@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-retrying-a-failed-protection-job.html 
+sidebar: sidebar 
+keywords:  
+summary: 失敗した保護ジョブを修正するための対策を行ったら、再試行を使用してジョブを再実行できます。ジョブを再試行すると、元のジョブ ID を使用して新しいジョブが作成されます。 
+---
+= 失敗した保護ジョブを再試行します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+失敗した保護ジョブを修正するための対策を行ったら、 * Retry * を使用してジョブを再実行できます。ジョブを再試行すると、元のジョブ ID を使用して新しいジョブが作成されます。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+失敗したジョブは一度に 1 つずつ再試行できます。複数のジョブを選択すると、 * Retry * ボタンが無効になります。再試行できるのは、タイプが Protection Configuration および Protection Relationship Operation のジョブだけです。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、 * 保護 * > * ジョブ * をクリックします。
+. ジョブのリストから、タイプが Protection Configuration または Protection Relationship Operation の失敗したジョブを 1 つだけ選択します。
++
+[* Retry* （再試行） ] ボタンが有効になります。
+
+. ［ * 再試行 * ］ をクリックします。
++
+ジョブが再開されます。
+
+

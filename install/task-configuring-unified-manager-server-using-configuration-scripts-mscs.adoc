@@ -1,0 +1,79 @@
+---
+permalink: install/task-configuring-unified-manager-server-using-configuration-scripts-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: 両方のクラスタノードにUnified Managerをインストールしたら、フェイルオーバークラスタマネージャで設定スクリプトを使用してUnified Managerを設定できます。 
+---
+= 設定スクリプトを使用したMSCSでのUnified Managerサーバの設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+両方のクラスタノードにUnified Managerをインストールしたら、フェイルオーバークラスタマネージャで設定スクリプトを使用してUnified Managerを設定できます。
+
+
+
+== 作業を開始する前に
+
+ソースのUnified Managerのデータを十分に格納できる共有のLUNを作成しておく必要があります。
+
+
+
+== 手順
+
+. クラスタの 1 つ目のノードにログインします。
+. フェイルオーバークラスタマネージャを使用して、Windows Server 2012またはWindows Server 2016にロールを作成します。
++
+.. フェイルオーバークラスタマネージャを起動します。
+.. [*役割*>]>[*空の役割の作成*]をクリックして、空の役割を作成します。
+.. 役割にグローバルIPアドレスを追加するには、*役割*>*リソースの追加*>*その他のリソース*>* IPアドレス*を右クリックします。
++
+[NOTE]
+====
+ハイアベイラビリティの構成後はこのIPアドレスを使用してUnified Managerを起動するため、このIPアドレスに両方のノードからpingを実行できる必要があります。
+
+====
+.. 役割にデータディスクを追加するには、*役割*>*ストレージの追加*を右クリックします。
+
+
+. を実行します `ha_setup.pl` 最初のノードでのスクリプト： `perl ha_setup.pl --first -t mscs -g group_name -i ip address -n fully_qualified_domain_cluster_name -f shared_location_path -k data_disk -u user_name -p password`
++
+`C:\Program Files\NetApp\ocum\bin>perl .\ha_setup.pl --first -t mscs -g umgroup -i "IP Address" -n spr38457002.eng.company.com -k "Cluster Disk 2" -f E:\ -u admin -p wx17yz`
+
++
+このスクリプトはにあります `Install_Dir\NetApp\ocum\bin`。
+
++
+** の値を取得できます `-g`、 `-k`および `-i` を使用したオプション `cluster res` コマンドを実行します
+** 。 `-n` オプションには、両方のノードからpingを実行できるグローバルIPアドレスのFQDNを指定する必要があります。
+
+
+. フェイルオーバークラスタマネージャのWebコンソールを使用して、Unified Managerサーバサービス、データディスク、およびクラスタのIPアドレスがクラスタグループに追加されたことを確認します。
+. を使用して、すべてのUnified Managerサーバサービス（MySQL、ocie、およびocieau）を停止します `services.msc` コマンドを実行します
+. フェイルオーバークラスタマネージャで、サービスグループを2つ目のノードに切り替えます。
+. コマンドを実行します `perl ha_setup.pl --join -t mscs -f``shared_location_path` クラスタの2つ目のノードで、Unified ManagerサーバのデータがLUNをポイントするように設定します。
++
+`perl ha_setup.pl --join -t mscs -f E:\`
+
+. フェイルオーバークラスタマネージャを使用して、すべてのUnified Managerサービスをオンラインにします。
+. Microsoft Cluster Serverのもう一方のノードに手動で切り替えます。
+. クラスタのもう一方のノードでUnified Managerサーバサービスが開始していることを確認します。
+. 設定スクリプトの実行後、Unified Managerの証明書を再生成し、グローバルIPアドレスを取得します。
++
+.. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、*設定*メニューから* HTTPS証明書*をクリックします。
+.. [* HTTPS 証明書の再生成 * ] をクリックします。
+
+
++
+再生成した証明書にはクラスタのIPアドレスが含まれ、完全修飾ドメイン名（FQDN）は含まれません。Unified Managerのハイアベイラビリティの構成には、グローバルIPアドレスを使用する必要があります。
+
+. 次のコマンドを使用してUnified Manager UIにアクセスします。 `https://<FQDN of Global IP>`
+
+
+
+
+== 完了後
+
+ハイアベイラビリティの構成が完了したら、バックアップの共有の場所を作成する必要があります。共有の場所は、フェイルオーバーの前後に作成するバックアップを格納するために必要です。ハイアベイラビリティ構成の両方のノードからアクセスできる必要があります。

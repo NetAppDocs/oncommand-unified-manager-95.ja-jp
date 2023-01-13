@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-authentication-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager サーバが認証サーバとの通信に使用するポートを変更することができます。 
+---
+= 認証サーバを編集しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager サーバが認証サーバとの通信に使用するポートを変更することができます。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者のロールが必要です。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、左の[設定]メニューの[*認証]をクリックします。
+. [*Setup/Authentication]ページで、[*Disable Nested Group Lookup*]チェックボックスをオンにします。
+. [* 認証サーバ * ] 領域で、編集する認証サーバを選択し、 [ * 編集 ] をクリックします。
+. Edit Authentication Server* ダイアログボックスで、ポートの詳細を編集します。
+. [ 保存（ Save ） ] をクリックします。
+

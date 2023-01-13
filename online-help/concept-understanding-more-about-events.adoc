@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-more-about-events.html 
+sidebar: sidebar 
+keywords:  
+summary: イベントに関する概念を理解しておくと、クラスタおよびクラスタオブジェクトを効率的に管理し、アラートを適切に定義できるようになります。 
+---
+= イベントに関する詳細情報
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+イベントに関する概念を理解しておくと、クラスタおよびクラスタオブジェクトを効率的に管理し、アラートを適切に定義できるようになります。

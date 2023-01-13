@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-network-interface-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance/LIFExplorerヘエシには、クラスタ内のすべてのLIFのパフォーマンスの詳細な概要が表示されます。 
+---
+= ハフオオマンスLIFエクスフロオラヘエシ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance/LIFExplorerヘエシには、クラスタ内のすべてのLIFのパフォーマンスの詳細な概要が表示されます。
+
+Performance/LIFExplorerヘエシを使用すると、一定期間のLIFのパフォーマンスを追跡して比較できるため、LIFのパフォーマンスのトラブルシューティングや微調整に役立ちます。
+
+表示と比較機能を使用して、このLIFのパフォーマンスを次の対象と比較できます。
+
+* 同じポート上の他のLIF
+* 同じSVM上の他のLIF
+* LIFが配置されているポート
+* LIFが配置されているSVM
+
+
+ハフオオマンスLIFエクスフロオラヘエシでは以下のことが可能です
+
+* しきい値に関連する問題とその詳細を表示します
+* LIFのパフォーマンスデータを追跡して比較する
+* しきい値に関連する問題の調査とトラブルシューティング
+* パフォーマンスの問題の調査とトラブルシューティング
+

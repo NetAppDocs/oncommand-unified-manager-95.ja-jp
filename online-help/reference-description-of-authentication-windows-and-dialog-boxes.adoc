@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-authentication-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: LDAP認証は、Setup/Authenticationページから有効にできます。 
+---
+= 認証ウィンドウとダイアログボックスの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LDAP認証は、Setup/Authenticationページから有効にできます。

@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-clusters-reaching-svm-count-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: クラスタインベントリレポートをカスタマイズして、クラスタをSVM数が多い順にソートして表示できます。 
+---
+= クラスタインベントリレポートのカスタマイズ：SVM数が上限に達しているクラスタを表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタインベントリレポートをカスタマイズして、クラスタをSVM数が多い順にソートして表示できます。
+
+
+
+== このタスクについて
+
+このタスクは、[レポート]ページに移動し、該当するレポートの[レポートの実行]をクリックして実行することもできます。
+
+
+
+== 手順
+
+. クラスタまたはノード別のグループ化を削除するには、次の手順を実行します。
++
+.. グループ化を解除する必要がある列内をクリックします。
+.. をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+.. * Group *>* Delete Inner Group *を選択します。
+
+
+. SVM数でクラスタをソートするには、次の手順を実行します。
++
+.. SVM数*列をクリックします。
+.. をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+.. * Group *>* Delete Inner Groupオプション*を選択します。
+
+
+. [*フィルタ*（Filter *）]>[*上/下N（* Top/Bottom N）]を選択する
+. [上/下N*（* Top/Bottom N *）]ダイアログボックスで、[*フィルタ*（* Filter *）]フィールドから[上N*（* Top N *）]を選択し、テキストフィールドに値を入力する。
+. [OK] をクリックします。
+

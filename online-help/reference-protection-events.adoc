@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-protection-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 保護イベントは、ジョブの失敗や中止を通知して、問題を監視できるようにします。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= 保護イベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+保護イベントは、ジョブの失敗や中止を通知して、問題を監視できるようにします。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：保護
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+保護ジョブが失敗しました (DocumentEvtProtectionJobTaskFailed)
+ a| 
+インシデント
+ a| 
+ボリュームまたはストレージサービス
+ a| 
+重要
+
+
+
+ a| 
+保護ジョブが中止されました（ Document EvtProtectionJobAborted ）
+ a| 
+リスク
+ a| 
+ボリュームまたはストレージサービス
+ a| 
+警告
+
+|===

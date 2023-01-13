@@ -1,0 +1,465 @@
+---
+permalink: online-help/reference-storage-vm-events.html 
+sidebar: sidebar 
+keywords:  
+summary: SVMイベントは、SVMのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= SVMイベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVMイベントは、SVMのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：可用性
+
+アスタリスク（ * ）は、 Unified Manager イベントに変換された EMS イベントを示します。
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+SVM CIFS サービスが停止（ Document EvtVserverCifsServiceStatusDown ）
+ a| 
+インシデント
+ a| 
+SVM
+ a| 
+重要
+
+
+
+ a| 
+SVM CIFS サービス未設定（該当なし）
+ a| 
+イベント
+ a| 
+SVM
+ a| 
+情報
+
+
+
+ a| 
+存在しないCIFS共有*に対して試行します
+ a| 
+インシデント
+ a| 
+SVM
+ a| 
+重要
+
+
+
+ a| 
+CIFS NetBIOS Name Conflict *
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+エラー
+
+
+
+ a| 
+CIFSシャドウコピー処理に失敗しました*
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+エラー
+
+
+
+ a| 
+多数のCIFS接続*
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+エラー
+
+
+
+ a| 
+最大CIFS接続数を超えました*
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+エラー
+
+
+
+ a| 
+ユーザあたりの最大CIFS接続数を超えました*
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+エラー
+
+
+
+ a| 
+SVM FC/FCoE サービス停止（ Document EvtVserverFcServiceStatusDown ）
+ a| 
+インシデント
+ a| 
+SVM
+ a| 
+重要
+
+
+
+ a| 
+SVM iSCSI サービスが停止（ ocument EvtVserverIscsiServiceStatusDown ）
+ a| 
+インシデント
+ a| 
+SVM
+ a| 
+重要
+
+
+
+ a| 
+SVM NFS サービス停止（ Document EvtVserverNfsServiceStatusDown ）
+ a| 
+インシデント
+ a| 
+SVM
+ a| 
+重要
+
+
+
+ a| 
+SVM FC / FCoE サービス未設定（該当なし）
+ a| 
+イベント
+ a| 
+SVM
+ a| 
+情報
+
+
+
+ a| 
+SVM iSCSI サービス未設定（該当なし）
+ a| 
+イベント
+ a| 
+SVM
+ a| 
+情報
+
+
+
+ a| 
+SVM NFS サービス未設定（該当なし）
+ a| 
+イベント
+ a| 
+SVM
+ a| 
+情報
+
+
+
+ a| 
+SVM が停止しました（ Document EvtDown ）
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+AVサーバがビジーのため新しいスキャン要求の受け入れ不可*
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+エラー
+
+
+
+ a| 
+ウィルススキャン*用のAVサーバ接続がありません
+ a| 
+インシデント
+ a| 
+SVM
+ a| 
+重要
+
+
+
+ a| 
+AVサーバが登録されていません*
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+エラー
+
+
+
+ a| 
+応答するAVサーバ接続がありません*
+ a| 
+イベント
+ a| 
+SVM
+ a| 
+情報
+
+
+
+ a| 
+権限のないユーザがAVサーバ*へのアクセスを試みました
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+エラー
+
+
+
+ a| 
+AVサーバ*がウィルスを検出しました
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+エラー
+
+
+
+ a| 
+Infinite Volumeを備えたSVMのストレージが使用できません（ドキュメント：VserverStorageNotAvailable）
+ a| 
+インシデント
+ a| 
+Infinite Volumeを備えたSVM
+ a| 
+重要
+
+
+
+ a| 
+Infinite Volumeを備えたSVMのストレージが一部使用可能（ドキュメント：EvtVserverStoragePartiallyAvailable）
+ a| 
+リスク
+ a| 
+Infinite Volumeを備えたSVM
+ a| 
+エラー
+
+
+
+ a| 
+Infinite Volumeを備えたSVMのネームスペースミラーコンスティチュエントの可用性に問題がある（ドキュメントEvtVserverNsMirrorAvailabilityHavingIssues）
+ a| 
+リスク
+ a| 
+Infinite Volumeを備えたSVM
+ a| 
+警告
+
+|===
+
+
+== 影響範囲：容量
+
+次に示す容量のイベントは、Infinite Volumeを備えたSVMにのみ該当します。
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+Infinite Volumeを備えたSVMのスペースがフル（Document EvtVserverFull）
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+エラー
+
+
+
+ a| 
+Infinite Volumeを備えたSVMのスペースがほぼフル（ドキュメント：VserverNearlyFull）
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+Infinite Volumeを備えたSVMのSnapshotの使用制限を超過（Document EvtVserverSnapshotUsageExceeded）
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+Infinite Volumeを備えたSVMのネームスペースのスペースがフル（Document Storage VserverNamespaceFull）
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+エラー
+
+
+
+ a| 
+Infinite Volumeを備えたSVMのネームスペースのスペースがほぼフル（ドキュメントStorage VserverNamespaceNearlyFull）
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+警告
+
+|===
+
+
+== 影響範囲：構成
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+SVM を検出（該当なし）
+ a| 
+イベント
+ a| 
+SVM
+ a| 
+情報
+
+
+
+ a| 
+SVM が削除されました（該当なし）
+ a| 
+イベント
+ a| 
+クラスタ
+ a| 
+情報
+
+
+
+ a| 
+SVM の名前が変更されました（該当なし）
+ a| 
+イベント
+ a| 
+SVM
+ a| 
+情報
+
+|===
+
+
+== 影響範囲：パフォーマンス
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+SVM IOPS の重大しきい値を超過（ドキュメント： vmIopsIncident ）
+ a| 
+インシデント
+ a| 
+SVM
+ a| 
+重要
+
+
+
+ a| 
+SVM IOPS の警告しきい値を超過（ドキュメントの注意：警告）
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+SVM MBpsの重大しきい値を超過（ドキュメント：vmMbpsIncident）
+ a| 
+インシデント
+ a| 
+SVM
+ a| 
+重要
+
+
+
+ a| 
+SVM MBpsの警告しきい値を超過（ドキュメントのMSvmMbpsWarning）
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+SVM レイテンシの重大しきい値を超過（ドキュメント： vmLatencyIncident ）
+ a| 
+インシデント
+ a| 
+SVM
+ a| 
+重要
+
+
+
+ a| 
+SVM レイテンシの警告しきい値を超過（ドキュメント： vmLatencyWarning ）
+ a| 
+リスク
+ a| 
+SVM
+ a| 
+警告
+
+|===

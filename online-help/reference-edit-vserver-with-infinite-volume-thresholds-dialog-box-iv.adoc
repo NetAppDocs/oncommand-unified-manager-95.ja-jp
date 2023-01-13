@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-edit-vserver-with-infinite-volume-thresholds-dialog-box-iv.html 
+sidebar: sidebar 
+keywords:  
+summary: Edit SVM with Infinite Volume Thresholdsダイアログボックスを使用すると、組織の要件に基づいて、Infinite Volumeを備えた各SVMのデフォルトのしきい値を変更できます。デフォルトのしきい値は、SVMに対するアクティビティのレベルがその値に達するとイベントがトリガーされるレベルを示します。 
+---
+= Edit SVM with Infinite Volume Thresholdsダイアログボックス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Edit SVM with Infinite Volume Thresholdsダイアログボックスを使用して、組織の要件に基づいて、Infinite Volumeを備えた各SVMのデフォルトのしきい値を変更できます。デフォルトのしきい値は、SVMに対するアクティビティのレベルがその値に達するとイベントがトリガーされるレベルを示します。
+
+
+
+== 容量
+
+容量領域では、選択したInfinite Volumeを備えたSVMの容量のしきい値条件を設定できます。
+
+* *スペースがほぼフル*
++
+Infinite Volumeを備えたSVMがほぼフルであるとみなす割合を示します。Infinite Volumeの対応するスペース（GB、MB、またはTB）も表示されます。たとえば、Infinite Volumeのサイズが10GBで「Space Nearly Full」しきい値が80%の場合、「（8 GB of 10 GB）」のように表示されます。
+
++
+このしきい値の値はスライダを使用して設定することもできます。
+
+* *スペースがフル*
++
+Infinite Volumeを備えたSVMがフルであるとみなす割合を示します。Infinite Volumeの対応するスペース（GB、MB、またはTB）も表示されます。たとえば、Infinite Volumeのサイズが10GBで「Space Full」しきい値が90%の場合、「（9 GB of 10 GB）」のように表示されます。
+
++
+このしきい値の値はスライダを使用して設定することもできます。
+
+* * Snapshotの使用制限*
++
+Infinite VolumeでSnapshotコピー用にリザーブされるスペースの上限を示します。
+
+
+
+
+
+== コマンドボタン
+
+各コマンドボタンを使用して次のタスクを実行できます。
+
+* *グローバル・デフォルトに戻します*
++
+しきい値の設定をグローバルレベルで設定されている現在の値に戻すことができます。
+
+* * 保存 *
++
+すべてのしきい値設定を保存します。
+
+* *保存して閉じる*
++
+すべてのしきい値の設定を保存して、[Edit SVM with Infinite Volume Thresholds]ダイアログボックスを閉じます。
+
+* * キャンセル *
++
+しきい値の設定に対する変更を無視して、Edit SVM with Infinite Volume Thresholdsダイアログボックスを閉じます。
+
+

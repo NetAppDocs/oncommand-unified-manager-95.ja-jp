@@ -1,0 +1,55 @@
+---
+permalink: install/concept-unified-manager-service-resources-for-vcs-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified ManagerのクラスタサービスリソースをVeritas Cluster Server \（vcs\）に追加する必要があります。これらのクラスタサービスリソースは、ストレージシステムの監視、ジョブのスケジュール、イベントの処理、他のすべてのUnified Managerサービスの監視など、さまざまな目的に使用されます。 
+---
+= VCS構成用のUnified Managerのサービスリソース
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified ManagerのクラスタサービスリソースをVeritas Cluster Server（VCS）に追加する必要があります。これらのクラスタサービスリソースは、ストレージシステムの監視、ジョブのスケジュール、イベントの処理、他のすべてのUnified Managerサービスの監視など、さまざまな目的に使用されます。
+
+次の表に、Unified Managerのすべてのサービスをカテゴリ別に示します。
+
+|===
+| カテゴリ | サービス 
+
+
+ a| 
+ストレージリソース
+ a| 
+* `vol`
+* `mount`
+
+
+
+
+ a| 
+データベースリソース
+ a| 
+* `mysqld`
+
+
+
+
+ a| 
+ネットワークリソース
+ a| 
+* `nic`
+* `vip`
+
+
+
+
+ a| 
+Unified Managerリソース
+ a| 
+* `ocie`
+* `ocieau`
+
+
+|===

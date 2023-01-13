@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-what-a-storage-class-is.html 
+sidebar: sidebar 
+keywords:  
+summary: ストレージクラスとは、アグリゲートの特性とボリュームの設定を定義したものです。さまざまなストレージクラスを定義して、1つ以上のストレージクラスをInfinite Volumeに関連付けることができます。ストレージクラスの要件に応じたワークフローを定義し、ストレージクラスをInfinite Volumeに割り当てるには、OnCommand Workflow Automation を使用する必要があります。 
+---
+= ストレージクラスとは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージクラスとは、アグリゲートの特性とボリュームの設定を定義したものです。さまざまなストレージクラスを定義して、1つ以上のストレージクラスをInfinite Volumeに関連付けることができます。ストレージクラスの要件に応じたワークフローを定義し、ストレージクラスをInfinite Volumeに割り当てるには、OnCommand Workflow Automation を使用する必要があります。
+
+ストレージクラスには次の特性を定義できます。
+
+* 使用するディスクのタイプなど、アグリゲートの特性を指定します
+* 圧縮、重複排除、ボリュームギャランティなどのボリューム設定
+
+
+たとえば、SASディスクで構成されたアグリゲートのみを使用し、圧縮と重複排除が有効になっているシンプロビジョニングのボリューム設定を使用するストレージクラスを定義できます。
+
+次の図は、Gold、Silver、Bronzeの各ストレージクラスを使用し、複数のノードにまたがるInfinite Volumeを示しています。各ストレージクラスは、Infinite Volume内の2つ以上のノードにまたがることができます。また、この図は、各ストレージクラスのデータコンスティチュエントの配置も示しています。
+
+image::../media/infinite-volume-with-storage-classes.gif[この図には説明が付随しています。]

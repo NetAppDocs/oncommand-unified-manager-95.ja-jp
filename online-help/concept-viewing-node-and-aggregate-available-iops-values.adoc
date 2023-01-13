@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-viewing-node-and-aggregate-available-iops-values.html 
+sidebar: sidebar 
+keywords:  
+summary: クラスタ内のすべてのノードまたはアグリゲートの使用可能な IOPS の値、または、 1 つのノードまたはアグリゲートの詳細を表示できます。 
+---
+= ノードとアグリゲートの使用可能な IOPS の値の表示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタ内のすべてのノードまたはアグリゲートの使用可能な IOPS の値、または、 1 つのノードまたはアグリゲートの詳細を表示できます。
+
+使用可能なIOPSの値は、パフォーマンスエクスプローラのページグラフに表示されます。たとえば、Performance/NodeExplorerページでノードを表示した場合、リストから「Available IOPS」カウンタチャートを選択して、そのノード上の複数のアグリゲートで使用可能なIOPS値を比較できます。
+
+image::../media/available-iops-zoom.gif[使用可能な IOPS のズーム]
+
+使用可能な IOPS カウンタを監視することで、次の項目を特定できます。
+
+* 使用可能な IOPS の値が最も大きいノードまたはアグリゲート。今後ワークロードを導入可能な場所を判断します。
+* 使用可能な IOPS の値が最も小さいノードまたはアグリゲート。今後発生する可能性のあるパフォーマンスの問題について監視が必要なリソースを特定します。
+* 使用可能な IOPS の値が小さいアグリゲート上の最も負荷の高いボリュームと LUN 。
+

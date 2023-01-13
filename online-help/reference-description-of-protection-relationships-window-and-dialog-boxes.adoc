@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-protection-relationships-window-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: リソースプール、 SVM の関連付け、保護ジョブなど、保護に関連する詳細を表示および管理できます。適切なConfiguration / Health Thresholdsページを使用して、アグリゲート、ボリューム、および関係のグローバル健全性しきい値を設定できます。 
+---
+= 保護関係の概要のウィンドウとダイアログボックス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+リソースプール、 SVM の関連付け、保護ジョブなど、保護に関連する詳細を表示および管理できます。適切なConfiguration / Health Thresholdsページを使用して、アグリゲート、ボリューム、および関係のグローバル健全性しきい値を設定できます。

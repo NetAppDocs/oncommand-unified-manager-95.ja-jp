@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-monitoring-cluster-performance-from-the-cluster-landing-page.html 
+sidebar: sidebar 
+keywords:  
+summary: パフォーマンスクラスタランディングページには、 Unified Manager のインスタンスによって監視されている、選択したクラスタのパフォーマンスステータスの概要が表示されます。このページでは、特定のクラスタの全体的なパフォーマンスを評価し、特定されたクラスタ固有のイベントをすばやく把握して特定し、解決策を適用することができます。 
+---
+= パフォーマンスクラスタランディングページからのクラスタパフォーマンスの監視
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+パフォーマンスクラスタランディングページには、 Unified Manager のインスタンスによって監視されている、選択したクラスタのパフォーマンスステータスの概要が表示されます。このページでは、特定のクラスタの全体的なパフォーマンスを評価し、特定されたクラスタ固有のイベントをすばやく把握して特定し、解決策を適用することができます。

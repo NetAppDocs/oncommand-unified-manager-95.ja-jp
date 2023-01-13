@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-infinite-volume-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Infinite Volumeを備えたSVMについては、対応する健常性/ Storage Virtual Machineの詳細ページで監視できます。ルールとデータポリシーは、ルールの作成ダイアログボックスで管理できます。ストレージクラスのしきい値の編集ダイアログボックスで、ストレージクラスのしきい値を変更することもできます。 
+---
+= Infinite Volumeの概要 のウィンドウとダイアログボックス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Infinite Volumeを備えたSVMについては、対応する健常性/ Storage Virtual Machineの詳細ページで監視できます。ルールとデータポリシーは、ルールの作成ダイアログボックスで管理できます。ストレージクラスのしきい値の編集ダイアログボックスで、ストレージクラスのしきい値を変更することもできます。

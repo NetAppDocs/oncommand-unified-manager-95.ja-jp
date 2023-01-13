@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-rediscovering-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: クラスタを手動で再検出するには、クラスタの健常性、監視ステータス、およびパフォーマンスステータスに関する最新情報をConfiguration / Cluster Data Sourcesページで確認します。 
+---
+= クラスタの再検出
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタを手動で再検出するには、クラスタの健常性、監視ステータス、およびパフォーマンスステータスに関する最新情報をConfiguration / Cluster Data Sourcesページで確認します。
+
+
+
+== このタスクについて
+
+クラスタを更新する場合は、スペースが不足しているときにアグリゲートのサイズを拡張するなど、クラスタを手動で再検出できます。変更を検出するには、 Unified Manager で検出します。
+
+Unified Manager と OnCommand Workflow Automation （ WFA ）を連携させている場合は、 WFA でキャッシュされたデータの再取得がトリガーされます。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Configuration *>* Cluster Data Sources *をクリックします。
+. [*Configuration/Cluster Data Sources*]ページで、[*Rediscover*]をクリックします。
++
+選択したクラスタが Unified Manager で再検出され、最新の健常性とパフォーマンスステータスが表示されます。
+
++
+[NOTE]
+====
+クラスタの監視ステータスは、[ダッシュボード/クラスタビュー]ページの右ペインから確認できます。
+
+====
+

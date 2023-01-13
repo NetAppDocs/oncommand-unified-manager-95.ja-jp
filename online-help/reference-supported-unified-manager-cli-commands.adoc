@@ -1,0 +1,272 @@
+---
+permalink: online-help/reference-supported-unified-manager-cli-commands.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: ストレージ管理者は、 CLI コマンドを使用して、クラスタ、アグリゲート、ボリューム、 qtree 、および LUN ：CLI コマンドを使用して、 Unified Manager の内部データベースと ONTAP データベースを照会できます。CLI コマンドは、処理の開始時または終了時に実行されるスクリプト、アラートがトリガーされたときに実行されるスクリプトでも使用できます。 
+---
+= Unified Manager の CLI コマンドがサポートされています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージ管理者は、 CLI コマンドを使用して、クラスタ、アグリゲート、ボリューム、 qtree 、および LUN ：CLI コマンドを使用して、 Unified Manager の内部データベースと ONTAP データベースを照会できます。CLI コマンドは、処理の開始時または終了時に実行されるスクリプト、アラートがトリガーされたときに実行されるスクリプトでも使用できます。
+
+すべてのコマンドの前にコマンドを入力する必要があります `um cli login` 認証用の有効なユーザ名とパスワードを指定します。
+
+|===
+| CLI コマンド | 説明 | 出力 
+
+
+ a| 
+`um run cmd [ -t <timeout> ] <cluster> <command>`
+ a| 
+1 つ以上のホストでコマンドを実行する最も簡単な方法です。主に、アラートのスクリプト化を使用して ONTAP で処理を取得または実行します。オプションの timeout 引数で、コマンドがクライアントで完了するのを待機する最大時間（秒）を設定できます。デフォルトは 0 （無期限に待機）です。
+ a| 
+ONTAP から受け取ったとおり。
+
+
+
+ a| 
+`um run query <sql command>`
+ a| 
+SQL クエリを実行します。データベースからの読み取りが許可されるクエリのみです。更新、挿入、削除の各操作はサポートされていません。
+ a| 
+結果は表形式で表示されます。空のセットが返された場合、または構文エラーや無効な要求がある場合は、該当するエラーメッセージが表示されます。
+
+
+
+ a| 
+`um datasource add -u <username> -P <password> [ -t <protocol> ] [ -p <port> ] <hostname-or-ip>`
+ a| 
+管理対象ストレージシステムのリストにデータソースを追加します。データソースは、ストレージシステムへの接続方法を定義したものです。データソースを追加するときは、 -u （ユーザ名）オプションと -P （パスワード）オプションを必ず指定する必要があります。オプションの -t （プロトコル）では、クラスタとの通信に使用するプロトコル（ http または https ）を指定します。プロトコルが指定されていない場合は、両方のプロトコルが試行されます。オプションの -p （ポート）では、クラスタとの通信に使用するポートを指定します。ポートが指定されていない場合は、該当するプロトコルのデフォルト値が試行されます。このコマンドは、ストレージ管理者のみが実行できます。
+ a| 
+ユーザに証明書の承認を求めるプロンプトを表示し、対応するメッセージを出力します。
+
+
+
+ a| 
+`um datasource list [ <datasource-id>]`
+ a| 
+管理対象ストレージシステムのデータソースを表示します。
+ a| 
+次の値が表形式で表示されます。 `ID Address Port, Protocol Acquisition Status, Analysis Status, Communication status, Acquisition Message, and Analysis Message`。
+
+
+
+ a| 
+`um datasource modify [ -h <hostname-or-ip> ] [ -u <username> ] [ -P <password> ] [ -t <protocol> ] [ -p <port> ] <datasource-id>`
+ a| 
+1 つ以上のデータソースオプションを変更します。ストレージ管理者のみが実行できます。
+ a| 
+対応するメッセージを表示します。
+
+
+
+ a| 
+`um datasource remove <datasource-id>`
+ a| 
+Unified Managerからデータソースを削除します。
+ a| 
+対応するメッセージを表示します。
+
+
+
+ a| 
+`um option list [ <option> .. ]`
+ a| 
+オプションをリストします。
+ a| 
+次の値が表形式で表示されます。 `Name, Value, Default Value, and Requires Restart.`
+
+
+
+ a| 
+`+um option set <option-name>=<option-value> [ <option-name>=<option-value> ... ]+`
+ a| 
+1 つまたは複数のオプションを設定します。このコマンドは、ストレージ管理者のみが実行できます。
+ a| 
+対応するメッセージを表示します。
+
+
+
+ a| 
+`um version`
+ a| 
+Unified Managerソフトウェアのバージョンを表示します。
+ a| 
+`Version ("7.0")`
+
+
+
+ a| 
+`um lun list [-q] [ -ObjectType <object-id>]`
+ a| 
+指定したオブジェクトでフィルタリングした LUN のリストを表示します。-q は、ヘッダーを表示しないすべてのコマンドに適用されます。ObjectTypeには、lun、qtree、cluster、volume、quota、SVM：例： `um lun list -cluster 1`
+
+この例では、 objectType が「 -cluster 」で、 objectId が「 1 」です。このコマンドを実行すると、 ID が 1 のクラスタに含まれるすべての LUN のリストが表示されます。
+ a| 
+次の値が表形式で表示されます。 `ID and LUN path`。
+
+
+
+ a| 
+`um svm list [-q] [ -ObjectType <object-id>]`
+ a| 
+指定したオブジェクトでフィルタリングしたSVMのリストを表示します。ObjectTypeには、lun、qtree、cluster、volume、quota、SVM：例： `um svm list -cluster 1`
+
+この例では、 objectType が「 -cluster 」で、 objectId が「 1 」です。このコマンドを実行すると、IDが1のクラスタに含まれるすべてのSVMのリストが表示されます。
+ a| 
+次の値が表形式で表示されます。 `Name and Cluster ID`。
+
+
+
+ a| 
+`um qtree list [-q] [ -ObjectType <object-id>]`
+ a| 
+指定したオブジェクトでフィルタリングした qtree のリストを表示します。-q は、ヘッダーを表示しないすべてのコマンドに適用されます。ObjectTypeには、lun、qtree、cluster、volume、quota、SVM：例： `um qtree list -cluster 1`
+
+この例では、 objectType が「 -cluster 」で、 objectId が「 1 」です。このコマンドを実行すると、 ID が 1 のクラスタに含まれるすべての qtree のリストが表示されます。
+ a| 
+次の値が表形式で表示されます。 `Qtree ID and Qtree Name`。
+
+
+
+ a| 
+`um disk list [-q] [-ObjectType <object-id>]`
+ a| 
+指定したオブジェクトでフィルタリングしたディスクのリストを表示します。ObjectTypeには、disk、aggr、node、clusterのいずれかを指定できます。例： `um disk list -cluster 1`
+
+この例では、 objectType が「 -cluster 」で、 objectId が「 1 」です。このコマンドを実行すると、 ID が 1 のクラスタに含まれるすべてのディスクのリストが表示されます。
+ a| 
+次の値が表形式で表示されます `ObjectType and object-id.`
+
+
+
+ a| 
+`um cluster list [-q] [-ObjectType <object-id>]`
+ a| 
+指定したオブジェクトでフィルタリングしたクラスタのリストを表示します。ObjectTypeには、disk、aggr、node、cluster、lun、qtree、ボリューム、クォータ、SVM例：``um cluster list -aggr 1``
+
+この例では、 objectType が「 -aggr 」で、 objectId が「 1 」です。このコマンドを実行すると、 ID が 1 のアグリゲートが属するクラスタが表示されます。
+ a| 
+次の値が表形式で表示されます。 `Name, Full Name, Serial Number, Datasource Id, Last Refresh Time, and Resource Key.`
+
+
+
+ a| 
+`um cluster node list [-q] [-ObjectType <object-id>]`
+ a| 
+指定したオブジェクトでフィルタリングしたクラスタノードのリストを表示します。ObjectTypeには、disk、aggr、node、clusterのいずれかを指定できます。例： `um cluster node list -cluster 1`
+
+この例では、 objectType が「 -cluster 」で、 objectId が「 1 」です。このコマンドを実行すると、 ID が 1 のクラスタに含まれるすべてのノードのリストが表示されます。
+ a| 
+次の値が表形式で表示されます `Name and Cluster ID.`
+
+
+
+ a| 
+`um volume list [-q] [-ObjectType <object-id>]`
+ a| 
+指定したオブジェクトでフィルタリングしたボリュームのリストを表示します。ObjectTypeには、lun、qtree、cluster、volume、quota、SVM、アグリゲート例： `um volume list -cluster 1`
+
+この例では、 objectType が「 -cluster 」で、 objectId が「 1 」です。このコマンドを実行すると、 ID が 1 のクラスタに含まれるすべてのボリュームのリストが表示されます。
+ a| 
+次の値が表形式で表示されます `Volume ID and Volume Name.`
+
+
+
+ a| 
+`um quota user list [-q] [-ObjectType <object-id>]`
+ a| 
+指定したオブジェクトでフィルタリングしたクォータユーザのリストを表示します。ObjectTypeには、qtree、cluster、volume、quota、svmのいずれかを指定できます。例： `um quota user list -cluster 1`
+
+この例では、 objectType が「 -cluster 」で、 objectId が「 1 」です。このコマンドを実行すると、 ID が 1 のクラスタに含まれるすべてのクォータユーザのリストが表示されます。
+ a| 
+次の値が表形式で表示されます `ID, Name, SID and Email.`
+
+
+
+ a| 
+`um aggr list [-q] [-ObjectType <object-id>]`
+ a| 
+指定したオブジェクトでフィルタリングしたアグリゲートのリストを表示します。ObjectTypeには、disk、aggr、node、cluster、volumeのいずれかを指定できます。例： `um aggr list -cluster 1`
+
+この例では、 objectType が「 -cluster 」で、 objectId が「 1 」です。このコマンドを実行すると、 ID が 1 のクラスタに含まれるすべてのアグリゲートのリストが表示されます。
+ a| 
+次の値が表形式で表示されます `Aggr ID, and Aggr Name.`
+
+
+
+ a| 
+`um event ack <event-ids>`
+ a| 
+1 つ以上のイベントに確認応答します。
+ a| 
+対応するメッセージを表示します。
+
+
+
+ a| 
+`um event resolve <event-ids>`
+ a| 
+1 つ以上のイベントを解決します。
+ a| 
+対応するメッセージを表示します。
+
+
+
+ a| 
+`um event assign -u <username> <event-id>`
+ a| 
+ユーザにイベントを割り当てます。
+ a| 
+対応するメッセージを表示します。
+
+
+
+ a| 
+`um event list [ -s <source> ] [ -S <event-state-filter-list>.. ] [ <event-id> .. ]`
+ a| 
+システムまたはユーザによって生成されたイベントのリストが表示されます。ソース、状態、および ID に基づいてイベントをフィルタリングします。
+ a| 
+次の値が表形式で表示されます `Source, Source type, Name, Severity, State, User and Timestamp.`
+
+
+
+ a| 
+`um cli login -u <username> [-p <password>`
+ a| 
+CLI にログインします。セッションはログインしてから 3 時間が経過すると期限切れになり、 3 時間が経過するとユーザは再度ログインする必要があります。
+ a| 
+対応するメッセージを表示します。
+
+
+
+ a| 
+`um cli logout`
+ a| 
+CLI からログアウトします。
+ a| 
+対応するメッセージを表示します。
+
+
+
+ a| 
+`um backup restore -f <backup_file_path_and_name>`
+ a| 
+.7zファイルを使用して、データベースのバックアップをリストアします。
+ a| 
+対応するメッセージを表示します。
+
+
+
+ a| 
+`um help`
+ a| 
+第 1 レベルのすべてのサブコマンドを表示します。
+ a| 
+第 1 レベルのすべてのサブコマンドを表示します。
+
+|===

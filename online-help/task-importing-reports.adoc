@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-importing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager以外で作成したレポートをインポートして保存し、そのレポートファイルをUnified Managerで使用することができます。 
+---
+= レポートのインポート
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager以外で作成したレポートをインポートして保存し、そのレポートファイルをUnified Managerで使用することができます。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者のロールが必要です。
+
+インポートを計画しているレポートがUnified Managerでサポートされていることを確認する必要があります。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、*レポート*をクリックし、*レポートのインポート*をクリックします。
+. [レポートのインポート*]ダイアログボックスで、[*参照]をクリックしてインポートするファイルを選択し、レポートの名前と簡単な概要 を入力します。
+. [* インポート * ] をクリックします。
++
+レポートをインポートできない場合は、ログファイルで問題 の原因となっているエラーを確認します。
+
+

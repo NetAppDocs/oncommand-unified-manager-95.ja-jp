@@ -1,0 +1,16 @@
+---
+permalink: install/concept-overview-of-the-deployment-process.html 
+sidebar: sidebar 
+keywords:  
+summary: 以下は、 Unified Manager を使用する前に必要な導入作業のワークフローです。 
+---
+= VMwareでの導入プロセスの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+以下は、 Unified Manager を使用する前に必要な導入作業のワークフローです。
+
+image::../media/deployment-sequence-oc-6-0.gif[展開シーケンス OC 6 0]

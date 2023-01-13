@@ -1,0 +1,146 @@
+---
+permalink: online-help/reference-logical-interface-events.html 
+sidebar: sidebar 
+keywords:  
+summary: LIFイベントは、LIFのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= 論理インターフェイス（LIF）イベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LIFイベントは、LIFのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：可用性
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+LIFステータス-停止（Document EvtLifStatusDown）
+ a| 
+リスク
+ a| 
+インターフェイス
+ a| 
+エラー
+
+
+
+ a| 
+LIFフェイルオーバーを実行できません（Document EvtLifFailoverNotPossible）
+ a| 
+リスク
+ a| 
+インターフェイス
+ a| 
+警告
+
+
+
+ a| 
+LIFがホームポートにない（Document EvtLifNotAtHomePort）
+ a| 
+リスク
+ a| 
+インターフェイス
+ a| 
+警告
+
+|===
+
+
+== 影響範囲：構成
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+LIFのルートが設定されていません（該当なし）
+ a| 
+イベント
+ a| 
+インターフェイス
+ a| 
+情報
+
+|===
+
+
+== 影響範囲：パフォーマンス
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+ネットワークLIF MBpsの重大しきい値を超過（ドキュメントNetworkLifMbpsIncident）
+ a| 
+インシデント
+ a| 
+インターフェイス
+ a| 
+重要
+
+
+
+ a| 
+ネットワークLIF MBpsの警告しきい値を超過（DocumentNetworkLifMbpsWarning）
+ a| 
+リスク
+ a| 
+インターフェイス
+ a| 
+警告
+
+
+
+ a| 
+FCP LIF MBpsの重大しきい値を超過（ドキュメントFcpLifMbpsIncident）
+ a| 
+インシデント
+ a| 
+インターフェイス
+ a| 
+重要
+
+
+
+ a| 
+FCP LIF MBpsの警告しきい値を超過（ドキュメントFcpLifMbpsWarning）
+ a| 
+リスク
+ a| 
+インターフェイス
+ a| 
+警告
+
+
+
+ a| 
+NVMf FCP LIF MBpsの重大しきい値を超過（ドキュメントNvmfFcLifMbpsIncident）
+ a| 
+インシデント
+ a| 
+インターフェイス
+ a| 
+重要
+
+
+
+ a| 
+NVMf FCP LIF MBpsの警告しきい値を超過（ドキュメントNvmfFcLifMbpsWarning）
+ a| 
+リスク
+ a| 
+インターフェイス
+ a| 
+警告
+
+|===

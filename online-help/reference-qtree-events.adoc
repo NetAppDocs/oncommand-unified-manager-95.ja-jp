@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-qtree-events.html 
+sidebar: sidebar 
+keywords:  
+summary: qtree イベントは、 qtree の容量とファイルとディスクの制限に関する情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= qtree イベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+qtree イベントは、 qtree の容量とファイルとディスクの制限に関する情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：容量
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+qtree スペースがほぼフル（ qtree の qtree eSpaceNearlyFull ）
+ a| 
+リスク
+ a| 
+qtree
+ a| 
+警告
+
+
+
+ a| 
+qtree スペースがフル（ Document QtreeSpaceFull ）
+ a| 
+リスク
+ a| 
+qtree
+ a| 
+エラー
+
+
+
+ a| 
+qtree スペースが正常（ Document qtree eSpaceThresholdOk ）
+ a| 
+イベント
+ a| 
+qtree
+ a| 
+情報
+
+
+
+ a| 
+qtree のファイル数がハードリミットに到達（ Document EvtQtreeFilesHardLimitReached ）
+ a| 
+インシデント
+ a| 
+qtree
+ a| 
+重要
+
+
+
+ a| 
+qtree のファイル数がソフトリミットを超過（ Document QtreeFilesSoftLimit超過 ）
+ a| 
+リスク
+ a| 
+qtree
+ a| 
+警告
+
+
+
+ a| 
+qtree のスペースがハードリミットに到達（ Document QtreeSpaceHardLimitReached ）
+ a| 
+インシデント
+ a| 
+qtree
+ a| 
+重要
+
+
+
+ a| 
+qtree のスペースがソフトリミットを超過（ Document QtreeSpaceSoftLimit超過 ）
+ a| 
+リスク
+ a| 
+qtree
+ a| 
+警告
+
+|===

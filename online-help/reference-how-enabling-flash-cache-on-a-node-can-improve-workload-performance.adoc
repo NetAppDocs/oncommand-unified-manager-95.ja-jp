@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-how-enabling-flash-cache-on-a-node-can-improve-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: クラスタ内の各ノードで Flash Cache ™インテリジェントデータキャッシングを有効にすることで、ワークロードパフォーマンスを向上させることができます。 
+---
+= ノードで Flash Cache を有効にしてワークロードパフォーマンスを改善する仕組み
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタ内の各ノードで Flash Cache ™インテリジェントデータキャッシングを有効にすることで、ワークロードパフォーマンスを向上させることができます。
+
+Flash Cache モジュールまたは Performance Acceleration Module PCIe ベースのメモリモジュールは、インテリジェントな外部読み取りキャッシュとして機能することで、ランダムリード中心のワークロードのパフォーマンスを最適化します。このハードウェアは、 ONTAP の WAFL 外部キャッシュソフトウェアコンポーネントと連携して機能します。
+
+Unified Manager のイベントの詳細ページで、競合状態にあるアグリゲートを表すクラスタコンポーネントアイコンが赤で強調表示されます。このアイコンの下には、アグリゲートを特定するアグリゲートの名前がかっこ内に表示されます。アグリゲートが配置されているノードで Flash Cache を有効にすることができます。
+
+OnCommand System ManagerまたはONTAP コマンドを使用して、Flash Cacheがインストールされて有効になっているかを確認し、有効になっていない場合は有効にすることができます。次のコマンドは、Flash Cacheが特定のノードで有効になっているかどうかを示します。 `cluster::> run local options flexscale.enable`
+
+Flash Cache とその使用要件については、次のテクニカルレポートを参照してください。
+
+http://www.netapp.com/us/media/tr-3832.pdf["テクニカルレポート 3832 ：『 Flash Cache Best Practices Guide 』"]

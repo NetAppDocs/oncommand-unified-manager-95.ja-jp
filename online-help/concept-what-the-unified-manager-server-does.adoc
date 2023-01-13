@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-the-unified-manager-server-does.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager サーバインフラは、データ収集ユニット、データベース、アプリケーションサーバで構成され、検出、監視、ロールベースアクセス制御（RBAC）、監査、ロギングなどのインフラサービスを提供します。 
+---
+= Unified Manager サーバの機能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager サーバインフラは、データ収集ユニット、データベース、アプリケーションサーバで構成され、検出、監視、ロールベースアクセス制御（ RBAC ）、監査、ロギングなどのインフラサービスを提供します。
+
+Unified Manager は、クラスタの情報を収集してデータベースにデータを格納し、そのデータを分析してクラスタに問題がないかどうかを確認します。

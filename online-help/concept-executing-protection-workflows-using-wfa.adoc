@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-executing-protection-workflows-using-wfa.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Workflow Automation とUnified Managerを統合して、ストレージクラスのワークフローを実行したり、ストレージクラスがないInfinite Volumeを備えたSVMを監視したりできます。 
+---
+= OnCommand Workflow Automation を使用した保護ワークフローの実行
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Workflow Automation とUnified Managerを統合して、ストレージクラスのワークフローを実行したり、ストレージクラスがないInfinite Volumeを備えたSVMを監視したりできます。

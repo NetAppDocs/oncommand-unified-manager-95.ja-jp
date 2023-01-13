@@ -1,0 +1,47 @@
+---
+permalink: health-checker/task-setting-up-protection-relationships-in-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager と OnCommand Workflow Automation を使用してデータを保護するための SnapMirror 関係と SnapVault 関係をセットアップするには、いくつかの手順を実行する必要があります。 
+---
+= Unified Manager で保護関係をセットアップする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager と OnCommand Workflow Automation を使用してデータを保護するための SnapMirror 関係と SnapVault 関係をセットアップするには、いくつかの手順を実行する必要があります。
+
+
+
+== 作業を開始する前に
+
+* OnCommand 管理者またはストレージ管理者のロールが必要です。
+* 2 つのクラスタまたは 2 つの Storage Virtual Machine （ SVM ）間にピア関係を確立しておく必要があります。
+* OnCommand Workflow Automation を Unified Manager に統合する必要があります。
++
+** xref:task-configuring-a-connection-between-workflow-automation-and-unified-manager.adoc[OnCommand Workflow Automation をセットアップする]
+** xref:task-verifying-unified-manager-data-source-caching-in-workflow-automation.adoc[Workflow Automation での Unified Manager データソースのキャッシングの確認]
+
+
+
+
+
+
+== 手順
+
+. 作成する保護関係のタイプに応じて、次のいずれかを実行します。
++
+** xref:task-creating-a-snapmirror-protection-relationship-from-the-health-volume-details-page.adoc[SnapMirror 保護関係を作成する]。
+** xref:task-creating-a-snapvault-protection-relationship-from-the-health-volume-details-page.adoc[SnapVault 保護関係を作成する]。
+
+
+. 関係のポリシーを作成する場合は、作成する関係タイプに応じて、次のいずれかを実行します。
++
+** xref:task-creating-a-snapvault-policy-to-maximize-transfer-efficiency.adoc[SnapVault ポリシーを作成する]。
+** xref:task-creating-a-snapmirror-policy-to-maximize-transfer-efficiency.adoc[SnapMirror ポリシーを作成する]。
+
+
+. xref:task-creating-snapmirror-and-snapvault-schedules.adoc[SnapMirror または SnapVault スケジュールを作成します]。
+

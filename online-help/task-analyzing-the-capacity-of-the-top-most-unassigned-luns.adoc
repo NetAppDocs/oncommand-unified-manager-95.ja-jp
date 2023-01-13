@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-analyzing-the-capacity-of-the-top-most-unassigned-luns.html 
+sidebar: sidebar 
+keywords:  
+summary: ストレージサマリレポートをカスタマイズしてクラスタのストレージ利用率を分析できます。これにより、未割り当て容量が最も多いLUNを見つけることができます。 
+---
+= ストレージサマリレポートのカスタマイズ：未割り当てのLUN容量が最も多いクラスタを分析する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージサマリレポートをカスタマイズしてクラスタのストレージ利用率を分析できます。これにより、未割り当て容量が最も多いLUNを見つけることができます。
+
+
+
+== このタスクについて
+
+このタスクは、[レポート]ページに移動し、該当するレポートの[レポートの実行]をクリックして実行することもできます。
+
+
+
+== 手順
+
+. クラスタ別のグループ化を解除するには、次の手順を実行します。
++
+.. グループ化を解除する必要がある列内をクリックします。
+.. をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+.. * Group *>* Delete Inner Group *を選択します。
+
+
+. 未割り当てのLUN容量が最も多いHAペアをソートするには、* Unlocated LUN Capacity（TB）*列をクリックし、をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+. [*フィルタ*（Filter *）]>[*上/下N（* Top/Bottom N）]を選択する
+. [上/下N*（* Top/Bottom N *）]ダイアログボックスで、[*フィルタ*（* Filter *）]フィールドから[上N*（* Top N *）]を選択し、テキストフィールドに値を入力する。
+. [OK] をクリックします。
+

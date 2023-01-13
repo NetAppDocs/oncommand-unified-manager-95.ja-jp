@@ -1,0 +1,51 @@
+---
+permalink: online-help/task-customizing-the-svm-inventory-report-to-display-a-list-of-svms-reaching-maximum-volume-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: SVMインベントリレポートをカスタマイズして、ボリューム数が上限に達しているSVMのリストを、ボリューム数を昇順にソートして表示できます。 
+---
+= SVMインベントリレポートのカスタマイズ：ボリューム数が上限に達しているSVMのリストを表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVMインベントリレポートをカスタマイズして、ボリューム数が上限に達しているSVMのリストを、ボリューム数を昇順にソートして表示できます。
+
+
+
+== このタスクについて
+
+このタスクは、[レポート]ページに移動し、該当するレポートの[レポートの実行]をクリックして実行することもできます。
+
+
+
+== 手順
+
+. クラスタ別のグループ化を削除するには、次の手順を実行します。
++
+.. グループ化を解除する必要がある列の内側をクリックします。
+.. をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+.. * Group *>* Delete Inner Group *を選択します。
+
+
+. 使用できるボリュームが制限されていないSVMをフィルタリングするには、列の* Maximum Allowed Volumes *をクリックして、* Filter *ダイアログボックスを開きます image:../media/click-to-filter.gif[""] をクリックします。
+. [*データ型*]フィールドで、[*文字列*]を選択し、[OK]をクリックします。
+. [*条件*（* Condition *）]ドロップダウンリストから、[*等しくない（* not equal to *）]を選択する。
+. 値の選択*をクリックし、*無制限*を選択します。
+. 新しい計算列を追加するには、次の手順を実行します。
++
+.. 列を選択し、をクリックします image:../media/click-to-see-menu.gif[""] アイコンをクリックし、*列*>*新規計算列*を選択します。
+.. [新規計算列*（New computed Column *）]ダイアログボックスで、と入力します `Available Volume` をクリックします。
+.. [カテゴリの選択]リストから、*Math*を選択します。
+.. [関数の選択*]ドロップダウンリストから、[*Advanced*]を選択します。
+.. [式の入力*]フィールドに、と入力します `[maximumVolumes]-[volumeCount]`。
+.. [OK] をクリックします。
+
+
+. SVMsを昇順にソートするには、* Available Volume *列をクリックし、をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+. [*フィルタ*（Filter *）]>[*上/下N（* Top/Bottom N）]を選択する
+. [*上/下N*（* Top/Bottom N *）]ダイアログボックスで、[*フィルタ*（* Filter *）]フィールドから[下N*（* Bottom N *）]を選択し、テキストフィールドに値を入力する。
+. [OK] をクリックします。
+

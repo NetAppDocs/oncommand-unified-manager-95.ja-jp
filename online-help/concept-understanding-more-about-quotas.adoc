@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-more-about-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: クォータに関する概念を理解しておくと、ユーザクォータとユーザグループクォータを効率的に管理できるようになります。 
+---
+= クォータに関する詳細情報
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クォータに関する概念を理解しておくと、ユーザクォータとユーザグループクォータを効率的に管理できるようになります。

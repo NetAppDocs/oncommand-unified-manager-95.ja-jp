@@ -1,0 +1,20 @@
+---
+permalink: install/concept-setting-up-unified-manager-for-high-availability-rhel.html 
+sidebar: sidebar 
+keywords:  
+summary: ハイアベイラビリティ構成はVeritas Cluster Server\（VCS\）を使用して作成できます。ハイアベイラビリティ構成ではフェイルオーバー機能を利用できるため、ディザスタリカバリに役立ちます。 
+---
+= ハイアベイラビリティ構成でのUnified Managerのセットアップ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハイアベイラビリティ構成はVeritas Cluster Server（VCS）を使用して作成します。ハイアベイラビリティ構成ではフェイルオーバー機能を利用できるため、ディザスタリカバリに役立ちます。
+
+ハイアベイラビリティ構成では、一度に1つのノードだけがアクティブです。一方のノードで障害が発生すると、VCSサービスがこのイベントを認識し、もう一方のノードにただちに制御を切り替えます。2つ目のノードがアクティブになり、サービスの提供を開始します。フェイルオーバープロセスは自動で実行されます。
+
+Unified Managerサーバが設定されたVCSクラスタは2つのノードで構成され、各ノードで同じバージョンのUnified Managerが実行されます。Unified Managerサーバのすべてのデータに共有データディスクからアクセスできるように設定する必要があります。
+
+VCSにUnified Managerをインストールしたあと、Unified ManagerがVCS環境で動作するように設定する必要があります。設定スクリプトを使用して、Unified ManagerがVCS環境で動作するようにセットアップすることができます。

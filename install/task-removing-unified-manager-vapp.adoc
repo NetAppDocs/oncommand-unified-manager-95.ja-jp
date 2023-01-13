@@ -1,0 +1,41 @@
+---
+permalink: install/task-removing-unified-manager-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerをアンインストールするには、Unified Managerソフトウェアがインストールされている仮想アプライアンスを削除します。 
+---
+= VMwareからのUnified Managerの削除
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerをアンインストールするには、Unified Managerソフトウェアがインストールされている仮想アプライアンスを削除します。
+
+
+
+== 作業を開始する前に
+
+* VMware vCenter ServerとvSphere Web Client（vSphereバージョン6.5の場合）またはvSphere Client（vSphereバージョン5.5または6.0の場合）にアクセスするためのクレデンシャルが必要です。
+* Unified Managerサーバから外部のデータプロバイダへのアクティブな接続が確立されていない必要があります。
++
+アクティブな接続がある場合は、Unified Managerメンテナンスコンソールを使用して接続を削除する必要があります。
+
+* Unified ManagerサーバからWorkflow Automationサーバへのアクティブな接続が確立されていない必要があります。
++
+アクティブな接続がある場合は'[管理]メニューを使用して接続を削除する必要があります
+
+* 仮想マシン（VM）を削除する前に、Unified Managerサーバからすべてのクラスタ（データソース）を削除しておく必要があります。
+
+
+
+
+== 手順
+
+. Unified Managerのメンテナンスコンソールを使用して、Unified Managerサーバから外部のデータプロバイダへのアクティブな接続がないことを確認します。
+. vSphere Client で、 * Home * > * Inventory * > * VMs and Templates * をクリックします。
+. 削除するVMを選択し、* Summary *タブをクリックします。
+. VM が実行中の場合は、 *Power*>* ゲストのシャットダウン * をクリックします。
+. 削除するVMを右クリックし、*ディスクから削除*をクリックします。
+

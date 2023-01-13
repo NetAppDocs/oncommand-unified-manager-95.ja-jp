@@ -1,0 +1,57 @@
+---
+permalink: online-help/task-monitoring-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: MetroCluster 構成の接続の問題を監視することができます。クラスタ内のコンポーネントおよび接続のステータス、および MetroCluster 構成のクラスタ間の接続ステータスなどの詳細情報を確認できます。 
+---
+= MetroCluster 構成を監視しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+MetroCluster 構成の接続の問題を監視することができます。クラスタ内のコンポーネントおよび接続のステータス、および MetroCluster 構成のクラスタ間の接続ステータスなどの詳細情報を確認できます。
+
+
+
+== 作業を開始する前に
+
+* MetroCluster 構成のローカルクラスタとリモートクラスタの両方を、OnCommand Unified Managerに追加する必要があります。
+* オペレータ、OnCommand 管理者、またはストレージ管理者のロールが必要です。
+
+
+
+
+== このタスクについて
+
+健常性/クラスタの詳細ページに表示される情報を基に、接続の問題を修正できます。たとえば、クラスタ内のノードとスイッチの間の接続が停止している場合は、次のアイコンが表示されます。
+
+image::../media/node-switch-connectivity.gif[ノードスイッチの接続]
+
+アイコンにカーソルを合わせると、生成されたイベントに関する詳細情報が表示されます。
+
+Unified Manager では、システムヘルスアラートを使用して、 MetroCluster 構成のコンポーネントおよび接続のステータスを監視します。
+
+MetroCluster 接続タブは、 MetroCluster 構成のクラスタに対してのみ表示されます。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Health *>* Clusters *をクリックします。
++
+監視対象であるすべてのクラスタのリストが表示されます。
+
+. * Health/Clusters *インベントリページで、MetroCluster 構成の詳細を表示するクラスタの名前をクリックします。
+. [*健常性/クラスタ*（* Health / Cluster *）]の詳細ページで、[* MetroCluster 接続（* Connectivity）]タブをクリックします。
++
+対応するクラスタオブジェクト領域に、 MetroCluster 構成のトポロジが表示されます。
+
+
+
+
+
+== 完了後
+
+MetroCluster 構成で接続の問題が見つかった場合は、 System Manager にログインするか ONTAP CLI にアクセスして問題を解決する必要があります。

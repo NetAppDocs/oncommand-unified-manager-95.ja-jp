@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-aggregate-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: レポートをカスタマイズして、アグリゲートに関するさまざまな情報を表示することができます。 
+---
+= アグリゲートの容量と使用状況レポートのカスタマイズ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+レポートをカスタマイズして、アグリゲートに関するさまざまな情報を表示することができます。

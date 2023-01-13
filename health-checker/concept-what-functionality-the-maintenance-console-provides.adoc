@@ -1,0 +1,26 @@
+---
+permalink: health-checker/concept-what-functionality-the-maintenance-console-provides.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager のメンテナンスコンソールでは、 Unified Manager システムの設定を管理し、問題の発生を防ぐために必要な変更を行うことができます。 
+---
+= メンテナンスコンソールで提供される機能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager のメンテナンスコンソールでは、 Unified Manager システムの設定を管理し、問題の発生を防ぐために必要な変更を行うことができます。
+
+メンテナンスコンソールでは、 Unified Manager をインストールしたオペレーティングシステムに応じて次の機能が提供されます。
+
+* 仮想アプライアンスの問題、特に Unified Manager の Web インターフェイスを使用できない場合はトラブルシューティングを行ってください
+* Unified Manager を新しいバージョンにアップグレードします
+* テクニカルサポートに送信するサポートバンドルを生成する
+* ネットワークの設定を行います
+* メンテナンスユーザのパスワードを変更します
+* パフォーマンス統計を送信するには、外部データプロバイダに接続してください
+* パフォーマンスデータ収集の内部を変更します
+* 以前にバックアップしたバージョンからの Unified Manager データベースと設定のリストア
+

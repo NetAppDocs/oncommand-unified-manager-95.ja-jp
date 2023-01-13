@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-monitoring-cluster-performance-from-the-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand System Managerのパフォーマンスダッシュボードには、Unified Managerの現在のインスタンスで監視しているすべてのクラスタのパフォーマンスステータスの概要が表示されます。管理対象クラスタの全体的なパフォーマンスを評価し、特定のイベントをすばやく把握して特定し、解決策を適用することができます。 
+---
+= パフォーマンスダッシュボードからのクラスタパフォーマンスの監視
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand System Managerのパフォーマンスダッシュボードには、Unified Managerの現在のインスタンスで監視しているすべてのクラスタのパフォーマンスステータスの概要が表示されます。管理対象クラスタの全体的なパフォーマンスを評価し、特定のイベントをすばやく把握して特定し、解決策を適用することができます。

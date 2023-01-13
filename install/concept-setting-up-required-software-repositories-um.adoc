@@ -1,0 +1,14 @@
+---
+permalink: install/concept-setting-up-required-software-repositories-um.html 
+sidebar: sidebar 
+keywords:  
+summary: インストールプログラムが必要なすべてのソフトウェアをインストールできるように、特定のリポジトリへのアクセスが必要になります。 
+---
+= 必要なソフトウェアリポジトリをセットアップする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+インストールプログラムが必要なすべてのソフトウェアをインストールできるように、特定のリポジトリへのアクセスが必要になります。

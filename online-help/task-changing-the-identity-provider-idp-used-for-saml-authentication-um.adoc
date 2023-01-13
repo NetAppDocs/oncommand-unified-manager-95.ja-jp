@@ -1,0 +1,54 @@
+---
+permalink: online-help/task-changing-the-identity-provider-idp-used-for-saml-authentication-um.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerでリモートユーザの認証に使用するアイデンティティプロバイダ（IdP）を変更することができます。 
+---
+= SAML 認証に使用するアイデンティティプロバイダを変更する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager でリモートユーザの認証に使用するアイデンティティプロバイダ（ IdP ）を変更することができます。
+
+
+
+== 作業を開始する前に
+
+* IdP の URL とメタデータが必要です。
+* IdP へのアクセスが必要です。
+
+
+
+
+== このタスクについて
+
+新しい IdP の設定は、 Unified Manager の設定前にも設定後にも実行できます。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、左の[設定]メニューの[*認証]をクリックします。
+. [* Setup/Authentication]ページで[* SAML Authentication*]タブを選択します。
+. 新しい IdP の URI と Unified Manager サーバを IdP に接続するために必要な IdP メタデータを入力します。
++
+Unified Manager サーバから IdP に直接アクセスできる場合は、 IdP の URL を入力したあとに「 * IdP メタデータの取得」ボタンをクリックすると、 IdP のメタデータフィールドに自動的に値が入力されます。
+
+. Unified Manager のメタデータ URI をコピーするか、メタデータを XML テキストファイルに保存します。
+. [ 構成の保存 *] をクリックします。
++
+設定を変更するかどうかの確認を求めるメッセージボックスが表示されます。
+
+. [OK] をクリックします。
+
+
+
+
+== 完了後
+
+新しい IdP にアクセスし、 Unified Manager サーバの URI とメタデータを入力して設定を完了します。
+
+許可されたリモートユーザが Unified Manager のグラフィカルインターフェイスにアクセスする際にクレデンシャルを入力するページが、次回から古い IdP のログインページではなく新しい IdP のログインページに変わります。

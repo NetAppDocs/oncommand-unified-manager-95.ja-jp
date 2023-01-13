@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-health-alert-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: '[Add Alert] ダイアログボックスを使用して、イベントに関する通知を受信するようにアラートを設定する必要があります。アラートのリストは、[設定/アラート]ページにも表示されます。' 
+---
+= 概要のアラートウィンドウとダイアログボックス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+[Add Alert] ダイアログボックスを使用して、イベントに関する通知を受信するようにアラートを設定する必要があります。アラートのリストは、[設定/アラート]ページにも表示されます。

@@ -1,0 +1,14 @@
+---
+permalink: install/concept-installing-unified-manager-win.html 
+sidebar: sidebar 
+keywords:  
+summary: Windows で Unified Manager をダウンロードしてインストールする一連の手順を理解することが重要です。WindowsにUnified Managerをインストールする前に、Unified Managerをハイアベイラビリティ構成にするかどうかを決めておきます。 
+---
+= Windows への Unified Manager のインストール
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows で Unified Manager をダウンロードしてインストールする一連の手順を理解することが重要です。WindowsにUnified Managerをインストールする前に、Unified Managerをハイアベイラビリティ構成にするかどうかを決めておきます。

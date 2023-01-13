@@ -1,0 +1,14 @@
+---
+permalink: install/concept-installing-unified-manager-on-rhel-or-centos.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager をダウンロードしてインストールする一連の手順は、インストールシナリオによって異なります。Red Hat Enterprise LinuxまたはCentOSにUnified Managerをインストールする前に、Unified Managerをハイアベイラビリティ構成にするかどうかをあらかじめ決めておきます。 
+---
+= Red Hat Enterprise LinuxまたはCentOSへのUnified Managerのインストール
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager をダウンロードしてインストールする一連の手順は、インストールシナリオによって異なります。Red Hat Enterprise LinuxまたはCentOSにUnified Managerをインストールする前に、Unified Managerをハイアベイラビリティ構成にするかどうかをあらかじめ決めておきます。

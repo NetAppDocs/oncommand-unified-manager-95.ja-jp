@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-clear-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: しきい値ポリシーのクリアページを使用して、1つ以上のストレージオブジェクトからパフォーマンスしきい値ポリシーを削除またはクリアできます。 
+---
+= パフォーマンスしきい値ポリシーのページをクリアします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+しきい値ポリシーのクリアページを使用して、1つ以上のストレージオブジェクトからパフォーマンスしきい値ポリシーを削除またはクリアできます。
+
+ポリシーのリストには、選択したオブジェクトで使用されているポリシーのみが表示されます。
+
+ストレージオブジェクトから削除するポリシーを選択し、*ポリシーのクリア*をクリックします。

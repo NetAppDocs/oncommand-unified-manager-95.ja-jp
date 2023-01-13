@@ -1,0 +1,39 @@
+---
+permalink: performance-checker/task-accessing-system-manager-from-the-um-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: トラブルシューティングでクラスタの構成の変更が必要な場合は、ONTAP コマンドラインインターフェイスの代わりにSystem Managerのグラフィカルインターフェイスを使用して行うことができます。System ManagerはWebサービスとしてONTAP に搭載されており、デフォルトで有効になっていて、ブラウザからアクセスできます。 
+---
+= Unified ManagerインターフェイスからOnCommand System Managerにアクセスします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+トラブルシューティングでクラスタの構成の変更が必要な場合は、ONTAP コマンドラインインターフェイスの代わりにSystem Managerのグラフィカルインターフェイスを使用して行うことができます。System ManagerはWebサービスとしてONTAP に搭載されており、デフォルトで有効になっていて、ブラウザからアクセスできます。
+
+
+
+== 作業を開始する前に
+
+を使用してクラスタユーザアカウントを設定しておく必要があります `admin` ロールと `http`、 `ontapi`および `console` アプリケーションタイプ：
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Dashboards *>* Cluster View *をクリックします。
+. [* Dashboards/Cluster View *]ページで、管理するクラスタを選択します。
++
+そのクラスタの監視ステータス、容量、およびパフォーマンスの概要が表示されます。
+
+. System Manager *アイコンをクリックします。
++
+自己署名のデジタル証明書がクラスタで使用されている場合、信頼されていない証明書であることを示す警告がブラウザ画面に表示されることがあります。危険を承諾してアクセスを続行するか、認証局（ CA ）の署名のあるデジタル証明書をクラスタにインストールしてサーバを認証します。
+
+. クラスタ管理者のクレデンシャルを使用して System Manager にログインします。
++
+System ManagerのユーザインターフェイスへのログインがSAML認証で保護されている場合は、System Managerのログインページではなくアイデンティティプロバイダ（IdP）のログインページでクレデンシャルを入力します。
+
+

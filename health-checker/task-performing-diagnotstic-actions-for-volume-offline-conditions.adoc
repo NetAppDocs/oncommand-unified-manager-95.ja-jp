@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-performing-diagnotstic-actions-for-volume-offline-conditions.html 
+sidebar: sidebar 
+keywords:  
+summary: オフラインと報告されたボリュームの健全性/ボリュームの詳細ページに移動したら、ボリュームのオフライン状態を診断するのに役立つ追加情報 を検索できます。 
+---
+= ボリュームがオフライン状態になった場合の診断処置の実施
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+オフラインと報告されたボリュームの健全性/ボリュームの詳細ページに移動したら、ボリュームのオフライン状態を診断するのに役立つ追加情報 を検索できます。
+
+
+
+== 作業を開始する前に
+
+オペレータ、OnCommand 管理者、またはストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+オフラインと報告されたボリュームが、意図的にオフラインにされたのではない場合は、いくつかの理由が考えられます。
+
+オフラインボリュームの健全性/ボリュームの詳細ページから他のページやペインに移動して、考えられる原因を確認するかどうかを確認することができます。
+
+
+
+== 選択肢
+
+* 健常性/ボリューム*の詳細ページのリンクをクリックして、ボリュームのオフライン状態の原因が、ホストノードの停止およびそのHAペアパートナーへのストレージフェイルオーバーの失敗であるかどうかを確認します。
++
+を参照してください xref:task-determining-if-a-volume-offline-condition-is-caused-by-a-down-cluster-node.adoc[ボリュームのオフライン状態の原因がノードの停止であるかどうかを判別します]。
+
+* 健常性/ボリューム*の詳細ページのリンクをクリックして、ボリュームがオフラインで、そのSVMのルートボリュームをホストしているノードが停止したためにホストしているStorage Virtual Machine（SVM）が停止していないかを確認します。
++
+を参照してください xref:task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.adoc[ボリュームのオフライン状態と SVM の停止の原因がノードの停止であるかどうかの判別]。
+
+* 健常性/ボリューム*の詳細ページのリンクをクリックして、ボリュームのオフライン状態の原因がホストアグリゲート内の破損ディスクであるかどうかを確認します。
++
+を参照してください xref:task-determining-if-a-volume-is-offline-because-of-broken-disks-in-an-aggregate.adoc[ボリュームのオフライン状態の原因がアグリゲート内の破損ディスクであるかどうかを判別しています]。
+
+

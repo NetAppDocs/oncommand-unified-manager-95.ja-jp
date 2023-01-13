@@ -1,0 +1,408 @@
+---
+permalink: online-help/reference-aggregate-events.html 
+sidebar: sidebar 
+keywords:  
+summary: アグリゲートイベントは、アグリゲートのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= アグリゲートイベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アグリゲートイベントは、アグリゲートのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：可用性
+
+アスタリスク（ * ）は、 Unified Manager イベントに変換された EMS イベントを示します。
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+アグリゲートがオフライン（ Document EvtAggregateStateOffline ）
+ a| 
+インシデント
+ a| 
+アグリゲート
+ a| 
+重要
+
+
+
+ a| 
+アグリゲートが失敗しました（ Document EvtAggregateStateFailed ）
+ a| 
+インシデント
+ a| 
+アグリゲート
+ a| 
+重要
+
+
+
+ a| 
+集約は制限されています (DocumentEvtAggregateStateRestricted)
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+
+
+ a| 
+アグリゲートの再構築（ Document EvtAggregateRaidStateReconstructing ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+
+
+ a| 
+アグリゲートがデグレード状態になりました（ Document EvtAggregateRaidStateDegraded ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+
+
+ a| 
+クラウド階層に部分的に到達可能（ドキュメントイベントクラウド階層への到達不能）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+
+
+ a| 
+クラウド階層に到達不能（ Document EventCloudTierUnreachable ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+エラー
+
+
+
+ a| 
+MetroCluster の残りのアグリゲート（ ocument MetroClusterAggregateLeftBehind ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+エラー
+
+
+
+ a| 
+MetroCluster アグリゲートのミラーリングがデグレード状態になる（ Document EvtMetroClusterAggregateMirroring Degraded ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+エラー
+
+
+
+ a| 
+アグリゲートの再配置でオブジェクトストアへのアクセスが拒否されました*
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+エラー
+
+
+
+ a| 
+ストレージフェイルオーバー時にアグリゲートの再配置でオブジェクトストアへのアクセスが拒否されました*
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+エラー
+
+|===
+
+
+== 影響範囲：容量
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+アグリゲートスペースがほぼフル（ Document EvtAggregateNearlyFull ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+
+
+ a| 
+アグリゲートスペースがフル（ Document EvtAggregateFull ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+エラー
+
+
+
+ a| 
+アグリゲートのフルまでの日数（ Document EvtAggregateDaysUntilFullSoon ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+エラー
+
+
+
+ a| 
+アグリゲートがオーバーコミット（ Document EvtAggregateOvercommitted ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+エラー
+
+
+
+ a| 
+アグリゲートがほぼオーバーコミット（ Document EvtAggregateAlmostOvercommitted ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+
+
+ a| 
+アグリゲートの Snapshot リザーブがフル（ Document EvtAggregateSnapReserveFull ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+
+
+ a| 
+アグリゲートの増加率が異常（ Document EvtAggregateGrowthRateAbnormal ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+|===
+
+
+== 影響範囲：構成
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+アグリゲートを検出（該当なし）
+ a| 
+イベント
+ a| 
+アグリゲート
+ a| 
+情報
+
+
+
+ a| 
+アグリゲートの名前を変更（該当なし）
+ a| 
+イベント
+ a| 
+アグリゲート
+ a| 
+情報
+
+
+
+ a| 
+アグリゲートが削除されました（該当なし）
+ a| 
+イベント
+ a| 
+ノード
+ a| 
+情報
+
+|===
+
+
+== 影響範囲：パフォーマンス
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+アグリゲート IOPS の重大しきい値を超過（ Document AggregateIopsIncident ）
+ a| 
+インシデント
+ a| 
+アグリゲート
+ a| 
+重要
+
+
+
+ a| 
+アグリゲート IOPS の警告しきい値を超過（ DocumentAggregateIopsWarning ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+
+
+ a| 
+アグリゲートMBpsの重大しきい値を超過（Document AggregateMbpsIncident）
+ a| 
+インシデント
+ a| 
+アグリゲート
+ a| 
+重要
+
+
+
+ a| 
+アグリゲートMBpsの警告しきい値を超過（Document AggregateMbpsWarning）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+
+
+ a| 
+アグリゲートレイテンシの重大しきい値を超過（ Document AggregateLatencyIncident ）
+ a| 
+インシデント
+ a| 
+アグリゲート
+ a| 
+重要
+
+
+
+ a| 
+アグリゲートレイテンシの警告しきい値を超過（ DocumentAggregateLatencyWarning ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+
+
+ a| 
+アグリゲート使用済み容量の重大しきい値を超過（AggregatePerfCapacityUsedIncident）
+ a| 
+インシデント
+ a| 
+アグリゲート
+ a| 
+重要
+
+
+
+ a| 
+アグリゲート使用済み容量の警告しきい値を超過（AggregatePerfCapacityUsedWarning）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+
+
+ a| 
+アグリゲート利用率の重大しきい値を超過（ Document AggregateUtilizationIncident ）
+ a| 
+インシデント
+ a| 
+アグリゲート
+ a| 
+重要
+
+
+
+ a| 
+アグリゲート利用率の警告しきい値を超過（ Document AggregateUtilizationWarning ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+
+
+ a| 
+利用率の高いアグリゲートディスクのしきい値を超過（ Document AggregateDisksOverUtilizedWarning ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+
+
+ a| 
+アグリゲート動的しきい値を超過（ DocumentAggregateDynamicEventWarning ）
+ a| 
+リスク
+ a| 
+アグリゲート
+ a| 
+警告
+
+|===

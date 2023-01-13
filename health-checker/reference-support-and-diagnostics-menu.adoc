@@ -1,0 +1,22 @@
+---
+permalink: health-checker/reference-support-and-diagnostics-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: サポートと診断メニューを使用して、サポートバンドルを生成できます。 
+---
+= Support and Diagnostics （サポートと診断）メニュー
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+サポートと診断メニューを使用して、サポートバンドルを生成できます。
+
+次のメニューオプションを使用できます。
+
+* * サポートバンドル * を生成します
++
+診断ユーザのホームディレクトリに、詳細な診断情報を収めた7-Zipファイルを作成することができます。このファイルには、AutoSupport メッセージで生成された情報、Unified Managerデータベースの内容、Unified Managerサーバの内部に関する詳細なデータ、およびAutoSupport メッセージには通常含まれない詳細なログが収められます。
+
+

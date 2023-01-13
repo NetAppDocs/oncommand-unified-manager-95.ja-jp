@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-view-aggregates-reaching-full-capacity.html 
+sidebar: sidebar 
+keywords:  
+summary: アグリゲートの容量と使用状況レポートをカスタマイズして、アグリゲートの容量利用率が低い順にソートして表示できます。これにより、容量がフルに達しているアグリゲートを確認できます。 
+---
+= アグリゲートの容量と使用状況レポートのカスタマイズ：容量がフルに達しているアグリゲートを表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アグリゲートの容量と使用状況レポートをカスタマイズして、アグリゲートの容量利用率が低い順にソートして表示できます。これにより、容量がフルに達しているアグリゲートを確認できます。
+
+
+
+== このタスクについて
+
+このタスクは、[レポート]ページに移動し、該当するレポートの[レポートの実行]をクリックして実行することもできます。
+
+
+
+== 手順
+
+. クラスタおよびHAペア別のグループ化を削除するには、次の手順を実行します。
++
+.. グループ化を解除する必要がある列内をクリックします。
+.. をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+.. * Group *>* Delete Inner Groupオプション*を選択します。
+
+
+. 容量がフルに近づいているアグリゲートをソートするには、* Days to Full *列をクリックし、をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+. [*フィルタ*（Filter *）]>[*上/下N（* Top/Bottom N）]を選択する
+. [*上/下N*（* Top/Bottom N *）]ダイアログボックスで、[*フィルタ*（* Filter *）]フィールドから[下N*（* Bottom N *）]を選択し、テキストフィールドに値を入力する。
+. [OK] をクリックします。
+

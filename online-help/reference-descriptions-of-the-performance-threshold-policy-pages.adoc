@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-descriptions-of-the-performance-threshold-policy-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Configuration / Performance Thresholdsページを使用して、パフォーマンスしきい値ポリシーを作成、編集、クローニング、削除、および表示します。 
+---
+= パフォーマンスしきい値ポリシーのページの説明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Configuration / Performance Thresholdsページを使用して、パフォーマンスしきい値ポリシーを作成、編集、クローニング、削除、および表示します。
+
+以下のトピックは、該当するページの*ヘルプ*をクリックすると表示されます。

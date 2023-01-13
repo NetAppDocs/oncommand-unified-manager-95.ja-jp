@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-understanding-more-about-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: オプションを使用すると、レポートを実行、削除、エクスポート、およびインポートできます。カスタムレポートを作成し、カスタマイズしたレポートを保存することもできます。フィルタ、ソート、グループ化、書式設定などの追加の処理を実行できます。 
+---
+= レポートに関する詳細情報
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+オプションを使用すると、レポートを実行、削除、エクスポート、およびインポートできます。カスタムレポートを作成し、カスタマイズしたレポートを保存することもできます。フィルタ、ソート、グループ化、書式設定などの追加の処理を実行できます。

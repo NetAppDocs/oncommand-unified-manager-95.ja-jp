@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-annotations-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 管理/アノテーションページですべてのアノテーションを表示および管理できます。ストレージオブジェクトのアノテーションルールは、アノテーションルールタブで設定することもできます。 
+---
+= アノテーションの概要 ウィンドウとダイアログボックス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理/アノテーションページですべてのアノテーションを表示および管理できます。ストレージオブジェクトのアノテーションルールは、アノテーションルールタブで設定することもできます。

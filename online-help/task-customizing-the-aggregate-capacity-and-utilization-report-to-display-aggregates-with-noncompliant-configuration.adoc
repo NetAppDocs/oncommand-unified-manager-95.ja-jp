@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-noncompliant-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: アグリゲートの容量と使用状況レポートをカスタマイズして、フルのしきい値でフィルタされたアグリゲートを表示できます。これにより、企業のポリシーに準拠しない可能性のあるアグリゲートを確認できます。 
+---
+= アグリゲートの容量と使用状況レポートのカスタマイズ：構成の条件を満たしていないアグリゲートを表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アグリゲートの容量と使用状況レポートをカスタマイズして、フルのしきい値でフィルタされたアグリゲートを表示できます。これにより、企業のポリシーに準拠しない可能性のあるアグリゲートを確認できます。
+
+
+
+== このタスクについて
+
+このタスクは、[レポート]ページに移動し、該当するレポートの[レポートの実行]をクリックして実行することもできます。
+
+
+
+== 手順
+
+. クラスタまたはHAペア別のグループ化を削除するには、次の手順を実行します。
++
+.. グループ化を解除する必要がある列内をクリックします。
+.. をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+.. * Group *>* Delete Inner Group *を選択します。
+
+
+. 85%を超えないアグリゲートのしきい値をフィルタリングするには、* Space Full Threshold *列をクリックし、* Filter *ダイアログボックスをクリックして開きます image:../media/click-to-filter.gif[""] をクリックします。
+. [*条件*（* Condition *）]リストから、[*より大きい（* Greater than）]を選択する
+. 値の選択*をクリックし、* 85 *を選択します。
+. [OK] をクリックします。
+

@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/concept-analyzing-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerを使用して、クラスタ上のボリュームのワークロードのI/Oパフォーマンスを監視して分析することができます。クラスタにパフォーマンス問題 があるかどうかや、ストレージが問題 かどうかを確認できます。 
+---
+= ワークロードパフォーマンスを分析しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerを使用して、クラスタ上のボリュームのワークロードのI/Oパフォーマンスを監視して分析することができます。クラスタにパフォーマンス問題 があるかどうかや、ストレージが問題 かどうかを確認できます。
+
+[NOTE]
+====
+この章では、パフォーマンス/ボリュームの詳細ページとイベントの詳細ページを使用してワークロードのパフォーマンスを分析する方法について説明します。
+
+====

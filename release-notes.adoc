@@ -1,0 +1,16 @@
+---
+permalink: release-notes.html 
+sidebar: sidebar 
+keywords: release notes, oncommand unified manager 
+summary: OnCommand Unified Manager 9.5の新機能、制限事項、および既知の問題の概要を示します。 
+---
+= リリースノート
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Manager 9.5の新機能、制限事項、および既知の問題の概要を示します。
+
+詳細については、を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP2847421["OnCommand Unified Managerリリースノート"^]。

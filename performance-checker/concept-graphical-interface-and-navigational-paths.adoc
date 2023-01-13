@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-graphical-interface-and-navigational-paths.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager は柔軟性に優れており、複数のタスクをさまざまな方法で実行できます。Unified Manager を実際に使用してみると、操作手順が多数あることがわかります。使用できる操作手順をすべて紹介することは不可能ですが、ここでは、代表的な操作手順をいくつか紹介します。 
+---
+= グラフィカルインターフェイスと操作手順
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager は柔軟性に優れており、複数のタスクをさまざまな方法で実行できます。Unified Manager を実際に使用してみると、操作手順が多数あることがわかります。使用できる操作手順をすべて紹介することは不可能ですが、ここでは、代表的な操作手順をいくつか紹介します。

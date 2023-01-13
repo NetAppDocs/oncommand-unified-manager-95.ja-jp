@@ -1,0 +1,57 @@
+---
+permalink: online-help/task-restoring-a-mysql-database-backup-on-red-hat-enterprise-linux-or-centos.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: データ損失やデータ破損が発生した場合、 Unified Manager を以前の安定した状態にリストアすることでデータ損失を最小限に抑えることができます。Unified Managerデータベースは、ローカルとリモートのどちらのRed Hat Enterprise LinuxまたはCentOSシステムにもリストアできます。 
+---
+= Linuxシステムでのデータベースバックアップのリストア
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+データ損失やデータ破損が発生した場合、 Unified Manager を以前の安定した状態にリストアすることでデータ損失を最小限に抑えることができます。Unified Managerデータベースは、ローカルとリモートのどちらのRed Hat Enterprise LinuxまたはCentOSシステムにもリストアできます。
+
+
+
+== 作業を開始する前に
+
+* Unified Managerがサーバにインストールされている必要があります。
+* Unified Manager がインストールされている Linux ホストの root ユーザのクレデンシャルが必要です。
+* リストア処理を実行するシステムに Unified Manager のバックアップファイルとデータベースリポジトリディレクトリの内容をコピーしておく必要があります。
++
+バックアップファイルはデフォルトのディレクトリにコピーすることを推奨します `/data/ocum-backup`。データベースリポジトリのファイルは、にコピーする必要があります `/database-dumps-repo` のサブディレクトリ `/ocum-backup` ディレクトリ。
+
+* バックアップファイルはにする必要があります `.7z` を入力します。
+
+
+
+
+== このタスクについて
+
+リストア機能は、プラットフォームおよびバージョンに固有の機能です。Unified Manager のバックアップは、同じバージョンの Unified Manager にのみリストアできます。Red Hat Enterprise Linux または CentOS システムにリストアできるのは、 Linux のバックアップファイルと仮想アプライアンスのバックアップファイルです。
+
+[TIP]
+====
+バックアップフォルダ名にスペースが含まれている場合は、絶対パスまたは相対パスを二重引用符で囲む必要があります。
+
+====
+
+
+== 手順
+
+. 新しいサーバへのリストアを実行する場合は、 Unified Manager のインストールの完了後に、 UI を起動したり、クラスタ、ユーザ、または認証設定を設定したりしないでください。この情報は、リストアプロセスでバックアップファイルに取り込まれます。
+. Unified Managerがインストールされているホストにrootユーザとしてログインします。
+. Unified ManagerがVCSセットアップ環境にインストールされている場合は、Veritas Operations Managerを使用してUnified Managerのocieサービスとocieauサービスを停止します。
+. コマンドプロンプトで、バックアップをリストアします。 `um backup restore -f <backup_file_path>/<backup_file_name>`
++
+`um backup restore -f /data/ocum-backup/UM_9.4.N151113.1348_backup_rhel_02-20-2018-04-45.7z`
+
+
+
+
+
+== 完了後
+
+リストア処理が完了したら、 Unified Manager にログインできます。

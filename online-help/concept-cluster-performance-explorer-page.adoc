@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-cluster-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance/ClusterExplorerヘエシには、Unified Managerで管理されているすべてのクラスタの詳細なパフォーマンス概要が表示されます。 
+---
+= Performance/ClusterExplorerヘエシ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance/ClusterExplorerヘエシには、Unified Managerで管理されているすべてのクラスタの詳細なパフォーマンス概要が表示されます。
+
+Performance/ClusterExplorerヘエシを使用すると、クラスタのパフォーマンスを追跡し、一定期間内にそのクラスタ内のオブジェクトを比較することができます。これは、クラスタのパフォーマンスのトラブルシューティングや微調整に役立ちます。
+
+表示と比較機能を使用して、クラスタのパフォーマンスを次の対象と比較できます。
+
+* このクラスタ上のノード
+* このクラスタのStorage Virtual Machine（SVM）
+* このクラスタ上のアグリゲート
+
+
+Performance/ClusterExplorerヘエシを使用すると、次のことができます。
+
+* しきい値に関連する問題とその詳細を表示します
+* クラスタのパフォーマンスデータを追跡します
+* しきい値に関連する問題の調査とトラブルシューティング
+* パフォーマンスの問題の調査とトラブルシューティング
+

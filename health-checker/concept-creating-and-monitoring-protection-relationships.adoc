@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-creating-and-monitoring-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager では、保護関係の作成、管理対象クラスタに保存されているデータのミラー保護とバックアップ保護の監視とトラブルシューティング、および上書きされたデータや失われたデータのリストアを実行できます。 
+---
+= 保護関係の作成、監視、およびトラブルシューティング
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager では、保護関係の作成、管理対象クラスタに保存されているデータのミラー保護とバックアップ保護の監視とトラブルシューティング、および上書きされたデータや失われたデータのリストアを実行できます。

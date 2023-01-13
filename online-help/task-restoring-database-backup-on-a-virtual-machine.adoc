@@ -1,0 +1,63 @@
+---
+permalink: online-help/task-restoring-database-backup-on-a-virtual-machine.html 
+sidebar: sidebar 
+keywords:  
+summary: データ損失やデータ破損が発生した場合、リストア機能を使用して Unified Manager を以前の安定した状態にリストアすることで損失を最小限に抑えることができます。Unified Managerメンテナンスコンソールを使用して、Unified Managerデータベースを仮想マシンにリストアすることができます。 
+---
+= 仮想マシンでのデータベースバックアップのリストア
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+データ損失やデータ破損が発生した場合、リストア機能を使用して Unified Manager を以前の安定した状態にリストアすることで損失を最小限に抑えることができます。Unified Managerメンテナンスコンソールを使用して、Unified Managerデータベースを仮想マシンにリストアすることができます。
+
+
+
+== 作業を開始する前に
+
+* メンテナンスユーザのクレデンシャルが必要です。
+* Unified Managerのバックアップファイルがローカルシステムにある必要があります。
+* バックアップファイルはにする必要があります `.7z` を入力します。
+
+
+
+
+== このタスクについて
+
+バックアップの互換性はプラットフォームおよびバージョンに依存します。仮想アプライアンスのバックアップは、別の仮想アプライアンスまたはRed Hat Enterprise LinuxまたはCentOSシステムにリストアすることができます。
+
+[NOTE]
+====
+元のバックアップファイルの作成元のシステムとは別の仮想アプライアンスでリストア処理を実行する場合は、新しいvAppで使用するメンテナンスユーザの名前とパスワードを元のvAppのクレデンシャルと同じにする必要があります。
+
+====
+
+
+== 手順
+
+. vSphere Clientで、Unified Manager仮想マシンを見つけ、* Console *タブを選択します。
+. コンソールウィンドウ内をクリックし、ユーザ名とパスワードを使用してメンテナンスコンソールにログインします。
+. * メインメニュー * で、 * システム構成 * オプションの番号を入力します。
+. * System Configuration Menu *で、OCUM Backup *オプションを使用してリストアする*の番号を入力します。
+. プロンプトが表示されたら、バックアップファイルの絶対パスを入力します。
++
+[listing]
+----
+Bundle to restore from: opt/netapp/data/ocum-backup/UM_9.4.N151112.0947_backup_unix_02-25-2018-11-41.7z
+----
++
+リストア処理が完了したら、 Unified Manager にログインできます。
+
+
+
+
+
+== 完了後
+
+バックアップをリストアしたあとに OnCommand Workflow Automation サーバが動作しない場合は、次の手順を実行します。
+
+. Workflow Automation サーバで、 Unified Manager サーバの IP アドレスを最新のマシンを参照するように変更します。
+. 手順 1 で取得に失敗した場合は、 Unified Manager サーバでデータベースパスワードをリセットします。
+

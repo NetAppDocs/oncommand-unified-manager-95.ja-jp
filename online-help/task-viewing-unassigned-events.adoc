@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-viewing-unassigned-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 未割り当てのイベントを表示して、各イベントを解決できるユーザに割り当てることができます。 
+---
+= 未割り当てのイベントを表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+未割り当てのイベントを表示して、各イベントを解決できるユーザに割り当てることができます。
+
+
+
+== 作業を開始する前に
+
+オペレータ、OnCommand 管理者、またはストレージ管理者のロールが必要です。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、 * Events * （イベント * ）をクリックします。
++
+デフォルトでは、新規と確認済みのイベントがイベントのインベントリページに表示されます。
+
+. [ * フィルタ * （ * Filters * ） ] パネルの [ * 割り当て先 * （ Assigned to * ） ] 領域で [ * 未割り当て * （ * Unassigned * ） ] フィルタオプションを選択する。
+

@@ -1,0 +1,49 @@
+---
+permalink: install/task-installing-unified-manager-in-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: ハイアベイラビリティ構成にするには、Microsoft Cluster Server \（MSCS \）の両方のクラスタノードにUnified Managerをインストールする必要があります。 
+---
+= MSCSにUnified Managerをインストールします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハイアベイラビリティ構成にするには、Microsoft Cluster Server（MSCS）の両方のクラスタノードにUnified Managerをインストールする必要があります。
+
+
+
+== 手順
+
+. クラスタの両方のノードにドメインユーザとしてログインします。
+. 次のいずれかを実行してハイアベイラビリティを設定します。
++
+|===
+| 状況 | 操作 
+
+
+ a| 
+既存のUnified Managerインストールでハイアベイラビリティを設定する
+ a| 
+既存のサーバとペアリングするサーバを追加します。
+
+.. 既存のUnified Managerサーバのソフトウェアを最新バージョンにアップグレードします。
+.. 既存のUnified Managerインストールのバックアップを作成し、マウントされたLUNに格納します。
+.. 2つ目のノードにUnified Managerをインストールします。
++
+xref:task-installing-unified-manager-on-windows.adoc[WindowsシステムへのUnified Managerのインストール]
+
+.. 既存のUnified Managerインストールのバックアップを2つ目のノードにリストアします。
+
+
+
+
+ a| 
+新しいUnified Manager環境でハイアベイラビリティを設定する
+ a| 
+両方のノードにUnified Managerをインストールします。 xref:task-installing-unified-manager-on-windows.adoc[WindowsシステムへのUnified Managerのインストール]
+
+|===
+

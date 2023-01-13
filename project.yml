@@ -1,0 +1,79 @@
+---
+settings:
+  name: OnCommand Unified Manager 9.5
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  versions:
+  - name: Unified Manager の略
+    url: "/oncommand-unified-manager-95"
+    version-number: '9.5'
+  - name: Unified Manager の略
+    url: "/active-iq-unified-manager-99"
+    version-number: '9.9'
+  - name: Unified Manager の略
+    url: "/active-iq-unified-manager-98"
+    version-number: '9.8'
+  - name: Unified Manager の略
+    url: "/active-iq-unified-manager-97"
+    version-number: '9.7'
+  langs: ja-jp,us-en,zh-cn,zh-tw,ko-kr,fr-fr,de-de
+sidebar:
+  entries:
+  - title: OnCommand Unified Manager 9.5のドキュメント
+    url: "/index.html"
+  - title: リリースノート
+    url: "/release-notes.html"
+  - title: はじめに
+    entries:
+    - title: VMware vSphere のクイックスタートインストール
+      url: "/qsg-vapp.html"
+    - title: Linux のクイックスタートインストール
+      url: "/qsg-linux.html"
+    - title: Windows のクイックスタートインストール
+      url: "/qsg-windows.html"
+  - section: install
+  - section: config
+  - section: online-help
+  - section: performance-checker
+  - section: health-checker
+  - title: 法的通知
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: はじめに
+    links:
+    - title: リリースノート
+      url: "/release-notes.html"
+    - title: VMware vSphere のクイックスタートインストール
+      url: qsg-vapp.html
+    - title: Linux のクイックスタートインストール
+      url: qsg-linux.html
+    - title: Windows のクイックスタートインストール
+      url: qsg-windows.html
+  - title: configure Unified Manager をインストールします
+    links:
+    - title: VMware vSphere システムにアップグレードをインストールします
+      url: install/concept-installing-upgrading-and-removing-unified-manager-software-on-vmware-vsphere.html
+    - title: Linux システムにアップグレードをインストール
+      url: install/concept-install-upgrade-and-remove-unified-manager-software.html
+    - title: Windows システムにアップグレードをインストールします
+      url: install/concept-installing-upgrading-and-removing-unified-manager-software.html
+    - title: Unified Manager を設定します
+      url: config/concept-configuring-unified-manager.html
+  - title: パフォーマンスの監視
+    links:
+    - title: パフォーマンスしきい値
+      url: performance-checker/concept-managing-performance-thresholds.html
+    - title: クラスタのパフォーマンス
+      url: performance-checker/concept-monitoring-cluster-performance-from-the-dashboard.html
+  - title: リソースの追加
+    links:
+    - title: Unified Manager のビデオ
+      url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7mp3jFSg0IJgo3oeDQRY-Gl
+    - title: Unified Manager のブログです
+      url: https://www.netapp.com/blog/#q=active%20iq%20unified%20manager&t=Blogs&sort=%40publish-date-mktg%20descending&layout=card&f:@facet-language-mktg=[English]
+    - title: Unified Managerの最新バージョンのドキュメント
+      url: https://docs.netapp.com/us-en/active-iq-unified-manager/index.html

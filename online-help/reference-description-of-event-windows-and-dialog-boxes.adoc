@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-event-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 環境内の問題はイベントを通じて通知されます。EventsインベントリページおよびEvent Detailsページを使用して、すべてのイベントを監視できます。通知設定オプションダイアログボックスを使用して通知を設定できます。イベントを無効または有効にするには、Configuration/Manage Eventsページを使用します。 
+---
+= イベントウィンドウとダイアログボックスの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+環境内の問題はイベントを通じて通知されます。EventsインベントリページおよびEvent Detailsページを使用して、すべてのイベントを監視できます。通知設定オプションダイアログボックスを使用して通知を設定できます。イベントを無効または有効にするには、Configuration/Manage Eventsページを使用します。

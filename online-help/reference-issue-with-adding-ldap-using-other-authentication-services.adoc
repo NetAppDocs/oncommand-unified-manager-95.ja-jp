@@ -1,0 +1,37 @@
+---
+permalink: online-help/reference-issue-with-adding-ldap-using-other-authentication-services.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 問題で他の認証サービスを使用して LDAP を追加
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* * 問題 *
++
+認証サービスとして[その他]を選択すると、ユーザーとGroupObjectClassは以前に選択したテンプレートの値を保持します。LDAP サーバが同じ値を使用していないと、処理が失敗することがあります。
+
+* * 原因 *
++
+OpenLDAP でユーザが正しく設定されていません。
+
+* * 是正措置 *
++
+この問題は、次のいずれかの対処方法によって手動で修正できます。
+
++
+LDAP のユーザオブジェクトクラスとグループオブジェクトクラスがそれぞれ user と group である場合は、次の手順を実行します。
+
++
+.. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、* Setup *>* Authentication *をクリックします。
+.. [* 認証サービス *] ドロップダウンメニューで、 [* Active Directory*] を選択し、 [* その他 *] を選択します。
+.. テキストフィールドに入力します。LDAP のユーザオブジェクトクラスとグループオブジェクトクラスがそれぞれ posixAccount と posixGroup である場合は、次の手順を実行します。
+.. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、* Setup *>* Authentication *をクリックします。
+.. [* Authentication Service*] ドロップダウンメニューで [*OpenLDAP *] を選択し、 [*Others *] を選択します。
+.. テキストフィールドに入力します。最初の2つの回避策が適用されない場合は、を呼び出します `option-set` APIを使用してを設定します `auth.ldap.userObjectClass` および `auth.ldap.groupObjectClass` 正しい値を指定します。
+
+
+

@@ -1,0 +1,91 @@
+---
+permalink: install/reference-windows-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified ManagerをWindowsに正しくインストールするには、Unified Managerをインストールするシステムがソフトウェアの要件を満たしている必要があります。 
+---
+= Windows ソフトウェアとインストールの要件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+Unified ManagerをWindowsに正しくインストールするには、Unified Managerをインストールするシステムがソフトウェアの要件を満たしている必要があります。
+
+
+
+== オペレーティングシステムソフトウェア
+
+Unified Managerは、64ビットの英語版Windowsオペレーティングシステムでのみ動作します。Unified Managerは次のWindowsプラットフォームにインストールできます。
+
+* Microsoft Windows Server 2012 Standard EditionおよびDatacenter Edition
+* Microsoft Windows Server 2012 R2 Standard EditionおよびDatacenter Edition
+* Microsoft Windows Server 2016 Standard EditionおよびDatacenter Edition
+
+
+[NOTE]
+====
+Windows Server 2012 R2では、ターゲットシステムにWindows更新プログラムのKB2919355がインストールされていないとインストールが失敗します。
+
+====
+Windows Server 2008は、以前のリリースでサポートされていた機能ではありません。サポートされている Windows のバージョンの最新のリストについては、 Interoperability Matrix を参照してください。
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+Unified Managerのみを実行する専用のサーバを用意し、他のアプリケーションはインストールしないでください。
+
+次のサードパーティパッケージが必要です。
+
+* Microsoft Visual C&#43;&#43;2015再頒布可能パッケージバージョン14.0.24212
+* Visual Studio 2013バージョン12.0.40660のMicrosoft Visual C&#43;&#4;&#43;再頒布可能パッケージ
+* MySQL Community Edition 5.7ファミリーのバージョン5.7.23以降
+* OpenJDKバージョン11
+* p7zipバージョン18.01以降
+
+
+これらのサードパーティパッケージがインストールされていない場合、Unified Managerのインストール時にインストールされます。
+
+[NOTE]
+====
+Unified Manager 9.5 以降、 OpenJDK は Unified Manager のインストールパッケージに含まれており、自動的にインストールされます。Unified Manager 9.5 以降では Oracle Java はサポートされません。
+
+====
+MySQLがインストールされている場合は、次の点を確認してください。
+
+* デフォルトのポートを使用している。
+* サンプルデータベースがインストールされていません。
+* サービス名は「MySQL」です。
+
+
+[NOTE]
+====
+Unified Managerの運用開始後にサードパーティ製ソフトウェアをアップグレードする場合は、Unified Managerを一度シャットダウンする必要があります。サードパーティ製ソフトウェアのインストールが完了したら、Unified Managerを再起動できます。
+
+====
+
+
+== インストールの要件
+
+* Microsoft .NET 4.5.2以降がインストールされている必要があります。
+* 用に2GBのディスクスペースを確保しておく必要があります `temp` インストールファイルを展開するディレクトリ。
+* Unified ManagerのMSIファイルのキャッシュ用に、Windowsドライブに2GBのディスクスペースを確保しておく必要があります。
+* Unified ManagerをインストールするMicrosoft Windows Serverの完全修飾ドメイン名（FQDN）を設定し `ping` ホスト名とFQDNへの応答が完了しました。
+* Microsoft IIS World Wide Web Publishingサービスを無効にして、ポート80および443が空いていることを確認する必要があります。
+* インストール中は、「Windows Installer RDS Compatibility」のリモートデスクトップセッションホスト設定が無効になっていることを確認する必要があります。
+* UDPポート514を他のサービスで使用されないように空けておく必要があります。
+
+
+[NOTE]
+====
+Unified Manager のインストールプログラムは、 Windows Defender で次の項目を除外するように設定します。
+
+* Unified Managerデータディレクトリ（Windows Server 2016のみ）
+* Unified Manager インストールディレクトリ
+* MySQL データディレクトリ
+
+
+サーバに別のウィルス対策ソフトウェアがインストールされている場合は、これらを手動で除外する必要があります。
+
+====

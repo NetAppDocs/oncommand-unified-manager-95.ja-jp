@@ -1,0 +1,37 @@
+---
+permalink: health-checker/task-editing-individual-qtree-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 1 つ以上の qtree の容量についての健全性しきい値の設定を編集することができます。しきい値を超えるとアラートが生成され、通知が送信されます。これらの通知は、生成されたイベントに基づいて予防策を講じるのに役立ちます。 
+---
+= 個々の qtree の健全性しきい値の設定を編集する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+1 つ以上の qtree の容量についての健全性しきい値の設定を編集することができます。しきい値を超えるとアラートが生成され、通知が送信されます。これらの通知は、生成されたイベントに基づいて予防策を講じるのに役立ちます。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+しきい値の値を変更すると、次回の監視サイクルから、その値に基づいてイベントが生成または廃止されます。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Health *>* SVM*をクリックします。
+. * Health/Storage Virtual Machines *インベントリページで、qtreeが含まれているSVMを選択します。
+. *健常性/ Storage Virtual Machine *の詳細ページで、qtreeタブをクリックします。
+. 1つ以上のqtreeを選択し、*しきい値の編集*をクリックします。
+. Edit Qtree Thresholds * ダイアログボックスで、選択した qtree または qtree の容量しきい値を変更し、 * Save * をクリックします。
+

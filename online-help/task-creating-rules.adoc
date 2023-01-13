@@ -1,0 +1,22 @@
+---
+permalink: online-help/task-creating-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 新しいルールをデータポリシーに追加することで、Infinite Volumeに書き込まれるデータの配置を決めることができます。ルールは、Unified Managerで定義されているルールテンプレートを使用して作成することも、カスタムルールを作成することもできます。 
+---
+= ルールの作成
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+新しいルールをデータポリシーに追加することで、Infinite Volumeに書き込まれるデータの配置を決めることができます。ルールは、Unified Managerで定義されているルールテンプレートを使用して作成することも、カスタムルールを作成することもできます。
+
+
+
+== 作業を開始する前に
+
+* OnCommand 管理者またはストレージ管理者のロールが必要です。
+* ストレージクラスを含むInfinite Volumeを備えたSVMが含まれるクラスタをUnified Managerデータベースに追加しておく必要があります。
+

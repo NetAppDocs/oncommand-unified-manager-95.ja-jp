@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-protection-storage-virtual-machine-associations-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Protection / Storage Virtual Machine Associationsページでは、ソースとデスティネーションのSVM間の既存のSVMの関連付けを表示したり、パートナーアプリケーションがSnapMirror関係とSnapVault 関係を作成するために使用する新しいSVMの関連付けを作成したりできます。 
+---
+= Protection / Storage Virtual Machine Associationsページ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Protection / Storage Virtual Machine Associationsページでは、ソースとデスティネーションのSVM間の既存のSVMの関連付けを表示したり、パートナーアプリケーションがSnapMirror関係とSnapVault 関係を作成するために使用する新しいSVMの関連付けを作成したりできます。
+
+
+
+== コマンドボタン
+
+各コマンドボタンを使用して次のタスクを実行できます。
+
+* * 作成 * 。
++
+Storage Virtual Machine関連付けの作成ウィザードを開きます。
+
+* * 削除 *
++
+選択したSVMの関連付けを削除できます。
+
+
+
+
+
+== Storage Virtual Machine（SVM）の関連付けのリスト
+
+Storage Virtual Machineの関連付けのリストには、作成されたソースとデスティネーションのSVMの関連付けと、各関連付けで許可されている保護関係のタイプが表形式で表示されます。
+
+* * ソース Storage Virtual Machine *
++
+ソース SVM の名前が表示されます。
+
+* * ソースクラスタ *
++
+ソースクラスタの名前が表示されます。
+
+* * デスティネーション Storage Virtual Machine *
++
+デスティネーション SVM の名前が表示されます。
+
+* * デスティネーションクラスタ *
++
+デスティネーションクラスタの名前が表示されます。
+
+* * タイプ *
++
+保護関係のタイプが表示されます。関係タイプは、 SnapMirror または SnapVault のいずれかです。
+
+

@@ -1,0 +1,60 @@
+---
+permalink: qsg-linux.html 
+sidebar: sidebar 
+keywords: quick start guide, getting started, QSG, Linux QSG, RHEL QSG, quick installation 
+summary: Linux プラットフォームでの Unified Manager のクイックスタートガイドです。 
+---
+= Linux インストールのクイックスタート手順
+:allow-uri-read: 
+
+
+
+
+== システム要件
+
+* オペレーティングシステム：OSインストーラのSoftware Selectionオプションから「Server with GUI」ベース環境を使用してインストールされるRed Hat Enterprise LinuxまたはCentOS 64ビットバージョン7.xアーキテクチャ
+* RAM ： 12GB
+* CPU ：合計 9572MHz
+* 空きディスクスペース：/optに100GB、ルートパーティションに50GBのディスクスペースが必要です
+
+
+システム要件の詳細については、を参照してください link:install/reference-red-hat-and-centos-software-and-installation-requirements.html["Red Hat Enterprise LinuxおよびCentOSのソフトウェアとインストールの要件"] および link:http://mysupport.netapp.com/matrix["互換性マトリックス"]。
+
+
+
+== OnCommand Unified Managerをインストールしています
+
+
+
+=== インストーラをダウンロードします。
+
+. をダウンロードします `OnCommandUnifiedManager-rhel7-9.5RC1.zip` インストールパッケージ：
+. インストールファイルをダウンロードしたディレクトリで、次のコマンドを実行します。
++
+`# unzip OnCommandUnifiedManager-rhel7-9.5RC1.zip`
+
+
+
+
+
+=== リポジトリの構成を確認する
+
+Red Hat Enterprise Linux リポジトリまたは CentOS リポジトリを設定する手順はサイトによって異なります。インストールパッケージに含まれるpre_install_check.shスクリプトを使用して、オペレーティングシステムが正しく設定されているかどうかを確認することもできます。システムがインターネットに接続されている場合は、Red Hat Enterprise LinuxリポジトリとMySQLリポジトリのセットアップ手順が自動的に表示されます。インターネットに接続されていないシステムにをインストールする方法については、を参照してください link:install/concept-install-upgrade-and-remove-unified-manager-software.html["Red HatまたはCentOSでのUnified Managerソフトウェアのインストール、アップグレード、削除"]。
+
+`# ./pre_install_check.sh`
+
+
+
+=== Unified Manager をインストールします
+
+Unified Managerでは、を使用します `yum` ソフトウェアおよび依存ソフトウェアをインストールするユーティリティ。Red Hat Enterprise LinuxまたはCentOSのイメージは組織によって異なるため、インストールするパッケージはイメージに含まれているソフトウェアによって異なります。。 `yum` ユーティリティは、インストールする依存ソフトウェアパッケージを決定します。依存するソフトウェアパッケージの詳細については、を参照してください link:install/concept-install-upgrade-and-remove-unified-manager-software.html["Red HatまたはCentOSでのUnified Managerソフトウェアのインストール、アップグレード、削除"]。
+
+rootユーザとして、またはsudoを使用して、インストールファイルが解凍されたディレクトリから次のコマンドを実行します。
+
+`# yum install *.rpm`
+
+または
+
+`% sudo yum install *.rpms`
+
+インストールの完了時に、 Unified Manager Web UI に接続するための情報が表示されます。Web UIに接続できない場合は、ポート443のホワイトリストの作成が必要になる可能性があります。詳細については、テクニカルサポートチームにお問い合わせください。

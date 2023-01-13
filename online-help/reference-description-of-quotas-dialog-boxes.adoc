@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-quotas-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 健全性/ Storage Virtual Machineのインベントリページのユーザクォータとグループクォータタブで適切なオプションを使用して、クォータ関連の問題 の発生時に送信されるEメール通知の形式を設定したり、ユーザクォータに基づいてEメールアドレスを指定するルールを設定したりできます。 
+---
+= クォータの概要ダイアログボックス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+健全性/ Storage Virtual Machineのインベントリページのユーザクォータとグループクォータタブで適切なオプションを使用して、クォータ関連の問題 の発生時に送信されるEメール通知の形式を設定したり、ユーザクォータに基づいてEメールアドレスを指定するルールを設定したりできます。

@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-changing-home-port-and-nodes-for-a-lif-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: LIFのホームポートとホームノードを変更することで、LIFの優先配置先を変更できます。この変更は、定期的なメンテナンスの際に一時的にLIFの場所を変更する場合に一般に使用されるLIFの移行よりも永続性の高い設定です。 
+---
+= OnCommand System Managerを使用してLIFのホームポートおよびノードを変更する方法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LIFのホームポートとホームノードを変更することで、LIFの優先配置先を変更できます。この変更は、定期的なメンテナンスの際に一時的にLIFの場所を変更する場合に一般に使用されるLIFの移行よりも永続性の高い設定です。
+
+
+
+== このタスクについて
+
+次の図は、変更後の元のLIFホームポートおよびノードとホームポートおよびノードを示しています。LIF1の元のホームポートはe1aからe3aに変更され、LIF2はe4aからe2aに変更されています。
+
+image::../media/diagram-cluster-lifs-move-jpg.gif[LIFのホームポートとノードが変更されました]
+
+
+
+== 手順
+
+. OnCommand システムマネージャを開きます。
+. [*ホーム]タブで、ストレージ・システムをダブルクリックします。
+. ナビゲーションペインで、* SVM *階層を展開します。
+. ナビゲーションペインで、SVMを選択し、* Configuration *>* Network Interfaces *をクリックします。
+. LIFを選択し、* Edit *をクリックします。
+. ** Edit Interface**ダイアログ・ボックスで'ターゲット・ポートのホーム・ポートとネットワーク・アドレスを入力します
++
+image::../media/systemmgr-lif-edit-jpg.gif[Edit Interfaceダイアログボックス]
+
++
+[NOTE]
+====
+ONTAP 8.2.1では、ホームポートフィールドは無効になっています。
+
+====
+. [ 保存して閉じる ] をクリックします。
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-backup-and-restore-operations.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerのバックアップを作成し、リストア機能を使用して、システム障害やデータ損失が発生した場合に同じ（ローカル）システムまたは新しい（リモート）システムにバックアップをリストアできます。 
+---
+= バックアップおよびリストア処理を設定しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerのバックアップを作成し、リストア機能を使用して、システム障害やデータ損失が発生した場合に同じ（ローカル）システムまたは新しい（リモート）システムにバックアップをリストアできます。

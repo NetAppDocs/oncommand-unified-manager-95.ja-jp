@@ -1,0 +1,50 @@
+---
+permalink: online-help/reference-database-backup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Management/Database Backupページには、Unified Managerで作成されたバックアップのリストが表示され、バックアップの名前、サイズ、作成時間、およびスケジュールに関する情報が提供されます。 
+---
+= Management/DatabaseBackupヘエシ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Management/Database Backupページには、Unified Managerで作成されたバックアップのリストが表示され、バックアップの名前、サイズ、作成時間、およびスケジュールに関する情報が提供されます。
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+
+
+== コマンドボタン
+
+* * アクション *
++
+Database Backup Settingsダイアログボックスが表示されます。このダイアログボックスでは、バックアップパス、保持数、およびバックアップスケジュールを指定できます。
+
+
+
+
+
+== リストビュー
+
+リストビューには、Unified Managerで作成されたバックアップに関する情報が表形式で表示されます。列のフィルタを使用して、表示するデータをカスタマイズできます。
+
+* * 名前 *
++
+選択したバックアップの名前が表示されます。
+
+* * サイズ *
++
+選択したバックアップのサイズが表示されます。
+
+* *作成時間*
++
+選択したバックアップの作成日時が表示されます。
+
+* * スケジュール *
++
+バックアップ処理のステータスが表示されます。スケジュールされたバックアップかどうかも示されます。
+
+

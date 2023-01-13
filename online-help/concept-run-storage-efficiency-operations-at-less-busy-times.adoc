@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-run-storage-efficiency-operations-at-less-busy-times.html 
+sidebar: sidebar 
+keywords:  
+summary: Storage Efficiency 処理に適用されるポリシーやスケジュールを変更して、影響を受けるボリュームワークロードの負荷が低いときに Storage Efficiency 処理を実行するように設定できます。 
+---
+= 負荷の低い時間帯で Storage Efficiency 処理を実行
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Storage Efficiency 処理に適用されるポリシーやスケジュールを変更して、影響を受けるボリュームワークロードの負荷が低いときに Storage Efficiency 処理を実行するように設定できます。
+
+Storage Efficiency 処理では、大量のクラスタ CPU リソースが使用されて、処理を実行するボリュームの負荷が高くなることがあります。Storage Efficiency 処理の実行中に、影響を受けるボリュームでアクティビティレベルが上がると、レイテンシが高くなってイベントがトリガーされる可能性があります。
+
+イベントの詳細ページのシステム診断セクションに、 QoS ポリシーグループ内のワークロードがアクティビティのピーク偏差で表示され、 Bully ワークロードが特定されます。表の上部に「 storage efficiency 」と表示された場合は、この処理が当該ワークロードの負荷を高めています。これらのワークロードの負荷が低いときに実行されるように効率化ポリシーまたはスケジュールを変更すれば、 Storage Efficiency 処理を原因とするクラスタの競合を回避できます。
+
+OnCommand System Managerを使用して効率化ポリシーを管理できます。効率化ポリシーとスケジュールの管理には、 ONTAP コマンドを使用します。

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-storage-summary-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: ストレージサマリレポートをカスタマイズして、HAペアのストレージ容量に関する情報を表示および分析できます。フィルタを使用すると、クラスタモデル別のストレージ利用率、最も割り当て数の少ないLUNの容量、および新しいボリュームやLUNをプロビジョニングするために使用可能なHAペアの容量を表示できます。 
+---
+= ストレージサマリレポートのカスタマイズ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージサマリレポートをカスタマイズして、HAペアのストレージ容量に関する情報を表示および分析できます。フィルタを使用すると、クラスタモデル別のストレージ利用率、最も割り当て数の少ないLUNの容量、および新しいボリュームやLUNをプロビジョニングするために使用可能なHAペアの容量を表示できます。

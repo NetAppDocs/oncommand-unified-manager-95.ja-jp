@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-what-lifs-are.html 
+sidebar: sidebar 
+keywords:  
+summary: LIF \（論理インターフェイス\）は、ロール、ホームポート、ホームノード、フェイルオーバー先のポートのリスト、ファイアウォールポリシーなどの特性が関連付けられているIPアドレスまたはWWPNです。LIF は、クラスタでネットワーク経由の通信の送受信に使用されるポートに設定できます。 
+---
+= LIF とは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LIF（論理インターフェイス）は、ロール、ホームポート、ホームノード、フェイルオーバー先のポートのリスト、ファイアウォールポリシーなどの特性が関連付けられているIPアドレスまたはWWPNです。LIF は、クラスタでネットワーク経由の通信の送受信に使用されるポートに設定できます。
+
+LIF をホストできるポートは次のとおりです。
+
+* インターフェイスグループに属していない物理ポート
+* インターフェイスグループ
+* VLAN
+* VLAN をホストする物理ポートまたはインターフェイスグループ
+* 仮想 IP （ VIP ）ポート
++
+ONTAP 9.5 以降では、 VIP LIF がサポートされており、 VIP ポートでホストされます。
+
+
+
+LIF で FC などの SAN プロトコルを設定する場合は、 WWPN に関連付けられます。
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html["ONTAP 9 SAN アドミニストレーションガイド"]
+
+次の図に、 ONTAP システムのポート階層を示します。
+
+image::../media/port-hierarchy-in-a-cluster-mode-system.gif[clustered Data ONTAP システムのポート階層を示す図]

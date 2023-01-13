@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-events-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: クラスタについての未対応のイベントを監視するレポートを作成することができます。 
+---
+= イベントレポートのカスタマイズ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタについての未対応のイベントを監視するレポートを作成することができます。

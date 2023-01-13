@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-rules-and-data-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: ルールとデータポリシーに関する概念を理解しておくと、Infinite Volumeを効率的に管理できるようになります。 
+---
+= ルールおよびデータポリシーの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ルールとデータポリシーに関する概念を理解しておくと、Infinite Volumeを効率的に管理できるようになります。

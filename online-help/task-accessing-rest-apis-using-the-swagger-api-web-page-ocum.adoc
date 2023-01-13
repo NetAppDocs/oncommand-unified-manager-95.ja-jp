@@ -1,0 +1,57 @@
+---
+permalink: online-help/task-accessing-rest-apis-using-the-swagger-api-web-page-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: REST API は Swagger Web ページから利用できます。Unified Manager REST API ドキュメントを表示する場合、および API 呼び出しを手動で問題する場合は、 Swagger Web ページにアクセスします。 
+---
+= Swagger API WebページからREST APIにアクセスする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+REST API は Swagger Web ページから利用できます。Unified Manager REST API ドキュメントを表示する場合、および API 呼び出しを手動で問題する場合は、 Swagger Web ページにアクセスします。
+
+
+
+== 作業を開始する前に
+
+* オペレータ、ストレージ管理者、OnCommand 管理者のいずれかのロールが割り当てられている必要があります。
+* REST API を実行する Unified Manager サーバの IP アドレスまたは完全修飾ドメイン名を確認しておく必要があります。
+
+
+
+
+== このタスクについて
+
+Swagger Webページで提供されている各REST APIの例を参照すると、情報の確認に使用できるオブジェクトや属性を判断するのに役立ちます。
+
+
+
+== 手順
+
+. Unified Manager REST APIにアクセスします。
++
+|===
+| オプション | 説明 
+
+
+ a| 
+Unified Manager Web UIで、次の手順を実行します。
+ a| 
+メニューバーで、*ヘルプ*ボタンをクリックし、* APIドキュメント*を選択します。
+
+
+
+ a| 
+ブラウザウィンドウ：
+ a| 
+Unified ManagerサーバのIPアドレスまたはFQDNを使用して、REST APIページにアクセスするためのURLをという形式で入力します `https://<Unified_Manager_IP_address_or_name>/apidocs/`。例： `+https://10.10.10.10/apidocs/+`
+
+|===
++
+APIのリソースタイプまたはカテゴリのリストが表示されます。
+
+. API リソースタイプをクリックすると、そのリソースタイプの API が表示されます。
+

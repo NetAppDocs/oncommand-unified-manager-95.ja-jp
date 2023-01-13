@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/task-bookmarking-frequently-viewed-product-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified ManagerのUIから頻繁にアクセスする製品ページはブックマークに登録できます。これにより、これらのページにすばやく戻ることができます。あとで表示したときは、最新のデータが表示されます。 
+---
+= 頻繁に表示する製品ページのブックマーク登録
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified ManagerのUIから頻繁にアクセスする製品ページはブックマークに登録できます。これにより、これらのページにすばやく戻ることができます。あとで表示したときは、最新のデータが表示されます。
+
+
+
+== このタスクについて
+
+リンク（URL）を現在の製品ページにコピーして、電子メールや別のアプリケーションに貼り付けて他のユーザーと共有することもできます。
+
+
+
+== 手順
+
+. ブラウザでページをブックマークするために必要な手順を使用してブックマークを作成します。
++
+ページのリンクとそのページの詳細が保存されますが、ページを識別するようにブックマークのテキストをカスタマイズすることもできます。たとえば、「Unified Manager |ノード：node-01」や「Unified Manager |ユーザ定義のしきい値イベント：IOPS volume1」のように変更します。
+
+

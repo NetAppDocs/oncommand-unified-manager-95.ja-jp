@@ -1,0 +1,77 @@
+---
+permalink: online-help/reference-backup-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Database Backup Settingsダイアログボックスを使用して、バックアップパスおよび保持数を指定したり、選択したバックアップインスタンスのバックアップスケジュールを有効にしたりできます。 
+---
+= Database Backup Settingsダイアログボックス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Database Backup Settingsダイアログボックスを使用して、バックアップパスおよび保持数を指定したり、選択したバックアップインスタンスのバックアップスケジュールを有効にしたりできます。
+
+次のデータベースバックアップ設定を変更できます。
+
+* * パス *
++
+バックアップファイルの保存先のパスを指定します。次の表に、バックアップパスの形式とデフォルトの場所をオペレーティングシステム別に示します。
+
++
+|===
+| ホストオペレーティングシステム | バックアップパスの形式 
+
+
+ a| 
+仮想アプライアンス
+ a| 
+`/opt/netapp/data/ocum-backup`
+
+
+
+ a| 
+Red Hat Enterprise Linux または CentOS
+ a| 
+`/data/ocum-backup`
+
+
+
+ a| 
+Microsoft Windows の場合
+ a| 
+`C:\ProgramData\NetApp\OnCommandAppData\ocum\backup\`
+
+|===
+* *保持数*
++
+Unified Managerでバックアップを保持する最大数を指定します。デフォルト値は10です。
+
+* *スケジュール頻度有効*
++
+このオプションでは、バックアップをスケジュールするタイミングを指定できます。日次バックアップまたは週次バックアップを選択できます。
+
+* * 毎日 *
++
+日次バックアップを実行する時刻を指定します。
+
+* * 毎週 *
++
+週次バックアップを実行する曜日と時刻を指定します。
+
+
+
+
+
+== コマンドボタン
+
+* *保存して閉じる*
++
+バックアップファイルを保存してダイアログボックスを閉じます。Unified Managerでは、次の形式でバックアップファイルが保存されます。 `um_um_version_backup_os_timestamp.7z`。
+
+* * キャンセル *
++
+変更を保存せずにDatabase Backup Settings（データベースバックアップ設定）ダイアログボックスを閉じます。
+
+

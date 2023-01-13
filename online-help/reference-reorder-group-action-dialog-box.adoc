@@ -1,0 +1,34 @@
+---
+permalink: online-help/reference-reorder-group-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: ReorderGroupActionsタイアロクホツクスを使用すると、1つ以上のグループアクションのランクを変更できます。グループアクションのランクは、グリッドでのグループアクションの位置で決まります。 
+---
+= ReorderGroupActionsタイアロクホツクス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ReorderGroupActionsタイアロクホツクスを使用すると、1つ以上のグループアクションのランクを変更できます。グループアクションのランクは、グリッドでのグループアクションの位置で決まります。
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+* *ランク*
++
+グループ内のストレージオブジェクトに適用されるグループアクションの順序を指定します。
+
+* * 名前 *
++
+グループアクションの名前を指定します。
+
+* *アクションタイプ*
++
+グループ内のストレージオブジェクトで実行できる操作のタイプを指定します。
+
+* *関連付けられたグループ*
++
+グループアクションが定義されているグループの名前を指定します。
+
+

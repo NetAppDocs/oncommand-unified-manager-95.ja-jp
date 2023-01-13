@@ -1,0 +1,20 @@
+---
+permalink: install/concept-introduction-to-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Unified Managerでは、ONTAP ストレージシステムの健常性とパフォーマンスを単一のインターフェイスから監視および管理することができます。Unified Manager は、 Linux サーバや Windows サーバに導入できるほか、 VMware ホストに仮想アプライアンスとして導入することもできます。 
+---
+= OnCommand Unified Managerの概要を参照してください
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Managerでは、ONTAP ストレージシステムの健常性とパフォーマンスを単一のインターフェイスから監視および管理することができます。Unified Manager は、 Linux サーバや Windows サーバに導入できるほか、 VMware ホストに仮想アプライアンスとして導入することもできます。
+
+インストールの完了後、管理対象のクラスタを追加すると、 Unified Manager のグラフィカルインターフェイスに、監視対象ストレージシステムの容量、可用性、保護、パフォーマンスのステータスが表示されます。
+
+* 関連情報 *
+
+http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"]

@@ -1,0 +1,64 @@
+---
+permalink: online-help/task-customizing-the-qtree-capacity-and-utilization-report-to-display-qtrees-that-have-breached-the-file-soft-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: qtreeの容量と使用状況レポートをカスタマイズして、ファイルのソフトリミットを超えているqtreeを表示できます。使用ファイル、ファイルハードリミット、ファイルソフトリミットでフィルタおよびソートできます。 
+---
+= qtreeの容量と使用状況レポートのカスタマイズ：ファイルのソフトリミットを超えているqtreeを表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+qtreeの容量と使用状況レポートをカスタマイズして、ファイルのソフトリミットを超えているqtreeを表示できます。使用ファイル、ファイルハードリミット、ファイルソフトリミットでフィルタおよびソートできます。
+
+
+
+== このタスクについて
+
+このタスクは、[レポート]ページに移動し、該当するレポートの[レポートの実行]をクリックして実行することもできます。
+
+
+
+== 手順
+
+. SVM、クラスタ、またはボリューム別のグループ化を削除するには、次の手順を実行します。
++
+.. グループ化を解除する必要がある列内をクリックします。
+.. をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+.. * Group *>* Delete Inner Group *を選択します。
+
+
+. ファイルのハードリミットが無制限でないqtreeをフィルタリングするには、* File Hard Limit *列をクリックし、* Filter *ダイアログボックスをクリックします image:../media/click-to-filter.gif[""] をクリックします。
++
+.. [*条件*（* Condition *）]ドロップダウンリストから、[*等しくない（* not equal to *）]を選択する。
+.. 値の選択*をクリックし、*無制限*を選択します。
+.. [OK]をクリックします。
+
+
+. ファイルソフトリミットが無制限でないqtreeをフィルタリングするには、* File Soft Limit *列をクリックし、* Filter *ダイアログボックスを開きます image:../media/click-to-filter.gif[""] をクリックします。
++
+.. [*条件*（* Condition *）]ドロップダウンリストから、[*等しくない（* not equal to *）]を選択する。
+.. 値の選択*をクリックし、*無制限*を選択します。
+.. [OK]をクリックします。
+
+
+. ファイルソフトリミットを超えているqtreeの列を追加するには、次の手順を実行します。
++
+.. [*ファイルソフトリミット*]列をクリックし、をクリックします image:../media/click-to-see-menu.gif[""] アイコンをクリックし、*列*>*新規計算列*を選択します
+.. [新規計算列*（New computed Column *）]ダイアログボックスで、と入力します `Breached File Soft Limit Capacity` をクリックします。
+.. [カテゴリの選択]リストから、[*テキスト*]を選択します。
+.. [関数の選択*]ドロップダウンリストから、[*Advanced*]を選択します。
+.. [式の入力*]フィールドに、と入力します `IF(([qtreeFileUsedPercent]*[fileLimit]/100 > [softFileLimit]), "Yes", "No")`。
+.. [OK] をクリックします。
+
+
+. ファイルのソフトリミットを超えているqtreeをフィルタリングするには、*ファイルソフトリミットを超過*列をクリックし、*フィルタ*ダイアログボックスを開くために、をクリックします image:../media/click-to-filter.gif[""] をクリックします。
++
+.. [* Condition *（*条件*）]ドロップダウンリストから、[* Equal to *（*に等しい）]を選択します。
+.. 値の選択*をクリックし、*はい*を選択します。
+.. [OK]をクリックします。
+
+
+

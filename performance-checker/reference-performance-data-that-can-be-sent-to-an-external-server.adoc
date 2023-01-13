@@ -1,0 +1,80 @@
+---
+permalink: performance-checker/reference-performance-data-that-can-be-sent-to-an-external-server.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager は、監視対象のすべてのクラスタからさまざまなパフォーマンスデータを収集します。特定のデータグループを外部サーバに送信できます。 
+---
+= 外部サーバに送信可能なパフォーマンスデータ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager は、監視対象のすべてのクラスタからさまざまなパフォーマンスデータを収集します。特定のデータグループを外部サーバに送信できます。
+
+グラフ化するパフォーマンスデータに応じて、次のいずれかの統計グループを選択して送信できます。
+
+|===
+| 統計グループ | データが含まれます | 詳細 
+
+
+ a| 
+Performance Monitor の略
+ a| 
+以下のオブジェクトのパフォーマンス統計の概要：
+
+* LUN
+* 個のボリューム
+
+ a| 
+このグループは、監視対象のすべてのクラスタ内のすべての LUN とボリュームの合計 IOPS / レイテンシを提供します。
+
+提供する統計データが最も少ないグループです。
+
+
+
+ a| 
+リソース利用率
+ a| 
+次のオブジェクトのリソース使用率の統計情報：
+
+* ノード
+* アグリゲート
+
+ a| 
+このグループは、監視対象のすべてのクラスタ内のノードおよびアグリゲートの物理リソースの利用率に関する統計情報を提供します。
+
+また、 Performance Monitor グループで収集された統計も表示されます。
+
+
+
+ a| 
+ドリルダウンします
+ a| 
+すべての追跡対象オブジェクトの読み取り / 書き込み、およびプロトコルごとの低レベルの統計情報：
+
+* ノード
+* アグリゲート
+* LUN
+* 個のボリューム
+* ディスク
+* LIF
+* ポート /NIC
+
+ a| 
+このグループは、監視対象のすべてのクラスタで追跡される 7 つのオブジェクトタイプのすべてについて、読み取り / 書き込みおよびプロトコルごとの内訳データを提供します。
+
+また、 Performance Monitor グループおよび Resource Utilization グループで収集された統計情報も表示されます。
+
+提供する統計データが最も多いグループです。
+
+|===
+[NOTE]
+====
+ストレージシステム上でクラスタまたはクラスタオブジェクトの名前が変更された場合、古いオブジェクトと新しいオブジェクトの両方に外部サーバ上のパフォーマンスデータが含まれます（「両パス」）。2 つのオブジェクトが同じオブジェクトとして関連付けられることはありません。たとえば、ボリュームの名前を「 volume1_acct` 」から「 acct_vol1 」に変更した場合は、古いボリュームの古いパフォーマンスデータと、新しいボリュームの新しいパフォーマンスデータが表示されます。
+
+====
+外部データプロバイダに送信可能なすべてのパフォーマンスカウンタの一覧については、ナレッジベースの記事を参照してください。
+
+https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Infrastructure_Management%2FActive_IQ_Unified_Manager%2FWhat_are_the_ActiveIQ_Unified_Manager_performance_counters_that_can_be_exported_to_an_External_Data_Provider%253F["外部データプロバイダにエクスポート可能な Unified Manager のパフォーマンスカウンタ"]

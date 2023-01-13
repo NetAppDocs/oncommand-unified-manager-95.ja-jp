@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-data-constituents-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Infinite Volumeでは、データは複数の個別のデータコンスティチュエントに格納されます。データコンスティチュエントにはファイルのデータのみが格納され、ファイル名は格納されません。 
+---
+= データコンスティチュエントとは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Infinite Volumeでは、データは複数の個別のデータコンスティチュエントに格納されます。データコンスティチュエントにはファイルのデータのみが格納され、ファイル名は格納されません。
+
+クライアントはデータコンスティチュエントを認識しません。クライアントがInfinite Volumeにファイルを要求すると、ノードはデータコンスティチュエントからファイルのデータを取得し、クライアントにファイルを返します。
+
+Infinite Volumeには、通常数十個のデータコンスティチュエントが含まれます。たとえば、10億個のファイルを含む6PBのInfinite Volumeの場合、6ノードのアグリゲート上にある60個のデータコンスティチュエントが含まれる可能性があります。

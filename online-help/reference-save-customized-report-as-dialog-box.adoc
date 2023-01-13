@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-save-customized-report-as-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: カスタマイズしたレポートを名前を付けて保存（Save Customized Report As）ダイアログボックスを使用して、カスタマイズしたレポートを保存できます。 
+---
+= Save Customized Report Asダイアログボックス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+カスタマイズしたレポートを名前を付けて保存（Save Customized Report As）ダイアログボックスを使用して、カスタマイズしたレポートを保存できます。
+
+
+
+== プロパティ
+
+名前や概要 などのプロパティを指定してレポートをカスタマイズし、保存することができます。
+
+* *レポート名*
++
+レポートの名前が表示されます。デフォルトでは、元のレポート名が表示されます。カスタマイズの内容に従ってレポート名を変更できます。レポート名は255文字以内にする必要があります。
+
+* * 概要 *
++
+レポートに対するカスタマイズの概要 を指定します。概要 は最大で150文字までです。
+
+
+
+
+
+== コマンドボタン
+
+各コマンドボタンを使用して次のタスクを実行できます。
+
+* * 保存 *
++
+カスタマイズしたレポートを保存します。
+
+* * キャンセル *
++
+最近の変更内容をキャンセルして、Save Customized Report Asダイアログボックスを閉じます。
+
+

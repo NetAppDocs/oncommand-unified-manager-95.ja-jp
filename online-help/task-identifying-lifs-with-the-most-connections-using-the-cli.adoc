@@ -1,0 +1,99 @@
+---
+permalink: online-help/task-identifying-lifs-with-the-most-connections-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: データLIFは、負荷やスループットが高い場合、移行が必要になることがあります。LIFを移行するかどうかを判断するために、ノード上のLIFへの負荷、ポートの接続数、スループット、およびCPUサイクルを表示できます。 
+---
+= CLIを使用した、接続数が最も多いLIFの特定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+データLIFは、負荷やスループットが高い場合、移行が必要になることがあります。LIFを移行するかどうかを判断するために、ノード上のLIFへの負荷、ポートの接続数、スループット、およびCPUサイクルを表示できます。
+
+
+
+== 手順
+
+. クラスタ管理者としてCLIにアクセスします。
+. 次のコマンドを入力して権限レベルをadvancedに設定します。 `set -privilege advanced`
++
+CLIをアドバンス・モードで使用する方法の詳細については、_System Administration Reference_.を参照してください。
+
+. 各LIFの重みを確認するには、次のコマンドを入力します。 `network interface lif-weights show`
++
+ビジーなLIFは、重みが最も小さいものです。
+
+. ノード上のアクティブな接続数を確認するには、次のコマンドを入力します。 `network connections active show-clients`
++
+ノード別の最大クライアント数を確認します。
+
++
+[listing]
+----
+cluster1::> network connections active show-clients
+Node    Client IP Address     Count
+------  -----------------     ------
+node1   192.0.2.253               12
+        192.0.2.252                9
+        192.0.2.251               12
+
+node2   192.0.2.250               12
+        192.0.2.252                9
+        192.0.2.253                9
+
+node3   customer.example.com       2
+        customer.example.net       2
+        customer.example.org       2
+----
+. ノードおよびSVM上のLIF別にアクティブな接続数を確認するには、次のコマンドを入力します。 `network connections active show-lifs`
++
+LIFあたりの最大クライアント数を確認します。
+
++
+[listing]
+----
+cluster1::> network connections active show-lifs
+Node      Vserver Name  Interface Name  Count
+--------  ------------  --------------- ------
+node1
+          vs1           clus1              30
+
+node2
+          vs2           clus1              30
+
+node3
+          vs3           lif1                2
+          vs4           clus1              30
+----
+. 同じホームポートおよびホームノードを共有しているLIFを確認して、接続数が最も多いLIFを特定します。
+. 最適なデータポートを選択するには、次のように入力します。 `statistics show -object port`
++
+statisticsコマンドを実行すると、イーサネットポートのスループットおよび帯域幅の情報が表示されます。各行には、一意な情報のカウンタが表示されます。valueは、カウンタを前回クリアしたとき（ONTAP を前回起動したとき）以降のオブジェクトのタイプに対する値です。
+
++
+[listing]
+----
+cluster1::> statistics show -object port
+Object: port
+Instance: e0a
+Start-time: 10/11/2013 13:51:41
+End-time: 10/11/2013 13:51:41
+Node: node1
+
+    Counter                                           Value
+    -------------------------------------------------------
+    recv-data                                            0B
+    recv-packets                                         0
+    recv-mcasts                                          0
+    recv-errors                                          0
+    recv-dropped                                         0
+    sent-data                                            0B
+    sent-packets                                         0
+    sent-mcasts                                          0
+    sent-errors                                          0
+    collisions                                           0
+----
+

@@ -1,0 +1,104 @@
+---
+permalink: install/task-upgrading-the-unified-manager-virtual-appliance-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerバージョン7.3または9.4からUnified Manager 9.5にアップグレードすることができます。 
+---
+= Unified Manager 仮想アプライアンスをアップグレードします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerバージョン7.3または9.4からUnified Manager 9.5にアップグレードすることができます。
+
+
+
+== 作業を開始する前に
+
+* をダウンロードしておく必要があります `.iso` NetApp Support Site からのファイルです。
+* Unified Manager をアップグレードするシステムがシステム要件とソフトウェア要件を満たしている必要があります。
++
+xref:concept-requirements-for-installing-unified-manager.adoc[仮想インフラの要件]
+
++
+xref:reference-vmware-software-and-installation-requirements.adoc[VMware ソフトウェアとインストールの要件]
+
+* vSphere 6.5を使用している場合は、VMware Remote Console（VMRC）をインストールしておく必要があります。
+* 次の情報が必要です。
++
+** NetApp Support Siteのログインクレデンシャル
+** VMware vCenter ServerとvSphere Web Client（vSphereバージョン6.5）またはvSphere Client（vSphereバージョン5.5または6.0）にアクセスするためのクレデンシャル
+** Unified Manager のメンテナンスユーザのクレデンシャル
+
+
+
+
+
+
+== このタスクについて
+
+アップグレードプロセスの実行中は、 Unified Manager を使用できなくなります。実行中の処理がある場合は、 Unified Manager をアップグレードする前に完了しておいてください
+
+Workflow AutomationとUnified Managerを連携させて使用している場合、Workflow Automationでホスト名を手動で更新する必要があります。
+
+
+
+== 手順
+
+. vSphere Client で、 * Home * > * Inventory * > * VMs and Templates * をクリックします。
+. Unified Manager 仮想アプライアンスがインストールされている仮想マシン（ VM ）を選択します。
+. Unified Manager VM が実行されている場合は、「 * 概要 * > * コマンド * > * ゲストのシャットダウン * 」に移動します。
+. Unified Manager VMのバックアップコピー（Snapshotやクローンなど）を作成して、アプリケーションと整合性のあるバックアップを作成します。
+. vSphere Client で、 Unified Manager VM の電源をオンにします。
+. Unified Managerのアップグレードイメージを選択します。
++
+|===
+| 使用するポート | 操作 
+
+
+ a| 
+vSphere 5.5または6.0
+ a| 
+.. [*CD/DVD Drive*]アイコンをクリックし、[*ローカルディスク上のISOイメージへの接続*]を選択します。
+.. を選択します `OnCommandUnifiedManager-9.5-virtual-update.iso` [ファイル]をクリックし、[開く]をクリックします。
+
+
+
+
+ a| 
+vSphere 6.5 の場合
+ a| 
+.. VMware Remote Console を起動します。
+.. [* CDROM * ] アイコンをクリックし、 [* ディスクイメージファイル (.ISO)* に接続 ] を選択します。
+.. を選択します `OnCommandUnifiedManager-9.5-virtual-update.iso` [ファイル]をクリックし、[開く]をクリックします。
+
+
+|===
+. [* コンソール * ] タブをクリックします。
+. Unified Manager メンテナンスコンソールにログインします。
+. メインメニュー*で、*アップグレード*を選択します。
++
+アップグレードプロセスの実行中はUnified Managerを使用できなくなり、完了後に再開されることを示すメッセージが表示されます。
+
+. を入力します `y` 続行します。
++
+仮想アプライアンスが配置されている仮想マシンをバックアップするように通知する警告が表示されます。
+
+. を入力します `y` 続行します。
++
+アップグレードプロセスが完了して Unified Manager サービスが再起動されるまでに数分かかることがあります。
+
+. 任意のキーを押して続行します。
++
+メンテナンスコンソールから自動的にログアウトされます。
+
+. メンテナンスコンソールにログインし、Unified Managerのバージョンを確認します。
+
+
+
+
+== 完了後
+
+Web UI にログインして、アップグレード後のバージョンの Unified Manager を使用できます。検出プロセスが完了するのを待ってから、UIでの作業を実行する必要があります。

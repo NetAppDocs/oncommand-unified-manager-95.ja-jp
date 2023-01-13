@@ -1,0 +1,29 @@
+---
+permalink: performance-checker/concept-navigating-performance-workflows-in-the-unified-manager-ui.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager インターフェイスには、パフォーマンス情報を収集、表示するためのページが多数あります。左側のナビゲーションパネルを使用して各ページに移動し、ページ上のタブとリンクを使用して情報を表示および設定します。 
+---
+= Unified Manager の GUI で実行するパフォーマンスワークフロー
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager インターフェイスには、パフォーマンス情報を収集、表示するためのページが多数あります。左側のナビゲーションパネルを使用して各ページに移動し、ページ上のタブとリンクを使用して情報を表示および設定します。
+
+クラスタのパフォーマンス情報を監視し、トラブルシューティングを行うには、次のすべてのページを使用します。
+
+* ダッシュボードページ
+* ストレージオブジェクトのインベントリページ
+* ストレージオブジェクトのランディングページ（パフォーマンスエクスプローラを含む）
+* 設定および設定ページ
+* イベントページ
+
+
+[NOTE]
+====
+Unified Managerのページには大量の情報が表示されることがあります。利用可能なすべての情報を表示するには、ページを一番下までスクロールしてください。
+
+====

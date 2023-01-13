@@ -1,0 +1,54 @@
+---
+permalink: online-help/reference-definitions-of-user-roles.html 
+sidebar: sidebar 
+keywords:  
+summary: メンテナンスユーザまたはOnCommand 管理者が、各ユーザにロールを割り当てます。各ロールには特定の権限が含まれていますUnified Manager で実行できる操作の範囲は、割り当てられたロールとその権限で決まります。 
+---
+= ユーザロールの定義
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+メンテナンスユーザまたはOnCommand 管理者が、各ユーザにロールを割り当てます。各ロールには特定の権限が含まれていますUnified Manager で実行できる操作の範囲は、割り当てられたロールとその権限で決まります。
+
+Unified Manager には、事前定義された次のユーザロールが用意されて
+
+* * 演算子 *
++
+履歴や容量の傾向など、 Unified Manager によって収集されたストレージシステムの情報やその他のデータを表示します。このロールを割り当てられたストレージオペレータは、イベントについて、表示、割り当て、応答、解決、メモの追加などの操作が可能です。
+
+* * ストレージ管理者 *
++
+Unified Manager でのストレージ管理処理の設定を行います。このロールを割り当てられたストレージ管理者は、しきい値の設定、およびアラートなどのストレージ管理用のオプションやポリシーの作成が可能です。
+
+* * OnCommand 管理者*
++
+ストレージ管理以外の設定を行います。ユーザ、セキュリティ証明書、データベースアクセスのほか、認証などの管理オプションを使用できます。 SMTP 、ネットワーク、および AutoSupport 。
+
++
+[NOTE]
+====
+Unified ManagerをLinuxシステムにインストールすると、OnCommand 管理者ロールが割り当てられた最初のユーザには「umadmin」という名前が自動的に付けられます。
+
+====
+* * 統合スキーマ *
++
+Unified Manager と OnCommand Workflow Automation （ WFA ）の統合用に Unified Manager のデータベースビューにアクセスするための読み取り専用アクセスが許可されます。
+
+* * レポートスキーマ *
++
+レポートおよびその他のデータベースビューに Unified Manager データベースから直接アクセスするための読み取り専用アクセスが許可されます。表示できるデータベースは次のとおりです。
+
++
+** NetApp_model_view
+** パフォーマンス
+** ocum
+** ocum_report
+** ocum_report_BIRT
+** OPM
+** 頭皮管理者
+
+
+

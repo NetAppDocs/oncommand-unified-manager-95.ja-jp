@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-setting-up-a-connection-between-unified-manager-and-an-external-data-provider.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager サーバと外部データプロバイダを接続すると、クラスタのパフォーマンスデータを外部サーバに送信できるので、ストレージ管理者は他社製ソフトウェアを使用してパフォーマンス指標をグラフ化できるようになります。 
+---
+= Unified Manager サーバと外部データプロバイダ間の接続の設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager サーバと外部データプロバイダを接続すると、クラスタのパフォーマンスデータを外部サーバに送信できるので、ストレージ管理者は他社製ソフトウェアを使用してパフォーマンス指標をグラフ化できるようになります。
+
+Unified Manager サーバと外部データプロバイダの間の接続は、メンテナンスコンソールの「 External Data Provider 」というメニューオプションを使用して確立されます。

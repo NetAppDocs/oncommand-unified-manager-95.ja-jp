@@ -1,0 +1,59 @@
+---
+permalink: install/task-creating-a-custom-user-home-directory-and-umadmin-user-prior-to-installation.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager をインストールする前に、カスタムのホームディレクトリを作成し、 umadmin ユーザのパスワードを独自に定義できます。このタスクはオプションですが、サイトによっては Unified Manager のデフォルトのインストール設定とは異なる設定が必要になることがあります。 
+---
+= カスタムユーザのホームディレクトリと umadmin のパスワードを作成しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager をインストールする前に、カスタムのホームディレクトリを作成し、 umadmin ユーザのパスワードを独自に定義できます。このタスクはオプションですが、サイトによっては Unified Manager のデフォルトのインストール設定とは異なる設定が必要になることがあります。
+
+
+
+== 作業を開始する前に
+
+* に記載されたシステム要件を満たしている必要があります xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[ハードウェアシステムの要件]。
+* Red Hat Enterprise Linux または CentOS のシステムに root ユーザとしてログインできる必要があります。
+
+
+
+
+== このタスクについて
+
+Unified Manager のインストール時、デフォルト設定では次のタスクが実行されます。
+
+* でumadminユーザが作成されます `/home/umadmin` をホームディレクトリとして指定します。
+* umadmin ユーザにデフォルトのパスワード「 admin 」を割り当てます。
+
+
+へのアクセスが制限されるインストール環境もあります `/home`の場合、インストールは失敗します。ホームディレクトリは別の場所に作成する必要があります。また、サイトによっては、パスワードの複雑さに関するルールが設定されている場合や、インストールプログラムではなくローカルの管理者が設定したパスワードが必要な場合があります。
+
+インストール環境でデフォルトのインストール設定とは異なる設定が必要な場合は、次の手順に従って、カスタムのホームディレクトリを作成し、 umadmin ユーザのパスワードを定義します。
+
+インストール前にこの情報を定義しておけば、インストールスクリプトで設定が検出され、定義した値がデフォルトのインストール設定の代わりに使用されます。
+
+また、Unified Managerのデフォルトのインストールでは、sudoersファイルにumadminユーザが追加されています (`ocum_sudoers` および `ocie_sudoers`）をクリックします `/etc/sudoers.d/` ディレクトリ。セキュリティポリシーや一部のセキュリティ監視ツールによってこのコンテンツを環境から削除した場合は、再度追加する必要があります。Unified Manager の一部の処理では sudo 権限が必要なため、 sudoers の設定を維持する必要があります。
+
+
+
+== 手順
+
+. サーバに root ユーザとしてログインします。
+. 「メンテナンス」という umadmin グループアカウントを作成します。``groupadd maintenance``
+. メンテナンスグループの任意のホームディレクトリにユーザアカウント「 umadmin 」を作成します。``adduser --home <home_directory\> -g maintenance umadmin``
+. umadmin のパスワードを定義します。``passwd umadmin``
++
+umadmin ユーザの新しいパスワードの文字列を入力するように求められます。
+
+
+
+
+
+== 完了後
+
+Unified Manager のインストールが完了したら、 umadmin ユーザのログインシェルを指定する必要があります。

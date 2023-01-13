@@ -1,0 +1,39 @@
+---
+permalink: health-checker/task-adding-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: クラスタ、ボリューム、およびStorage Virtual Machine（SVM）を管理しやすいように、グループを作成して1つにまとめることができます。 
+---
+= グループの追加
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタ、ボリューム、および Storage Virtual Machine （ SVM ）を管理しやすいように、グループを作成して 1 つにまとめることができます。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+グループルールを定義して、グループのメンバーを追加または削除したり、グループに対するグループ操作を変更したりできます。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、*管理*>*グループ*をクリックします。
+. [ * グループ * ] タブで、 [ * 追加 ] をクリックします。
+. [ グループの追加 *] ダイアログボックスで、グループの名前と概要を入力します。
++
+グループ名は一意である必要があります。
+
+. [追加*_**_]をクリックします。
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-infinite-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: Infinite Volumeを備えたStorage Virtual Machine（SVM）の容量と可用性を監視することができます。Infinite Volumeを備えたStorage Virtual Machine（SVM）でのコンテンツの配置は、ルールとデータポリシーを作成することで管理できます。 
+---
+= Infinite Volumeの管理と監視
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Infinite Volumeを備えたStorage Virtual Machine（SVM）の容量と可用性を監視することができます。ルールとデータポリシーを作成することで、Infinite Volumeを備えたStorage Virtual Machine（SVM）でのコンテンツの配置を管理できます。

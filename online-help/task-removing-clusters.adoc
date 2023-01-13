@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-removing-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerからクラスタを削除するには、Configuration/Cluster Data Sourcesページを使用します。たとえば、クラスタの検出に失敗した場合やストレージシステムを運用停止する場合に、クラスタを削除できます。 
+---
+= クラスタの削除
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerからクラスタを削除するには、Configuration/Cluster Data Sourcesページを使用します。たとえば、クラスタの検出に失敗した場合やストレージシステムを運用停止する場合に、クラスタを削除できます。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+このタスクでは、選択したクラスタを Unified Manager から削除します。削除したクラスタは監視されなくなります。削除したクラスタに登録されていた Unified Manager のインスタンスは、クラスタから登録解除されます。
+
+クラスタを削除すると、そのストレージオブジェクト、履歴データ、ストレージサービス、関連するイベントもすべて Unified Manager から削除されます。この変更は、次回のデータ収集サイクルのあとでインベントリページと詳細ページに反映されます。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Configuration *>* Cluster Data Sources *をクリックします。
+. [*構成/クラスタデータソース*]ページで、削除するクラスタを選択し、[*削除]をクリックします。
+. [ * データソースの削除 * ] メッセージダイアログで、 [ * 削除 * ] をクリックして削除要求を確定します。
+

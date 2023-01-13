@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-page-descriptions-for-cluster-management.html 
+sidebar: sidebar 
+keywords:  
+summary: クラスタの追加、編集、再検出、削除など、クラスタの表示と管理を行うことができます。単一ページから。 
+---
+= データソース管理のページの説明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタの追加、編集、再検出、削除など、クラスタの表示と管理を行うことができます。単一ページから。

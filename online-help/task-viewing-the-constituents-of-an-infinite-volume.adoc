@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-viewing-the-constituents-of-an-infinite-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: ケンセンセイ/ホリユウムインヘントリヘエシヲシヨウシテInfiniteVolumeナイノコンステイチユエントノリストヲヒヨウシできます。コンスティチュエントの状態、コンスティチュエントを含むInfinite Volumeを備えたSVM、コンスティチュエントのジャンクションパス、コンスティチュエントを含むアグリゲート、コンスティチュエントの使用可能なデータ容量、使用済みデータ容量、合計データ容量などの詳細を参照できます。 
+---
+= Infinite Volumeのコンスティチュエントを表示します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ケンセンセイ/ホリユウムインヘントリヘエシヲシヨウシテInfiniteVolumeナイノコンステイチユエントノリストヲヒヨウシできます。コンスティチュエントの状態、コンスティチュエントを含むInfinite Volumeを備えたSVM、コンスティチュエントのジャンクションパス、コンスティチュエントを含むアグリゲート、コンスティチュエントの使用可能なデータ容量、使用済みデータ容量、合計データ容量などの詳細を参照できます。
+
+
+
+== 作業を開始する前に
+
+次の要件を満たしている必要があります。
+
+* オペレータ、OnCommand 管理者、またはストレージ管理者のロールが必要です。
+* Infinite Volumeを備えたSVMが含まれるクラスタをUnified Managerデータベースに追加しておく必要があります。
+
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Health *>* SVM*をクリックします。
+. Infinite Volumeを備えたSVMの名前をクリックします。
+. * Health / Storage Virtual Machine * detailsページの右側の* Related Devices *ペインで* Volumesをクリックします。
++
+コンスティチュエントのリストは、健常性/ボリュームのインベントリページに表示されます。
+
+

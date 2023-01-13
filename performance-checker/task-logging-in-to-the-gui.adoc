@@ -1,0 +1,56 @@
+---
+permalink: performance-checker/task-logging-in-to-the-gui.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager の UI には、サポートされている Web ブラウザからログインできます。 
+---
+= UI にログインします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager の UI には、サポートされている Web ブラウザからログインできます。
+
+
+
+== 作業を開始する前に
+
+* Web ブラウザが最小要件を満たしている必要があります。
++
+詳細については、 Interoperability Matrix を参照してください http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"] をクリックして、サポートされているブラウザバージョンの一覧を表示します。
+
+* Unified Manager サーバの IP アドレスまたは URL が必要です。
+
+
+
+
+== このタスクについて
+
+24時間何も操作を行わないと、セッションから自動的にログアウトされます。
+
+
+
+== 手順
+
+. WebブラウザにURLを入力します `URL` は、Unified ManagerサーバのIPアドレスまたは完全修飾ドメイン名（FQDN）です。
++
+** IPv4 の場合： `+https://URL/+`
+** IPv6 の場合： `https://[URL]/`自己署名のデジタル証明書がサーバで使用されている場合、信頼されていない証明書であることを示す警告がブラウザ画面に表示されることがあります。リスクを承認してアクセスを続行するか、認証局（ CA ）の署名のあるデジタル証明書をインストールしてサーバを認証します。
+
+
+. ログイン画面で、ユーザ名とパスワードを入力します。
++
+Unified Manager のユーザインターフェイスへのログインが SAML 認証で保護されている場合は、 Unified Manager のログインページではなくアイデンティティプロバイダ（ IdP ）のログインページでクレデンシャルを入力します。
+
++
+[ダッシュボード/概要]ページが表示されます。
+
++
+[NOTE]
+====
+Unified Manager サーバが初期化されていない場合は、新しいブラウザウィンドウに初期設定ウィザードが表示されます。このウィザードで、 E メールアラートの受信者および E メール通信を処理する SMTP サーバを入力し、 AutoSupport で Unified Manager に関する情報のテクニカルサポートへの送信が有効になっているかどうかを指定します。この情報の入力を完了すると、 Unified Manager の UI が表示されます。
+
+====
+

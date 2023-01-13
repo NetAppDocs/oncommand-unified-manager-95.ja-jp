@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-service-processor-events.html 
+sidebar: sidebar 
+keywords:  
+summary: サービスプロセッサイベントは、プロセッサのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= サービスプロセッサイベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+サービスプロセッサイベントは、プロセッサのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：可用性
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+サービスプロセッサが設定されていません（ Document EvtServiceProcessorNotConfigured ）
+ a| 
+リスク
+ a| 
+ノード
+ a| 
+警告
+
+
+
+ a| 
+サービスプロセッサがオフラインです（ Document EvtServiceProcessorOffline ）
+ a| 
+リスク
+ a| 
+ノード
+ a| 
+エラー
+
+|===

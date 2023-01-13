@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-sending-an-on-demand-autosupport-message.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerシステムの情報をテクニカルサポートに送信して、問題のトラブルシューティングについてサポートを受けることができます。AutoSupport メッセージには、Unified Managerサーバに関するシステムの診断情報と詳細なデータが含まれています。 
+---
+= オンデマンドの AutoSupport メッセージの送信
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerシステムの情報をテクニカルサポートに送信して、問題のトラブルシューティングについてサポートを受けることができます。AutoSupport メッセージには、Unified Managerサーバに関するシステムの診断情報と詳細なデータが含まれています。
+
+
+
+== 作業を開始する前に
+
+メンテナンスユーザとしてログインする必要があります。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、*設定*メニューから* AutoSupport *をクリックします。
+. 次のいずれかまたは両方を実行します。
++
+|===
+| AutoSupport メッセージの送信先 | 手順 
+
+
+ a| 
+テクニカルサポート
+ a| 
+[テクニカルサポートへ送信*]チェックボックスをオンにします。
+
+
+
+ a| 
+特定のEメール受信者
+ a| 
+[電子メール受信者に送信*]チェックボックスをオンにして、受信者の電子メールアドレスを入力します。
+
+|===
+. 必要に応じて、HTTPプロキシサーバーの名前、ポート、および認証情報を定義し、*保存*をクリックします。
+. [Generate and send AutoSupport *（生成して送信）]をクリックします
+

@@ -1,0 +1,16 @@
+---
+permalink: install/concept-upgrading-third-party-products-on-linux-um.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: JRE、MySQLなどのサードパーティ製品がLinuxシステムにインストールされている場合は、Unified Managerでそれらの製品をアップグレードできます。 
+---
+= Linuxでのサードパーティ製品のアップグレード
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+JRE、MySQLなどのサードパーティ製品がLinuxシステムにインストールされている場合は、Unified Managerでそれらの製品をアップグレードできます。
+
+これらのサードパーティ製品を開発する企業は、定期的にセキュリティの脆弱性を報告しています。このソフトウェアの新しいバージョンには、独自のスケジュールでアップグレードできます。

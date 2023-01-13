@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/concept-performance-monitoring-of-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager では、 MetroCluster 構成のクラスタ間の書き込みスループットを監視して、大量の書き込みスループットを生成しているワークロードを特定できます。このような負荷の高いワークロードが原因でローカルクラスタの他のボリュームの I/O 応答時間が長くなると、 Unified Manager はパフォーマンスイベントをトリガーしてユーザに通知します。 
+---
+= MetroCluster 構成のパフォーマンス監視
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager では、 MetroCluster 構成のクラスタ間の書き込みスループットを監視して、大量の書き込みスループットを生成しているワークロードを特定できます。このような負荷の高いワークロードが原因でローカルクラスタの他のボリュームの I/O 応答時間が長くなると、 Unified Manager はパフォーマンスイベントをトリガーしてユーザに通知します。
+
+MetroCluster 構成のローカルクラスタがデータをパートナークラスタにミラーリングすると、データは NVRAM に書き込まれてからインタースイッチリンク（ ISL ）経由でリモートアグリゲートに転送されます。Unified Manager は NVRAM を分析し、大量の書き込みスループットが NVRAM を過剰に使用して NVRAM を競合状態にしているワークロードを特定します。
+
+応答時間の偏差がパフォーマンスしきい値を超えたワークロードは _Victim と呼ばれ、 NVRAM への書き込みスループットの偏差が通常より高く、競合を引き起こしているワークロードは _Bully と呼ばれます。パートナークラスタには書き込み要求のみがミラーされるため、 Unified Manager は読み取りスループットを分析しません。
+
+Unified Manager では、 MetroCluster 構成のクラスタを個別のクラスタとして扱います。クラスタがパートナーかどうかは区別されず、各クラスタからの書き込みスループットが関連付けられることもありません。

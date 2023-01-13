@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-nvram-battery-events.html 
+sidebar: sidebar 
+keywords:  
+summary: NVRAM バッテリイベントは、バッテリのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= NVRAM バッテリイベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NVRAM バッテリイベントは、バッテリのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：可用性
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+NVRAM バッテリ低下（ Document EvtNvramBatteryLow ）
+ a| 
+リスク
+ a| 
+ノード
+ a| 
+警告
+
+
+
+ a| 
+NVRAM バッテリ放電 (Document EvtNvramBatteryDischarged)
+ a| 
+リスク
+ a| 
+ノード
+ a| 
+エラー
+
+
+
+ a| 
+NVRAM バッテリ過充電（ Document EvtNvramBatteryOverCharge ）
+ a| 
+インシデント
+ a| 
+ノード
+ a| 
+重要
+
+|===

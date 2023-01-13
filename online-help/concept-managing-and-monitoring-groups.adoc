@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager でグループを作成してストレージオブジェクトを管理できます。 
+---
+= グループの管理と監視
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager でグループを作成してストレージオブジェクトを管理できます。

@@ -1,0 +1,57 @@
+---
+permalink: qsg-vapp.html 
+sidebar: sidebar 
+keywords: quick start guide, getting started, QSG, VMWare QSG, vApp QSG, quick installation 
+summary: VMware vSphere プラットフォームの Unified Manager のクイックスタートガイドです。 
+---
+= VMware のインストールのクイックスタート手順
+:allow-uri-read: 
+
+
+
+
+== システム要件
+
+* オペレーティングシステム：VMware ESXi 5.5、6.0、6.5
+* RAM ： 12GB
+* CPU ：合計 9572MHz
+* 空きディスクスペース：5GB（シンプロビジョニング）、152GB（シックプロビジョニング）
+
+
+システム要件の詳細については、を参照してください link:install/reference-vmware-software-and-installation-requirements.html["VMware ソフトウェアとインストールの要件"] および link:http://mysupport.netapp.com/matrix["互換性マトリックス"]。
+
+
+
+== OnCommand Unified Managerをインストールしています
+
+
+
+=== インストーラをダウンロードします。
+
+. をダウンロードします `OnCommandUnifiedManager-9.5RC1.ovas` インストールパッケージ：
+. vSphere Client からアクセス可能なローカルまたはネットワークのディレクトリにファイルを保存します。
+
+
+
+
+=== Unified Manager をインストールします
+
+VMware Toolsは、Unified Managerのインストールパッケージには含まれていません。Unified Managerのインストールプロセスの一環としてCD-ROMまたはISOイメージをマウントする必要があります。
+
+. vSphere Client で、 * File > Deploy OVF Template * をクリックします。
+. OVA ファイルを探し、ウィザードを使用して ESXi サーバに仮想アプライアンスを導入します。
+. [プロパティ]タブの[ネットワークの設定]ページで、実行するインストールのタイプに応じて、必要に応じてフィールドに入力します。
++
+** 静的設定の場合は、すべてのフィールドに必要な情報を入力します（セカンダリDNSは不要です）。
+** IPv4を使用するDHCPの場合は、すべてのフィールドを空白のままにします。
+** IPv6を使用するDHCPの場合は、[Enable Auto IPv6 addressing]ボックスをオンにして、他のフィールドはすべて空白のままにします。
+
+
+. VM の電源をオンにします。
+. [ コンソール ] タブをクリックして、最初の起動プロセスを表示します。
+. プロンプトに従って、 VM に VMware Tools をインストールします。
+. タイムゾーンを設定します。
+. Unified Manager のメンテナンスユーザの名前とパスワードを入力します。
+
+
+インストールの完了時に、 Unified Manager Web UI に接続するための情報が表示されます。

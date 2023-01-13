@@ -1,0 +1,59 @@
+---
+section: config
+title: 設定タスクと管理タスクを実行
+entries:
+- title: Unified Managerを設定しています
+  url: "/config/concept-configuring-unified-manager.html"
+  entries:
+  - title: 設定手順の概要
+    url: "/config/concept-overview-of-the-configuration-sequence.html"
+  - title: Unified Manager Web UI にアクセスします
+    url: "/config/task-accessing-oncommand-unified-manager-web-ui.html"
+  - title: Unified Manager Web UI の初期セットアップを実行する
+    url: "/config/task-performing-the-initial-setup-of-the-unified-manager-web-ui.html"
+  - title: クラスタを追加する
+    url: "/config/task-adding-clusters.html"
+  - title: Unified Manager でアラート通知を送信するための設定
+    url: "/config/task-configuring-unified-manager-to-send-alert-notifications.html"
+    entries:
+    - title: イベント通知を設定しています
+      url: "/config/task-configuring-event-notification-settings.html"
+    - title: リモート認証の有効化
+      url: "/config/task-enabling-remote-authentication.html"
+    - title: リモート認証でのネストされたグループの無効化
+      url: "/config/task-disabling-nested-groups-from-remote-authentication.html"
+    - title: 認証サーバを追加しています
+      url: "/config/task-adding-authentication-servers.html"
+    - title: 認証サーバの設定をテストする
+      url: "/config/task-testing-the-configuration-of-authentication-servers-um-6-0.html"
+    - title: ユーザを追加する
+      url: "/config/task-adding-users.html"
+    - title: アラートの追加
+      url: "/config/task-adding-alerts.html"
+  - title: Unified Manager に自動的に追加される EMS イベント
+    url: "/config/reference-ems-events-that-are-added-automatically-to-unified-manager.html"
+  - title: ONTAP EMS イベントに登録する
+    url: "/config/task-subscribing-to-ontap-ems-events.html"
+  - title: SAML 認証の設定を管理する
+    url: "/config/concept-managing-saml-authentication-settings-um.html"
+    entries:
+    - title: アイデンティティプロバイダの要件
+      url: "/config/reference-identity-provider-requirements-um.html"
+    - title: SAML 認証の有効化
+      url: "/config/task-enabling-saml-authentication-um.html"
+  - title: データベースバックアップの設定を構成しています
+    url: "/config/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html"
+  - title: ローカルユーザのパスワードを変更しています
+    url: "/config/task-changing-the-local-user-password.html"
+  - title: Unified Manager のホスト名を変更しています
+    url: "/config/concept-changing-the-unified-manager-host-name.html"
+    entries:
+    - title: Unified Manager 仮想アプライアンスのホスト名を変更する
+      url: "/config/task-changing-the-unified-manager-host-name-on-vmware.html"
+      entries:
+      - title: HTTPS セキュリティ証明書の生成
+        url: "/config/task-generating-an-https-security-certificate-ocf.html"
+      - title: Unified Manager 仮想マシンを再起動しています
+        url: "/config/task-restarting-the-unified-manager-virtual-machine.html"
+    - title: Linux システムで Unified Manager ホスト名を変更する
+      url: "/config/task-changing-the-unified-manager-host-name-on-rhel-or-centos.html"

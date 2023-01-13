@@ -1,0 +1,47 @@
+---
+permalink: health-checker/task-resolving-capacity-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: このワークフローでは、容量問題を解決する方法の例を示します。このシナリオでは、管理者またはオペレータが、Unified Managerのダッシュボード/概要ページにアクセスして、監視対象のストレージオブジェクトに容量の問題がないかどうかを確認します。容量にリスクのあるボリュームが存在することを確認し、問題の原因 と解決策を特定します。 
+---
+= 容量の問題を解決する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このワークフローでは、容量問題を解決する方法の例を示します。このシナリオでは、管理者またはオペレータが、Unified Managerの[ダッシュボード/概要]ページにアクセスして、監視対象のストレージオブジェクトに容量の問題があるかどうかを確認します。容量にリスクのあるボリュームが存在することを確認し、問題の原因 と解決策を特定します。
+
+
+
+== 作業を開始する前に
+
+オペレータ、OnCommand 管理者、またはストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+[ダッシュボード/概要]ページで、[未解決のインシデントとリスク]領域を確認し、[容量]ペインの[SVMボリューム容量にリスクあり]の下にある[ボリューム容量がフル]エラーイベントを確認します。
+
+
+
+== 手順
+
+. [*ダッシュボード/概要*]ページの[未解決のインシデントとリスク*]領域で、[容量*]ペインで[ボリューム容量がフル]エラーイベントの名前をクリックします。
++
+エラーのイベントの詳細ページが表示されます。
+
+. イベント * の詳細ページでは、次のタスクを 1 つ以上実行できます。
++
+** 原因フィールドのエラーメッセージを確認し、 Suggested Remedial Actions の下の提案をクリックして、考えられる修正方法の説明を確認します。 xref:task-performing-suggested-remedial-actions-for-a-full-volume.adoc[ボリュームがフルになった場合の推奨修正策の実施]
+** オブジェクトの詳細を表示するには、ソースフィールドでオブジェクト名（この場合はボリューム）をクリックします。 xref:reference-health-volume-details-page.adoc[ボリュームの詳細ページ]
+** このイベントに関して追加されたメモを探します。 xref:task-adding-and-reviewing-notes-about-an-event.adoc[イベントに関連するメモの追加と確認]
+** イベントにメモを追加します。 xref:task-adding-and-reviewing-notes-about-an-event.adoc[イベントに関連するメモの追加と確認]
+** イベントを別のユーザに割り当てます。 xref:task-assigning-events-to-specific-users.adoc[イベントを割り当てます]
+** イベントに応答します。 xref:task-acknowledging-and-resolving-events.adoc[イベントを確認して解決します]
+** イベントを解決済みとマークします。 xref:task-acknowledging-and-resolving-events.adoc[イベントを確認して解決します]
+
+
+

@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-nfs-exports-report-to-display-a-list-of-volumes-with-default-export-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: NFSエクスポートレポートをカスタマイズして、デフォルトのエクスポートポリシーが適用されているボリュームのリストを表示できます。 
+---
+= NFSエクスポートレポートのカスタマイズ：デフォルトのエクスポートポリシーを使用するボリュームのリストを表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NFSエクスポートレポートをカスタマイズして、デフォルトのエクスポートポリシーが適用されているボリュームのリストを表示できます。
+
+
+
+== このタスクについて
+
+このタスクは、[レポート]ページに移動し、該当するレポートの[レポートの実行]をクリックして実行することもできます。
+
+
+
+== 手順
+
+. クラスタまたはボリューム別のグループ化を削除するには、次の手順を実行します。
++
+.. グループ化を解除する必要がある列内をクリックします。
+.. をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+.. * Group *>* Delete Inner Group *を選択します。
+
+
+. デフォルトのエクスポートポリシーを使用してボリュームをフィルタリングするには、* Export Policy *列をクリックし、* Filter *ダイアログボックスをクリックします image:../media/click-to-filter.gif[""] をクリックします。
+. [*条件*（* Condition *）]リストから、[*と等しい（* Equal to *）]を選択
+. 値の選択*をクリックし、*デフォルト*を選択します。
+. [OK] をクリックします。
+

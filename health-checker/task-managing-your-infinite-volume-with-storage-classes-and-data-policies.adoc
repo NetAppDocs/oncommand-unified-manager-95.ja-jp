@@ -1,0 +1,68 @@
+---
+permalink: health-checker/task-managing-your-infinite-volume-with-storage-classes-and-data-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: Infinite Volumeを効果的に管理するには、必要な数のストレージクラスを含むInfinite Volumeの作成、各ストレージクラスのしきい値の設定、Infinite Volumeに書き込まれるデータの配置を決定するルールとデータポリシーの作成、データ保護の設定、必要に応じて通知アラートの設定を行います。 
+---
+= ストレージクラスとデータポリシーを含むInfinite Volumeを管理する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Infinite Volumeを効果的に管理するには、必要な数のストレージクラスを含むInfinite Volumeの作成、各ストレージクラスのしきい値の設定、Infinite Volumeに書き込まれるデータの配置を決定するルールとデータポリシーの作成、データ保護の設定、必要に応じて通知アラートの設定を行います。
+
+
+
+== 作業を開始する前に
+
+* OnCommand Workflow Automation （WFA）がインストールされている必要があります。
+* OnCommand 管理者またはストレージ管理者のロールが必要です。
+* WFAで適切な定義済みワークフローをカスタマイズして、必要な数のアグリゲートを作成しておく必要があります。
+* WFAで適切な定義済みワークフローをカスタマイズして、必要な数のストレージクラスを作成しておく必要があります。
+* WFAでUnified Managerサーバをデータソースとして設定し、データが正常にキャッシュされることを確認しておく必要があります。
+
+
+
+
+== このタスクについて
+
+このタスクを実行するときは、OnCommand Workflow Automation （WFA）とOnCommand Unified Managerの2つのアプリケーションを切り替える必要があります。
+
+以下は大まかな手順です。WFAタスクの実行の詳細については、OnCommand Workflow Automation のマニュアルを参照してください。
+
+image::../media/cr-workflow-oc-6-0.gif[ストレージクラスを含むInfinite Volumeを備えたSVMを管理するためのワークフロー]
+
+
+
+== 手順
+
+. image:../media/wfa-icon.gif["WFA手順 のアイコン"] 定義済みワークフローをカスタマイズして、必要なストレージクラスを定義します。
+. image:../media/wfa-icon.gif["WFA手順 のアイコン"] 適切なワークフローを使用して、必要な数のストレージクラスを含むInfinite Volumeを備えたSVMを作成します。
+. image:../media/um-icon.gif["Unified Manager手順 のアイコン"] Infinite Volumeを備えたSVMが含まれるクラスタをUnified Managerデータベースに追加します。
++
+クラスタを追加するには、クラスタのIPアドレスまたはFQDNを指定します。
+
+. image:../media/um-icon.gif["Unified Manager手順 のアイコン"] xref:task-editing-storage-class-threshold-settings.adoc[組織の要件に基づいて、各ストレージクラスのしきい値を変更します]。
++
+ストレージクラススペースを効果的に監視するには、ストレージクラスのデフォルトのしきい値設定を使用する必要があります。
+
+. image:../media/um-icon.gif["Unified Manager手順 のアイコン"] xref:task-adding-alerts.adoc[Infinite Volumeに関連する可用性と容量の問題に対応するための通知アラートとトラップを設定します]。
+. image:../media/um-icon.gif["Unified Manager手順 のアイコン"] xref:task-creating-rules.adoc[データポリシーでルールを設定し、データポリシーに対して行われたすべての変更をアクティブ化します]
++
+データポリシーのルールによって、Infinite Volumeに書き込まれるコンテンツの配置が決まります。
+
++
+[NOTE]
+====
+データポリシーのルールは、Infinite Volumeに新たに書き込まれるデータにのみ影響し、Infinite Volume内の既存のデータには影響しません。
+
+====
+. image:../media/wfa-icon.gif["WFA手順 のアイコン"] Infinite Volumeを備えたディザスタリカバリ（DR）用のSVMを作成し、次の手順でデータ保護（DP）を設定します。
++
+.. 適切なワークフローを使用してDP用のInfinite Volumeを作成します。
+.. 適切なワークフローを使用して、ソースとデスティネーションの間にDPミラー関係を設定します。
+
+
+

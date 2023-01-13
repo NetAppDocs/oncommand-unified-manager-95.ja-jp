@@ -1,0 +1,28 @@
+---
+permalink: health-checker/task-creating-and-importing-reports-into-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerではレポート作成機能を利用できますが、環境に固有の新しいレポートの作成が必要になる場合があります。Eclipse BIRT（Business Intelligence and Reporting Tools）を使用して新しいレポートを作成し、そのレポートをUnified Managerにインポートして表示し、管理することができます。 
+---
+= レポートを作成してUnified Managerにインポートする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerではレポート作成機能を利用できますが、環境に固有の新しいレポートの作成が必要になる場合があります。Eclipse BIRT（Business Intelligence and Reporting Tools）を使用して新しいレポートを作成し、そのレポートをUnified Managerにインポートして表示し、管理することができます。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者のロールが必要です。
+
+MySQL Connector/Jをダウンロードしてインストールしておく必要がありますレポートをUnified Managerに連結するJDBCデータソースを作成するために、mysql-connector-java-5.1.32-bin.jarファイルの場所を確認しておく必要があります。
+
+
+
+== このタスクについて
+
+レポートの作成の詳細については、Eclipse BIRTのWebサイトを参照してください。

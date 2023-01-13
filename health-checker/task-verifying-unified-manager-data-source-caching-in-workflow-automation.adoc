@@ -1,0 +1,32 @@
+---
+permalink: health-checker/task-verifying-unified-manager-data-source-caching-in-workflow-automation.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager データソースのキャッシングが正しく機能しているかどうかを判別するには、 Workflow Automation でデータソースの取得が正常に行われているかどうかを確認します。Workflow Automation を Unified Manager に統合する際にこの操作を実行して、統合後に Workflow Automation の機能が利用可能になることを確認できます。 
+---
+= Workflow Automation での Unified Manager データソースのキャッシングの確認
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager データソースのキャッシングが正しく機能しているかどうかを判別するには、 Workflow Automation でデータソースの取得が正常に行われているかどうかを確認します。Workflow Automation を Unified Manager に統合する際にこの操作を実行して、統合後に Workflow Automation の機能が利用可能になることを確認できます。
+
+
+
+== 作業を開始する前に
+
+このタスクを実行するには、 Workflow Automation で Administrator ロールまたは Architect ロールが割り当てられている必要があります。
+
+
+
+== 手順
+
+. Workflow Automation の UI から、 * Execution * > * Data Sources * を選択します。
+. Unified Manager データソースの名前を右クリックし、 * 今すぐ取得 * を選択します。
+. 取得が正常に完了してエラーが発生しないことを確認します
++
+Workflow Automation を Unified Manager に統合するためには、収集エラーを解決する必要があります。
+
+

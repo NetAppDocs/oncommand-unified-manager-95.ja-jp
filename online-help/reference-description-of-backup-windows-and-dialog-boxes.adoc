@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-backup-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerのバックアップのページには、バックアップのリストが表示されます。このページでは、バックアップの名前、サイズ、および作成時間を確認できます。データベースバックアップ設定は、Database Backup Settingsページで変更できます。 
+---
+= バックアップウィンドウとダイアログボックスの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerのバックアップのページには、バックアップのリストが表示されます。このページでは、バックアップの名前、サイズ、および作成時間を確認できます。データベースバックアップ設定は、Database Backup Settingsページで変更できます。

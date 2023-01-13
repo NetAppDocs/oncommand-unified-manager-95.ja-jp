@@ -1,0 +1,100 @@
+---
+permalink: online-help/reference-management-station-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 管理ステーションイベントは、 Unified Manager がインストールされているサーバのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= 管理ステーションイベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理ステーションイベントは、 Unified Manager がインストールされているサーバのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：構成
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+Unified Managerサーバのディスクスペースがほぼフル（Document EvtUnifiedManagerDiskSpaceNearlyFull）
+ a| 
+リスク
+ a| 
+管理ステーション
+ a| 
+警告
+
+
+
+ a| 
+Unified Managerサーバのディスクスペースがフル（Document EvtUnifiedManagerDiskSpaceFull）
+ a| 
+インシデント
+ a| 
+管理ステーション
+ a| 
+重要
+
+
+
+ a| 
+Unified Managerサーバのメモリが減少（Document EvtUnifiedManagerMemoryLow）
+ a| 
+リスク
+ a| 
+管理ステーション
+ a| 
+警告
+
+
+
+ a| 
+Unified Managerサーバのメモリがほとんどない（ドキュメントEvtUnifiedManagerMemoryAlmostOut）
+ a| 
+インシデント
+ a| 
+管理ステーション
+ a| 
+重要
+
+|===
+
+
+== 影響範囲：パフォーマンス
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+パフォーマンスデータ分析への影響（ Document EvtUnifiedManagerDataMissingAnalyze ）
+ a| 
+リスク
+ a| 
+管理ステーション
+ a| 
+警告
+
+
+
+ a| 
+パフォーマンスデータ収集への影響（ Document EvtUnifiedManagerDataMissingCollection ）
+ a| 
+インシデント
+ a| 
+管理ステーション
+ a| 
+重要
+
+|===
+[NOTE]
+====
+最後の 2 つのパフォーマンスイベントは、 Unified Manager 7.2 でのみ使用されていたものです。これらのいずれかのイベントが新規の状態で存在している場合、 Unified Manager ソフトウェアを新しいバージョンにアップグレードしてもイベントは自動的にパージされません。イベントを手動で解決済みの状態に移行する必要があります。
+
+====

@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-introduction-to-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Unified Managerでは、ONTAP ストレージシステムの健常性とパフォーマンスを単一のインターフェイスから監視および管理することができます。 
+---
+= OnCommand Unified Managerの概要を参照してください
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Managerでは、ONTAP ストレージシステムの健常性とパフォーマンスを単一のインターフェイスから監視および管理することができます。
+
+Unified Manager には次の機能があります。
+
+* ONTAP ソフトウェアがインストールされたシステムの検出、監視、通知
+* 容量、可用性、保護、パフォーマンスなど、環境の健全性をダッシュボードに表示します。
+* アラート、イベント、およびしきい値インフラが強化されています。
+* IOPS （処理数）、 MBps （スループット）、レイテンシ（応答時間）、利用率など、ワークロードのアクティビティを時系列で示す詳細なグラフを表示します。 パフォーマンス容量とキャッシュ比率：
+* クラスタコンポーネントを過剰に消費しているワークロードと、アクティビティの増加によってパフォーマンスが影響を受けたワークロードを特定します。
+* 特定のインシデントやイベントに対処するために実行できる推奨される対処方法を提供します。
+* OnCommand Workflow Automation との統合によりワークフローを自動化
+

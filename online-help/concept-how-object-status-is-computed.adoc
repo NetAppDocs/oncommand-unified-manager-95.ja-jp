@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-how-object-status-is-computed.html 
+sidebar: sidebar 
+keywords:  
+summary: オブジェクトステータスは、現在の状態が「新規」または「確認済み」の最も重大度の高いイベントによって決まります。たとえば、オブジェクトステータスがエラーの場合、オブジェクトのいずれかのイベントの重大度タイプがエラーになります。イベントに対処すると、イベントの状態は Resolved になります。 
+---
+= オブジェクトステータスの計算方法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+オブジェクトステータスは、現在の状態が「新規」または「確認済み」の最も重大度の高いイベントによって決まります。たとえば、オブジェクトステータスが Error の場合は、オブジェクトのいずれかのイベントの重大度タイプが Error となっています。イベントに対処すると、イベントの状態は Resolved になります。

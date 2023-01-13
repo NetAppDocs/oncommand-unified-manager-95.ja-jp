@@ -1,0 +1,29 @@
+---
+permalink: install/task-removing-custom-umadmin-user-and-maintenance-group.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager をインストールする前にカスタムのホームディレクトリを作成して独自の umadmin ユーザと maintenance アカウントを定義していた場合は、 Unified Manager のアンインストール後にそれらを削除する必要があります。 
+---
+= カスタムの umadmin ユーザと maintenance グループを削除します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager をインストールする前にカスタムのホームディレクトリを作成して独自の umadmin ユーザと maintenance アカウントを定義していた場合は、 Unified Manager のアンインストール後にそれらを削除する必要があります。
+
+
+
+== このタスクについて
+
+Unified Manager の標準のアンインストール手順では、カスタムの umadmin ユーザと maintenance アカウントは削除されません。これらの項目は手動で削除する必要があります。
+
+
+
+== 手順
+
+. Red Hat Enterprise Linux サーバに root ユーザとしてログインします。
+. umadmin ユーザを削除します。``userdel umadmin``
+. maintenance グループを削除します。``groupdel maintenance``
+

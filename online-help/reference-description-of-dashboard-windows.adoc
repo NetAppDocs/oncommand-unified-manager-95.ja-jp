@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-dashboard-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: ダッシュボードページを使用すると、監視しているオブジェクトの概要をすばやく確認できます。 
+---
+= ダッシュボードウィンドウの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ダッシュボードページを使用すると、監視しているオブジェクトの概要をすばやく確認できます。

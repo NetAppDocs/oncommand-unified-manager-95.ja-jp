@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-data-mirroring-status-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: MetroCluster 構成では、データのミラーリングが可能で、サイト全体が利用できなくなった場合にフェイルオーバーを開始する機能も利用できます。MetroCluster 構成のクラスタ間のデータミラーリングのステータスは、「 Normal 」または「 Mirroring Unavailable 」のいずれかになります。これらのステータスを理解しておくと、 MetroCluster 構成を効果的に管理できます。 
+---
+= データミラーリングのステータスの定義
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+MetroCluster 構成では、データのミラーリングが可能で、サイト全体が利用できなくなった場合にフェイルオーバーを開始する機能も利用できます。MetroCluster 構成のクラスタ間のデータミラーリングのステータスは、「 Normal 」または「 Mirroring Unavailable 」のいずれかになります。これらのステータスを理解しておくと、 MetroCluster 構成を効果的に管理できます。
+
+|===
+| データミラーリングのステータス | 説明 | アイコンが表示されます 
+
+
+ a| 
+正常
+ a| 
+MetroCluster 構成のクラスタ間のデータミラーリングが正常な状態です。
+ a| 
+image:../media/metrocluster-connectivity-optimal.gif[""]
+
+
+
+ a| 
+ミラーリングを使用できません
+ a| 
+スイッチオーバーが原因で、 MetroCluster 構成のクラスタ間のデータミラーリングが利用できない状態になっています。たとえば、災害によってパートナークラスタが停止している場合や、テスト目的で計画的スイッチオーバーを実行している場合などです。
+ a| 
+スイッチオーバーでエラー：
+
+image::../media/metrocluster-connectivity-down.gif[MetroCluster 接続がダウンしています]
+
+スイッチオーバー成功：
+
+image::../media/metrocluster-connectivity-failover.gif[MetroCluster 接続のフェイルオーバー]
+
+|===

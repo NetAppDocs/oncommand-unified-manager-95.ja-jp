@@ -1,0 +1,16 @@
+---
+permalink: install/concept-install-upgrade-and-remove-unified-manager-software.html 
+sidebar: sidebar 
+keywords:  
+summary: Linux システムで、 Unified Manager ソフトウェアのインストール、新しいバージョンへのアップグレード、または Unified Manager の削除を実行できます。 
+---
+= Red HatまたはCentOSでのUnified Managerソフトウェアのインストール、アップグレード、削除
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux システムで、 Unified Manager ソフトウェアのインストール、新しいバージョンへのアップグレード、または Unified Manager の削除を実行できます。
+
+Unified Manager は、 Red Hat Enterprise Linux サーバまたは CentOS サーバにインストールできます。Unified Manager をインストールする Linux サーバは、物理マシンでも仮想マシンでもかまいません。仮想マシンの場合は、 VMware ESXi 、 Microsoft Hyper-V 、または Citrix XenServer で実行されているマシンを使用できます。

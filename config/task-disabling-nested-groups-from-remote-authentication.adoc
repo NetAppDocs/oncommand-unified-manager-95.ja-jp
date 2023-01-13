@@ -1,0 +1,37 @@
+---
+permalink: config/task-disabling-nested-groups-from-remote-authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: リモート認証を有効にしている場合、ネストされたグループの認証を無効にすることで、リモートからの Unified Manager への認証を個々のユーザにのみ許可し、グループのメンバーは認証されないようにすることができます。ネストされたグループを無効にすると、 Active Directory 認証の応答時間を短縮できます。 
+---
+= リモート認証でのネストされたグループの無効化
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+リモート認証を有効にしている場合、ネストされたグループの認証を無効にすることで、リモートからの Unified Manager への認証を個々のユーザにのみ許可し、グループのメンバーは認証されないようにすることができます。ネストされたグループを無効にすると、 Active Directory 認証の応答時間を短縮できます。
+
+
+
+== 作業を開始する前に
+
+* OnCommand 管理者のロールが必要です。
+* ネストされたグループの無効化は、 Active Directory を使用している場合にのみ該当します
+
+
+
+
+== このタスクについて
+
+Unified Manager でネストされたグループのサポートを無効にすると、認証時間が短縮される可能性があります。ネストされたグループが無効になっている Unified Manager にリモートグループを追加した場合、 Unified Manager で認証されるためには個々のユーザがそのリモートグループのメンバーである必要があります。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、左の[設定]メニューの[*認証]をクリックします。
+. [*Setup/Authentication]ページで、[*Disable Nested Group Lookup*]チェックボックスをオンにします。
+. [ 保存（ Save ） ] をクリックします。
+

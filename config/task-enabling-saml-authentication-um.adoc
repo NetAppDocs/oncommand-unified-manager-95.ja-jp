@@ -1,0 +1,81 @@
+---
+permalink: config/task-enabling-saml-authentication-um.html 
+sidebar: sidebar 
+keywords:  
+summary: Security Assertion Markup Language（SAML）認証を有効にして、Unified ManagerのWeb UIにアクセスするリモートユーザをセキュアなアイデンティティプロバイダ（IdP）で認証するように設定できます。 
+---
+= SAML 認証の有効化
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Security Assertion Markup Language （ SAML ）認証を有効にして、 Unified Manager の Web UI にアクセスするリモートユーザをセキュアなアイデンティティプロバイダ（ IdP ）で認証するように設定できます。
+
+
+
+== 作業を開始する前に
+
+* リモート認証を設定し、正常に実行されることを確認しておく必要があります。
+* OnCommand 管理者ロールが割り当てられたリモートユーザまたはリモートグループを少なくとも1つ作成しておく必要があります。
+* アイデンティティプロバイダ（ IdP ）が Unified Manager でサポートされ、設定が完了している必要があります。
+* IdP の URL とメタデータが必要です。
+* IdP サーバへのアクセスが必要です。
+
+
+
+
+== このタスクについて
+
+Unified Manager で SAML 認証を有効にしたあと、 Unified Manager サーバのホスト情報を使用して IdP を設定するまでは、ユーザはグラフィカルユーザインターフェイスにアクセスできません。そのため、設定プロセスを開始する前に、両方の接続を完了できるように準備しておく必要があります。IdP の設定は、 Unified Manager の設定前にも設定後にも実行できます。
+
+SAML 認証を有効にしたあとで Unified Manager のグラフィカルユーザインターフェイスにアクセスできるのはリモートユーザのみです。ローカルユーザとメンテナンスユーザは UI にアクセスできません。この設定は、メンテナンスコンソール、 Unified Manager コマンド、 ZAPI にアクセスするユーザには影響しません。
+
+[NOTE]
+====
+このページで SAML の設定を完了すると、 Unified Manager が自動的に再起動されます。
+
+====
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、左の[設定]メニューの[*認証]をクリックします。
+. [* Setup/Authentication]ページで[* SAML Authentication*]タブを選択します。
+. Enable SAML authentication * チェックボックスをオンにします。
++
+IdP の接続の設定に必要なフィールドが表示されます。
+
+. IdP の URI と Unified Manager サーバを IdP に接続するために必要な IdP メタデータを入力します。
++
+IdP サーバに Unified Manager サーバから直接アクセスできる場合は、 IdP の URI を入力したあとに「 * IdP メタデータの取得」ボタンをクリックすると、 IdP のメタデータフィールドに自動的に値が入力されます。
+
+. Unified Manager のホストメタデータ URI をコピーするか、メタデータを XML テキストファイルに保存します。
++
+この情報を使用して IdP サーバを設定できます。
+
+. [ 保存（ Save ） ] をクリックします。
++
+設定を完了して Unified Manager を再起動するかどうかの確認を求めるメッセージボックスが表示されます。
+
+. [ 確認してログアウト * ] をクリックすると、 Unified Manager が再起動します。
+
+
+
+
+== 結果
+
+許可されたリモートユーザが Unified Manager のグラフィカルインターフェイスにアクセスする際にクレデンシャルを入力するページが、次回から Unified Manager のログインページではなく IdP のログインページに変わります。
+
+
+
+== 完了後
+
+まだ完了していない場合は、 IdP にアクセスし、 Unified Manager サーバの URI とメタデータを入力して設定を完了します。
+
+[NOTE]
+====
+アイデンティティプロバイダに ADFS を使用している場合は、 Unified Manager GUI で ADFS のタイムアウトが考慮されず、 Unified Manager のセッションタイムアウトに達するまでセッションが続行されます。Unified ManagerをWindows、Red Hat、またはCentOSに導入している場合は、次のUnified Manager CLIコマンドを使用してGUIのセッションタイムアウトを変更できます。 ``um option set absolute.session.timeout=00:15:00``このコマンドを実行すると、Unified ManagerのGUIのセッションタイムアウトが15分に設定されます。
+
+====

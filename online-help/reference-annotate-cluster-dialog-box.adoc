@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-cluster-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Annotate Clusterダイアログボックスでは、ストレージオブジェクトに手動でアノテーションを付けることができます。単一のクラスタまたは複数のクラスタを選択し、既存のアノテーションのリストにある特定の値ペアでアノテートすることができます。 
+---
+= AnnotateClusterタイアロクホツクス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Annotate Clusterダイアログボックスでは、ストレージオブジェクトに手動でアノテーションを付けることができます。単一のクラスタまたは複数のクラスタを選択し、既存のアノテーションのリストにある特定の値ペアでアノテートすることができます。
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+* *アノテーション=値ペア*
++
+選択したクラスタに必要なアノテーションを選択できます。
+
+* * 適用 *
++
+選択したアノテーションをクラスタに適用します。
+
+* * キャンセル *
++
+変更を保存せずにAnnotate Clusterダイアログボックスを閉じます。
+
+

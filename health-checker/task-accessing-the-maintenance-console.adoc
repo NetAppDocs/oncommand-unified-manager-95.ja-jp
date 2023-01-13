@@ -1,0 +1,80 @@
+---
+permalink: health-checker/task-accessing-the-maintenance-console.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager ユーザインターフェイスが動作状態でない場合、またはこのユーザインターフェイスにない機能を実行する必要がある場合は、メンテナンスコンソールにアクセスして Unified Manager システムを管理できます。 
+---
+= メンテナンスコンソールへのアクセス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager ユーザインターフェイスが動作状態でない場合、またはこのユーザインターフェイスにない機能を実行する必要がある場合は、メンテナンスコンソールにアクセスして Unified Manager システムを管理できます。
+
+
+
+== 作業を開始する前に
+
+Unified Manager をインストールして設定しておく必要があります。
+
+
+
+== このタスクについて
+
+15 分間操作を行わないと、メンテナンスコンソールからログアウトされます。
+
+[NOTE]
+====
+VMware にインストールした場合、 VMware コンソールからメンテナンスユーザとしてすでにログインしているときは、 Secure Shell を使用して同時にログインできません。
+
+====
+
+
+== 手順
+
+. メンテナンスコンソールにアクセスするには、次の手順を実行します。
++
+|===
+| オペレーティングシステム | 実行する手順 
+
+
+ a| 
+VMware
+ a| 
+.. Secure Shell を使用して、 Unified Manager 仮想アプライアンスの IP アドレスまたは完全修飾ドメイン名に接続します。
+.. メンテナンスユーザの名前とパスワードを使用してメンテナンスコンソールにログインします。
+
+
+
+
+ a| 
+Linux の場合
+ a| 
+.. Secure Shell を使用して、 Unified Manager システムの IP アドレスまたは完全修飾ドメイン名に接続します。
+.. メンテナンスユーザ（ umadmin ）の名前とパスワードでシステムにログインします。
+.. 入力するコマンド `maintenance_console` を押します。
+
+
+
+
+ a| 
+Windows の場合
+ a| 
+.. 管理者のクレデンシャルで Unified Manager システムにログインします。
+.. Windows 管理者として PowerShell を起動します。
+.. 入力するコマンド `maintenance_console` を押します。
++
+[NOTE]
+====
+Microsoft Windows Server 2012で実行ポリシーエラーが表示された場合は、次のコマンドを入力し、手順cをもう一度実行してください。 `PowerShell.exe -ExecutionPolicy RemoteSigned`
+
+====
+
+
+|===
++
+Unified Manager メンテナンスコンソールメニューが表示されます。
+
+

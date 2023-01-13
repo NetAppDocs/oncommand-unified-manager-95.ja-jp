@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-customizing-the-volume-relationships-inventory-report-to-view-volumes-grouped-by-issue.html 
+sidebar: sidebar 
+keywords:  
+summary: ボリューム関係インベントリレポートをカスタマイズして、ボリュームをボリューム関係の健常性ステータス別にグループ化して表示することができます。 
+---
+= ボリューム関係インベントリレポートのカスタマイズ：ボリュームを問題 別にグループ化して表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリューム関係インベントリレポートをカスタマイズして、ボリュームをボリューム関係の健常性ステータス別にグループ化して表示することができます。
+
+
+
+== このタスクについて
+
+このタスクは、[レポート]ページに移動し、該当するレポートの[レポートの実行]をクリックして実行することもできます。
+
+
+
+== 手順
+
+. ボリューム関係の健常性ステータスに基づいてボリュームをフィルタリングするには、* Relationship Health *列を選択し、をクリックします image:../media/click-to-filter.gif[""] をクリックします。
+. [*フィルター*]ダイアログボックスで、[*値の選択*]をクリックし、ドロップダウンリストから必要な値を選択します。
++
+選択した値のボリュームの詳細が表示されます。
+
+

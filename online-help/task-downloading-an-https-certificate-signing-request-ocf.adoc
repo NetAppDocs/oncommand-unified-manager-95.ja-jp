@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-downloading-an-https-certificate-signing-request-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: 認証局にファイルを送信して署名を求めるために、現在のHTTPSセキュリティ証明書の証明書要求をダウンロードできます。CA 署名証明書は、中間者攻撃を阻止するのに役立ち、自己署名証明書よりも強力なセキュリティ保護を実現します。 
+---
+= HTTPS 証明書署名要求のダウンロード
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+認証局にファイルを送信して署名を求めるために、現在のHTTPSセキュリティ証明書の証明書要求をダウンロードできます。CA 署名証明書は、中間者攻撃を阻止するのに役立ち、自己署名証明書よりも強力なセキュリティ保護を実現します。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者のロールが必要です。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、*設定*メニューから* HTTPS証明書*をクリックします。
+. [ * HTTPS 証明書署名要求のダウンロード * ] をクリックします。
+. を保存します `<hostname>.csr` ファイル。
+
+
+
+
+== 完了後
+
+認証局にファイルを送信して署名を求め、署名済み証明書をインストールできます。

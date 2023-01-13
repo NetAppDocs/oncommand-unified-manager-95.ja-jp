@@ -1,0 +1,70 @@
+---
+permalink: install/task-uninstalling-unified-manager-win.html 
+sidebar: sidebar 
+keywords:  
+summary: WindowsからUnified Managerをアンインストールするには、プログラムと機能ウィザードを使用するか、コマンドラインインターフェイスから無人アンインストールを実行します。 
+---
+= WindowsからUnified Managerをアンインストールします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+WindowsからUnified Managerをアンインストールするには、プログラムと機能ウィザードを使用するか、コマンドラインインターフェイスから無人アンインストールを実行します。
+
+
+
+== 作業を開始する前に
+
+* Windows の管理者権限が必要です。
+* ソフトウェアをアンインストールする前に、 Unified Manager サーバからすべてのクラスタ（データソース）を削除しておく必要があります。
+* Unified ManagerサーバからGraphiteなどの外部データプロバイダへのアクティブな接続を確立できません。
++
+接続されている場合は、Unified Managerメンテナンスコンソールを使用して接続を削除する必要があります。
+
+
+
+
+
+== 手順
+
+. ハイアベイラビリティ構成の場合は、Unified Managerをアンインストールする前に、両方のノードからHAサービスグループのリソースを削除してHAサービスグループを削除します。
+. 次のいずれかを実行して Unified Manager をアンインストールします。
++
+|===
+| Unified Manager をアンインストールする方法 | 作業 
+
+
+ a| 
+プログラムと機能ウィザード
+ a| 
+.. [ コントロールパネル *>* プログラムと機能 * ] に移動します。
+.. OnCommand Unified Managerを選択し、*アンインストール*をクリックします。
+
+
+
+
+ a| 
+コマンドライン
+ a| 
+.. 管理者権限でWindowsのコマンドラインにログインします。
+.. OnCommand Unified Managerディレクトリに移動し、次のコマンドを実行します。 `+msiexec /x {A78760DB-7EC0-4305-97DB-E4A89CDFF4E1} /qn /l*v %systemdrive%\UmUnInstall.log+`
+
+
+|===
++
+サーバでユーザアカウント制御（ UAC ）が有効になっていて、ドメインユーザとしてログインしている場合は、コマンドラインによるアンインストールを実行する必要があります。
+
++
+Unified Manager がシステムからアンインストールされます。
+
+. Unified Manager のアンインストール時に削除されない次のサードパーティパッケージとデータをアンインストールします。
++
+** サードパーティパッケージ： JRE 、 MySQL 、 Microsoft Visual C&#43;2015 再頒布可能パッケージ、 7zip
+** Unified Manager によって生成された MySQL のアプリケーションデータ
+** アプリケーションログとアプリケーションデータディレクトリの内容
+
+
+

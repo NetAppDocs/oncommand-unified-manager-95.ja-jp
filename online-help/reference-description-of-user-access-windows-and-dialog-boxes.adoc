@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-user-access-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: RBACの設定に基づいて、管理/ユーザページでユーザを追加し、それらのユーザにクラスタへのアクセスや監視を許可する適切なロールを割り当てることができます。 
+---
+= ユーザアクセスのウィンドウとダイアログボックスの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RBACの設定に基づいて、管理/ユーザページでユーザを追加し、それらのユーザにクラスタへのアクセスや監視を許可する適切なロールを割り当てることができます。

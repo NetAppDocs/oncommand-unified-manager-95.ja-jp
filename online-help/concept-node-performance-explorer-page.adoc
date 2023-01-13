@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-node-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance/NodeExplorerヘエシには、クラスタ内のすべてのノードの詳細なパフォーマンス概要が表示されます。 
+---
+= Performance/NodeExplorerヘエシ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance/NodeExplorerヘエシには、クラスタ内のすべてのノードの詳細なパフォーマンス概要が表示されます。
+
+Performance/NodeExplorerヘエシを使用すると、一定期間のノードのパフォーマンスを追跡して比較できるため、ノードのパフォーマンスのトラブルシューティングや微調整に役立ちます。
+
+表示と比較機能を使用して、このノードのパフォーマンスを次の対象と比較できます。
+
+* 同じクラスタ上の他のノード
+* ノード上のアグリゲート
+* ノード上のポート
+
+
+Performance/NodeExplorerヘエシを使用すると、次のことができます。
+
+* しきい値に関連する問題とその詳細を表示します
+* ノードのパフォーマンスデータを追跡して比較する
+* しきい値に関連する問題の調査とトラブルシューティング
+* パフォーマンスの問題の調査とトラブルシューティング
+

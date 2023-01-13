@@ -1,0 +1,14 @@
+---
+permalink: health-checker/task-using-the-maintenance-console.html 
+sidebar: sidebar 
+keywords:  
+summary: メンテナンスコンソールでは、ネットワークの設定、 Unified Manager がインストールされているシステムの設定と管理、潜在的な問題の防止とトラブルシューティングに役立つその他のメンテナンスタスクを実行することができます。 
+---
+= メンテナンスコンソールを使用する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+メンテナンスコンソールでは、ネットワークの設定、 Unified Manager がインストールされているシステムの設定と管理、潜在的な問題の防止とトラブルシューティングに役立つその他のメンテナンスタスクを実行することができます。

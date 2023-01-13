@@ -1,0 +1,59 @@
+---
+permalink: health-checker/task-resynchronizing-protection-relationships-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: SnapMirror 関係や SnapVault 関係を解除してデスティネーションが読み書き可能になったあとに、ソースのデータとデスティネーションのデータが一致するようにデータを再同期することができます。再同期は、必要な共通の Snapshot コピーがソースボリュームで削除されたために SnapMirror や SnapVault の更新が失敗する場合にも実行することがあります。 
+---
+= 健常性/ボリュームの詳細ページから保護関係を再同期しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror 関係や SnapVault 関係を解除してデスティネーションが読み書き可能になったあとに、ソースのデータとデスティネーションのデータが一致するようにデータを再同期することができます。再同期は、必要な共通の Snapshot コピーがソースボリュームで削除されたために SnapMirror や SnapVault の更新が失敗する場合にも実行することがあります。
+
+
+
+== 作業を開始する前に
+
+* OnCommand 管理者またはストレージ管理者のロールが必要です。
+* OnCommand Workflow Automation のセットアップが完了している必要があります。
+
+
+
+
+== 手順
+
+. * Health/Volume *の詳細ページの* Protection *タブで、再同期する保護関係をトポロジから探して右クリックします。
+. メニューから * Resynchronize * を選択します。
++
+または、 * Actions * メニューから * Relationship * > * Resynchronize * を選択して、現在詳細を表示している関係を再同期します。
+
++
+再同期化ダイアログボックスが表示されます。
+
+. [* Resynchronization Options] * タブで、転送の優先順位と最大転送速度を選択します。
+. [ * ソース Snapshot コピー * ] をクリックし、 [ * Snapshot コピー * ] 列で [ * デフォルト * ] をクリックします。
++
+Select Source Snapshot Copy （ソース Snapshot コピーの選択）ダイアログボックスが表示されます。
+
+. デフォルトの Snapshot コピーを転送するのではなく、既存の Snapshot コピーを指定する場合は、 * 既存の Snapshot コピー * をクリックし、リストから Snapshot コピーを選択します。
+. [Submit （送信） ] をクリックします。
++
+再同期ダイアログボックスに戻ります。
+
+. 再同期するソースを複数選択した場合は、既存の Snapshot コピーを指定する次のソースに対して * Default * をクリックします。
+. Submit * をクリックして、再同期ジョブを開始します。
++
+再同期ジョブが開始されると、健常性/ボリュームの詳細ページに戻り、ページの上部にジョブのリンクが表示されます。
+
+. 各再同期ジョブのステータスを追跡するには、*正常性/ボリューム*の詳細ページで*ジョブの表示*をクリックします。
++
+フィルタリングされたジョブのリストが表示されます。
+
+. ブラウザの戻る矢印をクリックして、*正常性/ボリューム*の詳細ページに戻ります。
++
+すべてのタスクが正常に完了すれば再同期ジョブは終了です。
+
+

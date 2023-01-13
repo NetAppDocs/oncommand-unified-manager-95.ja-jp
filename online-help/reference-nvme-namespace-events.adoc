@@ -1,0 +1,185 @@
+---
+permalink: online-help/reference-nvme-namespace-events.html 
+sidebar: sidebar 
+keywords:  
+summary: NVMe ネームスペースイベントは、ネームスペースのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= NVMe ネームスペースイベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NVMe ネームスペースイベントは、ネームスペースのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+アスタリスク（ * ）は、 Unified Manager イベントに変換された EMS イベントを示します。
+
+
+
+== 影響範囲：可用性
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+NVMeNS オフライン * （ nvmespaceStatusOffline ）
+ a| 
+イベント
+ a| 
+ネームスペース
+ a| 
+情報
+
+
+
+ a| 
+NVMeNS オンライン * （ nvmespaceStatusOnline ）
+ a| 
+イベント
+ a| 
+ネームスペース
+ a| 
+情報
+
+
+
+ a| 
+NVMeNS スペース不足 * （ nvmeNamespaceOutOfSpace ）
+ a| 
+リスク
+ a| 
+ネームスペース
+ a| 
+警告
+
+
+
+ a| 
+NVMe ネームスペースの破棄 * （ nvmespaceDestroy ）
+ a| 
+イベント
+ a| 
+ネームスペース
+ a| 
+情報
+
+|===
+
+
+== 影響範囲：パフォーマンス
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+NVMe ネームスペース IOPS の重大しきい値を超過（ドキュメント NvmeNamesaceIopsIncident ）
+ a| 
+インシデント
+ a| 
+ネームスペース
+ a| 
+重要
+
+
+
+ a| 
+NVMe ネームスペース IOPS の警告しきい値を超過（ドキュメント NvmeNamesaceIopsWarning ）
+ a| 
+リスク
+ a| 
+ネームスペース
+ a| 
+警告
+
+
+
+ a| 
+NVMeネームスペースMBpsの重大しきい値を超過（ドキュメントNvmeNamespaceMpsIncident）
+ a| 
+インシデント
+ a| 
+ネームスペース
+ a| 
+重要
+
+
+
+ a| 
+NVMeネームスペースMBpsの警告しきい値を超過（ドキュメントNvmeNamespaceMpsWarning）
+ a| 
+リスク
+ a| 
+ネームスペース
+ a| 
+警告
+
+
+
+ a| 
+NVMe ネームスペースレイテンシ / 処理の重大しきい値を超過（ドキュメント NvmeNamesaceLatencyIncident ）
+ a| 
+インシデント
+ a| 
+ネームスペース
+ a| 
+重要
+
+
+
+ a| 
+NVMe ネームスペースレイテンシミリ秒 / 処理の警告しきい値を超過（ドキュメント NvmeNamesaceLatencyWarning ）
+ a| 
+リスク
+ a| 
+ネームスペース
+ a| 
+警告
+
+
+
+ a| 
+NVMe ネームスペースレイテンシ / IOPS の重大しきい値を超過（ドキュメント NvmeNamespaceLatencyIopsIncident ）
+ a| 
+インシデント
+ a| 
+ネームスペース
+ a| 
+重要
+
+
+
+ a| 
+NVMe ネームスペースレイテンシ / IOPS の警告しきい値を超過（ドキュメント NvmeNamespaceLatencyIopsWarning ）
+ a| 
+リスク
+ a| 
+ネームスペース
+ a| 
+警告
+
+
+
+ a| 
+NVMeネームスペースレイテンシ/ MBpsの重大しきい値を超過（ドキュメントNvmeNamespaceLatencyMbpsIncident）
+ a| 
+インシデント
+ a| 
+ネームスペース
+ a| 
+重要
+
+
+
+ a| 
+NVMeネームスペースレイテンシ/ MBpsの警告しきい値を超過（ドキュメントNvmeNamespaceLatencyMbpsWarning）
+ a| 
+リスク
+ a| 
+ネームスペース
+ a| 
+警告
+
+|===

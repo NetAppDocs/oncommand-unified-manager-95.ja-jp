@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-managing-and-monitoring-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Unified Managerでは、保護関係の作成、管理対象クラスタでのSnapMirror関係とSnapVault 関係の監視とトラブルシューティング、および上書きされたデータや失われたデータのリストアを実行できます。 
+---
+= 保護関係を管理および監視する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Managerでは、保護関係の作成、管理対象クラスタでのSnapMirror関係とSnapVault 関係の監視とトラブルシューティング、および上書きされたデータや失われたデータのリストアを実行できます。
+
+SnapMirror 処理には、 2 つのレプリケーションタイプがあります。
+
+* 非同期
++
+プライマリボリュームからセカンダリボリュームへのレプリケーションはスケジュールに従って実行されます。
+
+* 同期
++
+レプリケーションはプライマリボリュームとセカンダリボリュームで同時に実行されます。
+
+
+
+保護ジョブは、パフォーマンスに影響を及ぼすことなく最大 10 件まで同時に実行できます。11~30 件のジョブを同時に実行すると、パフォーマンスが低下することがあります。30 を超えるジョブを同時に実行することは推奨されません。

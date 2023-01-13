@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-status-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: ボリューム転送ステータスレポート（履歴）をカスタマイズして、特定の期間のボリューム転送に関する情報を表示および分析できます。フィルタを使用すると、2つの日付の間のボリューム転送の詳細を表示できます。 
+---
+= ボリューム転送ステータス（履歴）レポートのカスタマイズ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリューム転送ステータス（履歴）レポートをカスタマイズして、特定の期間のボリューム転送に関する情報を表示および分析できます。フィルタを使用すると、2つの日付の間のボリューム転送の詳細を表示できます。

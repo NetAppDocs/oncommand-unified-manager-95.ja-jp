@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-creating-a-new-report-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: Eclipse BIRT（Business Intelligence and Reporting Tools）プラグインを使用して新しいレポートを作成することができます。Unified Managerの既存のレポートが環境のニーズを満たしていない場合は、新しいレポートの作成が必要になることがあります。 
+---
+= BIRTを使用した新しいレポートの作成
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eclipse BIRT（Business Intelligence and Reporting Tools）プラグインを使用して新しいレポートを作成することができます。Unified Managerの既存のレポートが環境のニーズを満たしていない場合は、新しいレポートの作成が必要になることがあります。
+
+
+
+== 作業を開始する前に
+
+BIRTをダウンロードして展開しておく必要があります。
+
+BIRTを使用してプロジェクトを作成しておく必要があります。
+
+
+
+== 手順
+
+. BIRTインターフェイスから、* File *>* New *>* Report *を選択します。
+. [新規レポート*（New Report *）]ダイアログボックスで、以前に作成したプロジェクトフォルダーと同じプロジェクトフォルダーを選択します。
++
+別のプロジェクトフォルダを選択すると、Unified Managerのレポート処理を使用できなくなります。
+
+. レポートファイル名を入力し、*次へ*をクリックします。
+. レポートタイプを選択し、*完了*をクリックします。
+

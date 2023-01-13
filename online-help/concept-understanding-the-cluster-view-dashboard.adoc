@@ -1,0 +1,37 @@
+---
+permalink: online-help/concept-understanding-the-cluster-view-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager Cluster View Overviewダッシュボードには、管理しているクラスタの健全性に関する概要が表示されます。Cluster Viewダッシュボードは、2つの主要なセクションで構成されます。管理対象クラスタ（左側）とクラスタの詳細（右側）です。 
+---
+= Cluster Viewダッシュボードの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager Cluster View Overviewダッシュボードには、管理しているクラスタの健全性に関する概要が表示されます。クラスタビューダッシュボードは、管理対象クラスタ（左側）とクラスタの詳細情報（右側）の2つの主要セクションで構成されます。
+
+次の図は、8つのクラスタを監視しているUnified Manager Cluster Viewダッシュボードの例を示しています。
+
+image::../media/dashboard-clusterview-um.gif[ダッシュボードのクラスタビュー]
+
+各クラスタ名の横にあるステータスアイコンは次のいずれかの状態になります。
+
+* 重要（image:../media/sev-critical-um60.png["重大度が「重大」のイベントのアイコン"]）：クラスタに対して1つ以上のアクティブな重大イベントが報告されています。
+* エラー（image:../media/sev-error-um60.png["重大度が「 ERROR 」のイベントのアイコン"]）：クラスタに対して1つ以上のアクティブなエラーイベントが報告されています。
+* 警告（image:../media/sev-warning-um60.png["重大度が「警告」のイベントのアイコン"]）：クラスタに対して1つ以上のアクティブな警告イベントが報告されています。
+* 標準（image:../media/sev-normal-um60.png["重大度が「 Normal 」のイベントのアイコン"]）：クラスタに対してアクティブなイベントは報告されていません。
+
+
+[NOTE]
+====
+色は、オブジェクトのアクティブな（新規または確認済みの）イベントが存在するかどうかを示します。アクティブではなくなったイベントは廃止イベントと呼ばれ、アイコンの色には影響しません。
+
+====
+クラスタに関する追加情報 を表示するには、次のいずれかを実行します。
+
+* クラスタ名をクリックすると、そのクラスタの監視ステータス、容量ステータス、およびパフォーマンスステータスについての概要情報が表示されます。
+* [クラスタの管理]をクリックすると、[設定/クラスタデータソース]ページが表示され、Unified Managerの現在のインスタンスで管理されているすべてのクラスタの詳細なステータス情報を確認できます。
+

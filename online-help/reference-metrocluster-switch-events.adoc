@@ -1,0 +1,82 @@
+---
+permalink: online-help/reference-metrocluster-switch-events.html 
+sidebar: sidebar 
+keywords:  
+summary: MetroCluster スイッチイベントは、 MetroCluster スイッチのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= MetroCluster スイッチイベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+MetroCluster スイッチイベントは、 MetroCluster スイッチのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：可用性
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+スイッチの温度が異常（ドキュメント異常）
+ a| 
+インシデント
+ a| 
+MetroCluster スイッチ
+ a| 
+重要
+
+
+
+ a| 
+スイッチに到達不能（ Document EvtSwitchUnreachable ）
+ a| 
+インシデント
+ a| 
+MetroCluster スイッチ
+ a| 
+重要
+
+
+
+ a| 
+ファンの切り替えに失敗しました (DocumentEvtSwitchFansOneOrMoreFailed)
+ a| 
+インシデント
+ a| 
+MetroCluster スイッチ
+ a| 
+重要
+
+
+
+ a| 
+スイッチの電源装置に障害が発生しました（ドキュメント EvtSwitchPowerSuppliesOneOrMoreFailed ）
+ a| 
+インシデント
+ a| 
+MetroCluster スイッチ
+ a| 
+重要
+
+
+
+ a| 
+温度センサーの切り替えに失敗しました（ドキュメント EvtSwitchTemperatureSensorFailed ）
+
+[NOTE]
+====
+このイベントは Cisco スイッチにのみ該当します。
+
+==== a| 
+インシデント
+ a| 
+MetroCluster スイッチ
+ a| 
+重要
+
+|===

@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-the-default-rule-is.html 
+sidebar: sidebar 
+keywords:  
+summary: デフォルトルールは、Infinite Volumeを備えたStorage Virtual Machine（SVM）のデータポリシーに含まれるルールです。このルールは、既存のルール内の条件がInfinite Volumeに書き込まれたデータと一致しない場合に、そのデータの配置を決定する目的で使用されます。 
+---
+= デフォルトルール
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+デフォルトルールは、Infinite Volumeを備えたStorage Virtual Machine（SVM）のデータポリシー内のルールです。このルールは、既存のルール内の条件がInfinite Volumeに書き込まれたデータと一致しない場合に、そのデータの配置を決定する目的で使用されます。
+
+デフォルトルールは常にデータポリシーの末尾に配置され、順序を変更することができません。たとえば、3つのルールを含むデータポリシーがあるとします。ルール1では、すべての.pdfファイルを__ high_performance__ストレージクラスに配置します。ルール2では、管理者が所有し、名前の末尾が*。xlsであるすべてのファイルを_archival_constituent_storageクラスに配置します。3つ目のルールは、_low_performance_storageクラスを使用するデフォルトルールです。
+
+管理者が所有していない*。jpgファイルのセットがInfinite Volumeに書き込まれると、デフォルトルールを使用して、それらの.jpgファイルが_low_performance_storageクラスに配置されます。書き込まれたデータがルール1とルール2に一致しないため、これらのルールは使用されません。

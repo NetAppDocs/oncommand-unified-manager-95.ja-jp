@@ -1,0 +1,22 @@
+---
+permalink: health-checker/concept-introduction-to-unified-manager-health-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerでは、ONTAP ソフトウェアを実行する多数のシステムを一元化されたユーザインターフェイスで監視できます。Unified Manager サーバインフラは拡張性とサポート性に優れ、高度な監視機能と通知機能を備えています。 
+---
+= OnCommand Unified Managerの健常性監視の概要を参照してください
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerでは、ONTAP ソフトウェアを実行する多数のシステムを一元化されたユーザインターフェイスで監視できます。Unified Manager サーバインフラは拡張性とサポート性に優れ、高度な監視機能と通知機能を備えています。
+
+Unified Managerの主な機能には、クラスタの可用性と容量の監視/通知/管理、保護機能の管理、パフォーマンスの監視、Infinite Volumeの設定と管理、ストレージオブジェクトのアノテート、診断データの収集とテクニカルサポートへの送信などがあります。
+
+Unified Manager を使用してクラスタを監視できます。クラスタで問題が発生すると、 Unified Manager のイベントを通じて問題の詳細が通知されます。一部のイベントでは、問題を解決するための対応策も提示されます。問題が発生したときに E メールや SNMP トラップで通知されるように、イベントにアラートを設定することができます。
+
+Unified Manager では、アノテーションを関連付けることで環境内のストレージオブジェクトを管理できます。カスタムアノテーションを作成し、ルールに基づいて動的にクラスタ、 Storage Virtual Machine （ SVM ）、およびボリュームを関連付けることができます。
+
+また、それぞれのクラスタオブジェクトについて、容量や健全性のグラフに表示される情報を使用してストレージ要件を計画することもできます。

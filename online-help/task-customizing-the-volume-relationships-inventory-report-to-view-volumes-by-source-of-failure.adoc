@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-customizing-the-volume-relationships-inventory-report-to-view-volumes-by-source-of-failure.html 
+sidebar: sidebar 
+keywords:  
+summary: ボリューム関係インベントリレポートをカスタマイズして、ボリュームを障害の有無でグループ化して表示することができます。 
+---
+= ボリューム関係インベントリレポートのカスタマイズ：ボリュームを障害の有無でグループ化して表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリューム関係インベントリレポートをカスタマイズして、ボリュームを障害の有無でグループ化して表示することができます。
+
+
+
+== このタスクについて
+
+このタスクは、[レポート]ページに移動し、該当するレポートの[レポートの実行]をクリックして実行することもできます。
+
+
+
+== 手順
+
+. [関係の健常性*（Relationship Health *）]列を選択します
+. 不良ボリュームの詳細を表示するには、[*Bad *]列の横にある--記号をクリックします。
+. 正常なボリュームの詳細を表示するには、「* Good *」列の横にある--記号をクリックします。
+

@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-configuring-a-connection-between-workflow-automation-and-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Workflow Automation \（wfa \）とUnified Managerの間にセキュアな接続を設定できます。Workflow Automation に接続することで、 SnapMirror や SnapVault の設定ワークフロー、 SnapMirror 関係の管理用コマンドなどの保護機能を使用できるようになります。 
+---
+= Workflow Automation と Unified Manager の間の接続の設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Workflow Automation （ WFA ）と Unified Manager の間にセキュアな接続を確立することができます。Workflow Automation に接続することで、 SnapMirror や SnapVault の設定ワークフロー、 SnapMirror 関係の管理用コマンドなどの保護機能を使用できるようになります。
+
+
+
+== 作業を開始する前に
+
+* バージョン4.2以降のWorkflow Automationがインストールされている必要があります。
+* WFAサーバに「WFA pack for managing Clustered Data ONTAP 」バージョン9.5.0以上がインストールされている必要があります。これらは、NetAppStorage Automation Storeからダウンロードできます。
++
+https://automationstore.netapp.com/pack-list.shtml["ONTAP を管理するための WFA パック"]
+
+* WFA と Unified Manager の接続をサポートするために Unified Manager で作成したデータベースユーザの名前を確認しておく必要があります。
++
+このデータベースユーザには、統合スキーマユーザロールが割り当てられている必要があります。
+
+* Workflow Automation で Administrator ロールまたは Architect のロールが割り当てられている必要があります。
+* ホストアドレス、ポート番号 443 、および Workflow Automation セットアップのユーザ名とパスワードが必要です。
+* OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、左の[セットアップ]メニューの[* Workflow Automation*]をクリックします。
+. OnCommand Unified Managerの[データベースユーザ*]領域の[セットアップ/ Workflow Automation *]ページで、名前を選択し、Unified Manager接続とWorkflow Automation接続をサポートするために作成したデータベースユーザのパスワードを入力します。
+. Setup/Workflow Automation *ページの* OnCommand Workflow Automation クリデンシャル*領域に、ホスト名またはIPアドレス（IPv4またはIPv6）、およびWorkflow Automationセットアップのユーザー名とパスワードを入力します。
++
+Unified Managerサーバのポート（ポート443）を使用する必要があります。
+
+. [ 保存（ Save ） ] をクリックします。
+. 自己署名証明書を使用する場合は、 [* はい ] をクリックしてセキュリティ証明書を承認します。
++
+Setup/Workflow Automationページが表示されます。
+
+. Web UI をリロードして Workflow Automation の機能を追加するには、「 * Yes 」をクリックします。
+

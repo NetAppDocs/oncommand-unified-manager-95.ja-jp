@@ -1,0 +1,54 @@
+---
+permalink: health-checker/task-performing-a-protection-relationship-failover-and-failback.html 
+sidebar: sidebar 
+keywords:  
+summary: ハードウェア障害や災害が原因で保護関係のソースボリュームが無効になっている場合は、 Unified Manager の保護関係機能を使用して保護デスティネーションの読み取り / 書き込みアクセスを可能にし、ソースがオンラインに戻るまでそのボリュームにフェイルオーバーすることができます。 その後、データの提供に使用できる元のソースにフェイルバックできます。 
+---
+= 保護関係のフェイルオーバーとフェイルバックを実行する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハードウェア障害や災害が原因で保護関係のソースボリュームが無効になっている場合は、 Unified Manager の保護関係機能を使用して保護デスティネーションの読み取り / 書き込みアクセスを可能にし、ソースがオンラインに戻るまでそのボリュームにフェイルオーバーすることができます。 その後、データの提供に使用できる元のソースにフェイルバックできます。
+
+
+
+== 作業を開始する前に
+
+* OnCommand 管理者またはストレージ管理者のロールが必要です。
+* この処理を実行するには、 OnCommand Workflow Automation をセットアップしておく必要があります。
+
+
+
+
+== 手順
+
+. xref:task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.adoc[SnapMirror 関係を解除]。
++
+デスティネーションをデータ保護ボリュームから読み書き可能ボリュームに変換する前、および関係を反転する前に、関係を解除する必要があります。
+
+. xref:task-reversing-protection-relationships-from-the-health-volume-details-page.adoc[保護関係を反転する]。
++
+元のソースボリュームが再び使用可能になったら、ソースボリュームをリストアして元の保護関係を再確立できます。ソースをリストアする前に、以前のデスティネーションに書き込まれたデータとソースを同期させる必要があります。逆再同期処理を使用して新しい保護関係を作成するには、元の関係のロールを反転し、ソースボリュームと以前のデスティネーションを同期させます。新しい関係に対して新しいベースライン Snapshot コピーが作成されます。
+
++
+反転関係は、カスケード関係に似ています。
+
++
+image::../media/um-toplogy-reverse-resync.gif[UM トポロジの逆再同期]
+
+. xref:task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.adoc[反転する SnapMirror 関係を解除する]。
++
+元のソースボリュームが再同期され、再びデータを提供できるようになったら、解除処理を使用して反転関係を解除します。
+
+. xref:task-removing-a-protection-relationship-from-the-health-volume-details-page.adoc[関係を削除します]。
++
+反転関係が不要になった場合は、元の関係を再確立する前に反転関係を削除する必要があります。
+
+. xref:task-resynchronizing-protection-relationships-from-the-health-volume-details-page.adoc[関係を再同期します]。
++
+再同期処理を使用して、ソースからデスティネーションにデータを同期し、元の関係を再確立します。
+
+

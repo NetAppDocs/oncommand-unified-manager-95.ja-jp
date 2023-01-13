@@ -1,0 +1,64 @@
+---
+permalink: health-checker/task-creating-a-jdbc-data-source-using-birt.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: BIRTを使用して新しいレポートを作成したら、データソースを作成してレポートをUnified Managerに連結する必要があります。 
+---
+= BIRTを使用したJDBCデータソースの作成
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+BIRTを使用して新しいレポートを作成したら、データソースを作成してレポートをUnified Managerに連結する必要があります。
+
+
+
+== 作業を開始する前に
+
+BIRTを使用してレポートを作成しておく必要があります。
+
+MySQL Connector/Jをダウンロードしてインストールしておく必要があります
+
+Report Schemaロールを持つデータベースユーザを作成しておく必要があります。
+
+
+
+== 手順
+
+. Eclipseで、* Data Explorer *>* Data Sources *>* New Data Source *を選択します。
+. 次のリストで、データソースタイプから*作成を選択します。*
+. 「* JDBCデータソース*」を選択し、「*次へ*」をクリックします。
+. [新規JDBCデータソースプロファイル*]ダイアログボックスで、[*com.mysql.jdbc.Driver(v5.1)*]を選択します。
++
+.. MySQLドライバが表示されない場合は、* Manage Drivers*をクリックします。
+.. [*JDBCドライバの管理*]ダイアログボックスで、[*Add*]をクリックします。
+.. MySQL Connector/Jの場所を参照します `.jar` ファイルがインストールされました。次にファイルを選択してください。
+.. [OK] をクリックします。
++
+MySQLドライバを表示して選択できるようになります。
+
+
+
+. Unified Managerインスタンスの完全修飾ホスト名またはIPアドレスを適切な形式で入力します。
++
+|===
+| 住所タイプ | の形式で入力し 
+
+
+ a| 
+IPv4
+ a| 
+`jdbc:mysql://xx.xx.xx.xx:3306/ocum_report`
+
+
+
+ a| 
+IPv6
+ a| 
+`jdbc:mysql://address=(protocol=tcp)(host=xx:xx:xx:xx:xx:xx:xx:xx)(port=3306)/ocum_report`
+
+|===
+. データベースユーザのユーザ名を入力し、パスワードを入力して、[*終了*]をクリックします。
+

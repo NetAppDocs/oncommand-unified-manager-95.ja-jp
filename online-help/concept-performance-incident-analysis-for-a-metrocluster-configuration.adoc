@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-performance-incident-analysis-for-a-metrocluster-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager を使用して、 MetroCluster 構成のパフォーマンスイベントを分析できます。イベントに関連するワークロードを特定し、推奨される解決方法を確認できます。 
+---
+= MetroCluster 構成のパフォーマンスイベント分析
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager を使用して、 MetroCluster 構成のパフォーマンスイベントを分析できます。イベントに関連するワークロードを特定し、推奨される解決方法を確認できます。
+
+MetroCluster のパフォーマンスイベントは、クラスタ間のインタースイッチリンク（ ISL ）を過剰に使用している Bully ワークロード、またはリンクの健常性の問題が原因である可能性があります。Unified Manager は、パートナークラスタのパフォーマンスイベントを考慮せずに、 MetroCluster 構成内の各クラスタを個別に監視します。
+
+MetroCluster 構成の両方のクラスタのパフォーマンスイベントは、Unified Managerのダッシュボード/概要ページにも表示されます。また、Unified Managerの健全性ページで各クラスタの健全性を確認したり、クラスタとの関係を表示したりすることもできます。

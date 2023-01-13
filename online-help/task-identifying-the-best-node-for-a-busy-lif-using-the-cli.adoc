@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-identifying-the-best-node-for-a-busy-lif-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: クラスタ内のすべてのポートに関する情報を表示できます。ネットワークポートのロール（クラスタ、データ、またはノード管理）、リンクのステータス、最大伝送ユニット（MTU）、速度の設定と動作ステータス、ポートのインターフェイスグループ（該当する場合）などの情報を表示できます。 
+---
+= CLIを使用したビジーなLIFの最適ノードの特定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタ内のすべてのポートに関する情報を表示できます。ネットワークポートのロール（クラスタ、データ、またはノード管理）、リンクのステータス、最大転送単位（MTU）、速度の設定と動作ステータス、ポートのインターフェイスグループなどの情報を適宜確認できます。
+
+
+
+== 手順
+
+. ポート情報を表示するには、次のコマンドを入力します。 `network port show`
++
+次の例は、データロールが設定されていて、クラスタ内で動作しているネットワークポートに関する情報を表示します。
+
++
+[listing]
+----
+cluster1::> network port show  -role data -link up
+                                   Auto-Negot Duplex      Speed (Mbps)
+Node Port Role         Link  MTU   Admin/Oper Admin/Oper  Admin/Oper
+---- ---- -----        ----  ----  ---------- ----------  ----------
+node1
+     e0M  data         up    1500  true/true  full/full   auto/100
+     e0b  data         up    1500  true/true  full/full   auto/1000
+
+node2
+     e0b  data         up    1500  true/true  full/full   auto/1000
+----
+. ソースのホームポートおよびホームノードと同じネットワークにあるデスティネーションポートがないか確認します。
++
+たとえば、デスティネーションのホームポートとホームノードは、該当する場合は同じVLAN上に存在する必要があります。
+
+. 最もビジーでないポートを特定するには、接続数が最も少ないデータポートを選択します。
+

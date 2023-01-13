@@ -1,0 +1,34 @@
+---
+permalink: health-checker/concept-what-a-database-restore-is.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: データベースリストアとは、Unified Managerの既存のバックアップファイルを同じサーバまたは別のUnified Managerサーバにリストアするプロセスです。リストア処理はUnified Managerコンソールから実行します。 
+---
+= データベースリストアとは何ですか
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+データベースリストアとは、Unified Managerの既存のバックアップファイルを同じサーバまたは別のUnified Managerサーバにリストアするプロセスです。リストア処理はUnified Managerコンソールから実行します。
+
+同じ（ローカル）システムでリストア処理を実行する場合、バックアップファイルがすべてローカルに保存されていれば、デフォルトの場所を使用してリストアコマンドを実行できます。別のUnified Managerシステム（リモートシステム）でリストア処理を実行する場合は、リストアコマンドを実行する前に、バックアップファイルをセカンダリストレージからローカルディスクにコピーする必要があります。
+
+リストアプロセス中は Unified Manager からログアウトされます。リストアプロセスが完了したら、システムにログインできます。
+
+リストア機能は、バージョンおよびプラットフォームに固有の機能です。Unified Manager のバックアップは、同じバージョンの Unified Manager にのみリストアできます。Unified Managerでは、次のプラットフォームにおけるバックアップとリストアをサポートしています。
+
+* 仮想アプライアンスから仮想アプライアンス
+* 仮想アプライアンスからRed Hat Enterprise LinuxまたはCentOSへ
+* Red Hat Enterprise LinuxからRed Hat Enterprise LinuxまたはCentOSへの移行
+* WindowsからWindowsへ
+
+
+バックアップイメージを新しいサーバにリストアする場合は、リストア処理の完了後に新しい HTTPS セキュリティ証明書を生成して Unified Manager サーバを再起動する必要があります。また、バックアップイメージを新しいサーバにリストアするときに、必要に応じて SAML 認証の設定を再設定する必要があります。
+
+[NOTE]
+====
+Unified Manager ソフトウェアを新しいバージョンにアップグレードしたあとに、古いバックアップファイルを使用してイメージをリストアすることはできません。スペースを節約するために、 Unified Manager をアップグレードすると、最新のファイルを除く古いバックアップファイルがすべて自動的に削除されます。
+
+====

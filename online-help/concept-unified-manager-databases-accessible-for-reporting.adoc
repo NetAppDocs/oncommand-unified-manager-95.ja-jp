@@ -1,0 +1,74 @@
+---
+permalink: online-help/concept-unified-manager-databases-accessible-for-reporting.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager では、監視対象のクラスタからのデータを MySQL データベースを使用して格納します。データは MySQL データベースのさまざまなスキーマに永続化されます。 
+---
+= カスタムレポートを作成するために Unified Manager データベースにアクセスできる
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager では、監視対象のクラスタからのデータを MySQL データベースを使用して格納します。データは MySQL データベースのさまざまなスキーマに永続化されます。
+
+Unified Manager 7.3以降では、追加のテーブルのデータへのアクセスを提供する追加のスキーマが公開されています。
+
+次のデータベースからすべてのテーブルデータを使用できます。
+
+|===
+| データベース | 説明 
+
+
+ a| 
+NetApp_model_view
+ a| 
+ONTAP コントローラのオブジェクトに関するデータ。
+
+
+
+ a| 
+パフォーマンス
+ a| 
+クラスタ固有のパフォーマンスカウンタ。
+
+
+
+ a| 
+ocum
+ a| 
+Unified Manager のアプリケーションデータと、 UI で一部の派生フィールドのフィルタ、ソート、計算に使用される情報。
+
+
+
+ a| 
+ocum_report
+ a| 
+インベントリの設定と容量に関連する情報のデータ。
+
+
+
+ a| 
+ocum_report_BIRT
+ a| 
+上記と同じデータ。このデータベースは組み込みのBIRTレポートで使用されます。
+
+
+
+ a| 
+OPM
+ a| 
+パフォーマンスの設定としきい値の情報。
+
+
+
+ a| 
+頭皮管理者
+ a| 
+Unified Manager のアプリケーションの健常性とパフォーマンスの問題に関するデータ。
+
+|===
+レポートスキーマロールを持つデータベースユーザーであるレポートユーザーは、これらのテーブルのデータにアクセスできます。このユーザには、レポートおよびその他のデータベースビューに Unified Manager データベースから直接アクセスするための読み取り専用アクセスが付与されます。このユーザには、ユーザデータやクラスタクレデンシャル情報を含むテーブルにアクセスする権限はありません。
+
+を参照してください http://www.netapp.com/us/media/tr-4565.pdf["Unified Managerレポートのテクニカルレポートを参照してください"] 詳細については、TR-4565を参照してください。

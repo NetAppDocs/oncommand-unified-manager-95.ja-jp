@@ -1,0 +1,52 @@
+---
+permalink: config/task-performing-the-initial-setup-of-the-unified-manager-web-ui.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerを使用するには、NTPサーバ、メンテナンスユーザのEメールアドレス、SMTPサーバのホスト名とオプションなどを最初に設定する必要があります。 
+---
+= Unified Manager Web UI の初期セットアップを実行する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerを使用するには、NTPサーバ、メンテナンスユーザのEメールアドレス、SMTPサーバのホスト名とオプションなどを最初に設定する必要があります。
+
+
+
+== 作業を開始する前に
+
+次の作業を完了しておきます。
+
+* インストールの完了時に表示された URL を使用して Unified Manager Web UI を起動します
+* インストール時に作成したメンテナンスユーザ（ Linux 環境の場合は umadmin ユーザ）の名前とパスワードを使用してログインします
+
+
+
+
+== このタスクについて
+
+OnCommand Unified Managerの初期セットアップページは、Web UIへの初回アクセス時にのみ表示されます。次のページは、 VMware 環境の場合のものです。
+
+image::../media/first-experience-wizard.gif[初期設定ウィザード]
+
+これらのオプションのいずれかを後で変更する場合は、[管理]オプションを使用できます。[管理]オプションには、[*]をクリックしてアクセスできますimage:../media/clusterpage-settings-icon.gif[""]*をクリックします。
+
+
+
+== 手順
+
+. OnCommand Unified Managerの初期セットアップ*ウィンドウで、メンテナンスユーザのEメールアドレス、SMTPサーバのホスト名とその他のSMTPオプション、およびNTPサーバ（VMwareの場合のみ）を入力します。次に、 [ * 次へ * ] をクリックします。
+. AutoSupport *]ページで、[* Agree(同意して続行)*をクリックしてAutoSupport を有効にします。
++
+AutoSupport コンテンツをサポートに送信するためにインターネットアクセスを提供するプロキシを指定する必要がある場合や、AutoSupport を無効にする場合は、管理オプションを使用します。
+
+. Red HatおよびCentOSのシステムの場合、umadminユーザのパスワードをデフォルトの「admin」から独自のパスワードに変更できます。
+
+
+
+
+== 結果
+
+初期セットアップのウィンドウが閉じ、Unified Manager Web UIが表示されます。Configuration / Cluster Data Sourcesページが表示され、システムにクラスタを追加できます。

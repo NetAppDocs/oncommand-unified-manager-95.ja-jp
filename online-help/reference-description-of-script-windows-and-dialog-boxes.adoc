@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-script-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Management/Scriptsヘエシを使用して、Unified Managerにスクリプトを追加できます。 
+---
+= スクリプトのウィンドウとダイアログボックスの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Management/Scriptsヘエシを使用して、Unified Managerにスクリプトを追加できます。

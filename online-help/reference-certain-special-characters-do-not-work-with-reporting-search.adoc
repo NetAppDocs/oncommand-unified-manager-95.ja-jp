@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-certain-special-characters-do-not-work-with-reporting-search.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= レポートの検索で一部の特殊文字を使用できません
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* * 問題 *
++
+レポート内で検索中に特殊文字%および_を使用すると、処理が失敗します。
+
+* * 是正措置 *
++
+%または_を含む文字列を検索する場合は、指定した文字の前に2つのバックスラッシュを付加する必要があります。
+
++
+たとえば、S_10を含む文字列を検索するには、「S\\_10」と入力する必要があります。
+
+

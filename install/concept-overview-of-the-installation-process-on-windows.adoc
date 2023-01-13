@@ -1,0 +1,16 @@
+---
+permalink: install/concept-overview-of-the-installation-process-on-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: 以下は、 Unified Manager を使用する前に必要なインストール作業のワークフローです。 
+---
+= Windowsでのインストールプロセスの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+以下は、 Unified Manager を使用する前に必要なインストール作業のワークフローです。
+
+image::../media/install-flow-on-windows.gif[Windows にフローをインストールします]

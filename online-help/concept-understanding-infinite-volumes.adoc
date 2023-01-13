@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-infinite-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: Infinite Volumeは、単一のネームスペースと単一のマウントポイントを使用する大規模で拡張性に優れたデータコンテナを提供するための論理ストレージユニットです。Infinite Volumeのいくつかの基本概念を理解しておくと、Infinite Volumeを備えたSVMを監視および管理できるようになります。 
+---
+= Infinite Volumeの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Infinite Volumeは、単一のネームスペースと単一のマウントポイントを使用する大規模で拡張性に優れたデータコンテナを提供するための論理ストレージユニットです。Infinite Volumeのいくつかの基本概念を理解しておくと、Infinite Volumeを備えたSVMを監視および管理できるようになります。

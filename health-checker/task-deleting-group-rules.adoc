@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-deleting-group-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 不要になったグループルールは、OnCommand Unified Managerから削除できます。 
+---
+= グループルールを削除しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+不要になったグループルールは、OnCommand Unified Managerから削除できます。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+グループルールを削除すると、関連付けられているストレージオブジェクトがグループから削除されます。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、*管理*>*グループ*をクリックします。
+. [ * グループルール * ] タブで、削除するグループルールを選択し、 [ * 削除 * ] をクリックします。
+. [ 警告 * ] ダイアログボックスで、 [ はい ] をクリックして削除を確認します。
+

@@ -1,0 +1,25 @@
+---
+permalink: health-checker/concept-maintenance-console-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: メンテナンスコンソールは各種のメニューで構成され、 Unified Manager サーバの特別な機能や設定の保守と管理を行うことができます。 
+---
+= メンテナンスコンソールのメニュー
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+メンテナンスコンソールは各種のメニューで構成され、 Unified Manager サーバの特別な機能や設定の保守と管理を行うことができます。
+
+Unified Manager をインストールしたオペレーティングシステムに応じて、メンテナンスコンソールは次のメニューで構成されます。
+
+* Upgrade Unified Manager （ VMware のみ）
+* Network Configuration （ VMware のみ）
+* System Configuration （ VMware のみ）
+* サポート / 診断
+* サーバ証明書をリセットします
+* 外部データプロバイダ
+* パフォーマンスポーリング間隔の設定
+

@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-rate-report-to-view-volume-transfers-based-on-transfer-size.html 
+sidebar: sidebar 
+keywords:  
+summary: ボリューム転送速度（履歴）レポートをカスタマイズして、ボリュームの合計転送サイズに基づいてボリューム転送の詳細を表示できます。 
+---
+= ボリューム転送速度（履歴）レポートのカスタマイズ：ボリューム転送を転送サイズに基づいて表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリューム転送速度（履歴）レポートをカスタマイズして、ボリュームの合計転送サイズに基づいてボリューム転送の詳細を表示できます。
+
+
+
+== このタスクについて
+
+このタスクは、[レポート]ページに移動し、該当するレポートの[レポートの実行]をクリックして実行することもできます。
+
+
+
+== 手順
+
+. クラスタ別のグループ化を解除します。
++
+.. グループ化を解除する列を選択します。
+.. をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+.. * Group *>* Delete Inner Group *を選択します。
+
+
+. ボリューム転送をボリューム転送サイズでソートするには、* Total Transfer Size（GB）*列をクリックします。
+

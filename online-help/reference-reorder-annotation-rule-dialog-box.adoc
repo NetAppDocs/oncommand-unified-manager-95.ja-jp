@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-reorder-annotation-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: ReorderAnnotationRuleタイアロクホツクスを使用すると、ストレージオブジェクトにアノテーションルールを適用する順序を指定できます。 
+---
+= ReorderAnnotationRuleタイアロクホツクス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ReorderAnnotationRuleタイアロクホツクスを使用すると、ストレージオブジェクトにアノテーションルールを適用する順序を指定できます。
+
+
+
+== コマンドボタン
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+* * 保存 *
++
+アノテーションルールに加えた変更を保存して、ReorderAnnotationRuleダイアログボックスを閉じます。
+
+* * キャンセル *
++
+変更を保存せずにReorderAnnotationRuleダイアログボックスを閉じます。
+
+
+
+
+
+== リストビュー
+
+* *ランク*
++
+アノテーションルールがストレージオブジェクトに適用される順序が表示されます。
+
+* * 名前 *
++
+アノテーションルールの名前が表示されます。
+
+* *ターゲットオブジェクトタイプ*
++
+アノテーションルールが適用されるストレージオブジェクトのタイプが表示されます。
+
+* *関連付けられているアノテーション*
++
+ストレージオブジェクトに適用されるアノテーションの名前が表示されます。
+
+* *関連付けられているアノテーション値*
++
+ストレージオブジェクトのアノテーション値が表示されます。
+
+

@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-snapvault-relationship-events.html 
+sidebar: sidebar 
+keywords:  
+summary: SnapVault 関係イベントは、 SnapVault 関係のステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= SnapVault 関係イベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapVault 関係イベントは、 SnapVault 関係のステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：保護
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+非同期バックアップが正常でない（ ocument SnapVaultRelationshipUnhealthy ）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+警告
+
+
+
+ a| 
+非同期バックアップを切断（ Document EvtSnapVaultRelationshipStateBrokenoff ）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+エラー
+
+
+
+ a| 
+非同期バックアップの初期化に失敗しました（ Document EvtSnapVaultRelationshipInitializeFailed ）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+エラー
+
+
+
+ a| 
+非同期バックアップの更新に失敗しました（ドキュメント SnapVault 関係更新失敗）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+エラー
+
+
+
+ a| 
+非同期バックアップの遅延エラー（ Document EvtSnapVaultRelationshipLagError ）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+エラー
+
+
+
+ a| 
+非同期バックアップの遅延警告（ Document EvtSnapVaultRelationshipLagWarning ）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+警告
+
+
+
+ a| 
+非同期バックアップの再同期失敗（「 Document EvtSnapvaultRelationshipResyncFailed 」）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+エラー
+
+|===

@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-testing-a-remote-user-or-group.html 
+sidebar: sidebar 
+keywords:  
+summary: 認証サーバに指定された認証設定を使用してリモートユーザまたはリモートグループがUnified Managerサーバにアクセスできることを検証できます。 
+---
+= リモートユーザまたはリモートグループをテストする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+認証サーバに指定された認証設定を使用してリモートユーザまたはリモートグループがUnified Managerサーバにアクセスできることを検証できます。
+
+
+
+== 作業を開始する前に
+
+* リモートユーザまたはリモートグループをUnified Managerサーバで検証できるように、リモート認証を有効にし、認証を設定しておく必要があります。
+* OnCommand 管理者のロールが必要です。
+
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、左の[管理]メニューの[*ユーザー*]をクリックします。
+. [* Management/Users*（管理/ユーザー*）]ページで、検証するリモートユーザーまたはリモートグループを選択し、[* Test*（テスト*）]をクリックします。
+

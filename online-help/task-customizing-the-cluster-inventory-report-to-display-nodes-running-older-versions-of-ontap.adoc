@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-nodes-running-older-versions-of-ontap.html 
+sidebar: sidebar 
+keywords:  
+summary: 古いバージョンのONTAP でフィルタされたノードを表示するようにクラスタインベントリレポートをカスタマイズできます。 
+---
+= クラスタインベントリレポートのカスタマイズ：古いバージョンのONTAP ソフトウェアを実行しているノードを表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+古いバージョンのONTAP でフィルタされたノードを表示するようにクラスタインベントリレポートをカスタマイズできます。
+
+
+
+== このタスクについて
+
+このタスクは、[レポート]ページに移動し、該当するレポートの[レポートの実行]をクリックして実行することもできます。
+
+
+
+== 手順
+
+. クラスタまたはノード別のグループ化を削除するには、次の手順を実行します。
++
+.. グループ化を解除する必要がある列内をクリックします。
+.. をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+.. * Group *>* Delete Inner Group *を選択します。
+
+
+. ONTAP 8.3を実行していないノードをフィルタリングするには、* ONTAP version *列をクリックし、* Filter *ダイアログボックスを開きます image:../media/click-to-filter.gif[""] をクリックします。
+. [*条件*（* Condition *）]ドロップダウンリストから、[*等しくない（* not equal to *）]を選択する。
+. 値の選択*をクリックし、* 8.3 *を選択します。
+. [OK] をクリックします。
+

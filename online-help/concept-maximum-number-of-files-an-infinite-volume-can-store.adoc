@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-maximum-number-of-files-an-infinite-volume-can-store.html 
+sidebar: sidebar 
+keywords:  
+summary: ほとんどの場合、Infinite Volumeには20億個のファイルを保持できます。Infinite Volumeのサイズが比較的小さい場合、最大ファイル数は20億未満になることがあります。 
+---
+= Infinite Volumeに格納できる最大ファイル数
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ほとんどの場合、Infinite Volumeには20億個のファイルを保持できます。Infinite Volumeのサイズが比較的小さい場合、最大ファイル数は20億未満になることがあります。
+
+Infinite Volumeが保持できる最大ファイル数は、ネームスペースコンスティチュエントのサイズによって決まります。ネームスペースコンスティチュエントが10TBの場合、Infinite Volumeは最大20億個のファイルを保持できます。ネームスペースコンスティチュエントが10TBより小さい場合、Infinite Volumeが保持できるファイル数は比例して少なくなります。
+
+ネームスペースコンスティチュエントのサイズは、ネームスペースコンスティチュエントの最大サイズ、ネームスペースコンスティチュエントを保持するアグリゲート内の使用可能スペース、SnapDiffの設定などのいくつかの要因に応じて、Infinite Volumeのサイズにほぼ比例します。
+
+SnapDiffが有効になっていない2ノードのInfinite VolumeまたはマルチノードのInfinite Volumeの場合、Infinite Volumeを80TB以上に設定すると、通常は10TBのネームスペースコンスティチュエントが作成されます。
+
+ファイル数には、通常のファイルだけでなく、ディレクトリやシンボリックリンクなどのファイルシステム構造も含まれます。

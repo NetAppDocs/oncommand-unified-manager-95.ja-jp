@@ -1,0 +1,204 @@
+---
+permalink: install/reference-protocol-and-port-requirements.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: ブラウザ、APIクライアント、またはSSHを使用して、必要なポートにUnified Manager UIおよびAPIからアクセスできるようにする必要があります。このポートとプロトコルを使用して、 Unified Manager サーバは管理対象のストレージシステム、サーバ、その他のコンポーネントと通信します。 
+---
+= プロトコルとポートの要件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ブラウザ、APIクライアント、またはSSHを使用して、必要なポートにUnified Manager UIおよびAPIからアクセスできるようにする必要があります。このポートとプロトコルを使用して、 Unified Manager サーバは管理対象のストレージシステム、サーバ、その他のコンポーネントと通信します。
+
+
+
+== Unified Manager サーバへの接続
+
+Unified Manager Web UIへの接続では、常にデフォルトのポートが使用されるため、ポート番号を指定する必要はありません。たとえば、Unified Managerは常にデフォルトのポートで実行されるため、と入力できます `\https://<host>` ではなく `\https://<host>:443`。デフォルトのポート番号は変更できません。
+
+Unified Manager サーバでは、次のインターフェイスにアクセスする際に特定のプロトコルを使用します。
+
+|===
+| インターフェイス | プロトコル | ポート | 説明 
+
+
+ a| 
+Unified Manager Web UI
+ a| 
+HTTP
+ a| 
+80
+ a| 
+Unified Manager Web UI へのアクセスに使用され、自動的にセキュアポート 443 にリダイレクトされます。
+
+
+
+ a| 
+Unified Manager Web UI および API を使用するプログラム
+ a| 
+HTTPS
+ a| 
+443
+ a| 
+Unified Manager Web UI へのセキュアなアクセスと API 呼び出しに使用されます。 API 呼び出しは HTTPS でしか実行できません。
+
+
+
+ a| 
+メンテナンスコンソール
+ a| 
+SSH/SFTP
+ a| 
+22
+ a| 
+メンテナンスコンソールにアクセスしてサポートバンドルを取得する際に使用されます。
+
+
+
+ a| 
+Linux コマンドライン
+ a| 
+SSH/SFTP
+ a| 
+22
+ a| 
+Red Hat Enterprise Linux または CentOS のコマンドラインにアクセスしてサポートバンドルを取得する際に使用されます。
+
+
+
+ a| 
+MySQL データベース
+ a| 
+MySQL
+ a| 
+3306
+ a| 
+OnCommand および OnCommand Workflow Automation API サービスから Unified Manager へのアクセスに使用されます。
+
+
+
+ a| 
+syslog
+ a| 
+UDP
+ a| 
+514
+ a| 
+ONTAP システムからのサブスクリプションベースの EMS メッセージにアクセスし、メッセージに基づいてイベントを作成する際に使用されます。
+
+
+
+ a| 
+REST
+ a| 
+HTTPS
+ a| 
+ポート 1
+ a| 
+認証された ONTAP システムからの REST API ベースのリアルタイムの EMS イベントにアクセスする際に使用されます。
+
+|===
+
+
+== Unified Manager サーバからの接続
+
+ファイアウォールの設定で、Unified Managerサーバと管理対象のストレージシステム、サーバ、その他のコンポーネントの間の通信に使用するポートを開く必要があります。ポートが開いていない場合、通信は失敗します。
+
+環境に応じて、 Unified Manager サーバから特定の接続先への接続に使用するポートとプロトコルを変更することもできます。
+
+Unified Manager サーバは、次のプロトコルとポートを使用して、管理対象のストレージシステム、サーバ、その他のコンポーネントに接続します。
+
+|===
+| 宛先 | プロトコル | ポート | 説明 
+
+
+ a| 
+ストレージシステム
+ a| 
+HTTPS
+ a| 
+443 tcp
+ a| 
+ストレージシステムの監視と管理に使用されます。
+
+
+
+ a| 
+ストレージシステム
+ a| 
+NDMP
+ a| 
+10000 TCP
+ a| 
+特定の Snapshot リストア処理に使用されます。
+
+
+
+ a| 
+AutoSupport サーバ
+ a| 
+HTTPS
+ a| 
+443
+ a| 
+AutoSupport 情報の送信に使用されます。この機能を実行するには、インターネットアクセスが必要です。
+
+
+
+ a| 
+認証サーバ
+ a| 
+LDAP
+ a| 
+389
+ a| 
+認証要求、およびユーザとグループの検索要求に使用されます。
+
+
+
+ a| 
+LDAPS
+ a| 
+636
+ a| 
+セキュアな LDAP 通信に使用されます。
+ a| 
+メールサーバ
+
+
+
+ a| 
+SMTP
+ a| 
+25
+ a| 
+アラート通知 E メールの送信に使用されます。
+ a| 
+SNMP トラップの送信元
+
+
+
+ a| 
+SNMPv1 または SNMPv3
+ a| 
+162 UDP
+ a| 
+アラート通知 SNMP トラップの送信に使用されます
+ a| 
+外部データプロバイダのサーバ
+
+
+
+ a| 
+TCP
+ a| 
+2003 年
+ a| 
+Graphite などの外部データプロバイダにパフォーマンスデータを送信します。
+ a| 
+NTP サーバ
+
+|===

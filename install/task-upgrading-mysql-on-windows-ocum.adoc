@@ -1,0 +1,45 @@
+---
+permalink: install/task-upgrading-mysql-on-windows-ocum.html 
+sidebar: sidebar 
+keywords: OnCommand Unified Manager 
+summary: Unified ManagerがインストールされているWindowsサーバでMySQLを新しいバージョンにアップグレードすることで、セキュリティの脆弱性に対する修正を入手できます。 
+---
+= WindowsでMySQLをアップグレードしています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified ManagerがインストールされているWindowsサーバでMySQLを新しいバージョンにアップグレードすることで、セキュリティの脆弱性に対する修正を入手できます。
+
+
+
+== 作業を開始する前に
+
+* Unified Manager がインストールされている Windows システムに対する admin 権限が必要です。
+* MySQLのrootユーザのパスワードが必要です。
+
+
+
+
+== 手順
+
+. Unified Manager ホストマシンに admin ユーザとしてログインします。
+. 該当するバージョンの MySQL をターゲットシステムにダウンロードします。
+. Windows サービスコンソールを使用して、次の Unified Manager サービスを停止します。
++
+** NetApp OCIE Acquisition Unit（Ocie-au）
+** NetApp OnCommand アプリケーションサーバ（Oncommandsvc）
+** MySQL
+
+
+. をクリックします `.msi` パッケージでMySQLのアップグレードを呼び出し、画面の指示に従ってアップグレードを完了します。
+. Windows サービスコンソールを使用して Unified Manager サービスを開始します。
++
+** MySQL
+** NetApp OnCommand アプリケーションサーバ（Oncommandsvc）
+** NetApp OCIE Acquisition Unit（Ocie-au）
+
+
+

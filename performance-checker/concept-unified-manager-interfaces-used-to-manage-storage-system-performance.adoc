@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Unified Managerでデータストレージのパフォーマンスに関する問題の監視とトラブルシューティングを行う場合、Webユーザインターフェイスとメンテナンスコンソールの2つのインターフェイスを使用できます。 
+---
+= ストレージシステムのパフォーマンスを管理するために使用される Unified Manager インターフェイス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Managerでデータストレージのパフォーマンスに関する問題の監視とトラブルシューティングを行う場合、Webユーザインターフェイスとメンテナンスコンソールの2つのインターフェイスを使用できます。
+
+
+
+== Unified Manager Web UI
+
+Unified Manager Web UI では、ストレージシステムのパフォーマンスに関連する問題を監視し、トラブルシューティングを実行できます。
+
+このセクションでは、管理者がUnified Manager Web UIに表示されたストレージのパフォーマンス問題をトラブルシューティングする際に従う共通のワークフローについて説明します。
+
+
+
+== メンテナンスコンソール
+
+メンテナンスコンソールでは、管理者が Unified Manager サーバ自体に関連するオペレーティングシステムの問題、バージョンアップグレードの問題、ユーザアクセスの問題、およびネットワークの問題を監視し、診断し、対処することができます。Unified Manager Web UI を使用できない場合は、メンテナンスコンソールが Unified Manager にアクセスする唯一の手段となります。
+
+ここでは、メンテナンスコンソールにアクセスしてUnified Managerサーバの機能に関連する問題を解決する方法について説明します。

@@ -1,0 +1,22 @@
+---
+permalink: online-help/task-viewing-the-annotation-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: クラスタ、ボリューム、およびStorage Virtual Machine（SVM）に動的に関連付けられるアノテーションのリストを表示できます。また、概要、 Created By 、 Created Date 、 Values 、 rules などの詳細も参照できます。 およびアノテーションに関連付けられているオブジェクト。 
+---
+= アノテーションリストおよび詳細の表示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタ、ボリューム、および Storage Virtual Machine （ SVM ）に動的に関連付けられるアノテーションのリストを確認することができます。また、概要、 Created By 、 Created Date 、 Values 、 rules などの詳細も参照できます。 およびアノテーションに関連付けられているオブジェクト。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、左側の[管理]メニューの[*注釈*]をクリックします。
+. アノテーション * タブでアノテーション名をクリックすると、関連付けられている詳細が表示されます。
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-report-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: オプションを使用して、レポートのスケジュール設定、共有、管理、保存、インポートを行うことができます。 
+---
+= レポートウィンドウとダイアログボックスの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+オプションを使用して、レポートのスケジュール設定、共有、管理、保存、インポートを行うことができます。

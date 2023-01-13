@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-storage-vm-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance/SVMExplorerヘエシには、クラスタ内のすべてのStorage Virtual Machine（SVM）の詳細なパフォーマンス概要が表示されます。 
+---
+= Performance/SVMExplorerヘエシ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance/SVMExplorerヘエシには、クラスタ内のすべてのStorage Virtual Machine（SVM）の詳細なパフォーマンス概要が表示されます。
+
+Performance/SVMExplorerヘエシを使用すると、一定期間のSVMのパフォーマンスを追跡して比較できるため、SVMのパフォーマンスのトラブルシューティングや微調整に役立ちます。
+
+表示と比較機能を使用して、このSVMのパフォーマンスを次の対象と比較できます。
+
+* 同じクラスタ上の他のSVM
+* このSVM上のボリューム
+* このSVMのLIFです
+
+
+Performance/SVMExplorerヘエシヲシ使用すると次のことができます。
+
+* しきい値に関連する問題とその詳細を表示します
+* SVMのパフォーマンスデータを追跡して比較する
+* しきい値に関連する問題の調査とトラブルシューティング
+* パフォーマンスの問題の調査とトラブルシューティング
+

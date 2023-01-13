@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-events.html 
+sidebar: sidebar 
+keywords:  
+summary: イベントによって、監視対象のクラスタ内の問題を特定できます。 
+---
+= イベントの管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+イベントによって、監視対象のクラスタ内の問題を特定できます。

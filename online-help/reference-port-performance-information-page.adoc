@@ -1,0 +1,59 @@
+---
+permalink: online-help/reference-port-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: '[Performance/Port Information]ページでは、ポートの物理属性と論理属性のリストを表示できます。この情報は、パフォーマンス関連の疑問を解決するのに役立ちます。' 
+---
+= Performance/PortInformationヘエシ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+[Performance/Port Information]ページでは、ポートの物理属性と論理属性のリストを表示できます。この情報は、パフォーマンス関連の疑問を解決するのに役立ちます。
+
+
+
+== ポートの属性
+
+* *WWN*
++
+ポートのWWN（World Wide Name）。
+
+* * ノード *
++
+物理ポートが配置されているノードの名前。名前をクリックすると、Performance/NodeExplorerヘエシにノードの詳細を表示できます。
+
+* * クラスタ *
++
+ポートが属するクラスタの名前。名前をクリックすると、Performance/ClusterExplorerヘエシにクラスタの詳細を表示できます。
+
+* *動作速度*
++
+ポートの実行速度として設定されている実際の速度。
+
++
+FCPポートは自動検出され、「Auto」と表示されます。
+
+* * 役割 *
++
+ネットワークポートの機能。「データ」または「クラスタ」のいずれかです。
+
++
+FCPポートにはロールを指定できないため、このフィールドは表示されません。
+
+* * タイプ *
++
+ポートタイプ（NetworkまたはFCP（ファイバチャネルプロトコル））。
+
+* * 状態 *
++
+ポートのリンクステータス。
+
++
+** ネットワークポートの場合、アクティブなポートは「up」として表示され、非アクティブなポートは「down」として表示されます。
+** FCPポートの場合は'アクティブなポートは[Online]として表示され'非アクティブなポートは[Link not connected]として表示されます
+
+
+

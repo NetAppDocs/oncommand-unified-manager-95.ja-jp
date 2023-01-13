@@ -1,0 +1,42 @@
+---
+permalink: online-help/task-viewing-svm-iops-traffic-by-protocol.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance/SVMExplorer ヘエシを使用すると、 SVM の詳細な IOPS 情報を表示できます。IOPS の合計カウンタグラフは SVM の合計 IOPS 使用量を示し、 IOPS - 内訳カウンタグラフは、 SVM に対する読み取り、書き込み、およびその他の IOPS の影響を特定する際に役立ちます。 
+---
+= プロトコル別の SVM の IOPS トラフィックの表示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance/SVMExplorer ヘエシを使用すると、 SVM の詳細な IOPS 情報を表示できます。IOPS の合計カウンタグラフは SVM の合計 IOPS 使用量を示し、 IOPS - 内訳カウンタグラフは、 SVM に対する読み取り、書き込み、およびその他の IOPS の影響を特定する際に役立ちます。
+
+
+
+== このタスクについて
+
+また、 IOPS - プロトコルグラフには、 SVM で使用されている各プロトコルの IOPS トラフィックの詳細な比較が表示されます。使用できるプロトコルは次のとおりです。
+
+* CIFS
+* NFS
+* FCP
+* iSCSI
+* NVMe
+
+
+
+
+== 手順
+
+. 選択した SVM の * パフォーマンス / SVM エクスプローラ * ページで、 IOPS チャートから、ドロップダウンメニューから * プロトコル * を選択します。
++
+IOPS - プロトコルグラフが表示されます。
+
+. グラフのより大きなバージョンを表示するには、「 * ズームビュー * 」を選択します。
++
+IOPS のプロトコル比較の詳細チャートが表示されます。を選択または選択解除して、比較対象を調整することができます image:../media/eye-icon.gif[""] プロトコルに関連付けられている。
+
+. 特定の値を表示するには、いずれかのチャートのチャート領域にカーソルを合わせてポップアップウィンドウを表示します。
+

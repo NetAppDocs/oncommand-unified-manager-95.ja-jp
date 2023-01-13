@@ -1,0 +1,118 @@
+---
+permalink: install/task-upgrading-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Red HatプラットフォームでUnified Managerバージョン7.3または9.4からUnified Manager 9.5にアップグレードするには、インストールファイルをダウンロードして実行します。 
+---
+= Red Hat Enterprise Linux または CentOS での Unified Manager のアップグレード
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Red HatプラットフォームでUnified Managerバージョン7.3または9.4からUnified Manager 9.5にアップグレードするには、インストールファイルをダウンロードして実行します。
+
+
+
+== 作業を開始する前に
+
+* Unified Manager をアップグレードするシステムがシステム要件とソフトウェア要件を満たしている必要があります。
++
+xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[ハードウェアシステムの要件]
+
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Red Hat および CentOS のソフトウェアとインストールの要件]
+
+* Unified Manager 9.4以降では、Red Hat Enterprise Linux 6.xはサポートされなくなりました。RHEL 6を使用している場合は、Unified Manager 9.5にアップグレードする前に、RHELのインスタンスをバージョン7.xにアップグレードする必要があります。
+* Unified Manager 9.5以降では、Oracle Javaはサポートされなくなりました。Unified Manager 9.5にアップグレードする前に、正しいバージョンのOpenJDKをインストールする必要があります。
+* Red Hat Enterprise Linux Subscription Manager への登録が必要です。
+* アップグレード中に問題が使用される場合にデータが失われないようにするために、 Unified Manager データベースのバックアップを作成しておく必要があります。また、からバックアップファイルを移動することを推奨します `/opt/netapp/data` ディレクトリを外部の場所に移動します。
+* アップグレードプロセスの実行中は Unified Manager を使用できなくなるため、実行中の処理がある場合は完了しておいてください。
+
+
+
+
+== このタスクについて
+
+[NOTE]
+====
+以下の手順には、Veritas Operation Managerを使用してハイアベイラビリティ用に構成されているシステム向けの手順も含まれています。システムがハイアベイラビリティ用に構成されていない場合は、ここで説明する追加の手順は無視してください。
+
+====
+
+
+== 手順
+
+. ターゲットの Red Hat Enterprise Linux サーバまたは CentOS サーバにログインします。
+. サーバに Unified Manager のバンドルをダウンロードします。
++
+xref:task-downloading-unified-manager.adoc[Red Hat または CentOS 版の Unified Manager のダウンロード]
+
+. ダウンロードしたディレクトリに移動し、 Unified Manager のバンドルを展開します。 `unzip OnCommandUnifiedManager-rhel7-9.5.zip`
++
+Unified Manager に必要な RPM モジュールがターゲットディレクトリに解凍されます。
+
+. 以下のモジュールがあることを確認します。 `ls *.rpm`
++
+次のRPMモジュールが表示されます。
+
++
+** `ocie-au-<version>.x86_64.rpm`
+** `ocie-server-<version>.x86_64.rpm`
+** `ocie-serverbase-<version>.x86_64.rpm`
+** `netapp-application-server-<version>.x86_64.rpm`
+** `netapp-platform-base-<version>.x86_64.rpm`
+** `netapp-ocum-<version>.x86_64.rpm`
+
+
+. システムがインターネットに接続されていない場合やRHELのリポジトリを使用していない場合は、次の手順に従って、必要なパッケージが揃っているかどうかを調べ、足りないパッケージをダウンロードします。
++
+.. 各パッケージについてその有無を表示します。 `yum install *.rpm --assumeno`
++
+"Installing :`" セクションの項目は現在のディレクトリにあるパッケージで、 "Installing for dependencies ： " セクションの項目はシステムにないパッケージです。
+
+.. インターネットにアクセスできる別のシステムで、不足しているパッケージをダウンロードします。 `yum install package_name --downloadonly --downloaddir=.`
++
+[NOTE]
+====
+プラグイン「 yum-plugin-downloadonly 」は、 Red Hat Enterprise Linux システムで常に有効になっているとは限りません。インストールせずにパッケージをダウンロードするには、この機能を有効にする必要があります。 `yum install yum-plugin-downloadonly`
+
+====
+.. インターネットに接続されたシステムからインストールシステムに不足しているパッケージをコピーします。
+
+
+. Unified Managerでハイアベイラビリティを構成している場合は、Veritas Operations Managerを使用して、1つ目のノードのすべてのUnified Managerサービスを停止します。
+. 次のスクリプトを使用して Unified Manager をアップグレードします。 `upgrade.sh`
++
+RPM モジュールが自動的に実行され、必要なサポートソフトウェアとそれらで実行されている Unified Manager モジュールがアップグレードされます。Unified Managerのアップグレードと競合するシステム設定やインストール済みソフトウェアがないかどうかも確認されます。問題が検出された場合は、Unified Managerをアップグレードする前に修正する必要があります。
+
++
+[NOTE]
+====
+アップグレードの実行に他のコマンド（など）は使用しないでください `+rpm -Uvh ...+`）。アップグレードを正しく実行するには、Unified Managerのすべてのファイルと関連ファイルを特定の順序で特定のディレクトリ構造にアップグレードする必要があり、そのためにはスクリプトを使用する必要があります。
+
+====
+. ハイアベイラビリティ構成の場合は、Veritas Operation Managerを使用して、2つ目のノードのすべてのUnified Managerサービスを停止します。
+. ハイアベイラビリティ構成の場合は、サービスグループをハイアベイラビリティ構成の2つ目のノードに切り替え、2つ目のノードでUnified Managerをアップグレードします。
+. アップグレードが完了したら、メッセージを上にスクロールして、 Unified Manager Web UI の IP アドレスまたは URL 、メンテナンスユーザの名前（ umadmin ）、およびデフォルトのパスワードを確認します。
++
+次のようなメッセージが表示されます。
+
++
+[listing]
+----
+OnCommand Unified Manager upgraded successfully.
+Use a web browser and one of the following URLs to access the OnCommand Unified Manager GUI:
+
+https://default_ip_address/    (if using IPv4)
+https://[default_ip_address]/  (if using IPv6)
+https://fully_qualified_domain_name/
+----
+
+
+
+
+== 完了後
+
+サポートされている Web ブラウザに表示された IP アドレスまたは URL を入力して Unified Manager Web UI を起動し、前に設定したメンテナンスユーザの名前（ umadmin ）とパスワードを使用してログインします。

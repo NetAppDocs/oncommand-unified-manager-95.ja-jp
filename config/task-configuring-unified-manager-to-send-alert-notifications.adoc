@@ -1,0 +1,52 @@
+---
+permalink: config/task-configuring-unified-manager-to-send-alert-notifications.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager では、環境内のイベントについて警告する通知を送信するように設定することができます。通知を送信するには、 Unified Manager のその他いくつかのオプションを設定する必要があります。 
+---
+= Unified Manager でアラート通知を送信するための設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager では、環境内のイベントについて警告する通知を送信するように設定することができます。通知を送信するには、 Unified Manager のその他いくつかのオプションを設定する必要があります。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+Unified Manager を導入して初期設定を完了したら、イベントの受信に対してアラートをトリガーし、通知 E メールや SNMP トラップを生成するように環境を設定することを検討する必要があります。
+
+
+
+== 手順
+
+. xref:task-configuring-event-notification-settings.adoc[イベント通知を設定]
++
+特定のイベントが発生したときにアラート通知を送信するには、 SMTP サーバを設定し、アラート通知の送信元の E メールアドレスを指定する必要があります。SNMP トラップを使用する場合は、該当するオプションを選択し、必要な情報を指定します。
+
+. xref:task-enabling-remote-authentication.adoc[リモート認証を有効にします]
++
+リモート LDAP ユーザまたは Active Directory ユーザが Unified Manager インスタンスにアクセスしてアラート通知を受信できるようにするには、リモート認証を有効にする必要があります。
+
+. xref:task-adding-authentication-servers.adoc[認証サーバを追加します]
++
+認証サーバを追加することで、認証サーバ内のリモートユーザが Unified Manager にアクセスできるようにすることができます。
+
+. xref:task-adding-users.adoc[ユーザを追加します]
++
+複数のタイプのローカルユーザまたはリモートユーザを追加し、特定のロールを割り当てることができます。アラートを作成する際に、アラート通知を受信するユーザを割り当てます。
+
+. xref:task-adding-alerts.adoc[アラートを追加します]
++
+通知を送信する E メールアドレスの追加、通知を受信するユーザの追加、ネットワークの設定、環境に必要な SMTP オプションと SNMP オプションの設定が完了したら、アラートを割り当てることができます。
+
+

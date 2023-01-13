@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-monitoring-metrocluster-replication.html 
+sidebar: sidebar 
+keywords: MetroCluster Replication,Mirroring 
+summary: データのミラーリング中に論理接続の全体的な健常性を監視して診断することができます。アグリゲート、ノード、 Storage Virtual Machine などのクラスタコンポーネントのミラーリングを中断する問題やリスクを特定することができます。 
+---
+= MetroCluster レプリケーションを監視しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+データのミラーリング中に論理接続の全体的な健常性を監視して診断することができます。アグリゲート、ノード、 Storage Virtual Machine などのクラスタコンポーネントのミラーリングを中断する問題やリスクを特定することができます。
+
+
+
+== 作業を開始する前に
+
+MetroCluster 構成のローカルクラスタとリモートクラスタの両方を、 Unified Manager に追加する必要があります
+
+
+
+== このタスクについて
+
+レプリケーションの問題を修正するには、健常性/クラスタの詳細ページに表示される情報を使用します。
+
+アイコンにカーソルを合わせると、生成されたイベントに関する詳細情報が表示されます。
+
+Unified Manager では、システムヘルスアラートを使用して、 MetroCluster 構成のコンポーネントおよび接続のステータスを監視します。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Health *>* Clusters *をクリックします。
++
+監視対象のクラスタのリストが表示されます。
+
+. [*健常性/クラスタ*]インベントリページで、MetroCluster レプリケーションの詳細を表示するクラスタの名前をクリックし、[* MetroCluster レプリケーション*]タブをクリックします。
++
+対応するクラスタオブジェクト領域のローカルサイトに、レプリケートされる MetroCluster 設定のトポロジが、データのミラー先であるリモートサイトの情報とともに表示されます。
+
+
+
+
+
+== 完了後
+
+MetroCluster 構成でミラーリングの問題が見つかった場合は、 System Manager にログインするか ONTAP CLI にアクセスして問題を解決する必要があります。

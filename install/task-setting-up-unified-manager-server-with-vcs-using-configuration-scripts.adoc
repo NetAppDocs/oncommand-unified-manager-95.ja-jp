@@ -1,0 +1,75 @@
+---
+permalink: install/task-setting-up-unified-manager-server-with-vcs-using-configuration-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: Veritas Cluster Server \（vcs \）では、設定スクリプトを使用してUnified Managerを設定できます。 
+---
+= 設定スクリプトを使用したVCSでのUnified Managerの設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Veritas Cluster Server（VCS）では、設定スクリプトを使用してUnified Managerを設定できます。
+
+
+
+== 作業を開始する前に
+
+* VCSセットアップ環境の両方のノードにUnified Managerがインストールされている必要があります。
+* VCSスクリプトが機能するためには、PerlのXML：LibXMLモジュールが必要です。
+* ソースのUnified Managerのデータを十分に格納できる共有のLUNを作成しておく必要があります。
+* スクリプトが機能するためには、絶対マウントパスを指定しておく必要があります。
++
+マウントパス内にフォルダを作成した場合、スクリプトは機能しません。
+
+* をダウンロードしておく必要があります `ha_setup.pl` スクリプトの場所 `/opt/netapp/ocum/scripts`。
+
+
+
+
+== このタスクについて
+
+VCSセットアップ環境において、仮想IPインターフェイスとマウントポイントがアクティブになっているノードが「1つ目のノード」で、もう一方のノードが2つ目のノードです。
+
+
+
+== 手順
+
+. クラスタの 1 つ目のノードにログインします。
++
+ハイアベイラビリティ構成の2つ目のノードで、Unified Managerのすべてのサービスを停止しておく必要があります。
+
+. VCSのインストールディレクトリを追加します `/opt/VRTSvcs/bin` PATH環境変数に移動します。
+. 既存のUnified Managerセットアップで設定する場合は、Unified Managerのバックアップを作成し、サポートバンドルを生成します。
+. を実行します `ha_setup.pl` スクリプト： `perl ha_setup.pl --first -t vcs -g group_name -e eth_name -i cluster_ip -m net_mask -n fully_qualified_cluster_name -f mount_path -v volume_group -d disk_group -l install_dir -u user_name -p password`
++
+`perl \ha_setup.pl --first -t vcs -g umgroup -e eth0 -i 10.11.12.13 -m 255.255.255.0 -n cluster.eng.company.com -f /mnt/ocumdb -v ocumdb_SdHv -d ocumdb_SdDg -l /opt/netapp/ -u admin -p wx17yz`
+
+. Veritas Operations Manager WebコンソールまたはVCS Cluster Managerを使用して、フェイルオーバーグループが作成され、Unified Managerサーバサービス、マウントポイント、仮想IP、ネットワークインターフェイスカード（NIC）、およびボリュームグループがクラスタグループに追加されたことを確認します。
+. Unified Managerサービスグループを2つ目のノードに手動で切り替え、クラスタフェイルオーバーが動作することを確認します。
+. VCSがクラスタの2つ目のノードにスイッチオーバーしていることを確認します。
++
+クラスタの2つ目のノードで、データマウント、仮想IP、ボリュームグループ、およびNICがオンラインになっていることを確認する必要があります。
+
+. Veritas Operations Managerを使用してUnified Managerを停止します。
+. を実行します `perl ha_setup.pl --join -t vcs -f``mount_path` クラスタの2つ目のノードでコマンドを実行して、Unified ManagerサーバのデータがLUNをポイントするように設定します。
+. クラスタの2つ目のノードでUnified Managerサーバサービスが開始していることを確認します。
+. 設定スクリプトの実行後、Unified Managerの証明書を再生成し、グローバルIPアドレスを取得します。
++
+.. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、*設定*メニューから* HTTPS証明書*をクリックします。
+.. [* HTTPS 証明書の再生成 * ] をクリックします。
+
+
++
+再生成された証明書にはクラスタのIPアドレスのみが含まれ、完全修飾ドメイン名（FQDN）は含まれません。Unified Managerのハイアベイラビリティの構成には、グローバルIPアドレスを使用する必要があります。
+
+. 次のコマンドを使用してUnified Manager UIにアクセスします。 `\https://<FQDN of Global IP>`
+
+
+
+
+== 完了後
+
+ハイアベイラビリティの構成が完了したら、バックアップの共有の場所を作成する必要があります。共有の場所は、フェイルオーバーの前後に作成するバックアップを格納するために必要です。ハイアベイラビリティ構成の両方のノードからアクセスできる必要があります。

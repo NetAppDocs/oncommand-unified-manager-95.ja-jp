@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-rate-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: ボリューム転送速度（履歴）レポートをカスタマイズして、ボリュームの合計転送サイズに基づいてボリューム転送の詳細を表示できます。特定の曜日のボリューム転送を表示することもできます。 
+---
+= ボリューム転送速度（履歴）レポートのカスタマイズ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリューム転送速度（履歴）レポートをカスタマイズして、ボリュームの合計転送サイズに基づいてボリューム転送の詳細を表示できます。特定の曜日のボリューム転送を表示することもできます。

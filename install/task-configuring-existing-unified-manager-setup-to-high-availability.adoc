@@ -1,0 +1,44 @@
+---
+permalink: install/task-configuring-existing-unified-manager-setup-to-high-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: 既存のUnified Managerインストールを更新し、セットアップ環境をハイアベイラビリティ構成にすることができます。 
+---
+= 既存のUnified Managerセットアップのハイアベイラビリティ構成への更新
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+既存のUnified Managerインストールを更新し、セットアップ環境をハイアベイラビリティ構成にすることができます。
+
+
+
+== 作業を開始する前に
+
+* 既存のデータのバックアップとサポートバンドルを作成しておく必要があります。
+* OnCommand 管理者またはストレージ管理者のロールが必要です。
+* クラスタに2つ目のノードを追加し、そのノードにVeritas Cluster Server（VCS）をインストールしておく必要があります。
++
+Veritas Cluster Server 6.2.1 Installation Guideを参照してください。
+
+* 新しく追加したノードは、ハイアベイラビリティ構成の既存のノードと同じ共有の場所にアクセスできるように設定する必要があります。
+
+
+
+
+== 手順
+
+. クラスタの新しいノードにログインします。
+. ノードにUnified Managerをインストールします。
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[Red Hat Enterprise LinuxまたはCentOSへのUnified Managerのインストール]
+
+. 既存のノードで設定スクリプトを実行し、Unified Managerサーバを設定します。
+. 2つ目のノードへのフェイルオーバーを手動で開始します。
+. を実行します `perl ha_setup.pl --join -t vcs -f``mount_path` クラスタの2つ目のノードでコマンドを実行し、Unified Managerサーバのデータが共有LUNをポイントするようにします。
+. Unified ManagerでOnCommand Workflow Automation （WFA）が設定されている場合は、無効にしてからWFA接続を再設定します。
+. SnapProtect にUnified Managerが設定されている場合は、クラスタの新しいIPアドレスと既存のストレージポリシーを使用してSnapProtect を再設定します。
+. カスタムレポートを再生成し、クラスタの新しいIPアドレスを使用してUnified Managerに追加します。
+

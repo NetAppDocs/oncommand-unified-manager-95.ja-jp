@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-cluster-object-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: それぞれのストレージオブジェクトのページで、すべてのクラスタおよびクラスタオブジェクトを表示できます。対応するストレージオブジェクトの詳細ページで詳細を確認することもできます。 
+---
+= クラスタオブジェクトのウィンドウとダイアログボックスの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+それぞれのストレージオブジェクトのページで、すべてのクラスタおよびクラスタオブジェクトを表示できます。対応するストレージオブジェクトの詳細ページで詳細を確認することもできます。

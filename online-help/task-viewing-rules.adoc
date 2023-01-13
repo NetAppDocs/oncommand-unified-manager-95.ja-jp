@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-viewing-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Infinite Volumeを備えたSVMのデータポリシーを変更する前に、データポリシータブで作成したルールのリストを確認できます。 
+---
+= ルールの表示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Infinite Volumeを備えたSVMのデータポリシーを変更する前に、データポリシータブで作成したルールのリストを確認できます。
+
+
+
+== 作業を開始する前に
+
+* オペレータ、OnCommand 管理者、またはストレージ管理者のロールが必要です。
+* ストレージクラスを含むInfinite Volumeを備えたSVMが含まれるクラスタをUnified Managerデータベースに追加しておく必要があります。
+
+
+
+
+== このタスクについて
+
+データポリシータブは、Infinite Volumeを備えたSVMの場合にのみ表示されます。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Health *>* SVM*をクリックします。
+. *ケンセンセイ/ Storage Virtual Machines *インヘントリヘエシで、適切なSVMを選択します。
+. [*データポリシー*]をクリックします。
+
+
+
+
+== 結果
+
+選択したSVMのデータポリシーに含まれるルールのリストが表示されます。ストレージクラスでフィルタを使用すると、特定のストレージクラスに関するルールを表示できます。

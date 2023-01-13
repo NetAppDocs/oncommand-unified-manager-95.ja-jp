@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-annotations-for-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerでアノテーションを作成してストレージオブジェクトをアノテートできます。アノテーションを使用すると、重要なリソースを簡単に特定して適切な操作を実行できます。たとえば、重要なリソースをグループに追加してグループアクションを割り当てたり、アノテートされたリソースのレポートを作成したりできます。 
+---
+= ストレージオブジェクトのアノテーションの管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerでアノテーションを作成してストレージオブジェクトをアノテートできます。アノテーションを使用すると、重要なリソースを簡単に特定して適切な操作を実行できます。たとえば、重要なリソースをグループに追加してグループアクションを割り当てたり、アノテートされたリソースのレポートを作成したりできます。

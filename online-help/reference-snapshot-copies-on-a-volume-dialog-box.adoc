@@ -1,0 +1,69 @@
+---
+permalink: online-help/reference-snapshot-copies-on-a-volume-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: ボリュームのSnapshotコピーダイアログボックスを使用すると、Snapshotコピーのリストを表示できます。ディスクスペースを節約したり解放したりする場合、またはSnapshotコピーが不要になった場合、Snapshotコピーを削除できます。1つ以上のSnapshotコピーを削除した場合に再利用可能となるディスクスペースの量を計算することもできます。 
+---
+= Volume（ボリューム）ダイアログボックスのSnapshotコピー
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリュームのSnapshotコピーダイアログボックスを使用すると、Snapshotコピーのリストを表示できます。ディスクスペースを節約したり解放したりする場合、またはSnapshotコピーが不要になった場合、Snapshotコピーを削除できます。1つ以上のSnapshotコピーを削除した場合に再利用可能となるディスクスペースの量を計算することもできます。
+
+
+
+== リストビュー
+
+ボリューム上のSnapshotコピーに関する情報が表形式のリストビューに表示されます。列のフィルタを使用して、表示するデータをカスタマイズできます。
+
+* * Snapshot コピー *
++
+Snapshotコピーの名前が表示されます。
+
+* *使用済みスペース%*
++
+ボリューム内のSnapshotコピーで使用されている合計スペースが表示されます。
+
+* * 合計サイズ *
++
+Snapshotコピーの合計サイズが表示されます。
+
+* *作成時刻*
++
+Snapshotコピーの作成時のタイムスタンプが表示されます。
+
+* *依存関係*
++
+Snapshotコピーに依存しているアプリケーションが表示されます。有効な値は、「SnapMirror」、「SnapVault 」、「SnapLock 」、「ダンプ」、「LUN」、VcloneとBusy。
+
+
+
+
+
+== コマンドボタン
+
+各コマンドボタンを使用して次のタスクを実行できます。
+
+* *計算*
++
+1つ以上のSnapshotコピーを削除することで再利用可能なスペースを計算できます。
+
+* *選択した項目を削除*
++
+1つ以上のSnapshotコピーを削除します。
+
+* * 閉じる *
++
+ボリューム上のSnapshotコピーを閉じます。
+
+* *再計算*
++
+選択したSnapshotコピーを削除することで再利用可能なスペースを計算できます。
+
++
+Snapshotコピーの選択を変更すると、* Recalculate *ボタンが有効になります。
+
+

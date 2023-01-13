@@ -1,0 +1,34 @@
+---
+permalink: online-help/reference-unknown-authentication-error.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 不明な認証エラーです
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* * 問題 *
++
+リモートユーザまたはリモートグループの追加、編集、削除、テストなどの認証に関連する処理を実行すると、次のエラーメッセージが表示される場合があります。 `Unknown authentication error`。
+
+* * 原因 *
++
+この問題は、次のオプションに誤った値を設定した場合に発生することがあります。
+
++
+** Active Directory 認証サービスの管理者名
+** OpenLDAP 認証サービスのバインド識別名
+
+
+* * 是正措置 *
++
+.. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、* Setup *>* Authentication *をクリックします。
+.. 選択した認証サービスに基づいて、管理者名またはバインド識別名に適切な情報を入力します。
+.. [ 認証のテスト * ] をクリックして、指定した詳細で認証をテストします。
+.. [ 保存して閉じる ] をクリックします。
+
+
+

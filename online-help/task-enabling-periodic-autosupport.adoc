@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-enabling-periodic-autosupport.html 
+sidebar: sidebar 
+keywords:  
+summary: 事前に定義された特定のメッセージをテクニカルサポートに自動的に送信するように設定すると、環境の正しい運用や環境の整合性の維持に役立ちます。 
+---
+= 定期的な AutoSupport の有効化
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+事前に定義された特定のメッセージをテクニカルサポートに自動的に送信するように設定すると、環境の正しい運用や環境の整合性の維持に役立ちます。
+
+
+
+== 作業を開始する前に
+
+メンテナンスユーザとしてログインする必要があります。
+
+
+
+== このタスクについて
+
+NetApp Active IQ のメリットを活用するには、AutoSupport をアクティブ化する必要があります。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、*設定*メニューから* AutoSupport *をクリックします。
+. [定期的なAutoSupport を有効にする（Enable Periodic *）]チェックボックスを選択
+. 必要に応じて、HTTPプロキシサーバの名前、ポート、および認証情報を定義します。
+. [ 保存（ Save ） ] をクリックします。
+

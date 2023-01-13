@@ -1,0 +1,23 @@
+---
+permalink: online-help/concept-adding-disk-space-to-the-unified-manager-database-directory.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager データベースディレクトリには、 ONTAP システムから収集された健常性とパフォーマンスのデータがすべて含まれています。状況によっては、データベースディレクトリのサイズの拡張が必要になることがあります。 
+---
+= Unified Manager データベースディレクトリにディスクスペースを追加しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager データベースディレクトリには、 ONTAP システムから収集された健常性とパフォーマンスのデータがすべて含まれています。状況によっては、データベースディレクトリのサイズの拡張が必要になることがあります。
+
+たとえば、 Unified Manager で多数のクラスタからデータを収集している場合、各クラスタに多数のノードがあると、データベースディレクトリがいっぱいになることがあります。データベースディレクトリの使用率が 90% の場合は警告イベントが生成され、ディレクトリの使用率が 95% の場合は重大イベントが生成されます。
+
+[NOTE]
+====
+ディレクトリの使用率が 95% に達すると、クラスタから追加のデータが収集されなくなります。
+
+====
+データディレクトリの容量を追加する手順は、 Unified Manager を VMware ESXi サーバ、 Red Hat Linux サーバまたは CentOS Linux サーバ、 Microsoft Windows サーバのいずれで実行しているかによって異なります。

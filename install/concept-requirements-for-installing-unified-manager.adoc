@@ -1,0 +1,18 @@
+---
+permalink: install/concept-requirements-for-installing-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerをインストールする前に、Unified Managerをインストールするサーバがソフトウェア、ハードウェア、CPU、およびメモリの所定の要件を満たしていることを確認する必要があります。 
+---
+= Unified Manager をインストールするための要件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerをインストールする前に、Unified Managerをインストールするサーバがソフトウェア、ハードウェア、CPU、およびメモリの所定の要件を満たしていることを確認する必要があります。
+
+* 関連情報 *
+
+http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"]

@@ -1,0 +1,22 @@
+---
+permalink: performance-checker/concept-what-the-timestamp-means-in-collected-data-and-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 収集された健常性とパフォーマンスのデータに表示されるタイムスタンプやイベントの検出時間に表示されるタイムスタンプは、 ONTAP クラスタの時間に基づいて、 Web ブラウザで設定されているタイムゾーンに調整されます。 
+---
+= 収集されたデータとイベントのタイムスタンプの意味
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+収集された健常性とパフォーマンスのデータに表示されるタイムスタンプやイベントの検出時間に表示されるタイムスタンプは、 ONTAP クラスタの時間に基づいて、 Web ブラウザで設定されているタイムゾーンに調整されます。
+
+ネットワークタイムプロトコル（ NTP ）サーバを使用して、 Unified Manager サーバ、 ONTAP クラスタ、および Web ブラウザの時間を同期することを強く推奨します。
+
+[NOTE]
+====
+特定のクラスタのタイムスタンプが正しく表示されない場合は、そのクラスタの時間が正しく設定されていることを確認してください。
+
+====

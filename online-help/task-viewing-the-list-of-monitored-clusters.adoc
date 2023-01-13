@@ -1,0 +1,33 @@
+---
+permalink: online-help/task-viewing-the-list-of-monitored-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: クラスタのインベントリを表示するには、Configuration/Cluster Data Sourcesページを使用します。名前や IP アドレス、通信ステータスなど、クラスタに関する詳細を確認できます。 
+---
+= 監視対象クラスタのリストの表示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタのインベントリを表示するには、Configuration/Cluster Data Sourcesページを使用します。名前や IP アドレス、通信ステータスなど、クラスタに関する詳細を確認できます。
+
+
+
+== 作業を開始する前に
+
+オペレータ、OnCommand 管理者、またはストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+クラスタのリストは、収集状態の重大度レベル列でソートされます。列ヘッダーをクリックすると、別の列でクラスタをソートできます。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Configuration *>* Cluster Data Sources *をクリックします。
+

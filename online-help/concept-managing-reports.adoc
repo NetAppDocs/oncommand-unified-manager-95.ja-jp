@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-managing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Unified Managerでは、レポートを作成および管理して、ストレージオブジェクトおよびストレージオブジェクトに関連するイベントの容量、利用率、パフォーマンスに関する情報をカスタマイズして表示できます。 
+---
+= レポートの管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Managerでは、レポートを作成および管理して、ストレージオブジェクトおよびストレージオブジェクトに関連するイベントの容量、利用率、パフォーマンスに関する情報をカスタマイズして表示できます。
+
+[NOTE]
+====
+左側のナビゲーションペインのReportsオプションからのレポートのスケジュール設定および生成の実装は、今後のリリースで廃止される予定です。別の方法として、次の方法でUnified Managerから健常性やパフォーマンスのデータを抽出できます。
+
+* GUIのグリッドページからデータを直接抽出する
+* 使用可能なすべてのオブジェクトにアクセスするためにOpen Databaseを使用する
+* Unified Manager REST API を使用して確認したい情報を取得する
+
+
+====

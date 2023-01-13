@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-a-namespace-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 各Infinite Volumeには、ディレクトリ情報とファイル名をInfinite Volume内のファイルの物理的な場所にマッピングするネームスペース構成要素が1つあります。 
+---
+= ネームスペースコンスティチュエントとは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+各Infinite Volumeには、ディレクトリ情報とファイル名をInfinite Volume内のファイルの物理的な場所にマッピングするネームスペースコンスティチュエントが1つあります。
+
+ネームスペースコンスティチュエントはクライアントには認識されず、クライアントが直接操作することはありません。ネームスペースコンスティチュエントは、Infinite Volumeの内部コンポーネントです。

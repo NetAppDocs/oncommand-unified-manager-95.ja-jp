@@ -1,0 +1,69 @@
+---
+permalink: health-checker/task-performing-corrective-action-for-storage-failover-interconnect-links-down.html 
+sidebar: sidebar 
+keywords:  
+summary: ストレージフェイルオーバー関連イベントのイベントの詳細ページを表示して、ページの概要情報を確認し、イベントの緊急性、問題の原因の候補、問題への解決策を特定できます。 
+---
+= ストレージフェイルオーバーインターコネクトリンクが停止した場合の対処策の実施
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージフェイルオーバー関連イベントのイベントの詳細ページを表示して、ページの概要情報を確認し、イベントの緊急性、問題の原因の候補、問題への解決策を特定できます。
+
+
+
+== 作業を開始する前に
+
+オペレータ、OnCommand 管理者、またはストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+この例では、イベントの詳細ページに表示されるイベントの概要に、ストレージフェイルオーバーインターコネクトリンクの停止状態に関する次の情報が表示されます。
+
+[listing]
+----
+Event: Storage Failover Interconnect One or More Links Down
+
+Summary
+
+Severity: Warning
+State: New
+Impact Level: Risk
+Impact Area: Availability
+Source: aardvark
+Source Type: Node
+Acknowledged By:
+Resolved By:
+Assigned To:
+Cause: At least one storage failover interconnected link
+       between the nodes aardvark and bonobo is down.
+       RDMA interconnect is up (Link0 up, Link1 down)
+----
+このイベント情報から、 HA ペアの aardvark ノードと bonobo ノードの間のストレージフェイルオーバーインターコネクトリンク Link1 が停止している一方で、 Apple と Boy の間の Link0 はアクティブであることがわかります。一方のリンクがアクティブであるため、 Remote Dynamic Memory Access （ RDMA ）は引き続き機能し、ストレージフェイルオーバージョブも正常に実行されます。
+
+ただし、両方のリンクが停止してストレージのフェイルオーバー保護が完全に無効になる状態を防ぐために、 Link1 が停止した理由を詳しく診断することにします。
+
+
+
+== 手順
+
+. イベント * の詳細ページで、ソースフィールドで指定されたイベントへのリンクをクリックすると、ストレージフェイルオーバーインターコネクトリンクの停止状態に関連するその他のイベントの詳細を確認できます。
++
+この例では、 aardvark というノードがイベントのソースです。そのノード名をクリックすると、影響を受けるHAペアaardvarkおよびbonoboのHAの詳細がHealth / Cluster detailsページのNodesタブに表示され、影響を受けるHAペアで最近発生したその他のイベントが表示されます。
+
+. イベントに関連する詳細情報については、 HA の詳細を確認してください。
++
+この例では、関連する情報が Events テーブルに表示されています。この表には、「ストレージフェイルオーバー接続 1 つ以上のリンク停止」イベント、イベントが生成された時刻、およびこのイベントの生成元のノードが表示されます。
+
+
+
+
+
+== 完了後
+
+HA の詳細で確認したノードの場所情報を使用して、該当する HA ペアノードでのストレージフェイルオーバー問題の物理的な調査と修復を依頼するか、または自ら実施します。

@@ -1,0 +1,86 @@
+---
+permalink: online-help/reference-svm-storage-class-events.html 
+sidebar: sidebar 
+keywords:  
+summary: SVMストレージクラスのイベントは、ストレージクラスのステータス情報を提供します。これにより、潜在的な問題を監視できます。SVMストレージクラスは、Infinite Volumeを備えたSVMにのみ存在します。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= SVMストレージクラスのイベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVMストレージクラスのイベントは、ストレージクラスのステータス情報を提供します。これにより、潜在的な問題を監視できます。SVMストレージクラスは、Infinite Volumeを備えたSVMにのみ存在します。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+次に示すSVMストレージクラスのイベントは、Infinite Volumeを備えたSVMにのみ該当します。
+
+
+
+== 影響範囲：可用性
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+SVMストレージクラスが使用できません（Document Storage ClassNotAvailable）
+ a| 
+インシデント
+ a| 
+ストレージクラス
+ a| 
+重要
+
+
+
+ a| 
+SVMストレージクラスが一部使用可能（ドキュメント：EvtVserverStorageClassPartiallyAvailable）
+ a| 
+リスク
+ a| 
+ストレージクラス
+ a| 
+エラー
+
+|===
+
+
+== 影響範囲：容量
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+SVMストレージクラスのスペースがほぼフル（Document EvtVserverStorageClassNearlyFull）
+ a| 
+リスク
+ a| 
+ストレージクラス
+ a| 
+警告
+
+
+
+ a| 
+SVMストレージクラスのスペースがフル（Document Storage VserverStorageClassFull）
+ a| 
+リスク
+ a| 
+ストレージクラス
+ a| 
+エラー
+
+
+
+ a| 
+SVMストレージクラスのSnapshotの使用制限を超えています（Document EvtVserverStorageClassSnapshotUsageExceeded）
+ a| 
+リスク
+ a| 
+ストレージクラス
+ a| 
+警告
+
+|===

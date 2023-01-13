@@ -1,0 +1,24 @@
+---
+permalink: performance-checker/concept-unified-manager-administration-navigation.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerの管理機能を使用してユーザとデータソースを管理できます。認証、AutoSupport 、Eメール、HTTPS証明書、ネットワーク、とNTPサーバの設定には、Unified Managerの管理ページを使用します。 
+---
+= Unified Managerの管理操作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerの管理機能を使用してユーザとデータソースを管理できます。認証、AutoSupport 、Eメール、HTTPS証明書、ネットワーク、とNTPサーバの設定には、Unified Managerの管理ページを使用します。
+
+次に、管理画面の操作例を紹介します。Workflow Automationサーバへの接続を追加または削除するには、次の手順を実行します。
+
+image::../media/admin-navigation.gif[管理者ナビゲーション]
+
+[NOTE]
+====
+ホーム*アイコンをクリックすると、Unified Managerのメインのナビゲーションページに戻ります。
+
+====

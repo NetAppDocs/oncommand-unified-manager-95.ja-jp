@@ -1,0 +1,42 @@
+---
+permalink: online-help/task-viewing-the-https-security-certificate-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: HTTPS 証明書の詳細をブラウザで取得した証明書と比較して、 Unified Manager に対するブラウザの暗号化された接続が妨害されていないことを確認できます。 
+---
+= HTTPS セキュリティ証明書の表示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+HTTPS 証明書の詳細をブラウザで取得した証明書と比較して、 Unified Manager に対するブラウザの暗号化された接続が妨害されていないことを確認できます。
+
+
+
+== 作業を開始する前に
+
+オペレータ、OnCommand 管理者、またはストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+証明書を表示すると、再生成された証明書の内容を検証したり、Unified Managerへのアクセスに使用できるURLの別名を確認したりできます。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、*設定*メニューから* HTTPS証明書*をクリックします。
++
+HTTPS 証明書がページの上部に表示されます
+
+
+
+
+
+== 完了後
+
+HTTPS 証明書ページに表示されるものよりも詳細なセキュリティ証明書情報を表示する必要がある場合は、ブラウザで接続証明書を表示できます。

@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-report-sharing-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 共有オプションを使用すると、Eメールでレポートを1人以上のユーザと共有できます。 
+---
+= レポートの共有とは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+1人または複数のユーザとレポートを共有するには、* Share *オプションを使用してEメールを送信します。
+
+レポートに対して行った最近の変更が表示されるようにするには、レポートを共有する前にレポートを保存する必要があります。
+
+任意の形式でレポートを共有できます。* Share*オプションを使用すると、Unified Managerにはアクセスできず有効なEメールアドレスを持っている場合でも、Eメールでレポートを瞬時に共有できます。

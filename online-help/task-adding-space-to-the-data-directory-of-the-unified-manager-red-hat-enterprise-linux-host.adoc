@@ -1,0 +1,89 @@
+---
+permalink: online-help/task-adding-space-to-the-data-directory-of-the-unified-manager-red-hat-enterprise-linux-host.html 
+sidebar: sidebar 
+keywords:  
+summary: Linuxホストを最初にセットアップした時点でUnified Managerをサポートするための十分なディスクスペースをに割り当てていなかった場合は、Unified Managerのインストール後に/opt/NetApp/dataディレクトリのディスクスペースを増やして拡張することができます。 
+---
+= Linux ホストのデータディレクトリにスペースを追加しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+に十分なディスクスペースを割り当てていない場合 `/opt/netapp/data` Unified Managerをサポートするディレクトリ：Linuxホストを最初にセットアップしたあとにUnified Managerをインストールしたときに、のディスクスペースを増やしてインストール後にディスクスペースを追加できます `/opt/netapp/data` ディレクトリ。
+
+
+
+== 作業を開始する前に
+
+Unified Manager がインストールされている Red Hat Enterprise Linux マシンまたは CentOS Linux マシンへの root ユーザアクセスが必要です。
+
+
+
+== このタスクについて
+
+データディレクトリのサイズを拡張する前に Unified Manager データベースをバックアップすることを推奨します。
+
+
+
+== 手順
+
+. ディスクスペースを追加する Linux マシンに root ユーザとしてログインします。
+. Unified Manager サービスと関連する MySQL ソフトウェアを次の順序で停止します。
+. 一時バックアップフォルダを作成する（例： `/backup-data`）には、現在のデータを格納できるだけの十分なディスクスペースがあります `/opt/netapp/data` ディレクトリ。
+. 既存ののの内容と権限の設定をコピーします `/opt/netapp/data` ディレクトリをバックアップデータディレクトリに移動します。 `cp -rp /opt/netapp/data/* /backup-data`
+. SE Linux が有効になっている場合：
++
+.. 既存のフォルダのSE Linuxタイプを取得します `/opt/netapp/data` フォルダ：
++
+`se_type= ls -Z /opt/netapp/data | awk '{print $4}'| awk -F: '{print $3}'| head -1`
+
++
+次のような情報が返されます。
+
++
+[listing]
+----
+echo $se_type
+mysqld_db_t
+----
+.. を実行します `chcon` バックアップディレクトリに対してSE Linuxタイプを設定するコマンドは、次のとおりです。 `chcon -R --type=mysqld_db_t /backup-data`
+
+
+. の内容を削除します `/opt/netapp/data` ディレクトリ：
++
+.. `cd /opt/netapp/data`
+.. `rm -rf *`
+
+
+. のサイズを展開します `/opt/netapp/data` LVMのコマンドを使用するかディスクを追加して、750GB以上のディレクトリを指定します。
++
+[NOTE]
+====
+を取り付けます `/opt/netapp/data` NFSエクスポートまたはCIFS共有上のディレクトリはサポートされません。
+
+====
+. を確認します `/opt/netapp/data` ディレクトリの所有者（mysql）とグループ（root）は変更されません。 `ls -ltr / | grep opt/netapp/data`
++
+次のような情報が返されます。
+
++
+[listing]
+----
+drwxr-xr-x.  17 mysql root  4096 Aug 28 13:08 data
+----
+. SE Linuxが有効になっている場合は、のコンテキストを確認します `/opt/netapp/data` ディレクトリがmysqld_db_tに設定されたままである `touch /opt/netapp/data/abc``ls -Z /opt/netapp/data/abc`
++
+次のような情報が返されます。
+
++
+[listing]
+----
+-rw-r--r--. root root unconfined_u:object_r:mysqld_db_t:s0 /opt/netapp/data/abc
+----
+. から内容をコピーします `backup-data`をクリックし、展開したに戻ります `/opt/netapp/data` ディレクトリ： `cp -rp /backup-data/* /opt/netapp/data/`
+. MySQL サービスを開始します。 `service mysqld start`
+. MySQL サービスが開始されたら、 ocie サービスと ocieau サービスを次の順序で開始します。 `service ocie start``service ocieau start`
+. すべてのサービスが開始されたら、バックアップフォルダを削除します `/backup-data`： `rm -rf /backup-data`
+

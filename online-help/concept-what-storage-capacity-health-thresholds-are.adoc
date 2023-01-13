@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-storage-capacity-health-thresholds-are.html 
+sidebar: sidebar 
+keywords:  
+summary: ストレージ容量の健常性しきい値は、ストレージオブジェクトに関する容量の問題を報告するために Unified Manager サーバがイベントを生成するポイントです。そのようなイベントが発生するたびに通知を送信するようにアラートを設定できます。 
+---
+= ストレージ容量の健常性しきい値とは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージ容量の健常性しきい値は、ストレージオブジェクトに関する容量の問題を報告するために Unified Manager サーバがイベントを生成するポイントです。そのようなイベントが発生するたびに通知を送信するようにアラートを設定できます。
+
+すべてのアグリゲート、ボリューム、および qtree のストレージ容量の健常性しきい値がデフォルト値に設定されます。設定は、オブジェクトまたはオブジェクトのグループに対して必要に応じて変更できます。

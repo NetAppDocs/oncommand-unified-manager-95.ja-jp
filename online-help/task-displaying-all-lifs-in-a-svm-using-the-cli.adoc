@@ -1,0 +1,66 @@
+---
+permalink: online-help/task-displaying-all-lifs-in-a-svm-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: SVM内のすべてのLIFに関する情報を表示できます。ビジー状態で移動する必要があるLIFを特定する場合などに、すべてのLIFを表示することができます。 
+---
+= CLIを使用してSVM内のすべてのLIFを表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVM内のすべてのLIFに関する情報を表示できます。ビジー状態で移動する必要があるLIFを特定する場合などに、すべてのLIFを表示することができます。
+
+
+
+== このタスクについて
+
+LIFの動作ステータスは、特定のポートで設定されていてデータを提供できるかどうかで決まります。SVMが停止すると、関連付けられているデータLIFとSVM管理LIFはデータを提供できなくなります。これらのLIFの動作ステータスがに変わります `down`。
+
+
+
+== 手順
+
+. SVM内のすべてのLIFに関する情報を表示するには、次のコマンドを入力します。 `network interface show -vserver vserver_name`
++
+コマンドは、次の情報を表示します。
+
++
+** LIFに関連付けられているノードまたはSVM
+** LIF 名
+** 管理ステータスと動作ステータス
+** IP アドレス
+** ネットマスク
+** LIFが設定されているノードとポート
+
+
++
+ホームサーバはノードまたはSVMのどちらかになります。
+
++
+該当するデータがないフィールド（アクティブでないポートの二重モードや速度など）については、undefと表示されます。
+
++
+[NOTE]
+====
+を指定すると、使用可能なすべての情報を取得できます `-instance` パラメータ
+
+====
++
+次の例は、SVM内のすべてのLIFに関する一般的な情報を表示します。
+
++
+[listing]
+----
+vs1::> network interface show -vserver vs1
+            Logical    Status     Network            Current       Current Is
+Vserver     Interface  Admin/Oper Address/Mask       Node          Port    Home
+----------- ---------- ---------- ------------------ ------------- ------- ----
+vs1
+            lif1         up/up    192.0.2.253/24     node-01       e0b     false
+            d2           up/up    192.0.2.252/21     node-01       e0d     true
+            data3        up/up    192.0.2.251/20     node-02       e0c     true
+----
+

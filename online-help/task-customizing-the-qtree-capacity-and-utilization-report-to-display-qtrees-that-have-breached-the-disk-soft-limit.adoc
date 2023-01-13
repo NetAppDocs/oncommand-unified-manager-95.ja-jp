@@ -1,0 +1,64 @@
+---
+permalink: online-help/task-customizing-the-qtree-capacity-and-utilization-report-to-display-qtrees-that-have-breached-the-disk-soft-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: qtreeの容量と使用状況レポートをカスタマイズして、ディスクのソフトリミットを超えているqtreeを表示できます。使用ディスク、ディスクハードリミット、ディスクソフトリミットでフィルタおよびソートできます。 
+---
+= qtreeの容量と使用状況レポートのカスタマイズ：ディスクのソフトリミットを超えているqtreeを表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+qtreeの容量と使用状況レポートをカスタマイズして、ディスクのソフトリミットを超えているqtreeを表示できます。使用ディスク、ディスクハードリミット、ディスクソフトリミットでフィルタおよびソートできます。
+
+
+
+== このタスクについて
+
+このタスクは、[レポート]ページに移動し、該当するレポートの[レポートの実行]をクリックして実行することもできます。
+
+
+
+== 手順
+
+. SVM、クラスタ、またはボリューム別のグループ化を削除するには、次の手順を実行します。
++
+.. グループ化を解除する必要がある列内をクリックします。
+.. をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+.. * Group *>* Delete Inner Group *を選択します。
+
+
+. ディスクのハードリミットに制限がないqtreeをフィルタリングするには、* Disk Hard Limit *列をクリックし、* Filter *ダイアログボックスをクリックします image:../media/click-to-filter.gif[""] をクリックします。
++
+.. [*条件*（* Condition *）]ドロップダウンリストから、[*等しくない（* not equal to *）]を選択する。
+.. 値の選択*をクリックし、*無制限*を選択します。
+.. [OK]をクリックします。
+
+
+. ディスクソフトリミットが無制限でないqtreeをフィルタリングするには、* Disk Soft Limit *列をクリックし、* Filter *ダイアログボックスをクリックして開きます image:../media/click-to-filter.gif[""] をクリックします。
++
+.. [*条件*（* Condition *）]ドロップダウンリストから、[*等しくない（* not equal to *）]を選択する。
+.. 値の選択*をクリックし、*無制限*を選択します。
+.. [OK]をクリックします。
+
+
+. ディスクソフトリミットを超えているqtreeの列を追加するには、次の手順を実行します。
++
+.. 「* Disk Soft Limit *」列をクリックし、をクリックします image:../media/click-to-see-menu.gif[""] アイコンをクリックし、*列*>*新規計算列*を選択します
+.. [新規計算列*（New computed Column *）]ダイアログボックスで、と入力します `Breached Disk Soft Limit Capacity` をクリックします。
+.. [カテゴリの選択]リストから、[*テキスト*]を選択します。
+.. [関数の選択*]ドロップダウンリストから、[*Advanced*]を選択します。
+.. [式の入力*]フィールドに、と入力します `IF(([qtreeDiskUsedPercent] *[diskLimit]/100 > [softDiskLimit]), "Yes", "No")`。
+.. [OK] をクリックします。
+
+
+. ディスクのソフトリミットを超えているqtreeをフィルタリングするには、*ディスクソフトリミットを超過列をクリックし、*フィルタ*ダイアログボックスを開きます。そのためには、をクリックします image:../media/click-to-filter.gif[""] をクリックします。
++
+.. [* Condition *（*条件*）]ドロップダウンリストから、[* Equal to *（*に等しい）]を選択します。
+.. 値の選択*をクリックし、*はい*を選択します。
+.. [OK]をクリックします。
+
+
+

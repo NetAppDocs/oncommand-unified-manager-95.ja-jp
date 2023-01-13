@@ -1,0 +1,59 @@
+---
+permalink: install/task-unattended-installation-of-unified-manager.html 
+sidebar: sidebar 
+keywords: perform, unattended, installation, unified manager 
+summary: コマンドラインインターフェイスを使用して、手動操作なしで Unified Manager をインストールできます。無人インストールを実行するには、キーと値のペアの形式でパラメータを渡します。 
+---
+= Unified Manager の無人インストールを実行する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+コマンドラインインターフェイスを使用して、手動操作なしで Unified Manager をインストールできます。無人インストールを実行するには、キーと値のペアの形式でパラメータを渡します。
+
+
+
+== 手順
+
+. デフォルトのローカル管理者アカウントで Windows のコマンドラインインターフェイスにログインします。
+. Unified Manager をインストールする場所に移動し、次のいずれかを実行します。
++
+[cols="4a,4a"]
+|===
+| オプション | 手順 
+
+
+ a| 
+サードパーティパッケージが事前にインストールされている場合
+ a| 
+`OnCommandUnifiedManager-x.y.exe /V"MYSQL_PASSWORD=mysql_password INSTALLDIR=\"Installation directory\" MYSQL_DATA_DIR=\"MySQL data directory\" MAINTENANCE_PASSWORD=maintenance_password MAINTENANCE_USERNAME=maintenance_username /qn /l*v CompletePathForLogFile"`
+
+* 例： *
+
+`OnCommandUnifiedManager.exe /s /v"MYSQL_PASSWORD=netapp21! INSTALLDIR=\"C:\Program Files\NetApp\" MYSQL_DATA_DIR=\"C:\ProgramData\MYSQL\MySQLServer\" MAINTENANCE_PASSWORD=******* MAINTENANCE_USERNAME=admin /qn /l*v C:\install.log"`
+
+
+
+ a| 
+サードパーティパッケージがインストールされていない場合
+ a| 
+`OnCommandUnifiedManager-x.y.exe /V"MYSQL_PASSWORD=mysql_password INSTALLDIR=\"Installation directory\" MYSQL_DATA_DIR=\"MySQL data directory\" MAINTENANCE_PASSWORD=maintenance_password MAINTENANCE_USERNAME=maintenance_username /qr /l*v CompletePathForLogFile"`
+
+* 例： *
+
+`OnCommandUnifiedManager.exe /s /v"MYSQL_PASSWORD=netapp21! INSTALLDIR=\"C:\Program Files\NetApp\" MYSQL_DATA_DIR=\"C:\ProgramData\MYSQL\MySQLServer\" MAINTENANCE_PASSWORD=******* MAINTENANCE_USERNAME=admin /qr /l*v C:\install.log"`
+
+|===
++
+。 `/qr` オプションを指定すると、ユーザインターフェイスが減少してQuietモードが有効になりますインストールの進捗を示す基本的なユーザインターフェイスが表示されます。入力を求められることはありません。JRE、MySQL、7zipなどのサードパーティパッケージが事前にインストールされていない場合は、を使用する必要があります `/qr` オプションがの場合、のインストールは失敗します `/qn` オプションは、サードパーティパッケージがインストールされていないサーバで使用します。
+
++
+。 `/qn` オプションを指定すると、ユーザインターフェイスのないQuietモードが有効になりますインストール中にユーザインターフェイスや詳細は表示されません。を使用しないでください `/qn` オプション：サードパーティパッケージがインストールされていない場合。
+
+. 次の URL を使用して Unified Manager Web ユーザインターフェイスにログインします。
++
+`\https://IP address`
+
+

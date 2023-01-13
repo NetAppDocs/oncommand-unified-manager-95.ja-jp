@@ -1,0 +1,34 @@
+---
+permalink: install/concept-browser-and-platform-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager UIにアクセスするには、サポートされているブラウザを使用する必要があります。 
+---
+= サポートされているブラウザ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager UIにアクセスするには、サポートされているブラウザを使用する必要があります。
+
+Unified Managerは、次のブラウザでテスト済みです。他のブラウザでも動作する場合がありますが、正式にはサポートされていません。サポートされているブラウザとバージョンの一覧は、Interoperability Matrixを参照してください。
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+* Mozilla Firefox ESR 60
+* Google Chromeバージョン68および69
+* Microsoft Internet Explorer 11.
+
+
+すべてのブラウザで、ポップアップブロックを無効にすることでソフトウェアの機能が正しく表示されます。
+
+Internet Explorerを使用する場合は、互換表示を無効にして、ドキュメントモードをデフォルトに設定する必要があります。これらの設定の詳細については、Microsoft IEのドキュメントを参照してください。
+
+[NOTE]
+====
+Internet Explorerでは複雑なUIページのロードに時間がかかることがあるため、FirefoxまたはChromeを使用することを推奨します。
+
+====
+アイデンティティプロバイダ（IdP）でユーザの認証を行うようにUnified ManagerでSAML認証を設定する場合は、IdPでサポートされるブラウザのリストも確認してください。

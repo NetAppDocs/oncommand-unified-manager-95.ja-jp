@@ -1,0 +1,198 @@
+---
+permalink: online-help/reference-metrocluster-connectivity-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 接続イベントは、クラスタのコンポーネント間の接続および MetroCluster 構成のクラスタ間の接続に関する情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= MetroCluster 接続イベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+接続イベントは、クラスタのコンポーネント間の接続および MetroCluster 構成のクラスタ間の接続に関する情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：可用性
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+すべてのスイッチ間リンクが停止（ Document EvtMetroClusterAllISLBetweenSwitchesDown ）
+ a| 
+インシデント
+ a| 
+MetroCluster スイッチ間接続
+ a| 
+重要
+
+
+
+ a| 
+MetroCluster パートナー間のすべてのリンクが停止（ Document EvtMetroClusterAllLinksBetweenPartnersDown ）
+ a| 
+インシデント
+ a| 
+MetroCluster 関係
+ a| 
+重要
+
+
+
+ a| 
+FC-SAS ブリッジからストレージスタックへのリンクが停止（ Document EvtBridgeSasPortDown ）
+ a| 
+インシデント
+ a| 
+MetroCluster ブリッジスタック接続
+ a| 
+重要
+
+
+
+ a| 
+MetroCluster 構成がスイッチオーバーされている（（影響を受けるMetroClusterDRStatusImpacted）
+ a| 
+リスク
+ a| 
+MetroCluster 関係
+ a| 
+警告
+
+
+
+ a| 
+MetroCluster 構成を部分的にスイッチオーバー（ドキュメント MetroCluster DRStatusPartiallyImpacted ）
+ a| 
+リスク
+ a| 
+MetroCluster 関係
+ a| 
+エラー
+
+
+
+ a| 
+影響を受ける MetroCluster ディザスタリカバリ機能（文書 MetroCluster DRStatusImpacted ）
+ a| 
+リスク
+ a| 
+MetroCluster 関係
+ a| 
+重要
+
+
+
+ a| 
+ピアリングネットワーク経由で MetroCluster パートナーに到達できない（ドキュメント MetroCluster PartnersNotReachableOverPeeringNetwork ）
+ a| 
+インシデント
+ a| 
+MetroCluster 関係
+ a| 
+重要
+
+
+
+ a| 
+ノードから FC スイッチへのすべての FC-VI インターコネクトリンクが停止（ Document EvtMccNodeSwitchFcvLinksDown ）
+ a| 
+インシデント
+ a| 
+MetroCluster ノードのスイッチ接続
+ a| 
+重要
+
+
+
+ a| 
+ノードから FC スイッチへの一部の FC イニシエータリンクが停止（ ocument EvtMccNodeSwitchFcLinksOneOrMoreDown ）
+ a| 
+リスク
+ a| 
+MetroCluster ノードのスイッチ接続
+ a| 
+警告
+
+
+
+ a| 
+ノードから FC スイッチへのすべての FC イニシエータリンクが停止（ Document EvtMccNodeSwitchFcLinksDown ）
+ a| 
+インシデント
+ a| 
+MetroCluster ノードのスイッチ接続
+ a| 
+重要
+
+
+
+ a| 
+スイッチから FC-SAS ブリッジへの FC リンクが停止（ドキュメント EvtMccSwitchgeFcLinksDown ）
+ a| 
+インシデント
+ a| 
+MetroCluster スイッチのブリッジ接続
+ a| 
+重要
+
+
+
+ a| 
+ノード間のすべての FC VI インターコネクトリンクが停止（ Document EvtMccInterNodeLinksDown ）
+ a| 
+インシデント
+ a| 
+ノード間の接続
+ a| 
+重要
+
+
+
+ a| 
+ノード間で 1 つ以上の FC VI インターコネクトリンクが停止（ ocument MccInterNodeLinksOneOrMoreDown ）
+ a| 
+リスク
+ a| 
+ノード間の接続
+ a| 
+警告
+
+
+
+ a| 
+ノードからブリッジへのリンクが停止（ Document EvtMccNodeBridgeLinksDown ）
+ a| 
+インシデント
+ a| 
+ノードのブリッジ接続
+ a| 
+重要
+
+
+
+ a| 
+ノードからストレージスタックへのすべての SAS リンクが停止（ Document EvtMccNodeStackLinksDown ）
+ a| 
+インシデント
+ a| 
+ノードスタック接続
+ a| 
+重要
+
+
+
+ a| 
+ノードからストレージスタックへの 1 つ以上の SAS リンクが停止（ ocument MccNodeStackLinksOneOrMoreDown ）
+ a| 
+リスク
+ a| 
+ノードスタック接続
+ a| 
+警告
+
+|===

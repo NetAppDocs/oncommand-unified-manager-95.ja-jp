@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-users.html 
+sidebar: sidebar 
+keywords:  
+summary: 管理/ユーザページでは、Unified Managerを使用してストレージオブジェクトとデータを管理するユーザのリストを表示できます。ユーザの詳細を表示できます。これには、ユーザ名、ユーザのタイプ、 E メールアドレス、ユーザに割り当てられているロールなどの情報が含まれます。 
+---
+= ユーザの表示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理/ユーザページでは、Unified Managerを使用してストレージオブジェクトとデータを管理するユーザのリストを表示できます。ユーザの詳細を表示できます。これには、ユーザ名、ユーザのタイプ、 E メールアドレス、ユーザに割り当てられているロールなどの情報が含まれます。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者のロールが必要です。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、左の[管理]メニューの[*ユーザー*]をクリックします。
++
+ユーザのリストが[Management/Users]ページに表示されます。
+
+

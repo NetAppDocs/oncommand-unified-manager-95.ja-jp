@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-a-namespace-mirror-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: ネームスペースミラーコンスティチュエントは、Infinite Volumeのネームスペースコンスティチュエントのクラスタ内データ保護ミラーコピーです。ネームスペースミラーコンスティチュエントには、ネームスペースコンスティチュエントのデータ保護と、SnapDiffのサポートによるInfinite Volumeの増分テープバックアップへの対応の、2つの役割があります。 
+---
+= ネームスペースミラーコンスティチュエントとは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ネームスペースミラーコンスティチュエントは、Infinite Volumeのネームスペースコンスティチュエントのクラスタ内データ保護ミラーコピーです。ネームスペースミラーコンスティチュエントには、ネームスペースコンスティチュエントのデータ保護と、SnapDiffのサポートによるInfinite Volumeの増分テープバックアップへの対応の、2つの役割があります。

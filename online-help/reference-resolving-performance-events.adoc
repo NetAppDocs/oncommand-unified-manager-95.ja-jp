@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-resolving-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 推奨される対処方法を使用して、パフォーマンスイベントを解決することができます。最初の 3 つの推奨策は常に表示され、表示されたイベントに固有の推奨策が 4 つ目以降に表示されます。 
+---
+= パフォーマンスイベントを解決しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+推奨される対処方法を使用して、パフォーマンスイベントを解決することができます。最初の 3 つの推奨策は常に表示され、表示されたイベントに固有の推奨策が 4 つ目以降に表示されます。
+
+[ ヘルプ ] [ この操作を実行する ] リンクには、特定の操作の実行手順を含む、推奨される各操作の追加情報が表示されます。一部の対処方法では、Unified Manager、OnCommand System Manager、OnCommand Workflow Automation 、ONTAP CLIコマンド、またはこれらのツールの組み合わせを使用する場合があります。

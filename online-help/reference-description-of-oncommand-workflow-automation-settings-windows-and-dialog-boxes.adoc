@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-oncommand-workflow-automation-settings-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified ManagerでOnCommand Workflow Automation をセットアップするには、セットアップ/ Workflow Automationのページを使用します。 
+---
+= 概要 of OnCommand Workflow Automation セットアップのウィンドウとダイアログボックス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified ManagerでOnCommand Workflow Automation をセットアップするには、セットアップ/ Workflow Automationのページを使用します。

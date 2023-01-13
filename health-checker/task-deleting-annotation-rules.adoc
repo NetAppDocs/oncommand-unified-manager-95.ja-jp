@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-deleting-annotation-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 不要になったアノテーションルールは、OnCommand Unified Managerから削除できます。 
+---
+= アノテーションルールを削除する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+不要になったアノテーションルールは、OnCommand Unified Managerから削除できます。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+アノテーションルールを削除すると、アノテーションの関連付けが解除されてストレージオブジェクトから削除されます。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、左側の[管理]メニューの[*注釈*]をクリックします。
+. [ * アノテーションルール * （ * Annotation Rules * ） ] タブで、削除するアノテーションルールを選択し、 [ * 削除 * （ * Delete * ） ] をクリックします。
+. [ 警告 * ] ダイアログボックスで、 [ はい * ] をクリックして削除を確認します。
+

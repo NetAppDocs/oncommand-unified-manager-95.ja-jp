@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerの各種レポートを、ストレージ容量や利用率、イベント、クラスタインベントリ、NFSエクスポート、またはSVMインベントリに基づいてカスタマイズすることができます。。 
+---
+= レポートのカスタマイズ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerの各種レポートを、ストレージ容量や利用率、イベント、クラスタインベントリ、NFSエクスポート、またはSVMインベントリに基づいてカスタマイズすることができます。。

@@ -1,0 +1,14 @@
+---
+permalink: install/concept-installing-upgrading-and-removing-unified-manager-software-on-vmware-vsphere.html 
+sidebar: sidebar 
+keywords:  
+summary: VMware vSphere システムで、 Unified Manager ソフトウェアのインストール、新しいバージョンへのアップグレード、または Unified Manager 仮想アプライアンスの削除を実行できます。 
+---
+= VMware vSphereでのUnified Managerソフトウェアのインストール、アップグレード、削除
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware vSphere システムで、 Unified Manager ソフトウェアのインストール、新しいバージョンへのアップグレード、または Unified Manager 仮想アプライアンスの削除を実行できます。

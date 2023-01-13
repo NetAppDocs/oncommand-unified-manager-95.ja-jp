@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-introduction-to-unified-manager-performance-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Unified Managerは、ネットアップのONTAP ソフトウェアを実行するシステムを対象に、パフォーマンス監視機能とパフォーマンスイベントの根本原因分析機能を提供します。 
+---
+= OnCommand Unified Managerによるパフォーマンス監視の概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Managerは、ネットアップのONTAP ソフトウェアを実行するシステムを対象に、パフォーマンス監視機能とパフォーマンスイベントの根本原因分析機能を提供します。
+
+Unified Manager では、クラスタコンポーネントを過剰に消費しているワークロードや、クラスタ上のその他のワークロードのパフォーマンスを低下させているワークロードを特定できます。パフォーマンスしきい値ポリシーを定義して特定のパフォーマンスカウンタの最大値を指定し、しきい値を超えたときにイベントが生成されるようにすることもできます。Unified Manager は、管理者がイベントに対処してパフォーマンスを平常時のレベルに戻すことができるよう、このようなパフォーマンスイベントに関するアラートをユーザに通知します。Unified Manager の UI でイベントを表示および分析できます。
+
+Unified Manager は、次の 2 種類のワークロードのパフォーマンスを監視します。
+
+* ユーザ定義のワークロード
++
+このワークロードは、クラスタに作成した FlexVol ボリュームと FlexGroup ボリュームで構成されます。
+
+* システム定義のワークロード
++
+このワークロードは、内部のシステムアクティビティで構成されます。
+
+

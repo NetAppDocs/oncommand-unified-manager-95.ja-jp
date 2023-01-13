@@ -1,0 +1,50 @@
+---
+permalink: install/task-upgrading-mysql-on-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager がインストールされている Linux サーバで MySQL を新しいバージョンにアップグレードすることで、セキュリティの脆弱性に対する修正を入手できます。 
+---
+= Linux での MySQL のアップグレード
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager がインストールされている Linux サーバで MySQL を新しいバージョンにアップグレードすることで、セキュリティの脆弱性に対する修正を入手できます。
+
+
+
+== 作業を開始する前に
+
+Unified Manager がインストールされている Linux システムに対する root 権限が必要です。
+
+
+
+== このタスクについて
+
+MySQL 5.7 のマイナーアップデートにアップグレードできるのは、 5.7.1 から 5.7.2 にアップグレードする場合などです。バージョン 5.8 などの MySQL をメジャーバージョンにアップグレードすることはできません。
+
+
+
+== 手順
+
+. Unified Manager ホストマシンに root ユーザとしてログインします。
+. 最新のMySQL Community Serverをダウンロードします `.rpm` ターゲットシステムにバンドルします。
+. バンドルをターゲットシステム上のディレクトリに展開します。
+. 複数の情報が得られます `.rpm` 展開したバンドルにはパッケージが含まれていますが、Unified Managerで必要とされるのは次のrpmパッケージのみです。
++
+** mysql-community-client-5.7.x
+** mysql-community-libs-5.7.x
+** mysql-community-server-5.7.x
+** mysql-community-common-5.7.x
+** mysql-community-libs-compat-5.7.xその他すべてを削除します `.rpm` パッケージ。rpm バンドル内のすべてのパッケージをインストールしても、原因 に問題はありません。
+
+
+. Unified Manager サービスと関連する MySQL ソフトウェアを次の順序で停止します。
+. 次のコマンドを使用して、 MySQL のアップグレードを実行します。 `yum install *.rpm`
++
+`*.rpm` を参照します `.rpm` 新しいバージョンのMySQLをダウンロードしたディレクトリ内のパッケージ。
+
+. Unified Manager を次の順序で開始します。
+

@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-to-view-volumes-based-on-specific-time.html 
+sidebar: sidebar 
+keywords:  
+summary: ボリューム転送ステータス（履歴）レポートをカスタマイズして、特定の期間のボリュームの詳細を表示できます。 
+---
+= ボリューム転送ステータス（履歴）レポートのカスタマイズ：特定の期間のボリュームを表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリューム転送ステータス（履歴）レポートをカスタマイズして、特定の期間のボリュームの詳細を表示できます。
+
+
+
+== このタスクについて
+
+このタスクは、[レポート]ページに移動し、該当するレポートの[レポートの実行]をクリックして実行することもできます。
+
+
+
+== 手順
+
+. クラスタ別のグループ化を解除します。
++
+.. グループ化を解除する列をクリックします。
+.. をクリックします image:../media/click-to-see-menu.gif[""] をクリックします。
+.. * Group *>* Delete Inner Group *を選択します。
+
+
+. 特定の期間のボリュームの詳細を表示するには、* Start time *列をクリックし、をクリックします image:../media/click-to-filter.gif[""] をクリックします。
+. [*フィルター*]ダイアログボックスで、[*値の選択*]をクリックし、ドロップダウンリストから特定の日付と時刻を選択します。
++
+選択した期間のボリュームの詳細が表示されます。
+
+

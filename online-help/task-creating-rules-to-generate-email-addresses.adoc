@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-creating-rules-to-generate-email-addresses.html 
+sidebar: sidebar 
+keywords:  
+summary: クラスタ、Storage Virtual Machine（SVM）、ボリューム、qtree、ユーザ、またはユーザグループに関連付けられたユーザクォータに基づいて、Eメールアドレスを指定するルールを作成できます。クォータに違反が発生すると、指定した E メールアドレスに通知が送信されます。 
+---
+= E メールアドレスを生成するルールを作成しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタ、 Storage Virtual Machine （ SVM ）、ボリューム、 qtree 、ユーザ、またはユーザグループに関連付けられたユーザクォータに基づいて、 E メールアドレスを指定するルールを作成できます。クォータに違反が発生すると、指定した E メールアドレスに通知が送信されます。
+
+
+
+== 作業を開始する前に
+
+* OnCommand 管理者またはストレージ管理者のロールが必要です。
+* [Rules to Generate User and Group Quota Email Address] ページのガイドラインを確認しておく必要があります。
+
+
+
+
+== このタスクについて
+
+クォータの E メールアドレスのルールを定義して、実行順にそれらを入力する必要があります。たとえば、 qtree1 でのクォータ違反に関する通知を E メールアドレス「 qtree1@xyz.com 」で受信し、それ以外の qtree については E メールアドレス「 admin@xyz.com 」を使用する場合は、次の順序でルールを指定する必要があります。
+
+* if （ $qtree='qtree1' ） then qtree1@xyz.com
+* if （ $qtree== * ） then admin@xyz.com
+
+
+指定したルールの条件がどれも満たされていない場合は、デフォルトのルールが使用されます。
+
+if （ $user_or_group=* ） then $user_or_group@$domain
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、左側の[設定]メニューの[*クォータ電子メール]をクリックします。
+. [*セットアップ*オプション]ページで、[*アドレスルール]をクリックし、条件に基づいてルールを入力します。
+. [*Validate] をクリックして、ルールの構文を検証します。
++
+ルールの構文が正しくない場合は、エラーメッセージが表示されます。構文を修正して、もう一度 * 検証 * をクリックする必要があります。
+
+. [ 保存して閉じる ] をクリックします。
+. 作成したEメールアドレスが、「*健常性/ Storage Virtual Machine *の詳細」ページの「*ユーザクォータとグループクォータ*」タブに表示されていることを確認します。
+

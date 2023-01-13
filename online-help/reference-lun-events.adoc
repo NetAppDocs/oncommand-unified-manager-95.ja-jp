@@ -1,0 +1,357 @@
+---
+permalink: online-help/reference-lun-events.html 
+sidebar: sidebar 
+keywords:  
+summary: LUN イベントは、 LUN のステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= LUN イベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LUN イベントは、 LUN のステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：可用性
+
+アスタリスク（ * ）は、 Unified Manager イベントに変換された EMS イベントを示します。
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+LUN オフライン（ Document EvtLunOffline ）
+ a| 
+インシデント
+ a| 
+LUN
+ a| 
+重要
+
+
+
+ a| 
+LUNが破棄されました*
+ a| 
+イベント
+ a| 
+LUN
+ a| 
+情報
+
+
+
+ a| 
+LUN にアクセスするためのアクティブなパスが 1 つ（ ocument EvtLunSingleActivePath ）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUN にアクセスするためのアクティブなパスがありません（ Document EvtLunNotReachable ）
+ a| 
+インシデント
+ a| 
+LUN
+ a| 
+重要
+
+
+
+ a| 
+LUN にアクセスするための最適化されたパスがありません（ Document EvtLunOptimizedPathInactive ）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+HA パートナーから LUN にアクセスするためのパスがない（ Document EvtLunHaPathInactive ）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+|===
+
+
+== 影響範囲：容量
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+LUN Snapshot コピー用の十分なスペースがありません（ ocument LunSnapshotNotPossible ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+|===
+
+
+== 影響範囲：パフォーマンス
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+LUN IOPS の重大しきい値を超過（ ocLunIopsIncident ）
+ a| 
+インシデント
+ a| 
+LUN
+ a| 
+重要
+
+
+
+ a| 
+LUN IOPS の警告しきい値を超過（ ocLunIopsWarning ）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUN MBpsの重大しきい値を超過（Document LunMbpsIncident）
+ a| 
+インシデント
+ a| 
+LUN
+ a| 
+重要
+
+
+
+ a| 
+LUN MBpsの警告しきい値を超過（Document LunMbpsWarning）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUN レイテンシミリ秒 / 処理の重大しきい値を超過（ Document LunLatencyIncident ）
+ a| 
+インシデント
+ a| 
+LUN
+ a| 
+重要
+
+
+
+ a| 
+LUN レイテンシミリ秒 / 処理の警告しきい値を超過（ ocumentLunLatencyWarning ）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUN レイテンシ / LUN IOPS の重大しきい値を超過（ ocLunLatencyIopsIncident ）
+ a| 
+インシデント
+ a| 
+LUN
+ a| 
+重要
+
+
+
+ a| 
+LUN レイテンシ / LUN IOPS の警告しきい値を超過（ Document LunLatencyIopsWarning ）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUNレイテンシ/ LUN MBpsの重大しきい値を超過（ocLunLatencyMbpsIncident）
+ a| 
+インシデント
+ a| 
+LUN
+ a| 
+重要
+
+
+
+ a| 
+LUNレイテンシ/ LUN MBpsの警告しきい値を超過（ocLunLatencyMbpsWarning）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUNレイテンシ/アグリゲート使用済み容量の重大しきい値を超過（Document LunLatencyAggregatePerfCapacityUsedIncident）
+ a| 
+インシデント
+ a| 
+LUN
+ a| 
+重要
+
+
+
+ a| 
+LUNレイテンシ/アグリゲート使用済み容量の警告しきい値を超過（Document LunLatencyAggregatePerfCapacityUsedWarning）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUN レイテンシ / アグリゲート利用率の重大しきい値を超過（ ocLunLatencyAggregateUtilizationIncident ）
+ a| 
+インシデント
+ a| 
+LUN
+ a| 
+重要
+
+
+
+ a| 
+LUN レイテンシ / アグリゲート利用率の警告しきい値を超過（ ocLunLatencyAggregateUtilizationWarning ）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUNレイテンシ/ノード使用済み容量の重大しきい値を超過（文書lunLatencyNodePerfCapacityUsedIncident）
+ a| 
+インシデント
+ a| 
+LUN
+ a| 
+重要
+
+
+
+ a| 
+LUNレイテンシ/ノード使用済み容量の警告しきい値を超過（文書lunLatencyNodePerfCapacityUsedWarning）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUNレイテンシ/ノード使用済みパフォーマンス容量-テイクオーバーの重大しきい値を超過（LunLatencyAggregatePerfCapacityUsedTakeoverIncident）
+ a| 
+インシデント
+ a| 
+LUN
+ a| 
+重要
+
+
+
+ a| 
+LUNレイテンシ/ノード使用済みパフォーマンス容量-テイクオーバーの警告しきい値を超過（Document LunLatencyAggregatePerfCapacityUsedTakeoverWarning）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUN レイテンシ / ノード利用率の重大しきい値を超過（ ocLunLatencyNodeUtilizationIncident ）
+ a| 
+インシデント
+ a| 
+LUN
+ a| 
+重要
+
+
+
+ a| 
+LUN レイテンシ / ノード利用率の警告しきい値を超過（ ocLunLatencyNodeUtilizationWarning ）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+QoS LUN 最大 IOPS の警告しきい値を超過（ドキュメントの QosLunMaxIopsWarning ）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+QoS LUN最大MBpsの警告しきい値を超過（ドキュメントのQosLunMaxMbpsWarning）
+ a| 
+リスク
+ a| 
+LUN
+ a| 
+警告
+
+|===

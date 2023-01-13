@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-groups-of-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: ストレージオブジェクトのグループを作成することで、環境内のストレージオブジェクトを管理できます。対象となるストレージオブジェクトは、グループに関連付けられているグループルールを満たしている必要があります。 
+---
+= ストレージオブジェクトのグループを管理する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージオブジェクトのグループを作成することで、環境内のストレージオブジェクトを管理できます。対象となるストレージオブジェクトは、グループに関連付けられているグループルールを満たしている必要があります。

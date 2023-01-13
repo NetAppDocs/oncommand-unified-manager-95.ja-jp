@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-storage-class-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: ストレージクラスのストレージスペースに関する問題に対処する必要がある場合は、組織の要件に基づいてストレージクラス容量のしきい値設定を編集できます。しきい値を超えるとイベントが生成され、該当するイベントに対するアラートを設定している場合は通知も送信されます。 
+---
+= ストレージクラスのしきい値設定を編集する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージクラスのストレージスペースに関する問題に対処する必要がある場合は、ストレージクラスの容量のしきい値設定を組織の要件に基づいて編集することができます。しきい値を超えるとイベントが生成され、該当するイベントに対するアラートを設定している場合は通知も送信されます。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Health *>* SVM*をクリックします。
+. * Health/Storage Virtual Machines *インベントリページで、Infinite Volumeを備えたSVMを選択します。
+. *健常性/ Storage Virtual Machine *の詳細ページで、* Actions *>* Edit Thresholds *をクリックします。
+. Edit Storage Class Thresholds *ダイアログボックスで、必要に応じてしきい値を変更します。
+. [ 保存して閉じる ] をクリックします。
+

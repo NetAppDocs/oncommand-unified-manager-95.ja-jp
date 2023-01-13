@@ -1,0 +1,65 @@
+---
+permalink: health-checker/task-updating-saml-authentication-settings-after-unified-manager-certificate-change.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager サーバにインストールされている HTTPS セキュリティ証明書が変更されたときは、 SAML 認証の設定を更新する必要があります。証明書は、ホストシステムの名前を変更したり、ホストシステムに新しい IP アドレスを割り当てたり、システムのセキュリティ証明書を手動で変更したりすると更新されます。 
+---
+= Unified Manager セキュリティ証明書変更後に SAML 認証設定を更新しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager サーバにインストールされている HTTPS セキュリティ証明書が変更されたときは、 SAML 認証の設定を更新する必要があります。証明書は、ホストシステムの名前を変更したり、ホストシステムに新しい IP アドレスを割り当てたり、システムのセキュリティ証明書を手動で変更したりすると更新されます。
+
+
+
+== このタスクについて
+
+セキュリティ証明書が変更されたあとに Unified Manager サーバが再起動されると、 SAML 認証は機能せず、ユーザは Unified Manager のグラフィカルインターフェイスにアクセスできなくなります。ユーザインターフェイスに再びアクセスできるようにするには、 IdP サーバと Unified Manager サーバの両方で SAML 認証の設定を更新する必要があります。
+
+
+
+== 手順
+
+. メンテナンスコンソールにログインします。
+. メインメニュー * で、 * SAML 認証を無効にする * オプションの番号を入力します。
++
+SAML 認証を無効にして Unified Manager を再起動することの確認を求めるメッセージが表示されます。
+
+. 更新された FQDN または IP アドレスを使用して Unified Manager のユーザインターフェイスを起動し、更新されたサーバ証明書をブラウザで受け入れ、メンテナンスユーザのクレデンシャルを使用してログインします。
+. [* Setup/Authentication] ページで [* SAML Authentication*] タブを選択し、 IdP 接続を設定します。
+. Unified Manager のホストメタデータ URI をコピーするか、メタデータを XML テキストファイルに保存します。
+. [ 保存（ Save ） ] をクリックします。
++
+設定を完了して Unified Manager を再起動するかどうかの確認を求めるメッセージボックスが表示されます。
+
+. [ 確認してログアウト * ] をクリックすると、 Unified Manager が再起動します。
+. IdP サーバにアクセスし、 Unified Manager サーバの URI とメタデータを入力して設定を完了します。
++
+|===
+| アイデンティティプロバイダ | 設定手順 
+
+
+ a| 
+ADFS （ ADFS ）
+ a| 
+.. ADFS 管理 GUI で、既存の証明書利用者信頼エントリを削除します。
+.. を使用して、新しい証明書利用者信頼エントリを追加します `saml_sp_metadata.xml` 更新したUnified Managerサーバを使用します。
+.. Unified Manager がこの証明書利用者信頼エントリに対する ADFS SAML 応答を解析するために必要な 3 つの要求規則を定義します。
+.. ADFS Windows サービスを再開します。
+
+
+
+
+ a| 
+Shibboleth
+ a| 
+.. Unified Managerサーバの新しいFQDNをで更新します `attribute-filter.xml` および `relying-party.xml` ファイル。
+.. Apache Tomcat Web サーバを再起動し、ポート 8005 がオンラインになるまで待ちます。
+
+
+|===
+. Unified Manager にログインし、 IdP 経由で SAML 認証が想定どおりに機能することを確認します。
+

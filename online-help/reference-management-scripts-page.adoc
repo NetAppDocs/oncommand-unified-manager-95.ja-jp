@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-management-scripts-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Management/Scriptsヘエシを使用して、Unified Managerにカスタムスクリプトを追加できます。これらのスクリプトをアラートに関連付けると、ストレージオブジェクトが自動的に再設定されます。 
+---
+= Management/Scriptsヘエシ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Management/Scriptsヘエシを使用して、Unified Managerにカスタムスクリプトを追加できます。これらのスクリプトをアラートに関連付けると、ストレージオブジェクトが自動的に再設定されます。
+
+Management/Scriptsヘエシを使用して、Unified Managerからスクリプトを追加または削除できます。
+
+
+
+== コマンドボタン
+
+* * 追加 * 。
++
+スクリプトの追加ダイアログボックスが表示されます。このダイアログボックスで、スクリプトを追加できます。
+
+* * 削除 *
++
+選択したスクリプトを削除します。
+
+
+
+
+
+== リストビュー
+
+リストビューには、 Unified Manager に追加したスクリプトが表形式で表示されます。
+
+* * 名前 *
++
+スクリプトの名前が表示されます。
+
+* * 概要 *
++
+スクリプトの概要を表示します。
+
+

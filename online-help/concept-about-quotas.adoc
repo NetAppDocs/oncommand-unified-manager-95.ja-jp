@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-about-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: クォータを使用すると、ユーザ、グループ、または qtree によって使用されるディスクスペースやファイル数を制限したり、追跡したりできます。クォータは、 /etc/quotas ファイルを使用して指定します。クォータは、特定のボリュームまたは qtree に適用されます。 
+---
+= クォータについて
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クォータを使用すると、ユーザ、グループ、または qtree によって使用されるディスクスペースやファイル数を制限したり、追跡したりできます。クォータは、を使用して指定します `/etc/quotas` ファイル。クォータは、特定のボリュームまたは qtree に適用されます。

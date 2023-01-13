@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-lun-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance/LUNInformationヘエシを使用すると、LUNの物理属性と論理属性のリストを表示できます。この情報は、パフォーマンス関連の疑問を解決するのに役立ちます。 
+---
+= Performance/LUNInformationヘエシ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance/LUNInformationヘエシを使用すると、LUNの物理属性と論理属性のリストを表示できます。この情報は、パフォーマンス関連の疑問を解決するのに役立ちます。
+
+
+
+== LUN 属性
+
+* *WWN*
++
+LUNのWWN（World Wide Name；ワールドワイド名）。
+
+* * パス *
++
+LUNの完全パス。例： `/vol/vol1/lun1`。
+
+* *位置合わせ*
++
+LUNのアライメント状態が表示されます。有効な値は次のとおり
+
++
+** マップされていません
+** アライメント済み
+** ミスアライメント状態です
+** ミスアライメントの可能性があり
+** 不確定
+
+
+* *容量（空き/合計）*
++
+LUN上で使用可能な合計ストレージ容量（GB）、および現在使用可能なストレージ容量。
+
+* * 音量 *
++
+LUNが属するボリュームの名前。名前をクリックすると、パフォーマンス/ボリュームエクスプローラのページにボリュームの詳細を表示できます。
+
+* * Storage Virtual Machine *
++
+LUNが属するSVMの名前。名前をクリックすると、Performance/SVMExplorerヘエシにSVMの詳細を表示できます。
+
+* * ノード *
++
+LUNが配置されているノードの名前。名前をクリックすると、Performance/NodeExplorerヘエシにノードの詳細を表示できます。
+
+* * クラスタ *
++
+LUNが属するクラスタの名前。名前をクリックすると、Performance/ClusterExplorerヘエシにクラスタの詳細を表示できます。
+
+* * 状態 *
++
+LUNの状態。有効な状態は、online、offline、nvfail、space-error、foreign-lun-errorです。
+
+* *マップ済み*
++
+LUNがイニシエータグループにマッピングされているか（true）、マッピングされていないか（false）を示します。
+
+

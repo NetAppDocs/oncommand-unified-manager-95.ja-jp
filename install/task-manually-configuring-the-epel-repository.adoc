@@ -1,0 +1,28 @@
+---
+permalink: install/task-manually-configuring-the-epel-repository.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified ManagerをインストールするシステムがExtra Packages for Enterprise Linux（EPEL）リポジトリにアクセスできない場合、インストールが成功するためにはリポジトリを手動でダウンロードして設定する必要があります。 
+---
+= EPEL リポジトリを手動で設定します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager をインストールするシステムが Extra Packages for Enterprise Linux （ EPEL ）リポジトリにアクセスできない場合、インストールが成功するためにはリポジトリを手動でダウンロードして設定する必要があります。
+
+
+
+== このタスクについて
+
+EPEL リポジトリは、システムにインストールする必要があるサードパーティユーティリティへのアクセスを提供します。Unified Manager を Red Hat と CentOS のどちらのシステムにインストールする場合も EPEL リポジトリを使用します。
+
+
+
+== 手順
+
+. インストールに対応するEPELリポジトリをダウンロードします。 `+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm+`
+. EPEL リポジトリを設定します。 `yum install epel-release-latest-7.noarch.rpm`
+

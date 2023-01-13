@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-quota-limits-are.html 
+sidebar: sidebar 
+keywords:  
+summary: ユーザクォータ制限とは、ユーザのスペース使用量がそのユーザのクォータで設定されている制限値に近づいているかどうか、または到達したかどうかを評価するために Unified Manager サーバで使用される値です。ソフトリミットを超えた場合や、ハードリミットに達した場合は、 Unified Manager サーバでユーザクォータイベントが生成されます。 
+---
+= クォータ制限とは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ユーザクォータ制限とは、ユーザのスペース使用量がそのユーザのクォータで設定されている制限値に近づいているかどうか、または到達したかどうかを評価するために Unified Manager サーバで使用される値です。ソフトリミットを超えた場合や、ハードリミットに達した場合は、 Unified Manager サーバでユーザクォータイベントが生成されます。
+
+デフォルトでは、 Unified Manager サーバは、クォータのソフトリミットを超えたユーザまたはクォータのハードリミットに達したユーザ、およびユーザクォータイベントが設定されているユーザに通知 E メールを送信します。OnCommand 管理者は、指定した受信者にユーザクォータイベントまたはユーザグループクォータイベントを通知するアラートを設定できます。
+
+OnCommand System ManagerまたはONTAP CLIを使用してクォータ制限を指定できます。

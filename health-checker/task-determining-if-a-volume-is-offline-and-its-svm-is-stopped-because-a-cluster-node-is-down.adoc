@@ -1,0 +1,61 @@
+---
+permalink: health-checker/task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager Web UIを使用して、ボリュームがオフラインになっている原因が、そのホストStorage Virtual Machine（SVM）のルートボリュームをホストするノードの停止に起因してSVMが停止したためであるかどうかを確認することができます。 
+---
+= ボリュームのオフライン状態とその SVM の停止の原因がノードの停止であるかどうかの判別
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager Web UI を使用して、ボリュームがオフラインになっている原因が、そのホスト Storage Virtual Machine （ SVM ）のルートボリュームをホストするノードの停止に起因して SVM が停止したためであるかどうかを確認することができます。
+
+
+
+== 作業を開始する前に
+
+オペレータ、OnCommand 管理者、またはストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+ボリュームのオフライン状態の原因が、そのホスト SVM のルートボリュームをホストするノードの停止に起因する SVM の停止であるかどうかを判別するには、次の手順を実行します。
+
+
+
+== 手順
+
+. オフラインボリュームの「* Health / Volume * details」ページの「* Related Devices *」ペインに表示されたハイパーテキストリンクを探してクリックします。
+. オフラインボリュームの「* Health / Volume * details」ページの「* Related Devices *」ペインに表示されたハイパーテキストリンクを探してクリックします。
++
+Health/Storage Virtual Machineの詳細ページには、ホストしているSVMの「running」または「stopped」のステータスが表示されます。SVM のステータスが「実行中」である場合は、ボリュームのオフライン状態の原因が、その SVM のルートボリュームをホストするノードの停止ではないことがわかります。
+
+. SVM のステータスが stopped になっていることを確認するには、 * SVM の表示 * をクリックして、停止しているホスト SVM の原因を特定します。
+. [* Health/Storage Virtual Machines * inventory pageSVM]列のヘッダーで、フィルタの記号をクリックします image:../media/filtericon-um60.png["列フィルタのアイコン"] 停止している SVM の名前を入力します。
++
+その SVM の情報が表形式で表示されます。
+
+. [** Health/Storage Virtual Machines **インベントリ]ページで、をクリックします image:../media/gridviewicon.gif["アイコンをクリックします"] 次に、オプション * Root Volume * を選択します。
++
+SVM インベントリにルートボリューム列が追加され、停止している SVM のルートボリュームの名前が表示されます。
+
+. Root Volume列で、ルートボリュームの名前をクリックして、そのボリュームの* Health / Storage Virtual Machine *詳細ページを表示します。
++
+SVM ルートボリュームのステータスが（オンライン）の場合は、元のボリュームのオフライン状態の原因が、その SVM ルートボリュームをホストするノードの停止ではないことがわかります。
+
+. SVMルートボリュームのステータスが（オフライン）の場合は、SVMルートボリュームの*正常性/ボリューム*詳細ページの*関連デバイス*ペインにあるアグリゲートの下に表示されているハイパーテキストリンクを探してクリックします。
+. Aggregateの* Health / Aggregate * detailsページの* Related Devices *ペインに表示されているHyperTextリンクを探してクリックします。
++
+健常性/クラスタの詳細ページのNodesタブには、SVMルートボリュームのホストノードが属しているノードのHAペアの状態が表示されます。ノードの状態が画面に示されます。
+
+
+
+
+
+== 完了後
+
+ボリュームのオフライン状態の原因が、そのボリュームのホスト SVM のオフライン状態であり、さらにその状態の原因が SVM のルートボリュームをホストするノードの停止であることを確認したら、適切な管理者またはオペレータに連絡して、停止したノードを手動で再起動するように依頼します。

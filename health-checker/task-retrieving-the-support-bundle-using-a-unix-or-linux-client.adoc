@@ -1,0 +1,78 @@
+---
+permalink: health-checker/task-retrieving-the-support-bundle-using-a-unix-or-linux-client.html 
+sidebar: sidebar 
+keywords:  
+summary: UNIXまたはLinuxを使用している場合は、Linuxクライアントサーバでコマンドラインインターフェイス\（CLI\）を使用して、vAppからサポートバンドルを取得することができます。サポートバンドルの取得には、 SCP または SFTP を使用します。 
+---
+= UNIX または Linux クライアントを使用したサポートバンドルの取得
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+UNIX または Linux を使用している場合は、 Linux クライアントサーバでコマンドラインインターフェイス（ CLI ）を使用して、 vApp からサポートバンドルを取得することができます。サポートバンドルの取得には、 SCP または SFTP を使用します。
+
+
+
+== 作業を開始する前に
+
+このタスクを実行するには、 maintenance ユーザである必要があります。
+
+メンテナンスコンソールを使用してサポートバンドルを生成し、サポートバンドル名を確認しておく必要があります。
+
+
+
+== 手順
+
+. Linux クライアントサーバを使用して、 Telnet またはコンソール経由で CLI にアクセスします。
+. にアクセスします `/support` ディレクトリ。
+. 次のコマンドを使用して、サポートバンドルを取得してローカルディレクトリにコピーします。
++
+|===
+| 使用するポート | 使用するコマンド 
+
+
+ a| 
+SCP
+ a| 
+`scp <maintenance-user>@<vApp-name-or-ip>:/support/support_bundle_file_name.7z <destination-directory>`
+
+
+
+ a| 
+SFTP を使用する
+ a| 
+`sftp <maintenance-user>@<vApp-name-or-ip>:/support/support_bundle_file_name.7z <destination-directory>`
+
+|===
++
+サポートバンドルの名前は、メンテナンスコンソールを使用してサポートバンドルを生成するときに自動的に付けられます。
+
+. メンテナンスユーザのパスワードを入力します。
+
+
+
+
+== 例
+
+次の例では、 SCP を使用してサポートバンドルを取得します。
+
+[listing]
+----
+
+        $ scp admin@10.10.12.69:/support/support_bundle_20160216_145359.7z .
+Password: <maintenance_user_password>
+support_bundle_20160216_145359.7z   100%  119MB  11.9MB/s   00:10
+----
+次の例では、 SFTP を使用してサポートバンドルを取得します。
+
+[listing]
+----
+
+        $ sftp admin@10.10.12.69:/support/support_bundle_20160216_145359.7z .
+Password: <maintenance_user_password>
+Connected to 10.228.212.69.
+Fetching /support/support_bundle_20130216_145359.7z to ./support_bundle_20130216_145359.7z
+/support/support_bundle_20160216_145359.7z
+----

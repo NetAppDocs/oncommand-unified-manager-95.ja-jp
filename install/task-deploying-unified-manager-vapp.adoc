@@ -1,0 +1,50 @@
+---
+permalink: install/task-deploying-unified-manager-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager を導入するには、ソフトウェアをダウンロードし、仮想アプライアンスを導入し、メンテナンスユーザを作成してユーザ名とパスワードを設定し、 Web UI で初期セットアップを行います。 
+---
+= Unified Manager を導入します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager を導入するには、ソフトウェアをダウンロードし、仮想アプライアンスを導入し、メンテナンスユーザを作成してユーザ名とパスワードを設定し、 Web UI で初期セットアップを行います。
+
+
+
+== 作業を開始する前に
+
+* 導入に必要なシステム要件を満たしている必要があります。
++
+xref:concept-requirements-for-installing-unified-manager.adoc[システム要件]
+
+* 次の情報が必要です。
++
+** NetApp Support Siteのログインクレデンシャル
+** VMware vCenter ServerとvSphere Web Client（vSphereバージョン6.5）またはvSphere Client（vSphereバージョン5.5または6.0）にアクセスするためのクレデンシャル
+** Unified Manager 仮想アプライアンスを導入する ESXi サーバの IP アドレス
+** データストアのストレージスペースやメモリ要件など、データセンターに関する詳細情報
+** IPv6アドレスを使用する場合は、ホストでIPv6が有効になっている必要があります。
+** VMware ToolsのCD-ROMまたはISOイメージ
+
+
+
+
+
+
+== このタスクについて
+
+Unified Manager は、 VMware ESXi サーバに仮想アプライアンスとして導入できます。
+
+メンテナンスコンソールには、SSHではなく、VMwareコンソールを使用してアクセスする必要があります。
+
+VMware ToolsはUnified Managerには含まれていません``.ova`` とを個別にインストールする必要があります。
+
+
+
+== 完了後
+
+導入と初期セットアップが完了したら、クラスタを追加するかメンテナンスコンソールで追加のネットワーク設定を行ってから、 Web UI にアクセスできます。

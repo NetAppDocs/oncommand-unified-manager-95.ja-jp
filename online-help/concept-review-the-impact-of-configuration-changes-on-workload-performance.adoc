@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-review-the-impact-of-configuration-changes-on-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: ディスク障害、 HA フェイルオーバー、ボリューム移動などのクラスタの構成変更が、ボリュームのパフォーマンスの低下や原因レイテンシの増加につながる可能性があります。 
+---
+= 構成の変更がワークロードのパフォーマンスに与える影響を確認します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ディスク障害、 HA フェイルオーバー、ボリューム移動などのクラスタの構成変更が、ボリュームのパフォーマンスの低下や原因レイテンシの増加につながる可能性があります。
+
+Unified Managerのパフォーマンス/ボリュームの詳細ページでは、最新の構成変更がいつ行われたかを確認し、処理やレイテンシ（応答時間）を比較して、選択したボリュームのワークロードでのアクティビティに変化があったかどうかを確認できます。
+
+Unified Manager のパフォーマンスページで検出できる変更イベントの数は限られています。健全性のページには、構成の変更に起因する他のイベントに関するアラートが表示されます。Unified Manager でボリュームを検索すると、イベント履歴を確認できます。

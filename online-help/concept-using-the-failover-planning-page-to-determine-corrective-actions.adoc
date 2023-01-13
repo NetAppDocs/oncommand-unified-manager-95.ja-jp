@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-using-the-failover-planning-page-to-determine-corrective-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance / Node Failover Planning ページに表示原因された情報に基づいて、フェイルオーバーが HA ペアのパフォーマンスを許容可能なレベルよりも低下しないように対処できます。 
+---
+= ノオトフエイルオオハアフランヘシテノタイシヨサクヲカクニン
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance / Node Failover Planning ページに表示原因された情報に基づいて、フェイルオーバーが HA ペアのパフォーマンスを許容可能なレベルよりも低下しないように対処できます。
+
+たとえば、フェイルオーバーによって予測されるパフォーマンスへの影響を軽減するために、一部のボリュームまたは LUN を HA ペアのノードからクラスタ内の他のノードに移動できます。これにより、プライマリノードはフェイルオーバー後も許容されるパフォーマンスを引き続き提供できます。

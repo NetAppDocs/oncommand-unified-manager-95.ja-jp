@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager Web UI では、 MetroCluster 構成を監視して、 MetroCluster 構成に接続の問題がないかを確認できます。接続問題を早期に検出することで、 MetroCluster 構成を効果的に管理できます。 
+---
+= MetroCluster 構成を管理および監視する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager Web UI では、 MetroCluster 構成を監視して、 MetroCluster 構成に接続の問題がないかを確認できます。接続問題を早期に検出することで、 MetroCluster 構成を効果的に管理できます。

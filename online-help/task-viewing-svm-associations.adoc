@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: Protection / Storage Virtual Machine Associationsページを使用すると、既存のSVMの関連付けとそのプロパティを表示したり、追加のSVMの関連付けが必要かどうかを確認したりできます。 
+---
+= SVMの関連付けの表示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Protection / Storage Virtual Machine Associationsページを使用すると、既存のSVMの関連付けとそのプロパティを表示したり、追加のSVMの関連付けが必要かどうかを確認したりできます。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Protection *>* SVM Associations *をクリックします。
++
+SVMの関連付けとそのプロパティのリストが表示されます。
+
+

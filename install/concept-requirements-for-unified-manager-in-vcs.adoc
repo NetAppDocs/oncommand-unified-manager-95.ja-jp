@@ -1,0 +1,37 @@
+---
+permalink: install/concept-requirements-for-unified-manager-in-vcs.html 
+sidebar: sidebar 
+keywords:  
+summary: Veritas Cluster Server \（VCS\）環境でUnified Managerをインストールする場合は、クラスタノードがUnified Managerをサポートするように適切に設定されていることを確認しておく必要があります。 
+---
+= VCSでのUnified Managerの要件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Veritas Cluster Server（VCS）環境でUnified Managerをインストールする場合は、クラスタノードがUnified Managerをサポートするように適切に設定されていることを確認しておく必要があります。
+
+VCSの構成が次の要件を満たしていることを確認する必要があります。
+
+* サポートされているバージョンのオペレーティングシステムが両方のクラスタノードで実行されている必要があります。
+* 両方のクラスタノードで同じバージョンのUnified Managerが同じパスにインストールされている必要があります。
+* MySQLユーザのユーザIDとグループIDが両方のノードで同じである必要があります。
+* ネイティブのext3ファイルシステム、ext4ファイルシステム、Logical Volume Manager（LVM）が使用されている必要があります。
+* Unified ManagerがFibre Channel（FC）またはiSCSI経由でストレージシステムに接続されている必要があります。
++
+また、FCリンクがアクティブであり、ストレージシステムに作成されたLUNに両方のクラスタノードからアクセスできることを確認する必要があります。
+
+* 共有データディスクにUnified Managerのデータベース、レポート、証明書、およびスクリプトプラグインの各フォルダを格納できるだけの十分なスペース（最低80GB）が必要です。
+* 各システムには、ノード間通信用とノードとクライアント間通信用の 2 つ以上のネットワークインターフェイスを設定する必要があります。
++
+ノードとクライアント間の通信に使用するネットワークインターフェイスの名前は、両方のシステムで同じである必要があります。
+
+* クラスタノード間に独立したハートビートリンクが確立されている必要があります。確立されていない場合、クラスタノード間の通信にネットワークインターフェイスが使用されます。
+* オプション：SnapDrive for UNIXを使用して、ハイアベイラビリティ構成の両方のノードからアクセスできる共有の場所を作成する必要があります。
++
+共有の場所のインストールと作成については、『SnapDrive for UNIX Installation and Administration Guide』を参照してください。SnapDrive またはストレージシステムのコマンドラインインターフェイスを使用してLUNを管理することもできます。詳細については、 SnapDrive for UNIX の互換性マトリックスを参照してください。
+
+* SnapDrive アプリケーションとVCSアプリケーション用に追加のRAMが必要です。
+

@@ -1,0 +1,22 @@
+---
+permalink: online-help/task-bookmarking-your-favorite-help-topics-onc.html 
+sidebar: sidebar 
+keywords:  
+summary: '[ ヘルプのお気に入り ] タブでは、頻繁に使用するヘルプトピックをブックマークできます。ブックマークに登録すると、お気に入りのトピックにすばやくアクセスできます。' 
+---
+= よく見るヘルプトピックのブックマーク登録
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+[ ヘルプのお気に入り ] タブでは、頻繁に使用するヘルプトピックをブックマークできます。ブックマークに登録すると、お気に入りのトピックにすばやくアクセスできます。
+
+
+
+== 手順
+
+. お気に入りに追加するヘルプトピックに移動します。
+. [ * お気に入り * ] をクリックし、 [ * 追加 * ] をクリックします。
+

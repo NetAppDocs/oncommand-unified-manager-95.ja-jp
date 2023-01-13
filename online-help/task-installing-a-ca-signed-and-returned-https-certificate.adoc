@@ -1,0 +1,59 @@
+---
+permalink: online-help/task-installing-a-ca-signed-and-returned-https-certificate.html 
+sidebar: sidebar 
+keywords:  
+summary: 認証局から署名を受けて返されたセキュリティ証明書を、アップロードしてインストールすることができます。アップロードしてインストールするファイルは、既存の自己署名証明書の署名済みバージョンである必要があります。CA 署名証明書は、中間者攻撃を阻止するのに役立ち、自己署名証明書よりも強力なセキュリティ保護を実現します。 
+---
+= HTTPSセキュリティ証明書をインストールする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+認証局から署名を受けて返されたセキュリティ証明書を、アップロードしてインストールすることができます。アップロードしてインストールするファイルは、既存の自己署名証明書の署名済みバージョンである必要があります。CA 署名証明書は、中間者攻撃を阻止するのに役立ち、自己署名証明書よりも強力なセキュリティ保護を実現します。
+
+
+
+== 作業を開始する前に
+
+次の作業を完了しておきます。
+
+* 証明書署名要求ファイルをダウンロードし、認証局によって署名されています
+* 証明書チェーンを PEM 形式で保存します
+* チェーンに含まれるすべての証明書について、 Unified Manager サーバ証明書からルート署名証明書への中間証明書も含めます
+
+
+OnCommand 管理者のロールが必要です。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、*設定*メニューから* HTTPS証明書*をクリックします。
+. ［ * HTTPS 証明書のインストール * ］ をクリックします。
+. 表示されるダイアログボックスで、「 * ファイルを選択 ... * 」をクリックして、アップロードするファイルを探します。
+. ファイルを選択し、 * Install * をクリックしてファイルをインストールします。
+
+
+
+
+== 証明書チェーンの例
+
+証明書チェーンファイルの表示例を次に示します。
+
+[listing]
+----
+-----BEGIN CERTIFICATE-----
+<*Server certificate*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#1 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#2 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Root signing certificate*>
+-----END CERTIFICATE-----
+----

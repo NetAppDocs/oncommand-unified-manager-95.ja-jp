@@ -1,0 +1,28 @@
+---
+permalink: online-help/reference-user-not-found.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= ユーザが見つかりません
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* * 問題 *
++
+リモートユーザまたはリモートグループの追加、編集、削除、テストなどの認証に関連する処理を実行すると、次のエラーメッセージが表示されます。 `User not found`。
+
+* * 原因 *
++
+この問題は、ユーザが AD サーバまたは LDAP サーバに存在し、ベース識別名の値が正しく設定されていない場合に発生する可能性があります。
+
+* * 是正措置 *
++
+.. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、* Setup *>* Authentication *をクリックします。
+.. ベース識別名に適切な情報を入力します。
+.. [ 保存して閉じる ] をクリックします。
+
+
+

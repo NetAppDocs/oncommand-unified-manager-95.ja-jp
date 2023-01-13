@@ -1,0 +1,33 @@
+---
+permalink: health-checker/task-send-a-support-bundle-to-technical-support.html 
+sidebar: sidebar 
+keywords:  
+summary: 問題で AutoSupport メッセージよりも詳細な診断情報とトラブルシューティング情報が必要な場合は、テクニカルサポートにサポートバンドルを送信します。 
+---
+= テクニカルサポートへのサポートバンドルの送信
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+問題で AutoSupport メッセージよりも詳細な診断情報とトラブルシューティング情報が必要な場合は、テクニカルサポートにサポートバンドルを送信します。
+
+
+
+== 作業を開始する前に
+
+テクニカルサポートに送信するには、サポートバンドルへのアクセス権が必要です。
+
+テクニカルサポートの Web サイトで生成されたケース番号が必要です。
+
+
+
+== 手順
+
+. NetApp Support Siteにログインします。
+. ファイルをアップロードします。
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/How_to_upload_a_file_to_NetApp["ネットアップにファイルをアップロードする方法"]
+
+

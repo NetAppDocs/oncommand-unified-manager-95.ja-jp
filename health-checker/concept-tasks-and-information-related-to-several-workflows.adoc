@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-tasks-and-information-related-to-several-workflows.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerの多くのワークフローに、共通のタスク、およびワークフローの理解と実行に役立つ参照情報があります。たとえば、イベントに関するメモの追加と確認、イベントの割り当て、イベントへの応答と解決、ボリューム、Storage Virtual Machine \（SVM \）、アグリゲートに関する詳細情報、など。 
+---
+= 複数のワークフローに関連するタスクと情報
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager の多くのワークフローに、共通のタスク、およびワークフローの理解と実行に役立つ参照情報があります。たとえば、イベントに関するメモの追加と確認、イベントの割り当て、イベントへの応答と解決、ボリューム、 Storage Virtual Machine （ SVM ）、アグリゲートに関する詳細情報、 など。

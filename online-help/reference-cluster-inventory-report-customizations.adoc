@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-cluster-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: クラスタコンポーネント上のリソースの不足を監視するようにインベントリレポートをカスタマイズできます。たとえば、SVM数が上限に近づいているクラスタ、古いバージョンのONTAP を実行しているノード、ディスク数が上限に達しているノードなどの情報を監視するようにレポートをカスタマイズできます。 
+---
+= クラスタインベントリレポートのカスタマイズ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタコンポーネント上のリソースの不足を監視するようにインベントリレポートをカスタマイズできます。たとえば、SVM数が上限に近づいているクラスタ、古いバージョンのONTAP を実行しているノード、ディスク数が上限に達しているノードなどの情報を監視するようにレポートをカスタマイズできます。

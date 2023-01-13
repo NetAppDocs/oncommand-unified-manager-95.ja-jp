@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-rbac-is.html 
+sidebar: sidebar 
+keywords:  
+summary: RBAC \（ロールベースアクセス制御\）を使用すると、OnCommand Unified Managerサーバのさまざまな機能やリソースにアクセスできるユーザを制御できます。 
+---
+= RBAC とは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RBAC（ロールベースアクセス制御）を使用すると、OnCommand Unified Managerサーバのさまざまな機能やリソースにアクセスするユーザを制御できます。

@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-configuring-global-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: アグリゲート、ボリューム、および qtree のサイズを効果的に監視できるように、容量、増加率、 Snapshot リザーブ、クォータ、および inode について、グローバル健常性しきい値の条件を設定することができます。また、遅延しきい値を超えた場合にイベントを生成する設定を編集することもできます。 
+---
+= グローバル健全性しきい値を設定します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アグリゲート、ボリューム、および qtree のサイズを効果的に監視できるように、容量、増加率、 Snapshot リザーブ、クォータ、および inode について、グローバル健常性しきい値の条件を設定することができます。また、遅延しきい値を超えた場合にイベントを生成する設定を編集することもできます。
+
+
+
+== このタスクについて
+
+グローバル健全性しきい値の設定は、アグリゲートやボリュームなど、関連付けられているすべてのオブジェクトに適用されます。しきい値を超えるとイベントが生成され、アラートが設定されている場合はアラート通知も送信されます。しきい値はデフォルトで推奨値に設定されていますが、それらの値を変更することでイベントが生成される間隔をニーズに合わせて調整することができます。しきい値を変更した場合、次回の監視サイクルから反映され、その値に基づいてイベントが生成または廃止されます。
+
+グローバル健常性しきい値の設定には、Configuration / Health Thresholdsページからアクセスできます。また、個々のオブジェクトのインベントリページまたは詳細ページから、そのオブジェクトのしきい値の設定を変更することもできます。
+
+
+
+== 選択肢
+
+* xref:task-configuring-global-aggregate-health-threshold-values.adoc[アグリゲートのグローバル健全性しきい値を設定します]
++
+すべてのアグリゲートに対する容量、増加率、および Snapshot コピーの健全性しきい値を設定して、しきい値の違反を追跡することができます。
+
+* xref:task-configuring-global-volume-health-threshold-values.adoc[ボリュームのグローバル健全性しきい値を設定しています]
++
+容量、 Snapshot コピー、 qtree クォータ、ボリューム増加率、オーバーライトリザーブスペースの健全性しきい値の設定を編集することができます。 しきい値の違反を追跡するには、すべてのボリュームの inode を使用します。
+
+* xref:task-configuring-global-qtree-health-threshold-values.adoc[qtree のグローバル健全性しきい値を設定しています]
++
+すべての qtree に対する容量の健全性しきい値の設定を編集して、しきい値の違反を追跡することができます。
+
+* xref:task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.adoc[管理対象外の保護関係の遅延健常性しきい値の編集]
++
+警告やエラーの遅延時間の割合を増やしたり減らしたりすることで、イベントが生成される間隔をニーズに合わせて調整することができます。
+
+

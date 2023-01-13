@@ -1,0 +1,38 @@
+---
+permalink: health-checker/reference-list-of-available-rest-apis-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerで使用可能なREST APIを確認しておくことで、APIの使用について計画する際に役立ちます。API呼び出しは、リソースタイプまたはカテゴリ別に分類されています。 
+---
+= 使用可能なREST APIのリスト
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Managerで使用可能なREST APIを確認しておくことで、APIの使用について計画する際に役立ちます。API呼び出しは、リソースタイプまたはカテゴリ別に分類されています。
+
+使用可能なAPI呼び出しの一覧、および各呼び出しの詳細を確認するには、Swagger Webページを参照する必要があります。
+
+管理API呼び出しは、次のカテゴリに分類されています。
+
+* アグリゲート
+* クラスタ
+* イベント
+* LIF
+* LUN
+* ネームスペース
+* ノード
+* ポート
+* SVM
+* 個のボリューム
+
+
+いずれかのカテゴリを選択すると、次のような、APIのサブカテゴリとバージョン付きのサブカテゴリを示すリストが表示されます。
+
+* /aggregates
+* /v1/Aggregatesの数
+
+
+最新バージョンのREST APIがURLにバージョン番号なしで表示されます。Unified Managerとの統合では、常に最新のバージョンのAPIを使用してください。

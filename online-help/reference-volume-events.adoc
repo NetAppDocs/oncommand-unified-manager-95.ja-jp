@@ -1,0 +1,716 @@
+---
+permalink: online-help/reference-volume-events.html 
+sidebar: sidebar 
+keywords:  
+summary: ボリュームイベントは、ボリュームのステータスに関する情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名、トラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= ボリュームイベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリュームイベントは、ボリュームのステータスに関する情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名、トラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+アスタリスク（ * ）は、 Unified Manager イベントに変換された EMS イベントを示します。
+
+
+
+== 影響範囲：可用性
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+ボリュームが制限状態（ Document EvtVolumeRestricted ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームがオフライン（ Document EvtVolumeOffline ）
+ a| 
+インシデント
+ a| 
+ボリューム
+ a| 
+重要
+
+
+
+ a| 
+ボリュームは一部使用可能（ドキュメント別のボリューム）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+エラー
+
+
+
+ a| 
+ボリュームがアンマウントされています（該当なし）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+ボリュームをマウント（該当なし）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+ボリュームを再マウント（該当なし）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+ボリュームジャンクションパスが非アクティブ（ Document EvtVolumeFunctionPathInactive ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームのオートサイズを有効化（適用不可）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+ボリュームのオートサイズを無効化（該当なし）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+ボリュームのオートサイズの最大容量を変更（該当なし）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+ボリュームのオートサイズの増分サイズを変更（該当なし）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+|===
+
+
+== 影響範囲：容量
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+シンプロビジョニングボリュームにスペースリスク（文書化「シンプロビジョニング」の「ボリュームスペースリスク」）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームスペースがフル（ Document EvtVolumeFull ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+エラー
+
+
+
+ a| 
+ボリュームスペースがほぼフル（ Document EvtVolumeNearlyFull ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリューム論理スペースがフル * （ volumeLogicalSpaceFull ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+エラー
+
+
+
+ a| 
+ボリューム論理スペースがほぼフル * （ volumeLogicalSpaceNearlyFull ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリューム論理スペースが正常 * （ volumeLogicalSpaceAllok ）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+ボリュームの Snapshot リザーブスペースがフル（ Document EvtSnapshotFull ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+Snapshot コピーが多すぎる（ ocumentEvtSnapshotTooMany ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+エラー
+
+
+
+ a| 
+ボリュームの qtree クォータがオーバーコミット（ Document EvtVolumeQtreeQuotaOvercommitted ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+エラー
+
+
+
+ a| 
+ボリュームの qtree クォータがほぼオーバーコミット（ Document EvtVolumeQtreeQuotaAlmostOvercommitted ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームの増加率が異常（ Document EvtVolumeGrowthRateAbnormal ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームのフルまでの日数（ Document EvtVolumeDaysUntilFullSoon ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+エラー
+
+
+
+ a| 
+ボリュームのスペースギャランティを無効化（該当なし）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+ボリュームのスペースギャランティを有効化（該当なし）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+ボリュームのスペースギャランティを変更（該当なし）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+ボリュームの Snapshot リザーブのフルまでの日数（ Document EvtVolumeSnapshotReserveDaysUntilFullSoon ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+エラー
+
+
+
+ a| 
+FlexGroup コンスティチュエントのスペースに問題あり * （ flexGroupConstitutsHaveSpaceIssues ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+エラー
+
+
+
+ a| 
+FlexGroup コンスティチュエントのスペースステータスがすべて正常 * （ flexGroupConstitutionsSpaceStatusAllOK ）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+FlexGroup コンスティチュエントの inode に関する問題 * （ flexGroupConstitutionsHaveInodesIssues ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+エラー
+
+
+
+ a| 
+FlexGroup コンスティチュエント inode ステータスすべて OK * （ flexGroupConstitutionsInodesStatusAllOK ）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+WAFL ボリュームのオートサイズが失敗しました*
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+エラー
+
+
+
+ a| 
+WAFL ボリュームのオートサイズ完了*
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+|===
+
+
+== 影響範囲：構成
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+ボリュームの名前を変更（該当なし）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+ボリュームを検出（該当なし）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+
+
+ a| 
+ボリュームが削除されました（該当なし）
+ a| 
+イベント
+ a| 
+ボリューム
+ a| 
+情報
+
+|===
+
+
+== 影響範囲：パフォーマンス
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+QoS ボリューム最大 IOPS の警告しきい値を超過（ドキュメントの QosVolumeMaxIopsWarning ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+QoSボリューム最大MBpsの警告しきい値を超過（ドキュメントのQosVolumeMaxMbpsWarning）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+QoS ボリューム最大 IOPS/TB の警告しきい値を超過（ドキュメントの QosVolumeMaxIopsPerTbWarning ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリューム IOPS の重大しきい値を超過（ドキュメントボリューム IopsIncident ）
+ a| 
+インシデント
+ a| 
+ボリューム
+ a| 
+重要
+
+
+
+ a| 
+ボリューム IOPS の警告しきい値を超過（ドキュメントボリュームの IopsWarning ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームMBpsの重大しきい値を超過（ドキュメントボリュームMbpsIncident）
+ a| 
+インシデント
+ a| 
+ボリューム
+ a| 
+重要
+
+
+
+ a| 
+ボリュームMBpsの警告しきい値を超過（ドキュメントボリュームの警告）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームレイテンシミリ秒 / 処理の重大しきい値を超過（ドキュメントボリュームレイテンシインシデント）
+ a| 
+インシデント
+ a| 
+ボリューム
+ a| 
+重要
+
+
+
+ a| 
+ボリュームレイテンシミリ秒 / 処理の警告しきい値を超過（ドキュメントボリュームレイテンシ警告）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームキャッシュミス率の重大しきい値を超過（ドキュメント VolumeCacheMissRatioIncident ）
+ a| 
+インシデント
+ a| 
+ボリューム
+ a| 
+重要
+
+
+
+ a| 
+ボリュームキャッシュミス率の警告しきい値を超過（ドキュメント VolumeCacheMissRatioWarning ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームレイテンシ / IOPS の重大しきい値を超過（ドキュメントボリュームレイテンシ / IOPS の重大しきい値を超過）
+ a| 
+インシデント
+ a| 
+ボリューム
+ a| 
+重要
+
+
+
+ a| 
+ボリュームレイテンシ / IOPS の警告しきい値を超過（ドキュメントボリュームレイテンシ / IOPS の警告）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームレイテンシ/ MBpsの重大しきい値を超過（ドキュメントボリュームレイテンシ/ MBpsの重大しきい値を超過）
+ a| 
+インシデント
+ a| 
+ボリューム
+ a| 
+重要
+
+
+
+ a| 
+ボリュームレイテンシ/ MBpsの警告しきい値を超過（ドキュメントボリュームレイテンシ/ MBpsの警告）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームレイテンシ/アグリゲートの使用済み容量の重大しきい値を超過（文書VolumeLatencyAggregatePerfCapacityUsedIncident）
+ a| 
+インシデント
+ a| 
+ボリューム
+ a| 
+重要
+
+
+
+ a| 
+ボリュームレイテンシ/アグリゲートの使用済み容量の警告しきい値を超過（DocumentVolumeLatencyAggregatePerfCapacityUsedWarning）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームレイテンシ / アグリゲート利用率の重大しきい値を超過（ ocVolumeLatencyAggregateUtilizationIncident ）
+ a| 
+インシデント
+ a| 
+ボリューム
+ a| 
+重要
+
+
+
+ a| 
+ボリュームレイテンシ / アグリゲート利用率の警告しきい値を超過（ Document VolumeLatencyAggregateUtilizationWarning ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームレイテンシ/ノードの使用済み容量の重大しきい値を超過（文書VolumeLatencyNodePerfCapacityUsedIncident）
+ a| 
+インシデント
+ a| 
+ボリューム
+ a| 
+重要
+
+
+
+ a| 
+ボリュームレイテンシ/ノードの使用済み容量の警告しきい値を超過（文書VolumeLatencyNodePerfCapacityUsedWarning）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームレイテンシ/ノードの使用済みパフォーマンス容量-テイクオーバーの重大しきい値を超過（文書VolumeLatencyAggregatePerfCapacityUsedTakeoverIncident）
+ a| 
+インシデント
+ a| 
+ボリューム
+ a| 
+重要
+
+
+
+ a| 
+ボリュームレイテンシ/ノードの使用済みパフォーマンス容量-テイクオーバーの警告しきい値を超過（文書VolumeLatencyAggregatePerfCapacityUsedTakeoverWarning）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+ボリュームレイテンシ / ノード利用率の重大しきい値を超過（ドキュメント VolumeLatencyNodeUtilizationIncident ）
+ a| 
+インシデント
+ a| 
+ボリューム
+ a| 
+重要
+
+
+
+ a| 
+ボリュームレイテンシ / ノード利用率の警告しきい値を超過（ ocVolumeLatencyNodeUtilizationWarning ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+|===

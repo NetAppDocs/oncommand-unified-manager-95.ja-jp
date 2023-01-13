@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-understanding-node-root-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager を使用して、ノードのルートボリュームを監視できます。ノードの停止を防ぐための十分な容量をノードのルートボリュームに確保しておくことを推奨します。 
+---
+= ノードルートボリュームの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager を使用して、ノードのルートボリュームを監視できます。ノードの停止を防ぐための十分な容量をノードのルートボリュームに確保しておくことを推奨します。
+
+ノードのルートボリュームの使用容量がノードのルートボリュームの合計容量の 80% を超えると、「 Node Root Volume Space Nearly Full 」イベントが生成されます。通知を受け取るようにイベントのアラートを設定できます。OnCommand System ManagerまたはONTAP CLIを使用して、ノードの停止を防ぐための適切な処置を行うことができます。

@@ -1,0 +1,87 @@
+---
+permalink: online-help/concept-what-event-management-system-events-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Event Management System（EMS\）は、ONTAP カーネルのさまざまな部分からイベントデータを収集し、イベント転送メカニズムを提供します。Unified Manager では、このような ONTAP イベントを EMS イベントとして報告できます。一元化された監視と管理により、重大な EMS イベントとそれらの EMS イベントに基づくアラート通知を簡単に設定することができます。 
+---
+= イベント管理システムイベントとは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Event Management System （ EMS ；イベント管理システム）は、 ONTAP カーネルのさまざまな部分からイベントデータを収集し、イベント転送のメカニズムを提供します。Unified Manager では、このような ONTAP イベントを EMS イベントとして報告できます。一元化された監視と管理により、重大な EMS イベントとそれらの EMS イベントに基づくアラート通知を簡単に設定することができます。
+
+Unified Manager にクラスタを追加すると、 Unified Manager のアドレスが通知の送信先としてクラスタに追加されます。クラスタでイベントが発生するとすぐに EMS イベントが報告されます。
+
+Unified Manager で EMS イベントを受け取る方法は 2 つあります。
+
+* 一定数の重要な EMS イベントは自動的に報告されます。
+* EMS イベントを受け取るように個別に登録することができます。
+
+
+Unified Manager で生成される EMS イベントの報告方法は、イベントが生成された方法によって異なります。
+
+|===
+| 機能性 | 自動の EMS メッセージ | 登録した EMS メッセージ 
+
+
+ a| 
+使用可能な EMS イベント
+ a| 
+一部の EMS イベント
+ a| 
+すべての EMS イベント
+
+
+
+ a| 
+EMS メッセージがトリガーされたときの名前
+ a| 
+Unified Manager のイベント名（ EMS のイベント名から変換）
+ a| 
+固有でない形式は「Error EMS received」です。詳細なメッセージに実際の EMS イベントをドット表記の形式で記載します
+
+
+
+ a| 
+メッセージを受信しました
+ a| 
+クラスタが検出されるとすぐに検出されます
+ a| 
+必要な各 EMS イベントが Unified Manager に追加されたあと、 15 分間隔の次回のポーリング時
+
+
+
+ a| 
+イベントのライフサイクル
+ a| 
+Unified Manager の他のイベントと同じで、「新規」、「確認済み」、「解決済み」、「廃止」の状態があります
+ a| 
+クラスタを更新したあと、イベントが作成されてから 15 分後に EMS イベントが廃止されます
+
+
+
+ a| 
+Unified Manager が停止しているときのイベントのキャプチャ
+ a| 
+システムの起動時に各クラスタと通信して不足しているイベントを取得
+ a| 
+いいえ
+
+
+
+ a| 
+イベントの詳細
+ a| 
+推奨される対処方法を ONTAP から直接インポートして、一貫した解決策を提示します
+ a| 
+[ イベントの詳細 ] ページで修正アクションを使用できません
+
+|===
+[NOTE]
+====
+新しい自動 EMS イベントには、過去のイベントが解決されたことを示す情報イベントも含まれます。たとえば' FlexGroup constituents Space Status All OK'情報イベントはFlexGroup constituents have Space Issues` Errorイベントが解決されたことを示します情報イベントは、他の重大度タイプのイベントと同じライフサイクルを使用して管理することはできませんが、同じボリュームが別の「スペースの問題」エラーイベントを受信した場合、イベントは自動的に廃止されます。
+
+====

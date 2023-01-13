@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-network-interface-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 設定されているLIFの属性のリストを表示するには、Performance/LIFInformationページを使用します。この情報は、パフォーマンス関連の疑問を解決するのに役立ちます。 
+---
+= ハフオオマンス/LIFシヨウホウヘエシ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+設定されているLIFの属性のリストを表示するには、Performance/LIFInformationページを使用します。この情報は、パフォーマンス関連の疑問を解決するのに役立ちます。
+
+
+
+== LIFの属性
+
+* * IP アドレス *
++
+LIFに割り当てられているIPv4またはIPv6アドレス。1つのLIFに複数のIPアドレスを割り当てることができます。
+
+* * 役割 *
++
+ロールは、LIFを介してサポートされるトラフィックの種類を決定します。
+
++
+LIFには次のいずれかのロールを指定できます。
+
++
+** データ
+** クラスタ
+** ノード管理
+** クラスタ間
+
+
+* * フェイルオーバーグループ *
++
+LIFに割り当てられているフェイルオーバーグループの名前。
+
++
+このフィールドはネットワークLIFにのみ適用され、SAN（FC / iSCSI）LIFとNVMe LIFには適用されません。
+
+* * フェイルオーバーポリシー *
++
+LIFに割り当てられているフェイルオーバーポリシーの名前。
+
++
+このフィールドはネットワークLIFにのみ適用され、SAN（FC / iSCSI）LIFとNVMe LIFには適用されません。
+
+* * ホームポート *
++
+このインターフェイスのホームポートとして定義されているノードとポートの名前。名前をクリックすると、Performance/Port Explorerページにポートの詳細を表示できます。
+
+* * 現在のポート *
++
+インターフェイスが現在ホストされているノードおよびポートの名前。名前をクリックすると、Performance/Port Explorerページにポートの詳細を表示できます。
+
+

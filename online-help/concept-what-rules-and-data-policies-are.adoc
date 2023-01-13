@@ -1,0 +1,27 @@
+---
+permalink: online-help/concept-what-rules-and-data-policies-are.html 
+sidebar: sidebar 
+keywords:  
+summary: ルールにより、Infinite Volumeを備えたStorage Virtual Machine（SVM）におけるファイル（データ）の配置が決まります。このようなルールの集まりがデータポリシーです。 
+---
+= ルールおよびデータポリシーとは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ルール_は、Infinite Volumeを備えたStorage Virtual Machine（SVM）におけるファイル（データ）の配置を決定します。このようなルールの集まりが_data policy__と呼ばれています。
+
+* *ルール*
++
+ルールは、Infinite Volume内でのファイルの配置を決定する、事前に定義された一連の条件と情報から主に構成されます。ファイルがInfinite Volume内に配置されるときに、そのファイルの属性がルールのリストと照合されます。属性がルールと一致した場合、そのルールの配置情報によって、ファイルが配置されるストレージクラスが決定されます。属性がルールリストのどのルールとも一致しない場合は、データポリシー内のデフォルトルールを使用してファイルの配置が決定されます。
+
++
+たとえば、「Place all files of .mp3 in the bronze storage class.」というルールがある場合、Infinite Volumeに書き込まれるすべての.mp3ファイルがbronzeストレージクラスに配置されます。
+
+* *データポリシー*
++
+データポリシーはルールのリストです。Infinite Volumeを備えた各SVMには、独自のデータポリシーがあります。Infinite Volumeに追加された各ファイルは、配置先を決定するために、データポリシーのルールと照合されます。データポリシーを使用すると、受信ファイルをファイル属性に基づいてフィルタリングし、適切なストレージクラスに配置することができます。
+
+

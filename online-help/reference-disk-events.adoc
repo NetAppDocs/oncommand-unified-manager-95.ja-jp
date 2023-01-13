@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-disk-events.html 
+sidebar: sidebar 
+keywords:  
+summary: ディスクのイベントは、ディスクのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= ディスクイベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ディスクのイベントは、ディスクのステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：可用性
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+フラッシュディスク - スペアブロックがほぼ使用されています（ Document EvtClusterFlashDiskFewerSpareBlockError ）
+ a| 
+リスク
+ a| 
+クラスタ
+ a| 
+エラー
+
+
+
+ a| 
+フラッシュディスク - スペアブロックなし（ Document EvtClusterFlashDiskNoSpareBlockCritical ）
+ a| 
+インシデント
+ a| 
+クラスタ
+ a| 
+重要
+
+
+
+ a| 
+一部の未割り当てディスク（ Document EvtClusterUnassignedDisksome ）
+ a| 
+リスク
+ a| 
+クラスタ
+ a| 
+警告
+
+
+
+ a| 
+一部のディスクで障害が発生しました（ Document EvtDisksSomeFailed ）
+ a| 
+インシデント
+ a| 
+クラスタ
+ a| 
+重要
+
+|===

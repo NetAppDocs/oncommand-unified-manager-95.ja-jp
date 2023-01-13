@@ -1,0 +1,40 @@
+---
+permalink: health-checker/task-creating-a-snapmirror-policy-to-maximize-transfer-efficiency.html 
+sidebar: sidebar 
+keywords:  
+summary: SnapMirror ポリシーを作成して、保護関係における SnapMirror 転送の優先順位を指定することができます。SnapMirror ポリシーで優先度を割り当てて、優先度が低い転送を通常の優先度の転送よりもあとに実行するようにスケジュールすることで、ソースからデスティネーションへの転送効率を最大化できます。 
+---
+= 転送効率を最大化するために、 SnapMirror ポリシーを作成します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror ポリシーを作成して、保護関係における SnapMirror 転送の優先順位を指定することができます。SnapMirror ポリシーで優先度を割り当てて、優先度が低い転送を通常の優先度の転送よりもあとに実行するようにスケジュールすることで、ソースからデスティネーションへの転送効率を最大化できます。
+
+
+
+== 作業を開始する前に
+
+* OnCommand 管理者またはストレージ管理者のロールが必要です。
+* Workflow Automation のセットアップが完了している必要があります。
+* このタスクでは、 [ 保護の設定 ] ダイアログボックスの [ 宛先情報 ] 領域がすでに完了していることを前提としています。
+
+
+
+
+== 手順
+
+. Configure Protection * （保護の設定）ダイアログボックスの * SnapMirror * タブで、 * Relationship Settings * （関係設定 * ）領域の * Create Policy * （ポリシーの作成）リンクをクリックします。
++
+SnapMirror ポリシーの作成ダイアログボックスが表示されます。
+
+. ［ * ポリシー名 * ］ フィールドに、ポリシーに付ける名前を入力します。
+. [* 転送優先度 *] フィールドで、ポリシーに割り当てる転送優先度を選択します。
+. [* コメント * （ * Comment * ） ] フィールドに、ポリシーのオプションのコメントを入力します。
+. [ 作成（ Create ） ] をクリックします。
++
+新しいポリシーが SnapMirror ポリシーのドロップダウンリストに表示されます。
+
+

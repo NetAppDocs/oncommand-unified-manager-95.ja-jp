@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-health-thresholds-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 適切なConfiguration / Health Thresholdsページを使用して、アグリゲートおよびボリュームのグローバル健全性しきい値を設定し、管理対象外の保護関係のグローバル遅延警告しきい値とエラーしきい値を設定できます。 
+---
+= 概要 の健全性しきい値ページ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+適切なConfiguration / Health Thresholdsページを使用して、アグリゲートおよびボリュームのグローバル健全性しきい値を設定し、管理対象外の保護関係のグローバル遅延警告しきい値とエラーしきい値を設定できます。

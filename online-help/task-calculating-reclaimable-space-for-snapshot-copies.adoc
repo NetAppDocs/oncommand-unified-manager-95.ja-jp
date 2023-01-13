@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-calculating-reclaimable-space-for-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: 1 つ以上の Snapshot コピーを削除した場合に再利用可能となるディスクスペースの量を計算できます。 
+---
+= Snapshot コピーの再利用可能なスペースを計算しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+1 つ以上の Snapshot コピーを削除した場合に再利用可能となるディスクスペースの量を計算できます。
+
+
+
+== 作業を開始する前に
+
+オペレータ、OnCommand 管理者、またはストレージ管理者のロールが必要です。
+
+ボリュームはオンラインである必要があります。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Health *>* Volumes *をクリックします。
+. * Health/Volumes *インベントリページで、表示するSnapshotコピーが含まれているボリュームを選択します。
++
+Snapshot コピーのリストが表示されます。
+
+. *正常性/ボリューム*の詳細ページで、*容量*タブをクリックします。
+. [ 容量 * ] タブの [ * 詳細 * ] ペインの [ その他の詳細 ] セクションで、 [ * Snapshot コピー * ] の横のリンクをクリックします。
++
+Snapshot コピーの数はリンクになっており、クリックすると Snapshot コピーのリストが表示されます。
+
+. 「 * Snapshot copies * 」ビューで、再利用可能なスペースを計算する Snapshot コピーを選択します。
+. [*Calculate] をクリックします。
++
+ボリューム上の再利用可能なスペース（割合、 KB 、 MB 、 GB など）が表示されます。
+
+. 再利用可能なスペースを再計算するには、必要な Snapshot コピーを選択し、 * 再計算 * をクリックします。
+

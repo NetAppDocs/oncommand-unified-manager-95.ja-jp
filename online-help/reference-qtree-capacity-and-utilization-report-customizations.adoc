@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-qtree-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: システムのqtreeの容量と使用率を分析するために、カスタマイズされたレポートを作成できます。たとえば、qtreeをソートしてディスクまたはファイルのソフトリミットを超えたqtreeがないかどうかを確認するレポートを作成できます。 
+---
+= qtreeの容量と使用状況レポートのカスタマイズ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+システムのqtreeの容量と利用率を分析できるようにカスタマイズしたレポートを作成できます。たとえば、qtreeをソートしてディスクまたはファイルのソフトリミットを超えたqtreeがないかどうかを確認するレポートを作成できます。

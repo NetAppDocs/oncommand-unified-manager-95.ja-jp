@@ -1,0 +1,68 @@
+---
+permalink: install/task-upgrading-the-host-os-from-rhel-6-x-to-7-x.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified ManagerがインストールされているRed Hat Enterprise Linux 6.xシステムをRed Hat Enterprise Linux 7.xにアップグレードする必要がある場合は、このトピックに記載されているいずれかの手順に従う必要があります。どちらの場合も、Red Hat Enterprise Linux 6.xでUnified Managerのバックアップを作成し、そのバックアップをRed Hat Enterprise Linux 7.xシステムにリストアする必要があります。 
+---
+= Red Hat Enterprise Linux 6.xから7.xへのホストOSのアップグレード
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified ManagerがインストールされているRed Hat Enterprise Linux 6.xシステムをRed Hat Enterprise Linux 7.xにアップグレードする必要がある場合は、このトピックに記載されているいずれかの手順に従う必要があります。どちらの場合も、Red Hat Enterprise Linux 6.xでUnified Managerのバックアップを作成し、そのバックアップをRed Hat Enterprise Linux 7.xシステムにリストアする必要があります。
+
+
+
+== このタスクについて
+
+ここに記載する2つの方法の違いは、Unified Managerのリストア処理を新しいRHEL 7.xサーバで実行するか同じサーバで実行するかです。
+
+この作業では、Red Hat Enterprise Linux 6.xシステムでUnified Managerのバックアップを作成する必要があるため、Unified Managerがオフラインになる時間が最小限になるように、アップグレードプロセス全体を実行する準備ができてからバックアップを作成します。Red Hat Enterprise Linux 6.xシステムをシャットダウンしたあと、新しいRed Hat Enterprise Linux 7.xシステムが起動するまではデータが収集されないため、その間のデータはUnified Manager UIに表示されません。
+
+バックアップとリストアのプロセスの詳細な手順については、Unified Managerオンラインヘルプを参照してください。
+
+* 新しいサーバを使用したホスト OS のアップグレード *
+
+RHEL 7.xソフトウェアをインストールできるスペアシステムがあり、RHEL 6.xシステムが稼働している間にスペアシステムでUnified Managerのリストアを実行できる場合は、次の手順に従います。
+
+. 新しいサーバにRed Hat Enterprise Linux 7.xソフトウェアをインストールして設定します。
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Red Hat のソフトウェアとインストールの要件]
+
+. Red Hat Enterprise Linux 7.xシステムに、既存のRed Hat Enterprise Linux 6.xシステムと同じバージョンのUnified Managerソフトウェアをインストールします。
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[Red Hat Enterprise Linux への Unified Manager のインストール]
+
++
+インストールが完了しても、 UI を起動したり、クラスタ、ユーザ、または認証設定を設定したりしないでください。この情報は、リストアプロセスでバックアップファイルに取り込まれます。
+
+. Red Hat Enterprise Linux 6.xシステムで、Web UIのの管理メニューで、Unified Managerのバックアップを作成し、そのバックアップファイルを外部の場所にコピーします。
+. Red Hat Enterprise Linux 6.xシステムで、Unified Managerをシャットダウンします。
+. Red Hat Enterprise Linux 7.xシステムで、外部の場所からにバックアップファイルをコピーします `/data/ocum-backup/`をクリックし、次のコマンドを入力してバックアップファイルからUnified Managerデータベースをリストアします。``um backup restore -f /opt/netapp/data/ocum-backup/<backup_file_name>``
+. サポートされているWebブラウザにIPアドレスまたはURLを入力してUnified Manager Web UIを起動し、システムにログインします。
+
+
+システムが正常に動作していることを確認したら、Red Hat Enterprise Linux 6.xシステムからUnified Managerを削除できます。
+
+* 同じサーバ上のホスト OS のアップグレード *
+
+RHEL 7.xソフトウェアをインストールできるスペアシステムがない場合は、次の手順に従います。
+
+. Web UIの管理メニューで、Unified Managerのバックアップを作成し、そのバックアップファイルを外部の場所にコピーします。
+. システムからRed Hat Enterprise Linux 6.xイメージを削除し、システムを完全に消去します。
+. 同じシステムにRed Hat Enterprise Linux 7.xソフトウェアをインストールして設定します。
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Red Hat のソフトウェアとインストールの要件]
+
+. Red Hat Enterprise Linux 7.xシステムに、前のRed Hat Enterprise Linux 6.xシステムと同じバージョンのUnified Managerソフトウェアをインストールします。
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[Red Hat Enterprise Linux への Unified Manager のインストール]
+
++
+インストールが完了しても、 UI を起動したり、クラスタ、ユーザ、または認証設定を設定したりしないでください。この情報は、リストアプロセスでバックアップファイルに取り込まれます。
+
+. 外部の場所からにバックアップファイルをコピーします `/data/ocum-backup/`をクリックし、次のコマンドを入力してバックアップファイルからUnified Managerデータベースをリストアします。``um backup restore -f /opt/netapp/data/ocum-backup/<backup_file_name>``
+. サポートされているWebブラウザにIPアドレスまたはURLを入力してUnified Manager Web UIを起動し、システムにログインします。
+

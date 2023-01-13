@@ -1,0 +1,33 @@
+---
+permalink: install/task-manually-configuring-the-mysql-repository.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Unified Manager をインストールするシステムが MySQL Community Edition リポジトリにアクセスできない場合、インストールが成功するためにはリポジトリを手動でダウンロードして設定する必要があります。 
+---
+= MySQL リポジトリを手動で設定する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager をインストールするシステムが MySQL Community Edition リポジトリにアクセスできない場合、インストールが成功するためにはリポジトリを手動でダウンロードして設定する必要があります。
+
+
+
+== このタスクについて
+
+MySQL リポジトリリポジトリリポジトリは、システムにインストールする必要がある MySQL ソフトウェアへのアクセスを提供します。
+
+[NOTE]
+====
+システムがインターネットに接続されていない場合、このタスクは失敗します。Unified Manager をインストールするシステムがインターネットにアクセスできない場合は、 MySQL のドキュメントを参照してください。
+
+====
+
+
+== 手順
+
+. インストールに対応するMySQLリポジトリをダウンロードします。 `+wget http://repo.mysql.com/yum/mysql-5.7-community/el/7/x86_64/mysql57-community-release-el7-7.noarch.rpm+`
+. MySQL リポジトリを設定します。 `yum install mysql57-community-release-el7-7.noarch.rpm`
+

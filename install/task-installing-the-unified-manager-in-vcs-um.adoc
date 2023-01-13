@@ -1,0 +1,44 @@
+---
+permalink: install/task-installing-the-unified-manager-in-vcs-um.html 
+sidebar: sidebar 
+keywords:  
+summary: ハイアベイラビリティ構成にするには、VCSの両方のクラスタノードにUnified Managerをインストールする必要があります。 
+---
+= VCSへのUnified Managerのインストール
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハイアベイラビリティ構成にするには、VCSの両方のクラスタノードにUnified Managerをインストールする必要があります。
+
+
+
+== 作業を開始する前に
+
+* クラスタの両方のノードにVCSがインストールされて設定されている必要があります。
++
+VCSのインストールの詳細については、_Veritas Cluster Server 6.2.1 Installation Guide _に記載されている手順を参照してください。
+
+* Unified Managerサーバのコンソールにログインするための明示的なroot権限が必要です。
+
+
+
+
+== このタスクについて
+
+Unified Managerの両方のインスタンスで同じデータベースを使用し、同じノードセットを監視するように設定する必要があります。
+
+
+
+== 手順
+
+. クラスタの 1 つ目のノードにログインします。
+. 1つ目のノードにUnified Managerをインストールします。
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[Red Hat Enterprise LinuxまたはCentOSへのUnified Managerのインストール]
+
+. クラスタの2つ目のノードで手順1と2を繰り返します。
+. 2つ目のUnified Managerインスタンスで、Red Hat Enterprise LinuxサーバまたはCentOSサーバにrootユーザとしてログインし、1つ目のUnified Managerインスタンスと同じumadminのパスワードを入力します.`passwd umadmin`
+

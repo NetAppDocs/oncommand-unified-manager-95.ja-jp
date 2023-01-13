@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-reverting-a-lif-to-its-home-port-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 別のポートにフェイルオーバーまたは移行されたLIFを、手動または自動で、現在のポートからホームポートにリバートできます。これは、OnCommand システムマネージャを使用して実行できます。 
+---
+= OnCommand システムマネージャを使用したLIFのホームポートへのリバート
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+別のポートにフェイルオーバーまたは移行されたLIFを、手動または自動で、現在のポートからホームポートにリバートできます。これは、OnCommand システムマネージャを使用して実行できます。
+
+
+
+== このタスクについて
+
+管理者は、LIFを作成する際に、LIFの優先配置先として使用するホームポートとホームノードを指定します。ホームノードを使用できない場合やホームポートで物理リンクの障害が発生した場合は、LIFが自動的に新しい場所に移行されます。新しい場所は、たとえばOnCommand のSystem Managerで、LIFの現在のポートとして報告されます。自動リバートオプションを有効にしないかぎり、LIFはリバートされるまでこの新しい場所のままとなります。
+
+
+
+== 手順
+
+. OnCommand システムマネージャを開きます。
+. [*ホーム]タブで、ストレージ・システムをダブルクリックします。
+. ナビゲーションペインで、* Storage Virtual Machines *階層を展開します。
+. ナビゲーションペインで、SVMを選択し、* Configuration *>* Network Interfaces *をクリックします。
+. 次の図に示すように、「* Current Port *」列で、赤い×印の付いた家のアイコンが表示されているデータLIFを探します。
++
+image::../media/systemmgr-lifs-networkinterfaces-jpg.gif[Network Interfacesビューで確認できます]
+
+. LIFを選択し、*ホームに送信*をクリックします。
++
+このオプションは、選択したインターフェイスがホーム以外のポートでホストされていて、かつホームポートが使用可能である場合にのみ有効になります。
+
+

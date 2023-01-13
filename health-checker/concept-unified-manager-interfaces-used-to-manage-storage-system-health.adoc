@@ -1,0 +1,32 @@
+---
+permalink: health-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-health.html 
+sidebar: sidebar 
+keywords:  
+summary: このセクションでは、OnCommand Unified Managerでデータストレージの容量、可用性、保護に関する問題をトラブルシューティングするための2種類のユーザインターフェイスについて説明します。2 種類の UI とは、 Unified Manager Web UI とメンテナンスコンソールです。 
+---
+= ストレージシステムの健常性を管理するために使用される Unified Manager のインターフェイス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このセクションでは、OnCommand Unified Managerでデータストレージの容量、可用性、保護に関する問題をトラブルシューティングするための2種類のユーザインターフェイスについて説明します。2 種類の UI とは、 Unified Manager Web UI とメンテナンスコンソールです。
+
+Unified Manager の保護機能を使用する場合は、 OnCommand Workflow Automation （ WFA ）もインストールして設定する必要があります。
+
+
+
+== Unified Manager Web UI
+
+Unified Manager Web UI では、管理者がデータストレージの容量、可用性、保護に関連するクラスタの問題を監視してトラブルシューティングすることができます。
+
+このセクションでは、管理者がUnified Manager Web UIに表示されるストレージ容量、データの可用性、または保護に関する問題をトラブルシューティングする際に従う共通のワークフローについて説明します。
+
+
+
+== メンテナンスコンソール
+
+メンテナンスコンソールでは、管理者が Unified Manager サーバ自体に関連するオペレーティングシステムの問題、バージョンアップグレードの問題、ユーザアクセスの問題、およびネットワークの問題を監視し、診断し、対処することができます。Unified Manager Web UI を使用できない場合は、メンテナンスコンソールが Unified Manager にアクセスする唯一の手段となります。
+
+ここでは、メンテナンスコンソールにアクセスしてUnified Managerサーバの機能に関連する問題を解決する方法について説明します。

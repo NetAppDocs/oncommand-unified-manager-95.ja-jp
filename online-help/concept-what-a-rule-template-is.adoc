@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-what-a-rule-template-is.html 
+sidebar: sidebar 
+keywords:  
+summary: ルールテンプレートは、データポリシー内のルールの作成に使用できる事前定義されたテンプレートです。ルールテンプレートでは、所有者、ファイルタイプ、ディレクトリパスの3つのカテゴリに基づいてルールを作成できます。 
+---
+= ルールテンプレートとは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ルールテンプレートは、データポリシー内のルールの作成に使用できる事前定義されたテンプレートです。ルールテンプレートでは、所有者、ファイルタイプ、ディレクトリパスの3つのカテゴリに基づいてルールを作成できます。
+
+
+
+== ファイルタイプのルールテンプレートの例
+
+ルールテンプレート「場所all files with the specified extensions in a suitable storage class」を指定すると、Infinite Volumeに書き込まれるすべての.mp3ファイルが指定したストレージクラスに配置されます。

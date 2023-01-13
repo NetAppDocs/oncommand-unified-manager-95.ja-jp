@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-inodes-events.html 
+sidebar: sidebar 
+keywords:  
+summary: inode イベントは、 inode がフルまたはほぼフルになったことを通知します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= inode イベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+inode イベントは、 inode がフルまたはほぼフルになったことを通知します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：容量
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+inode がほぼフル（ Document EvtInodesAlmostFull ）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+警告
+
+
+
+ a| 
+inode がフル（ドキュメントのノードがフル）
+ a| 
+リスク
+ a| 
+ボリューム
+ a| 
+エラー
+
+|===

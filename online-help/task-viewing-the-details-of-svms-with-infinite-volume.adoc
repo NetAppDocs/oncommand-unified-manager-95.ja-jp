@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-viewing-the-details-of-svms-with-infinite-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 健常性/ Storage Virtual Machineインベントリページを使用して、Unified Managerで監視されるInfinite Volumeを備えたStorage Virtual Machine（SVM）に関する詳細情報を表示できます。Infinite Volumeに関連付けられている容量、構成、データポリシーとルールなどの詳細を確認できます。 
+---
+= Infinite Volumeを備えたSVMの詳細を表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+健全性/ Storage Virtual Machineインベントリページを使用して、Unified Managerで監視されるInfinite Volumeを備えたStorage Virtual Machine（SVM）に関する詳細情報を表示できます。Infinite Volumeに関連付けられている容量、構成、データポリシーとルールなどの詳細を確認できます。
+
+
+
+== 作業を開始する前に
+
+* オペレータ、OnCommand 管理者、またはストレージ管理者のロールが必要です。
+* Infinite Volumeを備えたSVMが含まれるクラスタをUnified Managerデータベースに追加しておく必要があります。
+
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Health *>* SVM*をクリックします。
+. *健常性/ Storage Virtual Machine *インベントリページで、「* Allowed Volume Type *」の列フィルタを使用して、監視対象のInfinite Volumeを一覧表示します。
+. SVM名をクリックして、Infinite Volumeを備えたSVMのすべての詳細を表示します。
+

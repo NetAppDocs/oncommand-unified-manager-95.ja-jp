@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-descriptions-of-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: パフォーマンスインベントリページでは、クラスタ、アグリゲート、ボリュームなど、使用可能な各ストレージオブジェクトに関するパフォーマンス情報の概要を確認できます。パフォーマンスオブジェクト詳細ページへのリンクを使用して、特定のオブジェクトの詳細情報を表示できます。 
+---
+= パフォーマンスインベントリページの説明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+パフォーマンスインベントリページでは、クラスタ、アグリゲート、ボリュームなど、使用可能な各ストレージオブジェクトに関するパフォーマンス情報の概要を確認できます。パフォーマンスオブジェクト詳細ページへのリンクを使用して、特定のオブジェクトの詳細情報を表示できます。

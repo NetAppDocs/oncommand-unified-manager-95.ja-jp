@@ -1,0 +1,66 @@
+---
+permalink: health-checker/task-setting-up-and-monitoring-a-vserver-with-infinite-volume-without-storage-classes.html 
+sidebar: sidebar 
+keywords:  
+summary: Infinite Volumeを備えたStorage Virtual Machine（SVM）のセットアップと監視には、OnCommand Workflow Automation \（wfa \）とUnified Managerを使用する必要があります。WFAを使用してInfinite Volumeを備えたSVMを作成し、Unified Managerを使用してInfinite Volumeを監視する必要があります。必要に応じて、Infinite Volumeに対してデータ保護を設定できます。 
+---
+= ストレージクラスを含まないInfinite Volumeを備えたSVMをセットアップおよび監視する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Infinite Volumeを備えたStorage Virtual Machine（SVM）のセットアップと監視には、OnCommand Workflow Automation （WFA）とUnified Managerを使用する必要があります。WFAを使用してInfinite Volumeを備えたSVMを作成し、Unified Managerを使用してInfinite Volumeを監視する必要があります。必要に応じて、Infinite Volumeに対してデータ保護を設定できます。
+
+
+
+== 作業を開始する前に
+
+次の要件を満たしている必要があります。
+
+* WFAがインストールされ、データソースが設定されている必要があります。
+* OnCommand 管理者またはストレージ管理者のロールが必要です。
+* WFAで適切な定義済みワークフローをカスタマイズして、必要な数のアグリゲートを作成しておく必要があります。
+* WFAでUnified Managerサーバをデータソースとして設定し、データが正常にキャッシュされることを確認しておく必要があります。
+
+
+
+
+== このタスクについて
+
+* Unified Managerで監視できるのはデータSVMだけです。
+* このタスクを実行するときは、OnCommand Workflow Automation （WFA）とOnCommand Unified Managerの2つのアプリケーションを切り替える必要があります。
+* 以下は大まかな手順です。
++
+WFAタスクの実行の詳細については、OnCommand Workflow Automation のマニュアルを参照してください。
+
+
+
+
+
+== 手順
+
+. image:../media/wfa-icon.gif["WFA手順 のアイコン"] Infinite Volumeを備えたSVMを作成し、適切なワークフローを使用してInfinite Volumeを作成します。
++
+Infinite Volumeを作成するときに、重複排除や圧縮などのStorage Efficiencyテクノロジを有効にすることができます。
+
+. image:../media/um-icon.gif["Unified Manager手順 のアイコン"] Infinite Volumeを備えたSVMが含まれるクラスタをUnified Managerデータベースに追加します。
++
+クラスタを追加するには、クラスタのIPアドレスまたはFQDNを指定します。
+
+. image:../media/um-icon.gif["Unified Manager手順 のアイコン"] 組織の要件に基づいて、SVM上のInfinite Volumeのしきい値を変更します。
++
+[TIP]
+====
+Infinite Volumeのデフォルトのしきい値設定を使用する必要があります。
+
+====
+. image:../media/um-icon.gif["Unified Manager手順 のアイコン"] Infinite Volumeに関連する可用性と容量の問題に対応するための通知アラートとトラップを設定します。
+. image:../media/wfa-icon.gif["WFA手順 のアイコン"] Infinite Volumeを備えたディザスタリカバリ（DR）用のSVMを作成し、次の手順でデータ保護（DP）を設定します。
++
+.. 適切なワークフローを使用してDP用のInfinite Volumeを作成します。
+.. 適切なワークフローを使用して、ソースとデスティネーションの間にDPミラー関係を設定します。
+
+
+

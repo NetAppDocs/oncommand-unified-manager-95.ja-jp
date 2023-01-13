@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-viewing-the-list-of-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: 選択したボリュームの Snapshot コピーのリストを表示できます。Snapshot コピーのリストを使用すると、 1 つ以上の Snapshot コピーが削除された場合に再利用可能なディスクスペースの量を計算できます。また、必要に応じて Snapshot コピーを削除できます。 
+---
+= Snapshot コピーリストを表示しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+選択したボリュームの Snapshot コピーのリストを表示できます。Snapshot コピーのリストを使用すると、 1 つ以上の Snapshot コピーが削除された場合に再利用可能なディスクスペースの量を計算できます。また、必要に応じて Snapshot コピーを削除できます。
+
+
+
+== 作業を開始する前に
+
+* オペレータ、OnCommand 管理者、またはストレージ管理者のロールが必要です。
+* Snapshot コピーを含むボリュームがオンラインになっている必要があります。
+
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Health *>* Volumes *をクリックします。
+. * Health/Volumes *インベントリページで、表示するSnapshotコピーが含まれているボリュームを選択します。
+. *正常性/ボリューム*の詳細ページで、*容量*タブをクリックします。
+. [ 容量 * ] タブの [ * 詳細 * ] ペインの [ その他の詳細 ] セクションで、 [ * Snapshot コピー * ] の横のリンクをクリックします。
++
+Snapshot コピーの数はリンクになっており、クリックすると Snapshot コピーのリストが表示されます。
+
+

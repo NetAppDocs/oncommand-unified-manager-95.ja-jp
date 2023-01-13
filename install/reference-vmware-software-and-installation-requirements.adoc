@@ -1,0 +1,44 @@
+---
+permalink: install/reference-vmware-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager をインストールする VMware vSphere システムには、特定のバージョンのオペレーティングシステムとサポートソフトウェアが必要です。 
+---
+= VMware ソフトウェアとインストールの要件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager をインストールする VMware vSphere システムには、特定のバージョンのオペレーティングシステムとサポートソフトウェアが必要です。
+
+
+
+== オペレーティングシステムソフトウェア
+
+サポートされる VMware ESXi のバージョンは次のとおりです。
+
+* ESXi 5.5、6.0、6.5
+
+
+サポートされる vSphere のバージョンは次のとおりです。
+
+* VMware vCenter Server 5.5、6.0、6.5
+
+
+サポートされている ESXi のバージョンの最新のリストについては、 Interoperability Matrix を参照してください。
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+仮想アプライアンスが正しく動作するには、VMware ESXiサーバの時刻がNTPサーバの時刻と同じである必要があります。VMware ESXi サーバの時刻を NTP サーバの時刻と同期すると、時刻に関する障害は発生しなくなります。
+
+
+
+== インストールの要件
+
+Unified Manager 仮想アプライアンスでは、 VMware High Availability がサポートされます。
+
+ONTAP ソフトウェアを実行しているストレージシステムにNFSデータストアを導入する場合は、NetApp NFS Plug-in for VMware VAAIを使用してシックプロビジョニングを使用する必要があります。
+
+リソースが不十分なために高可用性に対応した環境で展開に失敗した場合は、仮想マシンの再起動優先度を無効にして、ホスト隔離時の対応をオンにしたまま、クラスタ機能仮想マシンオプションを変更する必要があります。

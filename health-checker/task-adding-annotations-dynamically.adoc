@@ -1,0 +1,34 @@
+---
+permalink: health-checker/task-adding-annotations-dynamically.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Managerでカスタムアノテーションを作成すると、クラスタ、Storage Virtual Machine（SVM）、およびボリュームがルールに基づいてアノテーションに動的に関連付けられます。ルールにより、ストレージオブジェクトにアノテーションが自動的に割り当てられます。 
+---
+= アノテーションの動的な追加
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager でカスタムアノテーションを作成すると、クラスタ、 Storage Virtual Machine （ SVM ）、およびボリュームがルールに基づいてアノテーションに動的に関連付けられます。ルールにより、ストレージオブジェクトにアノテーションが自動的に割り当てられます。
+
+
+
+== 作業を開始する前に
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+
+
+== 手順
+
+. ツールバーで、*をクリックしますimage:../media/clusterpage-settings-icon.gif[""]*をクリックし、左側の[管理]メニューの[*注釈*]をクリックします。
+. [* 注釈 * ] ページで、 [ * 注釈の追加 * ] をクリックします。
+. [ 注釈の追加 * （ * Add Annotation * ） ] ダイアログボックスで、注釈の名前と概要を入力します。
++
+アノテーションの作成時にアノテーションに値を追加することもできます。
+
+. オプション：アノテーション値 * セクションで、 * 追加 * をクリックしてアノテーションに値を追加します。
+. [ 保存して閉じる ] をクリックします。
+

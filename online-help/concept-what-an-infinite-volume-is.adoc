@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-an-infinite-volume-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Infinite Volumeは、単一のボリュームで最大20億のファイル、容量にして数十ペタバイトのデータを格納可能な、拡張性に優れたボリュームです。 
+---
+= Infinite Volumeとは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Infinite Volumeは、単一のボリュームで最大20億のファイル、容量にして数十ペタバイトのデータを格納可能な、拡張性に優れたボリュームです。
+
+Infinite Volumeを使用すると、数ペタバイトのデータを大規模な1つの論理エンティティで管理することができ、クライアントは数ペタバイトのデータをボリューム全体に対する1つのジャンクションパスから取得できます。
+
+Infinite Volumeは、複数のノード上の複数のアグリゲートのストレージを使用します。最初は小規模なInfinite Volumeから始めて、アグリゲートにディスクを追加したり使用するアグリゲートを増やしたりすることで、無停止で拡張することができます。

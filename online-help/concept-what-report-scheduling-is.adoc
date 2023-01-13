@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-report-scheduling-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Scheduleオプションを使用すると、特定の日時にレポートを生成するようにスケジュールできます。レポートは、スケジュールに従って1人以上の受信者にEメールで自動的に送信されます。 
+---
+= レポートのスケジュールとは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+特定の日時にレポートを生成するようにスケジュールを設定するには、* Schedule *オプションを使用します。レポートは、スケジュールに従って1人以上の受信者にEメールで自動的に送信されます。
+
+レポートをスケジュールすると、レポートを手動で生成して送信する手間を最小限に抑えることができます。Unified Managerからの通知を受信しない管理者がストレージの現在のステータスを指定した間隔で監視するように設定できます。

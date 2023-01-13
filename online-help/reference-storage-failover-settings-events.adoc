@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-storage-failover-settings-events.html 
+sidebar: sidebar 
+keywords:  
+summary: ストレージフェイルオーバー（SFO）の設定のイベントは、ストレージフェイルオーバーが無効か設定されていないかに関する情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= ストレージフェイルオーバー設定のイベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージフェイルオーバー（ SFO ）の設定のイベントは、ストレージフェイルオーバーが無効か設定されていないかに関する情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：可用性
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+ストレージフェイルオーバーインターコネクトの 1 つ以上のリンクが停止（ Document EvtSfoInterconnectOneOrMoreLinksDown ）
+ a| 
+リスク
+ a| 
+ノード
+ a| 
+警告
+
+
+
+ a| 
+ストレージフェイルオーバーが無効になっている（ Document EvtSfoSettingsDisabled ）
+ a| 
+リスク
+ a| 
+ノード
+ a| 
+エラー
+
+
+
+ a| 
+ストレージフェイルオーバーが設定されていません（ Document EvtSfoSettingsNotConfigured ）
+ a| 
+リスク
+ a| 
+ノード
+ a| 
+エラー
+
+
+
+ a| 
+ストレージフェイルオーバーの状態 - テイクオーバー（ Document EvtSfoStateTakeover ）
+ a| 
+リスク
+ a| 
+ノード
+ a| 
+警告
+
+
+
+ a| 
+ストレージフェイルオーバーの状態 - 部分的なギブバック（ドキュメント EvtSfoStatePartialGiveback ）
+ a| 
+リスク
+ a| 
+ノード
+ a| 
+エラー
+
+
+
+ a| 
+ストレージフェイルオーバーノードのステータスが停止しています（ Document EvtSfoNodeStatusDown ）
+ a| 
+リスク
+ a| 
+ノード
+ a| 
+エラー
+
+
+
+ a| 
+ストレージフェイルオーバーのテイクオーバーを実行できません（ドキュメントエヴァットフォックステイクオーバー可能）
+ a| 
+リスク
+ a| 
+ノード
+ a| 
+エラー
+
+|===

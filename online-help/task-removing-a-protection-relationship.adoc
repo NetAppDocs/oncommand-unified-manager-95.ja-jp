@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-removing-a-protection-relationship.html 
+sidebar: sidebar 
+keywords:  
+summary: Protection / Volume Relationshipsページで、保護関係を削除して、選択したソースとデスティネーションの間の既存の関係を完全に削除できます。たとえば、別のデスティネーションを使用して関係を作成する場合などです。この処理ではすべてのメタデータが削除され、元に戻すことはできません。 
+---
+= Protection / Volume Relationshipsページから保護関係を削除します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Protection / Volume Relationshipsページで、保護関係を削除して、選択したソースとデスティネーションの間の既存の関係を完全に削除できます。たとえば、別のデスティネーションを使用して関係を作成する場合などです。この処理ではすべてのメタデータが削除され、元に戻すことはできません。
+
+
+
+== 作業を開始する前に
+
+* OnCommand 管理者またはストレージ管理者のロールが必要です。
+* Workflow Automation のセットアップが完了している必要があります。
+
+
+
+
+== 手順
+
+. [保護/ボリューム関係*]ページで、削除する保護関係のある1つ以上のボリュームを選択し、ツールバーの[*削除]をクリックします。
++
+[ 関係の削除（ Remove Relationship ） ] ダイアログボックスが表示されます。
+
+. [* 続行 ] をクリックして、関係を削除します。
++
+関係が保護/ボリューム関係ページから削除されます。
+
+

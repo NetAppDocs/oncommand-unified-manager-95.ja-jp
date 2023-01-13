@@ -1,0 +1,32 @@
+---
+permalink: online-help/task-viewing-performance-threshold-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 現在定義されているパフォーマンスしきい値ポリシーはすべて、Configuration / Performance Thresholdsページで表示できます。 
+---
+= パフォーマンスしきい値ポリシーを表示します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+現在定義されているパフォーマンスしきい値ポリシーはすべて、Configuration / Performance Thresholdsページで表示できます。
+
+
+
+== このタスクについて
+
+しきい値ポリシーのリストは、ポリシー名のアルファベット順にソートされます。このリストには、すべてのタイプのストレージオブジェクトのポリシーが含まれています。列ヘッダーをクリックすると、その列でポリシーをソートできます。特定のポリシーを検索する場合は、フィルタと検索を使用して、インベントリリストに表示するしきい値ポリシーを絞り込むことができます。
+
+ポリシー名と条件名にカーソルを合わせると、ポリシーの設定の詳細を確認できます。また、ユーザ定義のしきい値ポリシーを作成、クローニング、編集、削除するためのボタンもあります。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、* Configuration *>* Performance Thresholds *を選択します。
++
+Configuration / Performance Thresholdsページが表示されます。
+
+

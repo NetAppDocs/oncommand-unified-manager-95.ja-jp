@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-troubleshooting-non-availability-of-cifs-shares.html 
+sidebar: sidebar 
+keywords:  
+summary: CIFS共有を提供するストレージオブジェクトを使用できない場合は、それらの共有にアクセスできない可能性があります。これらのオブジェクトを使用できない場合に生成される「Volume Offline」、「Junction Path Offline」、「SVM CIFS Server Down」などの可用性イベントを確認する必要があります。 
+---
+= CIFS共有へのアクセスのトラブルシューティング
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CIFS共有を提供するストレージオブジェクトを使用できない場合は、それらの共有にアクセスできない可能性があります。これらのオブジェクトを使用できない場合に生成される「Volume Offline」、「Junction Path Offline」、「SVM CIFS Server Down」などの可用性イベントを確認する必要があります。
+
+
+
+== 作業を開始する前に
+
+このタスクを実行するには、ストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+適切なアラートを設定している場合は、可用性イベントに関する通知がアラートEメールで届きます。
+
+
+
+== 手順
+
+. [ダッシュボード/概要*]ページで、該当するオフラインイベントをクリックします。
++
+たとえば、「ボリュームがオフラインです」イベントが表示された場合は、をクリックします *`Volume_name` Unresolved Incidents and Risks領域のAvailabilityパネルにあるVolume Offline *イベント。
+
+. [*イベント*の詳細]ページで、をクリックします *`Volume_name`*を入力します。
+. * Health/Volume *の詳細ページで、* Related Devices *ペインのCIFS共有に対応する番号をクリックします。
+. *健常性/ Storage Virtual Machine *の詳細ページで、* CIFS Shares *タブをクリックします。
++
+影響を受けるCIFS共有の数を確認できます。
+
+
+
+
+
+== 完了後
+
+OnCommand システムマネージャまたはONTAP CLIを使用して問題を解決する必要があります。

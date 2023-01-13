@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-understanding-performance-events-and-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: パフォーマンスイベントは、事前に定義された状況が発生したとき、またはパフォーマンスカウンタの値がしきい値を超えたときに Unified Manager で自動的に生成される通知です。イベントによって、監視対象のクラスタ内のパフォーマンスの問題を特定できます。 
+---
+= パフォーマンスイベントとアラートの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+パフォーマンスイベントは、事前に定義された状況が発生したとき、またはパフォーマンスカウンタの値がしきい値を超えたときに Unified Manager で自動的に生成される通知です。イベントによって、監視対象のクラスタ内のパフォーマンスの問題を特定できます。
+
+特定の重大度タイプのパフォーマンスイベントが発生したときに自動的に E メール通知を送信するアラートを設定できます。

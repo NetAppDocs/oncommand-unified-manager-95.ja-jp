@@ -1,0 +1,16 @@
+---
+permalink: health-checker/concept-monitoring-and-troubleshooting-data-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager は、許可されたユーザが格納データにアクセスできる信頼性を監視し、アクセスのブロックや妨害をもたらしている状態をユーザに警告します。また、ユーザがその状態を診断して解決方法を決定し、追跡することができます。 
+---
+= データの可用性の監視とトラブルシューティング
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager は、許可されたユーザが格納データにアクセスできる信頼性を監視し、アクセスのブロックや妨害をもたらしている状態をユーザに警告します。また、ユーザがその状態を診断して解決方法を決定し、追跡することができます。
+
+このセクションで取り上げる可用性関連のワークフローのトピックでは、ストレージ管理者が Unified Manager Web UI を使用して、データの可用性に悪影響を与えるハードウェアとソフトウェアの状態を検出、診断、および解決方法の決定を行う方法の例を説明します。

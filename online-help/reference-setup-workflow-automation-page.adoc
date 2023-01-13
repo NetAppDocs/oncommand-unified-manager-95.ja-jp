@@ -1,0 +1,72 @@
+---
+permalink: online-help/reference-setup-workflow-automation-page.html 
+sidebar: sidebar 
+keywords:  
+summary: セットアップ/ Workflow Automationページでは、OnCommand Workflow Automation とUnified Managerを統合するための設定を行うことができます。設定を追加、変更、または削除することもできます。 
+---
+= Setup/WorkflowAutomationヘエシ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+セットアップ/ Workflow Automationページでは、OnCommand Workflow Automation とUnified Managerを統合するための設定を行うことができます。設定を追加、変更、または削除することもできます。
+
+OnCommand 管理者またはストレージ管理者のロールが必要です。
+
+
+
+== Unified Managerデータベースユーザ
+
+この領域では、Unified ManagerとWorkflow Automationのペアリングに必要なデータベースユーザのクレデンシャルを入力できます。
+
+* * 名前 *
++
+Unified Managerデータベースのデータへのアクセスに使用するデータベースユーザのユーザ名を指定できます。デフォルトでは、データベースユーザは選択されていません。ドロップダウンリストからデータベースユーザを選択できます。
+
+* * パスワード *
++
+指定したユーザ名のパスワードを指定できます。
+
+
+
+
+
+== OnCommand Workflow Automation クレデンシャル
+
+この領域では、Unified Managerとのペアリングに必要なWorkflow Automationアカウントのクレデンシャルを入力できます。
+
+* *ホスト名またはIPアドレス*
++
+Unified Managerとのペアリングに使用する、Workflow Automationホストサーバの名前またはIPアドレスを指定します。
+
+* * ポート *
++
+必要なWorkflow Automationホストサーバのポート番号（443）が表示されます。
+
+* * ユーザー名 *
++
+Workflow Automationへのログインに使用するユーザ名を指定できます。
+
+* * パスワード *
++
+指定したユーザ名のパスワードを指定できます。
+
+
+
+
+
+== コマンドボタン
+
+各コマンドボタンを使用して、セットアップオプションを削除、保存、またはキャンセルできます。
+
+* *セットアップを削除*
++
+Workflow AutomationセットアップをUnified Managerから削除します。
+
+* * 保存 *
++
+選択したオプションの設定を保存します。
+
+

@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-create-storage-virtual-machine-associations-wizard.html 
+sidebar: sidebar 
+keywords:  
+summary: Storage Virtual Machineの関連付けの作成ウィザードでは、ソースとデスティネーションのStorage Virtual Machine（SVM）を関連付けて、SnapMirrorおよびSnapVault の保護関係で使用することができます。 
+---
+= Create Storage Virtual Machine Associationsウィザード
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Storage Virtual Machine関連付けの作成ウィザードでは、ソースとデスティネーションのStorage Virtual Machine（SVM）を関連付けて、SnapMirrorとSnapVault の保護関係で使用することができます。
+
+
+
+== ソースSVMを選択
+
+ソースStorage Virtual Machineの選択パネルでは、SVMの関連付けでソースまたはプライマリのSVMを選択できます。
+
+* * 任意 *
++
+任意のSVMソースと1つ以上のデスティネーション、またはセカンダリのSVMとの間で関連付けを作成できます。つまり、現時点で保護を必要とする既存のすべてのSVMおよび今後作成されるすべてのSVMが指定したデスティネーションSVMに関連付けられます。たとえば、異なる場所にある複数のソースのアプリケーションを1箇所にある1つ以上のデスティネーションSVMにバックアップできます。
+
+* * シングル *
++
+特定のソースSVMを1つ以上のデスティネーションSVMに関連付けることができます。たとえば、データを互いに分離する必要のある多数のクライアントにストレージサービスを提供する場合は、このオプションを選択して、特定のSVMソースを、対象のクライアントにのみ割り当てられる特定のSVMデスティネーションに関連付けます。
+
+* * なし（外部） *
++
+ソースSVMとデスティネーションSVMの外部のフレキシブルボリュームの間で関連付けを作成できます。
+
++
+** Storage Virtual Machine の略
++
+使用可能なソースSVMの名前が表示されます
+
+** クラスタ
++
+各SVMが配置されているクラスタが表示されます
+
+
+
+* * これらの種類の関係を許可する *
++
+関連付けの関係タイプを選択できます。
+
++
+** SnapMirror
++
+関連付けのタイプとしてSnapMirror関係を指定します。このオプションを選択すると、選択したソースからデスティネーションへのデータレプリケーションが有効になります。
+
+** SnapVault
++
+関連付けのタイプとしてSnapVault 関係を指定します。このオプションを選択すると、選択したプライマリの場所からセカンダリの場所へのバックアップが可能になります。
+
+
+
+
+
+
+
+== Protection Destinations を選択します
+
+Create Storage Virtual Machine AssociationsウィザードのSelect Protection Destinationsパネルでは、データをコピーまたはレプリケートする場所を選択できます。クラスタごとに1つのデスティネーションSVMでのみ関連付けを作成できます。
+
+
+
+== コマンドボタン
+
+各コマンドボタンを使用して次のタスクを実行できます。
+
+* * 次へ *
++
+ウィザードの次のページに進みます。
+
+* * 戻る *
++
+ウィザードの前のページに戻ります。
+
+* * 完了 *
++
+選択項目を適用して関連付けを作成します。
+
+* * キャンセル *
++
+選択内容を破棄してStorage Virtual Machineの関連付け作成ウィザードを閉じます。
+
+

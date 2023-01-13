@@ -1,0 +1,54 @@
+---
+permalink: config/task-changing-the-unified-manager-host-name-on-rhel-or-centos.html 
+sidebar: sidebar 
+keywords:  
+summary: 必要に応じて、 Unified Manager をインストールした Red Hat Enterprise Linux または CentOS マシンのホスト名をあとから変更することができます。たとえば、タイプ、ワークグループ、監視対象のクラスタグループなどがわかるような名前に変更すると、 Linux マシンのリストで Unified Manager サーバを識別しやすくなります。 
+---
+= Linux システムで Unified Manager ホスト名を変更する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+必要に応じて、 Unified Manager をインストールした Red Hat Enterprise Linux または CentOS マシンのホスト名をあとから変更することができます。たとえば、タイプ、ワークグループ、監視対象のクラスタグループなどがわかるような名前に変更すると、 Linux マシンのリストで Unified Manager サーバを識別しやすくなります。
+
+
+
+== 作業を開始する前に
+
+Unified Manager がインストールされている Linux システムへの root ユーザアクセスが必要です。
+
+
+
+== このタスクについて
+
+Unified Manager Web UI には、ホスト名（またはホストの IP アドレス）を使用してアクセスできます。導入時に静的 IP アドレスを使用してネットワークを設定した場合は、指定したネットワークホストの名前を使用します。DHCP を使用してネットワークを設定した場合は、 DNS サーバからホスト名を取得します。
+
+ホスト名を変更した場合、 Unified Manager Web UI へのアクセスに新しいホスト名を使用するには、ホスト名の元の割り当て方法に関係なく、必ず新しいセキュリティ証明書を生成する必要があります。
+
+ホスト名ではなくサーバの IP アドレスを使用して Web UI にアクセスする場合は、ホスト名を変更したときに新しい証明書を生成する必要はありません。ただし、証明書のホスト名が実際のホスト名と同じになるように証明書を更新することを推奨します。新しい証明書は、 Linux マシンを再起動するまで有効になりません。
+
+Unified Manager でホスト名を変更した場合は、 OnCommand Workflow Automation （ WFA ）でホスト名を手動で更新する必要があります。ホスト名は WFA では自動的に更新されません。
+
+
+
+== 手順
+
+. 変更する Unified Manager システムに root ユーザとしてログインします。
+. 次のコマンドを記載された順序で入力して、Unified Managerソフトウェアと関連するMySQLソフトウェアを停止します。
+. Linuxを使用してホスト名を変更します `hostnamectl` コマンドを実行します `hostnamectl set-hostname new_FQDN`
++
+`hostnamectl set-hostname nuhost.corp.widget.com`
+
+. サーバの HTTPS 証明書を再生成します。``/opt/netapp/essentials/bin/cert.sh create``
+. ネットワークサービスを再起動します。 `service network restart`
+. サービスが再起動したら、新しいホスト名で ping を実行できるかどうかを確認します。 `ping new_hostname`
++
+`ping nuhost`
+
++
+元のホスト名に対して設定していたものと同じ IP アドレスが返されることを確認します。
+
+. ホスト名を変更して確認したら、次のコマンドを記載された順序で入力してUnified Managerを再起動します。
+

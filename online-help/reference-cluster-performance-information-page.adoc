@@ -1,0 +1,74 @@
+---
+permalink: online-help/reference-cluster-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance/ClusterInformationヘエシを使用すると、クラスタの物理属性と論理属性のリストを表示できます。この情報は、パフォーマンス関連の疑問を解決するのに役立ちます。 
+---
+= Performance/ClusterInformationヘエシ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance/ClusterInformationヘエシを使用すると、クラスタの物理属性と論理属性のリストを表示できます。この情報は、パフォーマンス関連の疑問を解決するのに役立ちます。
+
+
+
+== クラスタの属性
+
+* *管理LIF *
++
+クラスタ管理LIFの名前、およびLIFが現在使用可能かどうか（up）、または使用できないか（down）。
+
+* * IP アドレス *
++
+クラスタ管理LIFのIPv4アドレスまたはIPv6アドレス。
+
+* * FQDN *
++
+クラスタ管理LIFの完全修飾ドメイン名（FQDN）。
+
+* * OSバージョン*
++
+クラスタにインストールされているONTAP ソフトウェアのバージョン。
+
++
+[NOTE]
+====
+クラスタ内の各ノードに異なるバージョンのONTAP ソフトウェアがインストールされている場合は、最も低いバージョン番号が表示されます。Performance/NodeInformationページを確認し、各ノードにインストールされているONTAP ソフトウェアのバージョンを確認します。
+
+====
+* * シリアル番号 *
++
+クラスタの一意のID番号。
+
+* *モデル/ファミリー*
++
+クラスタ内のすべてのノードのプラットフォームモデル番号とモデルファミリー。
+
+* *容量（空き/合計）*
++
+クラスタで使用可能な合計ストレージ（GB）、および現在使用可能なストレージ容量。
+
+* * 許可されたプロトコル *
++
+このクラスタで処理できるすべてのプロトコルのリスト。使用可能なプロトコルは、FC / FCoE、iSCSI、HTTP、NVMe、NDMP、NFS、CIFSです。
+
+* * ノード * ：
++
+このクラスタ内のノードの数。この数をクリックすると、Performance/NodeInventoryページにノードを表示できます。
+
+* * Storage Virtual Machine *
++
+このクラスタ内のSVMの数。数をクリックすると、パフォーマンス/ SVMインベントリページにSVMを表示できます。
+
+* * LIF *
++
+このクラスタ内のLIFの数。数をクリックすると、ハフオオマンス/ LIFインヘントリヘエシにLIFを表示できます。
+
+* *連絡先/場所*
++
+該当する場合、このクラスタに関する連絡先となるストレージ管理者の名前、およびクラスタの場所。
+
+

@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-aggregate-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance / Aggregate Informationページでは、アグリゲートの物理的な属性と論理的な属性のリストを確認できます。この情報は、パフォーマンス関連の疑問を解決するのに役立ちます。 
+---
+= Performance/AggregateInformationヘエシ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance / Aggregate Informationページでは、アグリゲートの物理的な属性と論理的な属性のリストを確認できます。この情報は、パフォーマンス関連の疑問を解決するのに役立ちます。
+
+
+
+== アグリゲートの属性
+
+* *アグリゲートタイプ*
++
+アグリゲートのタイプ。
+
++
+** HDD
+** ハイブリッド
++
+HDDとSSDの組み合わせですが、Flash Poolは有効になっていません。
+
+** ハイブリッド（Flash Pool）
++
+HDDとSSDの組み合わせで、Flash Poolが有効になっています。
+
+** SSD の場合
+** SSD （ FabricPool ）
++
+SSDとクラウド階層の組み合わせです
+
+** VMDisk（SDS）
++
+仮想マシン内の仮想ディスク
+
+** VMディスク（FabricPool ）
++
+仮想ディスクとクラウド階層の組み合わせです
+
+** LUN（FlexArray ）
+
+
+* * クラスタ *
++
+アグリゲートが属するクラスタの名前。名前をクリックすると、Performance/ClusterExplorerヘエシにクラスタの詳細を表示できます。
+
+* * ノード *
++
+アグリゲートのディスクが属するノードの名前。名前をクリックすると、Performance/NodeExplorerヘエシにノードの詳細を表示できます。
+
+* * Flash Pool *
++
+Flash Poolアグリゲートの場合は「はい」と「いいえ」のいずれかです
+
++
+Flash Poolアグリゲートは、SSDとHDDの両方で構成されるハイブリッドアグリゲートです。
+
+* * FabricPool *
++
+FabricPool アグリゲートの場合は「はい」と「いいえ」のどちらですか
+
++
+FabricPool アグリゲートは、SSDとクラウド階層の両方で構成されるアグリゲートです。
+
+* *非アクティブなデータレポート*
++
+このアグリゲートでInactive Data Reporting機能が有効になっているかどうか。有効にすると、このアグリゲートのボリュームのパフォーマンス/ボリュームインベントリページにコールドデータの量が表示されます。
+
++
+このフィールドの値は、ONTAP のバージョンが非アクティブデータレポートをサポートしていない場合は「N/A」です。
+
+

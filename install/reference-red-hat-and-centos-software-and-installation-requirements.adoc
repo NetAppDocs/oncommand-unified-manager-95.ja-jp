@@ -1,0 +1,97 @@
+---
+permalink: install/reference-red-hat-and-centos-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager をインストールする Linux システムには、特定のバージョンのオペレーティングシステムとサポートソフトウェアが必要です。 
+---
+= Red Hat Enterprise LinuxおよびCentOSのソフトウェアとインストールの要件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager をインストールする Linux システムには、特定のバージョンのオペレーティングシステムとサポートソフトウェアが必要です。
+
+
+
+== オペレーティングシステムソフトウェア
+
+Linux システムに、次のバージョンのオペレーティングシステムとサポートソフトウェアがインストールされている必要があります。
+
+* Red Hat Enterprise LinuxまたはCentOS 64ビットバージョン7.x
++
+Unified Manager 9.4以降ではRed Hat Enterprise Linux 6.xはサポートされません。
+
+
+
+サポートされている Red Hat Enterprise Linux および CentOS のバージョンの最新のリストについては、 Interoperability Matrix を参照してください。
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+次のサードパーティパッケージが必要です。
+
+* MySQL Community Edition 5.7ファミリーのバージョン5.7.23以降（MySQLリポジトリから入手）
+* OpenJDKバージョン11（Red Hat Extra Enterprise Linux Serverリポジトリから入手）
++
+[NOTE]
+====
+Unified Manager 9.5 以降では Oracle Java はサポートされません。
+
+====
+* p7zip バージョン 16.02 以降（ Red Hat Extra Packages for Enterprise Linux リポジトリから入手）
+
+
+[NOTE]
+====
+Unified Managerの運用開始後にサードパーティ製ソフトウェアをアップグレードする場合は、Unified Managerを一度シャットダウンする必要があります。サードパーティ製ソフトウェアのインストールが完了したら、 Unified Manager を再起動できます。
+
+====
+
+
+== ユーザ認証の要件
+
+Red Hat Enterprise LinuxシステムまたはCentOSのシステムへのUnified Managerのインストールは、rootユーザに加え、を使用すればroot以外のユーザも実行できます `sudo` コマンドを実行します
+
+
+
+== インストールの要件
+
+Red Hat Enterprise LinuxまたはCentOSとその関連リポジトリをシステムにインストールする際のベストプラクティスは次のとおりです。
+
+* Red Hatのベストプラクティスに従ってRed Hat Enterprise LinuxまたはCentOSをインストールし'次のデフォルト・オプションを選択する必要がありますデフォルト・オプションでは'Server with GUI'を選択します
+* Red Hat Enterprise Linux または CentOS への Unified Manager のインストール中にインストールプログラムが必要なすべてのソフトウェアにアクセスしてインストールできるように、システムには該当するリポジトリへのアクセスが必要です。
+* をクリックします `yum` インストーラによるRed Hat Enterprise Linuxリポジトリで依存するソフトウェアの検索では、Red Hat Enterprise Linuxのインストール中またはインストール後に有効なRed Hatサブスクリプションを使用してシステムを登録しておく必要があります。
++
+Red Hat Subscription Manager については、 Red Hat のドキュメントを参照してください。
+
+* 必要なサードパーティユーティリティがシステムに正しくインストールされるように、 Extra Packages for Enterprise Linux （ EPEL ）リポジトリを有効にする必要があります。
++
+システムで EPEL リポジトリが設定されていない場合は、リポジトリを手動でダウンロードして設定する必要があります。
+
++
+xref:task-manually-configuring-the-epel-repository.adoc[EPEL リポジトリを手動で設定します]
+
+* 正しいバージョンの MySQL がインストールされていない場合は、システムに MySQL ソフトウェアが正しくインストールされるように MySQL リポジトリを有効にする必要があります。
++
+システムで MySQL リポジトリが設定されていない場合は、リポジトリを手動でダウンロードして設定する必要があります。
+
++
+xref:task-manually-configuring-the-mysql-repository.adoc[MySQL リポジトリを手動で設定する]
+
+
+
+システムがインターネットにアクセスできず、インターネットに接続されたシステムからリポジトリがミラーリングされていない場合は、インストール手順に従ってシステムに必要な外部ソフトウェアを確認してください。必要なソフトウェアをインターネットに接続されたシステムにダウンロードして、をコピーします `.rpm` ファイルを、Unified Managerをインストールするシステムにインストールします。アーティファクトとパッケージをダウンロードするには、を使用する必要があります `yum install` コマンドを実行します2 つのシステムで同じバージョンのオペレーティングシステムを実行していること、および該当する Red Hat Enterprise Linux バージョンまたは CentOS バージョンのサブスクリプションライセンスがあることを確認してください。
+
+[NOTE]
+====
+必要なサードパーティ製ソフトウェアは、ここに記載されたリポジトリ以外からはインストールしないでください。Red Hat リポジトリからインストールされるソフトウェアは、 Red Hat Enterprise Linux 用に特別に設計されたものであり、 Red Hat のベストプラクティス（ディレクトリのレイアウトや権限など）に準拠しています。他の場所から入手したソフトウェアは必ずしもこれらのガイドラインに従っていないため、原因 Unified Manager のインストールに失敗したり、将来のアップグレードで原因の問題が発生したりする可能性があります。
+
+====
+
+
+== ポート 443 の要件
+
+Red HatおよびCentOSの汎用イメージは、ポート443への外部アクセスをブロックします。お使いのブラウザがOnCommand 製品に接続できない場合は、問題 である可能性があります。次のコマンドは、すべての外部ユーザとアプリケーションによるポート443へのアクセスを有効にします。 `# firewall-cmd –zone=public –add-port=443/tcp –permanent; firewall-cmd –reload`
+
+このコマンドを実行する前に、IT部門に問い合わせて、セキュリティポリシーに別の手順 が必要かどうかを確認してください。

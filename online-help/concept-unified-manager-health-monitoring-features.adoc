@@ -1,0 +1,54 @@
+---
+permalink: online-help/concept-unified-manager-health-monitoring-features.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager のサーバインフラは拡張性とサポート性に優れ、高度な監視機能と通知機能を備えています。Unified Manager では、 ONTAP ソフトウェアを実行しているシステムの監視をサポートします。 
+---
+= Unified Manager の健常性監視機能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager のサーバインフラは拡張性とサポート性に優れ、高度な監視機能と通知機能を備えています。Unified Manager では、 ONTAP ソフトウェアを実行しているシステムの監視をサポートします。
+
+Unified Manager には次の機能があります。
+
+* ONTAP ソフトウェアがインストールされたシステムの検出、監視、通知
++
+** 物理オブジェクト：ノード、ディスク、ディスクシェルフ、 SFO ペア、ポート、 」を参照してください
+** 論理オブジェクト：クラスタ、Storage Virtual Machine（SVM）、アグリゲート、ボリューム、LUN、ネームスペース、qtree、LIF、Snapshotコピー、ジャンクションパス、NFSエクスポートCIFS共有、ユーザクォータとグループクォータ、およびイニシエータグループ
+** プロトコル： CIFS 、 NFS 、 FC 、 iSCSI 、 NVMe および fcoe です
+** ストレージ効率化： SSD アグリゲート、 Flash Pool アグリゲート、 FabricPool アグリゲート、重複排除、圧縮
+** 保護： SnapMirror 関係（同期および非同期）および SnapVault 関係
+
+
+* クラスタの検出と監視のステータスを表示します
+* MetroCluster 構成：クラスタコンポーネントの構成、 MetroCluster スイッチおよびブリッジ、問題、接続ステータスの表示と監視
+* アラート、イベント、およびしきい値インフラが強化されています
+* LDAP 、 LDAPS 、 SAML 認証、およびローカルユーザのサポート
+* RBAC （事前定義された一連のロール）
+* AutoSupport とサポートバンドル
+* ダッシュボードが強化され、環境の容量、可用性、保護、パフォーマンスなどの健全性が表示されるようになりました
+* ボリューム移動の相互運用性、ボリューム移動の履歴、およびジャンクションパスの変更履歴
+* 影響範囲：障害が発生したディスク、 MetroCluster アグリゲートのミラーリングがデグレード状態、 MetroCluster のスペアディスクなど、イベントの影響を受けるリソースがグラフィカルに表示されます
+* MetroCluster イベントの影響を表示する有効範囲
+* Suggested Corrective Actions area ： Some Failed Disks 、 MetroCluster Aggregate Mirroring Degraded 、 MetroCluster Spare Disks Left Behind イベントなどのイベントに対処するために実行できる対処方法を表示します
+* 「影響を受ける可能性があるリソース」領域には、「ボリュームがオフライン」イベント、「ボリュームが制限状態」イベント、「シンプロビジョニングボリュームにスペースリスクあり」イベントなどのイベントの影響を受ける可能性があるリソースが表示されます
+* SVMsのサポート
++
+** FlexVol ボリューム
+** FlexGroup ボリューム
+** Infinite Volume
+
+
+* ノードのルートボリュームの監視がサポートされます
+* 再利用可能なスペースの計算や Snapshot コピーの削除など、 Snapshot コピーの監視機能が強化されました
+* ストレージオブジェクトのアノテーション
+* 物理容量と論理容量、利用率、スペース削減率、関連イベントなど、ストレージオブジェクトの情報の作成と管理に関するレポート
+* OnCommand Workflow Automation と統合してワークフローを実行
++
+Storage Automation Store で、 OnCommand Workflow Automation （ WFA ）用に開発されたネットアップ認定のストレージワークフロー自動化パックを提供しています。パックをダウンロードし、 WFA にインポートして実行できます。自動化されたワークフローは次のとおりです link:https://automationstore.netapp.com["Storage Automation Store の略"]
+
+

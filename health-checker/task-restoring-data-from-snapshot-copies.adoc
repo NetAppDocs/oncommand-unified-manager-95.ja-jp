@@ -1,0 +1,32 @@
+---
+permalink: health-checker/task-restoring-data-from-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: 災害またはディレクトリやファイルの誤削除が原因でデータが失われた場合は、Unified Managerを使用してSnapshotコピーからデータを検索してリストアできます。 
+---
+= Snapshotコピーからのデータのリストア
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+災害またはディレクトリやファイルの誤削除が原因でデータが失われた場合は、Unified Managerを使用してSnapshotコピーからデータを検索してリストアできます。
+
+
+
+== このタスクについて
+
+Unified Manager Web UIの2つの場所からデータをリストアすることができます。
+
+
+
+== 手順
+
+. 次のいずれかのタスクを実行してデータをリストアします。
++
+** xref:task-restoring-data-using-the-health-volume-details-page.adoc[健常性/ボリュームの詳細ページからデータをリストア]。
+** xref:task-restoring-data-using-the-health-volumes-page.adoc[ケンシヨウセイ/ホリユウムヘエシテノテエタノリストア]。
+
+
+

@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-lun-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance/LUNExplorerヘエシには、クラスタ内のすべてのLUNのパフォーマンスの詳細な概要が表示されます。 
+---
+= Performance/LUNExplorerヘエシ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance/LUNExplorerヘエシには、クラスタ内のすべてのLUNのパフォーマンスの詳細な概要が表示されます。
+
+Performance/LUNExplorerヘエシを使用すると、一定期間のLUNのパフォーマンスを追跡して比較できるため、LUNのパフォーマンスのトラブルシューティングや微調整に役立ちます。
+
+表示と比較機能を使用して、このLUNのパフォーマンスを次の対象と比較できます。
+
+* 同じボリューム上の他のLUN
+* LUNが配置されているボリューム
+
+
+グラフに表示される統計は収集期間後に更新されます。この間隔はデフォルトでは5分です。セレクタのView statisticsには、過去1時間の統計を平均化するオプションがあります。この機能を使用すると、NetAppの「パフォーマンス保証」プログラムをサポートするレイテンシー・チャートを表示できます。
+
+Performance/LUNExplorerヘエシヲシツハイスヘノアクセス
+
+* しきい値に関連する問題とその詳細を表示します
+* LUNのパフォーマンスデータを追跡して比較する
+* しきい値に関連する問題の調査とトラブルシューティング
+* パフォーマンスの問題の調査とトラブルシューティング
+

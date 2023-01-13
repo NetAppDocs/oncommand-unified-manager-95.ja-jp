@@ -1,0 +1,145 @@
+---
+permalink: online-help/reference-snapmirror-relationship-events.html 
+sidebar: sidebar 
+keywords:  
+summary: SnapMirror関係イベントは、SnapMirror関係のステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。 
+---
+= SnapMirror 関係イベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror関係イベントは、SnapMirror関係のステータス情報を提供します。これにより、潜在的な問題を監視できます。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。
+
+
+
+== 影響範囲：保護
+
+アスタリスク（ * ）は、 Unified Manager イベントに変換された EMS イベントを示します。
+
+|===
+| イベント名（トラップ名） | 影響レベル | ソースタイプ | 重大度 
+
+
+ a| 
+ミラーレプリケーションが正常でない（ ocument SnapmirrorRelationshipUnhealthy ）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+警告
+
+
+
+ a| 
+ミラーレプリケーションを切断（ ocumentEvtSnapmirrorRelationshipStateBrokenoff ）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+エラー
+
+
+
+ a| 
+ミラーレプリケーションの初期化に失敗しました（ドキュメント SnapMirror 関係の初期化に失敗しました）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+エラー
+
+
+
+ a| 
+ミラーレプリケーションの更新に失敗しました（ドキュメント： SnapmirrorRelationshipUpdateFailed ）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+エラー
+
+
+
+ a| 
+ミラーレプリケーションの遅延エラー（「 Document EvtSnapMirrorRelationshipLagError 」）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+エラー
+
+
+
+ a| 
+ミラーレプリケーションの遅延警告（「 Document 」「 SnapMirrorRelationshipLagWarning 」）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+警告
+
+
+
+ a| 
+ミラーレプリケーションの再同期失敗（ドキュメント： SnapmirrorRelationshipResyncFailed ）
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+エラー
+
+
+
+ a| 
+ミラーレプリケーションの削除済みドキュメントSnapMirror関係の削除
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+警告
+
+
+
+ a| 
+同期レプリケーションが同期されていません*
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+警告
+
+
+
+ a| 
+同期レプリケーションがリストアされました*
+ a| 
+イベント
+ a| 
+SnapMirror 関係
+ a| 
+情報
+
+
+
+ a| 
+同期レプリケーションの自動再同期に失敗しました*
+ a| 
+リスク
+ a| 
+SnapMirror 関係
+ a| 
+エラー
+
+|===

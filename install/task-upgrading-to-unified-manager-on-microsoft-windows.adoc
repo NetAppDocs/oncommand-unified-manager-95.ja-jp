@@ -1,0 +1,106 @@
+---
+permalink: install/task-upgrading-to-unified-manager-on-microsoft-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: WindowsプラットフォームでUnified Manager 7.3または9.4からUnified Manager 9.5にアップグレードするには、インストールファイルをダウンロードして実行します。 
+---
+= WindowsでのUnified Managerのアップグレード
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+WindowsプラットフォームでUnified Manager 7.3または9.4からUnified Manager 9.5にアップグレードするには、インストールファイルをダウンロードして実行します。
+
+
+
+== 作業を開始する前に
+
+* Unified Manager をアップグレードするシステムがシステム要件とソフトウェア要件を満たしている必要があります。
++
+xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[ハードウェアシステムの要件]
+
++
+xref:reference-windows-software-and-installation-requirements.adoc[Windows ソフトウェアとインストールの要件]
+
++
+[NOTE]
+====
+Unified Manager 9.5 以降、 OpenJDK は Unified Manager のインストールパッケージに含まれており、自動的にインストールされます。Unified Manager 9.5 以降では Oracle Java はサポートされません。
+
+====
++
+[NOTE]
+====
+Unified Manager 9.4以降では、Microsoft .NET 4.5.2以上が必要です。アップグレードを開始する前に、正しいバージョンの.NETがインストールされていることを確認してください。
+
+====
+* Windows の管理者権限が必要です。
+* NetApp Support Siteにログインするための有効なクレデンシャルが必要です。
+* アップグレード中に問題 が使用される場合にデータが失われないようにするために、Unified Managerマシンのバックアップを作成しておく必要があります。
+* アップグレードを実行するための十分なディスクスペースが必要です。
++
+インストールドライブに、データディレクトリのサイズよりも2.5GBの使用可能なスペースが必要です。十分な空きスペースがないと、アップグレードが中止され、追加で必要なスペース量がエラーメッセージに表示されます。
+
+
+
+
+
+== このタスクについて
+
+アップグレードプロセスの実行中は、 Unified Manager を使用できなくなります。実行中の処理がある場合は、 Unified Manager をアップグレードする前に完了しておいてください
+
+Unified Manager を OnCommand Workflow Automation のインスタンスとペアにして使用している環境では、両方の製品のソフトウェアで新しいバージョンを利用できる場合、 2 つの製品間の接続を解除してから各製品をアップグレードし、アップグレードの実行後に Workflow Automation の接続を新たにセットアップする必要があります。いずれかの製品のみをアップグレードする場合は、アップグレード後に Workflow Automation にログインし、 Unified Manager からデータを取得していることを確認します。
+
+
+
+== 手順
+
+. NetApp Support Site にログインし、Windowsプラットフォーム向けのUnified Managerのダウンロードページに移動します。
++
+http://mysupport.netapp.com/NOW/cgi-bin/software["ネットアップのダウンロード：ソフトウェア"]
+
+. Unified Manager WindowsインストールファイルをWindowsシステムのターゲットディレクトリにダウンロードします。
+. Unified Managerでハイアベイラビリティを構成している場合は、Microsoft Cluster Serverを使用して1つ目のノードのUnified Managerサービスをすべて停止してから、を使用してMySQLサービスを開始します `services.msc`。
+. Unified Managerインストーラの実行ファイルを右クリックして実行します `(.exe)` 管理者としてファイルを作成します。
++
+Unified Manager から次のメッセージが表示されます。
+
++
+[listing]
+----
+This setup will perform an upgrade of ‘OnCommand Unified Manager’. Do you want to continue?
+----
+. [ はい ] をクリックし、 [ 次へ ] をクリックします。
+. インストール時に設定したMySQLのrootパスワードを入力し、*次へ*をクリックします。
+. ハイアベイラビリティ構成の場合は、アップグレードの完了後に、フェイルオーバークラスタマネージャを使用してすべてのUnified Managerサービスを開始し、残りの作業を実行します。
+. コマンドプロンプトでを実行します `ha_setup.pl` フェイルオーバークラスタの新しいサービスと共有の場所にあるファイルを設定するスクリプト。
++
+`C:\Program Files\NetApp\ocum\bin> perl .\ha_setup.pl --upgrade --first -t mscs -g kjaggrp -i "New IP Address1" -n scs8003.englab.company.com -k "Cluster Disk 2" -f E:\ -u user -p userpass`
+
+. Microsoft Cluster Serverを使用して、1つ目のノードのすべてのUnified Managerサービス（ocie、ocieau、およびMySQL）を停止します。
+. から2つ目のノードでMySQLサービスを開始します `services.msc`。
+. サービスグループをハイアベイラビリティ構成の2つ目のノードに切り替えます。
+. 2つ目のノードでUnified Managerをアップグレードします。
+. コマンドプロンプトで、と入力します `Y` 続行する場合はを、中止する場合は他の文字を入力します。
++
+Unified Managerサービスのアップグレードと再起動のプロセスが完了するまでに数分かかることがあります。
+
+. Microsoft Cluster Serverを使用して、両方のノードですべてのUnified Managerサービスを開始します。
+. コマンドプロンプトでを実行します `ha_setup.pl` を使用してスクリプトを作成します `--upgrade` オプション
++
+`perl ha_setup.pl --upgrade --join -t mscs -f E:\`
+
+. Unified Manager Web UI にログインし、バージョン番号を確認します。
+
+
+
+
+== 完了後
+
+[NOTE]
+====
+Unified Managerのサイレントアップグレードを行う場合は、次のコマンドを実行します。 `OnCommandUnifiedManager-9.5.exe /s /v"MYSQL_PASSWORD=netapp21! /qn /l*v C:\install.log`
+
+====

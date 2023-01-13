@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-setup-authentication-page-um-7-3.html 
+sidebar: sidebar 
+keywords:  
+summary: Setup / Authenticationページでは、Unified Manager Web UIにログインするリモートユーザを認証するようにUnified Managerを設定できます。 
+---
+= Setup/Authentication（セットアップ/認証）ページ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Setup / Authenticationページでは、Unified Manager Web UIにログインするリモートユーザを認証するようにUnified Managerを設定できます。
+
+Remote Authenticationページを使用して、Unified Managerがリモートユーザの認証に使用する認証サーバと通信するように設定することができます。
+
+SAML認証ページを使用して、Unified Managerがセキュアなアイデンティティプロバイダ（IdP）と通信してリモートユーザを認証するように設定できます。
