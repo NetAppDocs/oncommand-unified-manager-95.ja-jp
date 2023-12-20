@@ -45,7 +45,7 @@ https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=6
 登録可能なEMSイベントの名前を確認するには、ONTAP クラスタシェルでを使用します `event route show` コマンド（ONTAP 9より前）または `event catalog show` コマンド（ONTAP 9以降）。個 々 のEMSイベントを特定する詳しい手順については、ナレッジベースの回答 1072320を参照してください。
 
 +
-https://kb.netapp.com/app/answers/answer_view/a_id/1072320["KB 1072320 - ONTAP EMSイベントサブスクリプションの設定方法"]
+https://kb.netapp.com/mgmt/AIQUM/How_to_configure_and_receive_alerts_from_ONTAP_EMS_Event_Subscription_in_Active_IQ_Unified_Manager["Active IQ Unified Manager で ONTAP EMS イベントサブスクリプションからアラートを設定して受信する方法"^]
 
 . [ 追加（ Add ） ] をクリックします。
 +
