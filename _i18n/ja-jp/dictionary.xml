@@ -1030,7 +1030,6 @@
   <block id="713d9eb7bae81414a341cd2b9ad04f0e" category="paragraph">Unified Manager はメモリの少ないシステムにもインストールできますが、推奨される 12GB の RAM があれば最適なパフォーマンスが保証されるだけでなく、拡張時にクラスタやストレージオブジェクトの追加にも対応できます。Unified Managerを導入するVMにはメモリの上限などを設定しないでください。また、ソフトウェアがシステムで割り当てられているメモリを利用できなくなる機能（バルーニングなど）は有効にしないでください。</block>
   <block id="1ba321baad6e31e95cddb86bd159a0ab" category="paragraph">また、1つのUnified Managerインスタンスで監視できるノードの数には上限があり、この上限を超える場合は2つ目のUnified Managerインスタンスをインストールする必要があります。詳細については、_ベストプラクティスガイド_を参照してください。</block>
   <block id="9650789293045a87cc14a47729b5ebfc" category="inline-link">テクニカルレポート 4621 ：『 Unified Manager Best Practices Guide 』</block>
-  <block id="badef135127b32313f0e0eebe283472f" category="paragraph"><block ref="badef135127b32313f0e0eebe283472f" category="inline-link-rx"></block></block>
   <block id="ccd350b03208f21a01e8434aa29bf22c" category="paragraph">メモリページのスワッピングは、システムや管理アプリケーションのパフォーマンスに悪影響を及ぼします。CPU リソースがホスト全体で競合して使用できなくなると、パフォーマンスが低下する可能性があります。</block>
   <block id="4019b02afc32a61e39e48a05d352cdf9" category="section-title">専用使用の要件</block>
   <block id="f8a1acaf90775fd387de63d0c7d02a5a" category="paragraph">Unified Managerをインストールする物理システムまたは仮想システムは、他のアプリケーションとは共有せず、Unified Manager専用にする必要があります。他のアプリケーションにシステムリソースが消費されることで、 Unified Manager のパフォーマンスが大幅に低下する可能性があります。</block>
@@ -6555,7 +6554,6 @@
   <block id="11e8e4f244f4ff642a8c627e453e7ac8" category="paragraph">OnCommand System ManagerまたはONTAP コマンドを使用して、Flash Cacheがインストールされて有効になっているかを確認し、有効になっていない場合は有効にすることができます。次のコマンドは、Flash Cacheが特定のノードで有効になっているかどうかを示します。<block ref="48de88639c7fbb304293e385f1577ff8" prefix=" " category="inline-code"></block></block>
   <block id="4226c3da2a5d50e1c8abfdfbf9bd3780" category="paragraph">Flash Cache とその使用要件については、次のテクニカルレポートを参照してください。</block>
   <block id="4d594fa378085e019a42ca73e740986c" category="inline-link">テクニカルレポート 3832 ：『 Flash Cache Best Practices Guide 』</block>
-  <block id="e9f146d71f531c29c1d0c53c51f7c325" category="paragraph"><block ref="e9f146d71f531c29c1d0c53c51f7c325" category="inline-link-rx"></block></block>
   <block id="ed46215834ece9df6f6e928ec99fb8b8" category="summary">既存のクラスタを追加して、そのクラスタを監視し、健全性、容量、構成、パフォーマンスに関する情報を取得できます。</block>
   <block id="0130853463bbe8886a65910adc3f54b2" category="doc">Add Clusterダイアログボックス</block>
   <block id="67417a585c57d841c0ff1ea84e382fcd" category="paragraph">次の値を指定してクラスタを追加できます。</block>
@@ -7651,7 +7649,6 @@
   <block id="f804ed2945f8b8f58e9c8ebf45b6d70a" category="paragraph">Unified Manager のアプリケーションの健常性とパフォーマンスの問題に関するデータ。</block>
   <block id="030a4fbaf40ce64a3de26a58a2349f3b" category="paragraph">レポートスキーマロールを持つデータベースユーザーであるレポートユーザーは、これらのテーブルのデータにアクセスできます。このユーザには、レポートおよびその他のデータベースビューに Unified Manager データベースから直接アクセスするための読み取り専用アクセスが付与されます。このユーザには、ユーザデータやクラスタクレデンシャル情報を含むテーブルにアクセスする権限はありません。</block>
   <block id="43c57f8ab49b52141a07a60ab8386a94" category="inline-link">Unified Managerレポートのテクニカルレポートを参照してください</block>
-  <block id="ef284f778ff870c90bd04052fa19e3d6" category="paragraph">を参照してください<block ref="204d4ee1ca42e994250ea354be144e73" category="inline-link-rx"></block> 詳細については、TR-4565を参照してください。</block>
   <block id="d5115a56160e45240d2698485e7e3777" category="summary">イベントに関する概念を理解しておくと、クラスタおよびクラスタオブジェクトを効率的に管理し、アラートを適切に定義できるようになります。</block>
   <block id="71d8a1201a22de215395582e8721d30e" category="doc">イベントに関する詳細情報</block>
   <block id="65326e6b22fde34c92c7ea8237cc8412" category="summary">SVMストレージクラスのイベントは、ストレージクラスのステータス情報を提供します。これにより、潜在的な問題を監視できます。SVMストレージクラスは、Infinite Volumeを備えたSVMにのみ存在します。影響範囲別にイベントがまとめられ、イベント名とトラップ名、影響レベル、ソースタイプ、および重大度が表示されます。</block>
@@ -11885,7 +11882,6 @@
   <block id="7c48a0120101491ea5a781058b5716de" category="doc">ディスクを追加してアグリゲートレイアウトを再構築する</block>
   <block id="fdf3b7352c190d213c24db064ec3a78e" category="paragraph">イベントの詳細ページにシステム定義のしきい値イベントが表示された場合、問題があるアグリゲートの名前がイベント概要のテキストに表示されます。このアグリゲートに対して、ディスクを追加してデータを再構築できます。</block>
   <block id="c993772a65e087ac68acfde3645c3287" category="inline-link">テクニカルレポート 3838 ：『 Storage Subsystem Configuration Guide 』</block>
-  <block id="0379ced083df169219dc62cc5068b75c" category="paragraph"><block ref="0379ced083df169219dc62cc5068b75c" category="inline-link-rx"></block></block>
   <block id="877f5e27a442690f512bdd4fa77d8cb6" category="summary">Unified Manager を使用して、 MetroCluster 構成のクラスタとそのコンポーネントの運用の健常性を確認できます。Unified Manager によって検出されたパフォーマンスイベントにクラスタが関連している場合は、健常性ステータスを確認することで、ハードウェアまたはソフトウェアの問題がイベントの一因となったかどうかを判断できます。</block>
   <block id="5e9e3cac8906fbac9ab062f3f912efc9" category="doc">MetroCluster 構成のクラスタの健常性を確認しています</block>
   <block id="1e86f8bde1a87a2deac3175345884436" category="list-text">MetroCluster 構成のパフォーマンスイベントを分析し、関連するクラスタの名前を取得しておく必要があります。</block>
@@ -11967,7 +11963,6 @@
   <block id="4a62775f3719d6969e4b9d4bd0578ca6" category="paragraph">選択した効率化設定を保存し、 [ 保護の設定 ] ダイアログボックスで [ 適用 ] をクリックしたときに適用します。</block>
   <block id="cfc05fb84db9c30b38a419540c16db12" category="paragraph">選択内容を破棄して、 [Advanced Destination Settings] ダイアログボックスを閉じます。</block>
   <block id="ae66a56126cf2726904ab28390ff838b" category="inline-link">ネットアップテクニカルレポート3966：『ネットアップのデータ圧縮機能と重複排除機能導入および実装ガイド：clustered Data ONTAP 』</block>
-  <block id="df4f489fd8783506ee2d692048efa87d" category="paragraph"><block ref="df4f489fd8783506ee2d692048efa87d" category="inline-link-rx"></block></block>
   <block id="f3a8d1f0654a5e8b0761614bebc1ad16" category="summary">MetroCluster 構成では、データのミラーリングが可能で、サイト全体が利用できなくなった場合にフェイルオーバーを開始する機能も利用できます。MetroCluster 構成のクラスタ間のデータミラーリングのステータスは、「 Normal 」または「 Mirroring Unavailable 」のいずれかになります。これらのステータスを理解しておくと、 MetroCluster 構成を効果的に管理できます。</block>
   <block id="baf5d44e1d7facdf126425b9dacabd71" category="doc">データミラーリングのステータスの定義</block>
   <block id="f4eb4da5d6840b7010c0afd8cb3a5816" category="cell">データミラーリングのステータス</block>
@@ -12215,4 +12210,9 @@
   <block id="1acf808d5167e8d3738f46ff5b4e301e" category="inline-link">Active IQ Unified Manager で ONTAP EMS イベントサブスクリプションからアラートを設定して受信する方法</block>
   <block id="9df7d5af79770924171ad1bae7e6fd64" category="paragraph"><block ref="9df7d5af79770924171ad1bae7e6fd64" category="inline-link-rx"></block></block>
   <block id="31787eb1cdcbc7b2acf891b9fa7f133e" category="sidebar">OnCommand Unified Managerでは、ONTAP ストレージシステムの健常性とパフォーマンスを単一のインターフェイスから監視および管理することができます。このドキュメントライブラリには、バージョン9.5の情報が含まれています。</block>
+  <block id="ee26087a8b7ec790988603a3298c45f3" category="paragraph"><block ref="ee26087a8b7ec790988603a3298c45f3" category="inline-link-rx"></block></block>
+  <block id="06c70b026e4d10bfcd7be2ebfa770d1c" category="paragraph"><block ref="06c70b026e4d10bfcd7be2ebfa770d1c" category="inline-link-rx"></block></block>
+  <block id="a87e9b78df20679676eb71ecb2dadaf4" category="paragraph">詳細については、（TR-4565）を参照してください<block ref="7a573ad874e1456bf6b4f96b852006f2" category="inline-link-rx"></block> 。</block>
+  <block id="ec41073735b02d172b0bc1ee60ea5ec9" category="paragraph"><block ref="ec41073735b02d172b0bc1ee60ea5ec9" category="inline-link-rx"></block></block>
+  <block id="796f4a9be8e525f7e4d64c24bac529c9" category="paragraph"><block ref="796f4a9be8e525f7e4d64c24bac529c9" category="inline-link-rx"></block></block>
 </blocks>

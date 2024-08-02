@@ -74,7 +74,7 @@ Unified Manager はメモリの少ないシステムにもインストールで�
 
 また、1つのUnified Managerインスタンスで監視できるノードの数には上限があり、この上限を超える場合は2つ目のUnified Managerインスタンスをインストールする必要があります。詳細については、_ベストプラクティスガイド_を参照してください。
 
-http://www.netapp.com/us/media/tr-4621.pdf["テクニカルレポート 4621 ：『 Unified Manager Best Practices Guide 』"]
+https://www.netapp.com/pdf.html?item=/media/13504-tr4621pdf.pdf["テクニカルレポート 4621 ：『 Unified Manager Best Practices Guide 』"^]
 
 メモリページのスワッピングは、システムや管理アプリケーションのパフォーマンスに悪影響を及ぼします。CPU リソースがホスト全体で競合して使用できなくなると、パフォーマンスが低下する可能性があります。
 

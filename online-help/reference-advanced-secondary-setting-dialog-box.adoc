@@ -88,4 +88,4 @@ SnapVault 関係のセカンダリボリュームで重複排除を有効にし�
 
 * 関連情報 *
 
-http://www.netapp.com/us/media/tr-3966.pdf["ネットアップテクニカルレポート3966：『ネットアップのデータ圧縮機能と重複排除機能導入および実装ガイド：clustered Data ONTAP 』"]
+https://www.netapp.com/pdf.html?item=/media/19753-tr-3966.pdf["ネットアップテクニカルレポート3966：『ネットアップのデータ圧縮機能と重複排除機能導入および実装ガイド：clustered Data ONTAP 』"^]
